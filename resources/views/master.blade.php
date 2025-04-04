@@ -10,26 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('template/histudy/assets/images/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
 
     <!-- CSS
 	============================================ -->
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/vendor/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/vendor/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/vendor/slick-theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/sal.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/feather.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/euclid-circulara.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/swiper.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/odometer.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/animation.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/bootstrap-select.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/magnigy-popup.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/plyr.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/plugins/jodit.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/histudy/assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick-theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/sal.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/feather.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/euclid-circulara.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/swiper.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/odometer.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animation.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/magnigy-popup.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/plyr.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/jodit.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
 
     </head>
 
@@ -38,12 +38,12 @@
         <ul>
             <li>
                 <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                    <img src="{{ asset('template/histudy/assets/images/about/sun-01.svg') }}" alt="Sun images"><span title="Light Mode"> Light</span>
+                    <img src="{{ asset('assets/images/about/sun-01.svg') }}" alt="Sun images"><span title="Light Mode"> Light</span>
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                    <img src="{{ asset('template/histudy/assets/images/about/vector.svg') }}" alt="Vector Images"><span title="Dark Mode"> Dark</span>
+                    <img src="{{ asset('assets/images/about/vector.svg') }}" alt="Vector Images"><span title="Dark Mode"> Dark</span>
                 </a>
             </li>
         </ul>
@@ -59,7 +59,7 @@
                             <div class="inner justify-content-center">
                                 <div class="content">
                                     <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Limited Time Offer</span>
-                                    <span class="news-text color-white-off"><img src="{{ asset('template/histudy/assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Intro price. Get Histudy for Big Sale -95% off.</span>
+                                    <span class="news-text color-white-off"><img src="{{ asset('assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Intro price. Get Histudy for Big Sale -95% off.</span>
                                 </div>
                                 <div class="right-button">
                                     <a class="rbt-btn-link color-white" href="https://themeforest.net/checkout/from_item/42846507?license=regular">
@@ -84,13 +84,13 @@
                     <div class="header-left">
                         <div class="logo logo-dark">
                             <a href="index.html">
-                                <img src="{{ asset('template/histudy/assets/images/logo/logo.png') }}" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
 
                         <div class="logo d-none logo-light">
                             <a href="index.html">
-                                <img src="{{ asset('template/histudy/assets/images/dark/logo/logo-light.png') }}" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="01-main-demo.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h1.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="01-main-demo.html"><img src="{{ asset('assets/images/splash/demo/h1.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="01-main-demo.html">Home Demo <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -124,7 +124,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="12-marketplace.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h12.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="12-marketplace.html"><img src="{{ asset('assets/images/splash/demo/h12.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="12-marketplace.html">Marketplace <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -139,7 +139,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="04-kindergarten.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h4.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="04-kindergarten.html"><img src="{{ asset('assets/images/splash/demo/h4.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="04-kindergarten.html">kindergarten <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -154,7 +154,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="13-university-classic.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h13.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="13-university-classic.html"><img src="{{ asset('assets/images/splash/demo/h13.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="13-university-classic.html">University Classic <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -169,7 +169,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="14-home-elegant.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h14.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="14-home-elegant.html"><img src="{{ asset('assets/images/splash/demo/h14.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="14-home-elegant.html">Home Elegant <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -184,7 +184,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="09-gym-coaching.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h9.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="09-gym-coaching.html"><img src="{{ asset('assets/images/splash/demo/h9.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="09-gym-coaching.html">Gym Coaching <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -199,7 +199,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="03-online-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h3.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="03-online-school.html"><img src="{{ asset('assets/images/splash/demo/h3.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="03-online-school.html">Online School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -214,7 +214,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="06-university-status.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h6.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="06-university-status.html"><img src="{{ asset('assets/images/splash/demo/h6.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="06-university-status.html">University Status <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -229,7 +229,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="15-home-technology.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h15.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="15-home-technology.html"><img src="{{ asset('assets/images/splash/demo/h15.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="15-home-technology.html">Home Technology <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -244,7 +244,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="07-instructor-portfolio.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h7.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="07-instructor-portfolio.html"><img src="{{ asset('assets/images/splash/demo/h7.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="07-instructor-portfolio.html">Instructor Portfolio <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -259,7 +259,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="08-language-academy.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h8.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="08-language-academy.html"><img src="{{ asset('assets/images/splash/demo/h8.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="08-language-academy.html">Language Academy <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -274,7 +274,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="11-single-course.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h11.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="11-single-course.html"><img src="{{ asset('assets/images/splash/demo/h11.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="11-single-course.html">Single Course <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -289,7 +289,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="10-online-course.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h10.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="10-online-course.html"><img src="{{ asset('assets/images/splash/demo/h10.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="10-online-course.html">Online Course <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -304,7 +304,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="05-classic-lms.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="05-classic-lms.html"><img src="{{ asset('assets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="05-classic-lms.html">Classic Lms <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -319,7 +319,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="02-course-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h2.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="02-course-school.html"><img src="{{ asset('assets/images/splash/demo/h2.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="02-course-school.html">Course School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -334,7 +334,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner">
                                                             <div class="thumbnail">
-                                                                <a href="16-udemy-affiliate.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h16.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="16-udemy-affiliate.html"><img src="{{ asset('assets/images/splash/demo/h16.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="16-udemy-affiliate.html">Udemy Affiliate <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -350,7 +350,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="17-online-academy.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h17.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="17-online-academy.html"><img src="{{ asset('assets/images/splash/demo/h17.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="17-online-academy.html">Online Academy <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -366,7 +366,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="18-instructors-coaches.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h18.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="18-instructors-coaches.html"><img src="{{ asset('assets/images/splash/demo/h18.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="18-instructors-coaches.html">Instructor Coaches <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -382,7 +382,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="19-modern-university.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h19.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="19-modern-university.html"><img src="{{ asset('assets/images/splash/demo/h19.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="19-modern-university.html">Modern University <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -398,7 +398,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="20-multilingual.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h20.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="20-multilingual.html"><img src="{{ asset('assets/images/splash/demo/h20.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="20-multilingual.html">Multilingual <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -414,7 +414,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="21-art-design-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h21.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="21-art-design-school.html"><img src="{{ asset('assets/images/splash/demo/h21.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="21-art-design-school.html">Art Design School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -430,7 +430,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="22-wishlist.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h22.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="22-wishlist.html"><img src="{{ asset('assets/images/splash/demo/h22.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="22-wishlist.html">Wishlist <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -446,7 +446,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="23-coaching.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h23.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="23-coaching.html"><img src="{{ asset('assets/images/splash/demo/h23.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="23-coaching.html">Coaching <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -462,7 +462,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="24-health-wellness-institute.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h24.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="24-health-wellness-institute.html"><img src="{{ asset('assets/images/splash/demo/h24.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="24-health-wellness-institute.html">Health Institute <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -478,7 +478,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="25-life-coach.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h25.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="25-life-coach.html"><img src="{{ asset('assets/images/splash/demo/h25.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="25-life-coach.html">Life Coach <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -494,7 +494,7 @@
                                                         <div class="inner">
                                                             <span class="new-batch">New Added</span>
                                                             <div class="thumbnail">
-                                                                <a href="26-islamic-center.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h26.jpg') }}" alt="Demo Images"></a>
+                                                                <a href="26-islamic-center.html"><img src="{{ asset('assets/images/splash/demo/h26.jpg') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="26-islamic-center.html">Islamic Center <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -509,7 +509,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner disable">
                                                             <div class="thumbnail">
-                                                                <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
+                                                                <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -525,7 +525,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner disable">
                                                             <div class="thumbnail">
-                                                                <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-2.png') }}" alt="Demo Images"></a>
+                                                                <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-2.png') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -541,7 +541,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner disable">
                                                             <div class="thumbnail">
-                                                                <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-3.png') }}" alt="Demo Images"></a>
+                                                                <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-3.png') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -557,7 +557,7 @@
                                                     <div class="demo-single">
                                                         <div class="inner disable">
                                                             <div class="thumbnail">
-                                                                <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
+                                                                <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
                                                             </div>
                                                             <div class="content">
                                                                 <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -732,7 +732,7 @@
                                                         <!-- Start Single Category  -->
                                                         <div class="nav-category-item">
                                                             <div class="thumbnail">
-                                                                <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-2.png') }}" alt="Course images"></div>
+                                                                <div class="image"><img src="{{ asset('assets/images/course/category-2.png') }}" alt="Course images"></div>
                                                                 <a href="course-filter-one-toggle.html">
                                                                     <span>Online Education</span>
                                                                     <i class="feather-chevron-right"></i>
@@ -744,7 +744,7 @@
                                                         <!-- Start Single Category  -->
                                                         <div class="nav-category-item">
                                                             <div class="thumbnail">
-                                                                <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-1.png') }}" alt="Course images"></div>
+                                                                <div class="image"><img src="{{ asset('assets/images/course/category-1.png') }}" alt="Course images"></div>
                                                                 <a href="course-filter-one-toggle.html">
                                                                     <span>Language Club</span>
                                                                     <i class="feather-chevron-right"></i>
@@ -756,7 +756,7 @@
                                                         <!-- Start Single Category  -->
                                                         <div class="nav-category-item">
                                                             <div class="thumbnail">
-                                                                <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-4.png') }}" alt="Course images"></div>
+                                                                <div class="image"><img src="{{ asset('assets/images/course/category-4.png') }}" alt="Course images"></div>
                                                                 <a href="course-filter-one-toggle.html">
                                                                     <span>University Status</span>
                                                                     <i class="feather-chevron-right"></i>
@@ -779,7 +779,7 @@
                                                         <!-- Start Single Category  -->
                                                         <div class="nav-category-item">
                                                             <div class="thumbnail">
-                                                                <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-9.png') }}" alt="Course images"></div>
+                                                                <div class="image"><img src="{{ asset('assets/images/course/category-9.png') }}" alt="Course images"></div>
                                                                 <a href="course-filter-one-toggle.html">
                                                                     <span>Academy</span>
                                                                     <i class="feather-chevron-right"></i>
@@ -897,7 +897,7 @@
 
                                                 <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
                                                     <div class="rbt-ads-wrapper">
-                                                        <a class="d-block" href="#"><img src="{{ asset('template/histudy/assets/images/service/mobile-cat.jpg') }}" alt="Education Images"></a>
+                                                        <a class="d-block" href="#"><img src="{{ asset('assets/images/service/mobile-cat.jpg') }}" alt="Education Images"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -939,13 +939,13 @@
                     <div class="logo">
                         <div class="logo logo-dark">
                             <a href="index.html">
-                                <img src="{{ asset('template/histudy/assets/images/logo/logo.png') }}" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
 
                         <div class="logo d-none logo-light">
                             <a href="index.html">
-                                <img src="{{ asset('template/histudy/assets/images/dark/logo/logo-light.png') }}" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
                     </div>
@@ -978,7 +978,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="01-main-demo.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h1.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="01-main-demo.html"><img src="{{ asset('assets/images/splash/demo/h1.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="01-main-demo.html">Home Demo <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -993,7 +993,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="12-marketplace.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h12.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="12-marketplace.html"><img src="{{ asset('assets/images/splash/demo/h12.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="12-marketplace.html">Marketplace <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1008,7 +1008,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="04-kindergarten.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h4.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="04-kindergarten.html"><img src="{{ asset('assets/images/splash/demo/h4.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="04-kindergarten.html">kindergarten <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1023,7 +1023,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="13-university-classic.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h13.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="13-university-classic.html"><img src="{{ asset('assets/images/splash/demo/h13.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="13-university-classic.html">University Classic <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1038,7 +1038,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="14-home-elegant.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h14.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="14-home-elegant.html"><img src="{{ asset('assets/images/splash/demo/h14.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="14-home-elegant.html">Home Elegant <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1053,7 +1053,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="09-gym-coaching.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h9.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="09-gym-coaching.html"><img src="{{ asset('assets/images/splash/demo/h9.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="09-gym-coaching.html">Gym Coaching <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1068,7 +1068,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="03-online-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h3.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="03-online-school.html"><img src="{{ asset('assets/images/splash/demo/h3.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="03-online-school.html">Online School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1083,7 +1083,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="06-university-status.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h6.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="06-university-status.html"><img src="{{ asset('assets/images/splash/demo/h6.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="06-university-status.html">University Status <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1098,7 +1098,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="15-home-technology.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h15.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="15-home-technology.html"><img src="{{ asset('assets/images/splash/demo/h15.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="15-home-technology.html">Home Technology <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1113,7 +1113,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="07-instructor-portfolio.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h7.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="07-instructor-portfolio.html"><img src="{{ asset('assets/images/splash/demo/h7.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="07-instructor-portfolio.html">Instructor Portfolio <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1128,7 +1128,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="08-language-academy.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h8.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="08-language-academy.html"><img src="{{ asset('assets/images/splash/demo/h8.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="08-language-academy.html">Language Academy <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1143,7 +1143,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="11-single-course.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h11.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="11-single-course.html"><img src="{{ asset('assets/images/splash/demo/h11.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="11-single-course.html">Single Course <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1158,7 +1158,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="10-online-course.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h10.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="10-online-course.html"><img src="{{ asset('assets/images/splash/demo/h10.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="10-online-course.html">Online Course <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1173,7 +1173,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="05-classic-lms.html"><img src="{{ asset('template/histudy/ssets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="05-classic-lms.html"><img src="{{ asset('assets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="05-classic-lms.html">Classic Lms <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1188,7 +1188,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="02-course-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h2.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="02-course-school.html"><img src="{{ asset('assets/images/splash/demo/h2.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="02-course-school.html">Course School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1203,7 +1203,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="16-udemy-affiliate.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h16.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="16-udemy-affiliate.html"><img src="{{ asset('assets/images/splash/demo/h16.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="16-udemy-affiliate.html">Udemy Affiliate <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1219,7 +1219,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="17-online-academy.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h17.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="17-online-academy.html"><img src="{{ asset('assets/images/splash/demo/h17.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="17-online-academy.html">Online Academy <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1235,7 +1235,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="18-instructors-coaches.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h18.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="18-instructors-coaches.html"><img src="{{ asset('assets/images/splash/demo/h18.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="18-instructors-coaches.html">Instructor Coaches <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1251,7 +1251,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="19-modern-university.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h19.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="19-modern-university.html"><img src="{{ asset('assets/images/splash/demo/h19.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="19-modern-university.html">Modern University <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1267,7 +1267,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="20-multilingual.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h20.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="20-multilingual.html"><img src="{{ asset('assets/images/splash/demo/h20.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="20-multilingual.html">Multilingual <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1283,7 +1283,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="21-art-design-school.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h21.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="21-art-design-school.html"><img src="{{ asset('assets/images/splash/demo/h21.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="21-art-design-school.html">Art Design School <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1299,7 +1299,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="22-wishlist.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h22.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="22-wishlist.html"><img src="{{ asset('assets/images/splash/demo/h22.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="22-wishlist.html">Wishlist <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1315,7 +1315,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="23-coaching.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h23.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="23-coaching.html"><img src="{{ asset('assets/images/splash/demo/h23.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="23-coaching.html">Coaching <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1331,7 +1331,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="24-health-wellness-institute.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h24.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="24-health-wellness-institute.html"><img src="{{ asset('assets/images/splash/demo/h24.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="24-health-wellness-institute.html">Health Institute <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1347,7 +1347,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="25-life-coach.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h25.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="25-life-coach.html"><img src="{{ asset('assets/images/splash/demo/h25.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="25-life-coach.html">Life Coach <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1363,7 +1363,7 @@
                                             <div class="inner">
                                                 <span class="new-batch">New Added</span>
                                                 <div class="thumbnail">
-                                                    <a href="26-islamic-center.html"><img src="{{ asset('template/histudy/assets/images/splash/demo/h26.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="26-islamic-center.html"><img src="{{ asset('assets/images/splash/demo/h26.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="26-islamic-center.html">Islamic Center <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1378,7 +1378,7 @@
                                         <div class="demo-single">
                                             <div class="inner disable">
                                                 <div class="thumbnail">
-                                                    <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
+                                                    <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -1394,7 +1394,7 @@
                                         <div class="demo-single">
                                             <div class="inner disable">
                                                 <div class="thumbnail">
-                                                    <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-2.png') }}" alt="Demo Images"></a>
+                                                    <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-2.png') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -1410,7 +1410,7 @@
                                         <div class="demo-single">
                                             <div class="inner disable">
                                                 <div class="thumbnail">
-                                                    <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-3.png') }}" alt="Demo Images"></a>
+                                                    <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-3.png') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -1426,7 +1426,7 @@
                                         <div class="demo-single">
                                             <div class="inner disable">
                                                 <div class="thumbnail">
-                                                    <a href="#"><img src="{{ asset('template/histudy/assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
+                                                    <a href="#"><img src="{{ asset('assets/images/splash/demo/coming-soon-1.png') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="#">Coming Soon <span class="btn-icon"><i class="feather-arrow-right"></i></span></a>
@@ -1601,7 +1601,7 @@
                                             <!-- Start Single Category  -->
                                             <div class="nav-category-item">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-2.png') }}" alt="Course images"></div>
+                                                    <div class="image"><img src="{{ asset('assets/images/course/category-2.png') }}" alt="Course images"></div>
                                                     <a href="course-filter-one-toggle.html">
                                                         <span>Online Education</span>
                                                         <i class="feather-chevron-right"></i>
@@ -1613,7 +1613,7 @@
                                             <!-- Start Single Category  -->
                                             <div class="nav-category-item">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-1.png') }}" alt="Course images"></div>
+                                                    <div class="image"><img src="{{ asset('assets/images/course/category-1.png') }}" alt="Course images"></div>
                                                     <a href="course-filter-one-toggle.html">
                                                         <span>Language Club</span>
                                                         <i class="feather-chevron-right"></i>
@@ -1625,7 +1625,7 @@
                                             <!-- Start Single Category  -->
                                             <div class="nav-category-item">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-4.png') }}" alt="Course images"></div>
+                                                    <div class="image"><img src="{{ asset('assets/images/course/category-4.png') }}" alt="Course images"></div>
                                                     <a href="course-filter-one-toggle.html">
                                                         <span>University Status</span>
                                                         <i class="feather-chevron-right"></i>
@@ -1648,7 +1648,7 @@
                                             <!-- Start Single Category  -->
                                             <div class="nav-category-item">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img src="{{ asset('template/histudy/assets/images/course/category-9.png') }}" alt="Course images"></div>
+                                                    <div class="image"><img src="{{ asset('assets/images/course/category-9.png') }}" alt="Course images"></div>
                                                     <a href="course-filter-one-toggle.html">
                                                         <span>Academy</span>
                                                         <i class="feather-chevron-right"></i>
@@ -1766,7 +1766,7 @@
 
                                     <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
                                         <div class="rbt-ads-wrapper">
-                                            <a class="d-block" href="#"><img src="{{ asset('template/histudy/assets/images/service/mobile-cat.jpg') }}" alt="Education Images"></a>
+                                            <a class="d-block" href="#"><img src="{{ asset('assets/images/service/mobile-cat.jpg') }}" alt="Education Images"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1841,7 +1841,7 @@
                                             <a class="transparent-button" href="#">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('template/histudy/assets/images/service/service-06.png') }}" alt="Education Images">
+                                            <img src="{{ asset('assets/images/service/service-06.png') }}" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -1859,7 +1859,7 @@
                                             <a class="transparent-button" href="#">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('template/histudy/assets/images/service/service-05.png') }}" alt="Education Images">
+                                            <img src="{{ asset('assets/images/service/service-05.png') }}" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -1877,7 +1877,7 @@
                                             <a class="transparent-button" href="#">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('template/histudy/assets/images/service/service-03.png') }}" alt="Education Images">
+                                            <img src="{{ asset('assets/images/service/service-03.png') }}" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -1896,7 +1896,7 @@
                                             <a class="transparent-button" href="#">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('template/histudy/ssets/images/service/service-04.png') }}" alt="Education Images">
+                                            <img src="{{ asset('assets/images/service/service-04.png') }}" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -1973,7 +1973,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-01.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-01.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2008,7 +2008,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2033,7 +2033,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-02.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2066,7 +2066,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2091,7 +2091,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-03.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2125,7 +2125,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/ssets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2150,7 +2150,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-04.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2184,7 +2184,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2210,7 +2210,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-05.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2243,7 +2243,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2268,7 +2268,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-06.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-06.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2302,7 +2302,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2332,7 +2332,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-02.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2365,7 +2365,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2390,7 +2390,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-03.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2424,7 +2424,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2453,7 +2453,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-01.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-01.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2488,7 +2488,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2513,7 +2513,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-02.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2546,7 +2546,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2571,7 +2571,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-03.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2605,7 +2605,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2630,7 +2630,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-04.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2664,7 +2664,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2690,7 +2690,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-05.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2723,7 +2723,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2752,7 +2752,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-03.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2786,7 +2786,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2811,7 +2811,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-04.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2845,7 +2845,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2871,7 +2871,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-05.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2904,7 +2904,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2933,7 +2933,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-02.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -2966,7 +2966,7 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -2991,7 +2991,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-03.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -3025,7 +3025,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -3050,7 +3050,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-04.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -3084,7 +3084,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -3110,7 +3110,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('template/histudy/assets/images/course/course-list-05.jpg') }}" alt="Card image">
+                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -3143,7 +3143,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('template/histudy/assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -3232,7 +3232,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('template/histudy/assets/images/team/team-05.jpg') }}" alt="Blog Images">
+                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-05.jpg') }}" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Aaron Griffin</h4>
@@ -3250,7 +3250,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('template/histudy/assets/images/team/team-09.jpg') }}" alt="Blog Images">
+                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-09.jpg') }}" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Rafiq Bali</h4>
@@ -3268,7 +3268,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('template/histudy/assets/images/team/team-03.jpg') }}" alt="Blog Images">
+                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-03.jpg') }}" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Fatima Usa</h4>
@@ -3286,7 +3286,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('template/histudy/assets/images/team/team-07.jpg') }}" alt="Blog Images">
+                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-07.jpg') }}" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">John Due</h4>
@@ -3380,7 +3380,7 @@
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('template/histudy/assets/images/testimonial/client-01.png') }}" alt="Clint Images">
+                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
                                                 <h5 class="title">Martha Maldonado</h5>
@@ -3412,7 +3412,7 @@
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('template/histudy/assets/images/testimonial/client-01.png') }}" alt="Clint Images">
+                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
                                                 <h5 class="title">Martha Maldonado</h5>
@@ -3444,7 +3444,7 @@
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('template/histudy/assets/images/testimonial/client-01.png') }}" alt="Clint Images">
+                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
                                                 <h5 class="title">Martha Maldonado</h5>
@@ -3496,7 +3496,7 @@
                     <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="event-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/event/grid-type-01.jpg') }}" alt="Card image">
+                                <img src="{{ asset('assets/images/event/grid-type-01.jpg') }}" alt="Card image">
                             </a>
                         </div>
                         <div class="rbt-card-body">
@@ -3524,7 +3524,7 @@
                     <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="event-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/event/grid-type-02.jpg') }}" alt="Card image">
+                                <img src="{{ asset('assets/images/event/grid-type-02.jpg') }}" alt="Card image">
                             </a>
                         </div>
                         <div class="rbt-card-body">
@@ -3553,7 +3553,7 @@
                     <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="event-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/event/grid-type-03.jpg') }}" alt="Card image">
+                                <img src="{{ asset('assets/images/event/grid-type-03.jpg') }}" alt="Card image">
                             </a>
                         </div>
                         <div class="rbt-card-body">
@@ -3582,7 +3582,7 @@
                     <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="event-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/event/grid-type-04.jpg') }}" alt="Card image">
+                                <img src="{{ asset('assets/images/event/grid-type-04.jpg') }}" alt="Card image">
                             </a>
                         </div>
                         <div class="rbt-card-body">
@@ -3638,7 +3638,7 @@
                     <div class="rbt-card variation-02 height-330 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="blog-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/blog/blog-card-01.jpg') }}" alt="Card image"> </a>
+                                <img src="{{ asset('assets/images/blog/blog-card-01.jpg') }}" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h3 class="rbt-card-title"><a href="blog-details.html">React</a></h3>
@@ -3656,7 +3656,7 @@
                     <div class="rbt-card card-list variation-02 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="blog-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/blog/blog-card-02.jpg') }}" alt="Card image"> </a>
+                                <img src="{{ asset('assets/images/blog/blog-card-02.jpg') }}" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h5 class="rbt-card-title"><a href="blog-details.html">Why Is Education So Famous?</a></h5>
@@ -3671,7 +3671,7 @@
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
                             <a href="blog-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/blog/blog-card-03.jpg" alt="Card image') }}"> </a>
+                                <img src="{{ asset('assets/images/blog/blog-card-03.jpg') }}" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h5 class="rbt-card-title"><a href="blog-details.html">Difficult Things About Education.</a></h5>
@@ -3686,7 +3686,7 @@
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
                             <a href="blog-details.html">
-                                <img src="{{ asset('template/histudy/assets/images/blog/blog-card-04.jpg') }}" alt="Card image"> </a>
+                                <img src="{{ asset('assets/images/blog/blog-card-04.jpg') }}" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h5 class="rbt-card-title"><a href="blog-details.html">Education Is So Famous, But Why?</a></h5>
@@ -3739,12 +3739,12 @@
                         <div class="footer-widget">
                             <div class="logo logo-dark">
                                 <a href="index.html">
-                                    <img src="{{ asset('template/histudy/assets/images/logo/logo.png') }}" alt="Edu-cause">
+                                    <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Edu-cause">
                                 </a>
                             </div>
                             <div class="logo d-none logo-light">
                                 <a href="index.html">
-                                    <img src="{{ asset('template/histudy/assets/images/dark/logo/logo-light.png') }}" alt="Edu-cause">
+                                    <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}" alt="Edu-cause">
                                 </a>
                             </div>
 
@@ -3893,35 +3893,35 @@
 
     <!-- JS ============================================ -->
     <!-- Vendor JS -->
-    <script src="{{ asset('template/histudy/assets/js/vendor/modernizr.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jquery.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/sal.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/js.cookie.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jquery.style.switcher.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/swiper.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jquery-appear.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/odometer.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/backtotop.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/isotop.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/imageloaded.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/wow.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/waypoint.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/easypie.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/text-type.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jquery-one-page-nav.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jquery-ui.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/magnify-popup.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/paralax-scroll.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/paralax.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/countdown.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/plyr.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/jodit.min.js') }}"></script>
-    <script src="{{ asset('template/histudy/assets/js/vendor/Sortable.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/modernizr.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/sal.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/js.cookie.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.style.switcher.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/swiper.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-appear.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/odometer.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/backtotop.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/isotop.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/imageloaded.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/wow.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/waypoint.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/easypie.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/text-type.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-one-page-nav.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-ui.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/magnify-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/paralax-scroll.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/paralax.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/countdown.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/plyr.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
 
     <!-- Main JS -->
-    <script src="{{ asset('template/histudy/assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 
