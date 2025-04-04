@@ -50,6 +50,7 @@
         </ul>
     </div>
     <!-- Start Header Area -->
+     <!-- Start Header Area -->
     <header class="rbt-header rbt-header-default rbt-transparent-header">
         <div class="rbt-sticky-placeholder"></div>
         <div class="rbt-header-campaign rbt-header-campaign-1 rbt-header-top-news bg-image1">
