@@ -24,6 +24,12 @@ dev-docker-nlc-build:
 #exec run migration
 dev-docker-nlc-migrate:
 	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate
+#exec run migrate refresh
+dev-docker-nlc-refresh:
+	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate:refresh
+#exec run seeder
+dev-docker-nlc-seed:
+	docker compose -f dev.Docker-Compose.yml exec app php artisan db:seed
 #exec app docker via composer install
 dev-docker-nlc-composer:
 	docker compose -f dev.Docker-Compose.yml exec app composer install
