@@ -6,6 +6,8 @@
 /public/assets
 /public/storage
 /storage/*.key
+/nlc-compose/mysql/data
+/nlc-compose/mysql/logs
 /storage/pail
 /vendor
 .env
