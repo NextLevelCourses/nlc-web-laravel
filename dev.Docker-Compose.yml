@@ -54,7 +54,7 @@ services:
     ports:
         - 8085:80
     links:
-        - nextlevelcourse
+        - nextlevelcourse-db-mysql
     restart: unless-stopped
     environment:
         PMA_HOST: nextlevelcourse-db-mysql
