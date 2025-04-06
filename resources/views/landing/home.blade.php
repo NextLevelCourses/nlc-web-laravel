@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('landing.layouts.app')
 
 @section('title', 'Dashboard')
 
@@ -1802,7 +1802,7 @@
         <div class="row mb--25">
             <div class="col-lg-12">
                 <div class="section-title text-center">
-                    <h5 class="subtitle bg-secondary-opacity">Next Level Learning Categories</h5>
+                    <h5 class="subtitle bg-secondary-opacity">Next Level Categories</h5>
                 </div>
             </div>
         </div>
