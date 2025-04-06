@@ -7,12 +7,12 @@
                         <div class="col-lg-12">
                             <div class="inner justify-content-center">
                                 <div class="content">
-                                    <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Limited Time Offer</span>
-                                    <span class="news-text color-white-off"><img src="{{ asset('assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Intro price. Get Histudy for Big Sale -95% off.</span>
+                                    <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Limited Time Offer!</span>
+                                    <span class="news-text color-white-off"><img src="{{ asset('assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Learn more and unlock your skills today!</span>
                                 </div>
                                 <div class="right-button">
                                     <a class="rbt-btn-link color-white" href="https://themeforest.net/checkout/from_item/42846507?license=regular">
-                                        <span>Purchase Now <i class="feather-arrow-right"></i></span>
+                                        <span>Join the Course <i class="feather-arrow-right"></i></span>
                                     </a>
                                 </div>
                             </div>
@@ -57,15 +57,8 @@
                                         <div class="wrapper">
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                    <div class="mega-top-banner">
-                                                        <div class="content">
-                                                            <h4 class="title">Next Level Course</h4>
-                                                            <p class="description">Build your skill with structured learning paths, private classes, and mentoring projects.</p>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
-
                                             <div class="row row--15">
                                                 <!-- Kursus Utama -->
                                                 <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
@@ -146,69 +139,67 @@
                                 </li>
 
                                 <li class="has-dropdown has-menu-child-item">
-    <a href="#">Platform <i class="feather-chevron-down"></i></a>
-    <ul class="submenu">
+                                    <a href="#">Platform <i class="feather-chevron-down"></i></a>
+                                    <ul class="submenu">
 
-        <!-- Tentang Next Level -->
-        <li class="has-dropdown">
-            <a href="#">About</a>
-            <ul class="submenu">
-                <li><a href="about-us.html">About Next Level</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </li>
+                                        <!-- Tentang Next Level -->
+                                        <li class="has-dropdown">
+                                            <a href="#">About</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-us.html">About Next Level</a></li>
+                                                <li><a href="how-it-works.html">How It Works</a></li>
+                                                <li><a href="faqs.html">FAQs</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </li>
 
-        <!-- Layanan Tambahan -->
-        <li class="has-dropdown">
-            <a href="#">Services</a>
-            <ul class="submenu">
-                <li><a href="private-class.html">Private Class</a></li>
-                <li><a href="mentoring-projects.html">Mentoring Projects</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="terms.html">Terms & Policies</a></li>
-            </ul>
-        </li>
+                                        <!-- Layanan Tambahan -->
+                                        <li class="has-dropdown">
+                                            <a href="#">Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="private-class.html">Private Class</a></li>
+                                                <li><a href="mentoring-projects.html">Mentoring Projects</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="terms.html">Terms & Policies</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-    </ul>
-</li>
-
-
-
-
-                                <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
-                                    <!-- Start Mega Menu  -->
-                                    <div class="rbt-megamenu grid-item-3">
-                                        <div class="wrapper">
-                                            <div class="row row--15 single-dropdown-menu-presentation">
-                                                <div class="col-lg-4 col-xxl-4 single-mega-item">
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="style-guide.html">Private Class <span class="rbt-badge-card">Hot</span></a></li>
-                                                        <li><a href="about.html">Mentoring Project <span class="rbt-badge-card">New</span></a></li>
-                                                        <li><a href="#">Detail</a></li>
-                                                    </ul>
-                                                </div>
-
+                                <li class="with-megamenu has-menu-child-item">
+                                <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
+                                <!-- Start Mega Menu -->
+                                <div class="rbt-megamenu grid-item-2">
+                                    <div class="wrapper">
+                                        <!-- Menu Items -->
+                                        <div class="row row--15">
+                                            <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
+                                                <h3 class="rbt-short-title">Programs</h3>
+                                                <ul class="mega-menu-item">
+                                                    <li><a href="/programs/private-class">Private Class <span class="rbt-badge-card">Hot</span></a></li>
+                                                    <li><a href="/programs/mentoring-project">Mentoring Project <span class="rbt-badge-card">New</span></a></li>
+                                                    <li><a href="/programs/details">Program Details</a></li>
+                                                </ul>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="btn-wrapper">
-                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
-                                                            <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Join Now</span>
+
+                                            <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item d-flex align-items-center">
+                                                <div class="btn-wrapper w-100 mt--20 mt-xl--0 text-center">
+                                                    <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 hover-transform-none" href="/join">
+                                                        <span class="icon-reverse-wrapper">
+                                                            <span class="btn-text">Join Now</span>
                                                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
+                                                        </span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Mega Menu  -->
-                                </li>
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
+
+
 
                                 <li class="with-megamenu has-menu-child-item position-static">
                                     <a href="#">Resources <i class="feather-chevron-down"></i></a>
