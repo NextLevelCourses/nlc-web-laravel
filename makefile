@@ -44,7 +44,10 @@ nlc-serve:
 #migrate schema
 nlc-migrate:
 	php artisan migrate
-#refresh schema
+#seed database
+nlc-seed:
+	php artisan db:seed
+#refresh schema and seed
 nlc-refresh:
 	php artisan migrate:refresh
 	php artisan db:seed
