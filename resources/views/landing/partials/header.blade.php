@@ -47,7 +47,7 @@
                         <nav class="mainmenu-nav">
                             <ul class="mainmenu">
                                 <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="#">Home </a>
+                                <a href="#">Home</a>
                                 </li>
 
                                 <li class="with-megamenu has-menu-child-item">
