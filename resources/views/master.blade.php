@@ -10,8 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo/favicon.png') }}">
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
 
     <!-- CSS
 	============================================ -->
@@ -1174,7 +1173,7 @@
                                         <div class="demo-single">
                                             <div class="inner">
                                                 <div class="thumbnail">
-                                                    <a href="05-classic-lms.html"><img src="{{ asset('ssets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
+                                                    <a href="05-classic-lms.html"><img src="{{ asset('assets/images/splash/demo/h5.jpg') }}" alt="Demo Images"></a>
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title"><a href="05-classic-lms.html">Classic Lms <span class="btn-icon"><i class="feather-arrow-right"></i></span></a></h4>
@@ -1897,7 +1896,7 @@
                                             <a class="transparent-button" href="#">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('ssets/images/service/service-04.png') }}" alt="Education Images">
+                                            <img src="{{ asset('assets/images/service/service-04.png') }}" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -2126,7 +2125,7 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('ssets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
+                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
@@ -3672,7 +3671,7 @@
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
                             <a href="blog-details.html">
-                                <img src="{{ asset('assets/images/blog/blog-card-03.jpg" alt="Card image') }}"> </a>
+                                <img src="{{ asset('assets/images/blog/blog-card-03.jpg') }}" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h5 class="rbt-card-title"><a href="blog-details.html">Difficult Things About Education.</a></h5>
