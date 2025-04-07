@@ -10,4 +10,14 @@ class DashboardController extends Controller
     {
         return view('dashboard.master');
     }
+
+    public function instructor()
+    {
+        return view('dashboard.instructor');
+    }
+
+    public function student()
+    {
+        return view('dashboard.student');
+    }
 }

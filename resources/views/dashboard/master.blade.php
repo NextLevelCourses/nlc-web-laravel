@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -934,6 +935,15 @@
 
     <!-- Mobile Menu Section -->
     <div class="popup-mobile-menu">
+=======
+@extends('dashboard.layouts.app')
+
+@section('title', 'Home')
+
+@section('content')
+<!-- Mobile Menu Section -->
+<div class="popup-mobile-menu">
+>>>>>>> master
         <div class="inner-wrapper">
             <div class="inner-top">
                 <div class="content">
@@ -2253,8 +2263,11 @@
         </div>
     </div>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
     <!-- Start Card Style -->
     <div class="rbt-section-overlayping-top rbt-section-gapBottom">
         <div class="container">
@@ -2828,6 +2841,7 @@
             <hr class="rbt-separator m-0">
         </div>
     </div>
+<<<<<<< HEAD
     <!-- Start Footer aera -->
     <footer class="rbt-footer footer-style-1 bg-color-white overflow-hidden">
         <div class="footer-top">
@@ -3001,3 +3015,6 @@
 </body>
 
 </html>
+=======
+    @endsection
+>>>>>>> master
