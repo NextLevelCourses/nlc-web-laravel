@@ -8,6 +8,16 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('landing_page.dashboard');
+        return view('dashboard.master');
+    }
+
+    public function instructor()
+    {
+        return view('dashboard.instructor');
+    }
+
+    public function student()
+    {
+        return view('dashboard.student');
     }
 }

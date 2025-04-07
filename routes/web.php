@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('master');
-});
+Route::get('/', [LandingController::class, 'index']);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/instructor', [DashboardController::class, 'instructor'])->name('instructor');
+Route::get('/student', [DashboardController::class, 'student'])->name('student');
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+

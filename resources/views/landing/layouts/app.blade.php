@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon dan CSS-->
-    @include('partials.css')
+    @include('landing.partials.css')
 
     </head>
 
@@ -30,14 +30,24 @@
         </ul>
     </div>
     <!-- Start Header Area -->
-    @include('partials.header')
+    @include('landing.partials.header')
 
     <!-- content -->
     @yield('content')
 
+
+    <!-- Start Footer aera -->
+    @include('landing.partials.footer')
+    <!-- End Footer aera -->
+    <div class="rbt-progress-parent">
+        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
     <!-- JS dan Vendor JS  -->
     <!-- Vendor JS -->
-    @include('partials.javascript')
+    @include('landing.partials.javascript')
 </body>
 
 </html>
