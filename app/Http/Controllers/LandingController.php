@@ -15,4 +15,24 @@ class LandingController extends Controller
     {
         return view('landing.detail');
     }
+
+    public function aboutus()
+    {
+        return view('landing.aboutus');
+    }
+
+    public function testimonial()
+    {
+        return view('landing.testimonial');
+    }
+
+    public function register()
+    {
+        return view('landing.register');
+    }
+
+    public function faqs()
+    {
+        return view('landing.faqs');
+    }
 }
