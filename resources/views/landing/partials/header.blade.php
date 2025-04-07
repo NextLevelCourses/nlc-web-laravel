@@ -52,12 +52,10 @@
 
                                 <li class="with-megamenu has-menu-child-item position-static">
                                     <a href="#">Course <i class="feather-chevron-down"></i></a>
-
                                     <!-- Start Mega Menu -->
                                     <div class="rbt-megamenu grid-item-3">
                                         <div class="wrapper">
                                             <div class="row row--15 single-dropdown-menu-presentation">
-
                                                 <!-- Kolom 1: Tech & Innovation -->
                                                 <div class="col-lg-4 col-xxl-4 single-mega-item">
                                                     <h5 class="mega-menu-title">Tech & Innovation</h5>
@@ -105,16 +103,14 @@
                                                         <li><a href="#">& More Coming</a></li>
                                                     </ul>
                                                 </div>
-
                                             </div>
-
                                             <!-- Tombol CTA -->
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="btn-wrapper">
                                                         <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
                                                             <span class="icon-reverse-wrapper">
-                                                                <span class="btn-text">Visit Histudy Template</span>
+                                                                <span class="btn-text">Join Now</span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                                             </span>
@@ -122,75 +118,39 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <!-- End Mega Menu -->
                                 </li>
 
+                                
                                 <li class="with-megamenu has-menu-child-item position-static">
-    <a href="#">Dashboard <i class="feather-chevron-down"></i></a>
-
-    <!-- Start Mega Menu -->
-    <div class="rbt-megamenu grid-item-1"> <!-- Lebih kecil karena hanya 1 kolom -->
-        <div class="wrapper">
-            <div class="single-dropdown-menu minimal-dropdown text-start p-4">
-                <ul class="mega-menu-item list-unstyled mb-0">
-                    <li class="mb-2">
-                        <a href="brand.html" class="d-flex align-items-center">
-                            <i class="feather-user-check me-2"></i> 
-                            <span>Guru / Instructor</span>
-                            <span class="rbt-badge-card ms-auto">Admin</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="button.html" class="d-flex align-items-center">
-                            <i class="feather-user me-2"></i> 
-                            <span>Siswa / Student</span>
-                            <span class="rbt-badge-card ms-auto">New</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-    <!-- End Mega Menu -->
-</li>
-
-<li class="with-megamenu has-menu-child-item position-static">
-    <a href="#">Dashboard <i class="feather-chevron-down"></i></a>
-
-    <!-- Start Mega Menu -->
-    <div class="rbt-megamenu custom-dashboard-menu">
-        <div class="wrapper">
-            <div class="single-dropdown-menu minimal-dropdown text-start p-4">
-
-                <h6 class="text-uppercase mb-3"><i class="feather-users"></i> Dashboard Access</h6>
-                <ul class="mega-menu-item list-unstyled mb-0">
-                    <li class="mb-2">
-                        <a href="brand.html" class="d-flex align-items-center">
-                            <i class="feather-user-check me-2"></i> 
-                            <span>Guru / Instructor</span>
-                            <span class="rbt-badge-card ms-auto">Admin</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="button.html" class="d-flex align-items-center">
-                            <i class="feather-user me-2"></i> 
-                            <span>Siswa / Student</span>
-                            <span class="rbt-badge-card ms-auto">New</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-    <!-- End Mega Menu -->
-</li>
-
-
+                                    <a href="#">Dashboard <i class="feather-chevron-down"></i></a>
+                                    <!-- Start Mega Menu -->
+                                    <div class="rbt-megamenu grid-item-1"> 
+                                        <div class="wrapper">
+                                            <div class="single-dropdown-menu minimal-dropdown text-start p-4">
+                                                <ul class="mega-menu-item list-unstyled mb-0">
+                                                    <li class="mb-2">
+                                                        <a href="brand.html" class="d-flex align-items-center">
+                                                            <i class="feather-user-check me-2"></i> 
+                                                            <span>Guru / Instructor</span>
+                                                            <span class="rbt-badge-card ms-auto">Admin</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="button.html" class="d-flex align-items-center">
+                                                            <i class="feather-user me-2"></i> 
+                                                            <span>Siswa / Student</span>
+                                                            <span class="rbt-badge-card ms-auto">New</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Mega Menu -->
+                                </li>
 
                                 <li class="with-megamenu has-menu-child-item position-static">
                                     <a href="#">Elements <i class="feather-chevron-down"></i></a>
