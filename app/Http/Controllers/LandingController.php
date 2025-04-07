@@ -6,39 +6,43 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-    public function index()
+    public function Index()
     {
-        return view('landing.home');
+        return view('landing.module.Home');
     }
 
+<<<<<<< HEAD
     public function allcourse()
     {
         return view('landing.allcourse');
     }
 
     public function detail()
+=======
+    public function Detail()
+>>>>>>> a550de49702d3fdf26688562f9f3085983b08d5e
     {
-        return view('landing.detail');
+        return view('landing.module.Detail');
     }
 
-    public function aboutus()
+    public function AboutUs()
     {
-        return view('landing.aboutus');
+        return view('landing.module.AboutUs');
     }
 
-    public function testimonial()
+    public function Testimonial()
     {
-        return view('landing.testimonial');
+        return view('landing.module.Testimonial');
     }
 
-    public function register()
+    public function Register()
     {
-        return view('landing.register');
+        return view('landing.module.Register');
     }
 
-    public function faqs()
+    public function FAQs()
     {
-        return view('landing.faqs');
+        return view('landing.module.FAQs');
     }
 
     public function blog()

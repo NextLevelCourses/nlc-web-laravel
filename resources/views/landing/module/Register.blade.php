@@ -1,6 +1,6 @@
-@extends('landing.layouts.app')
+@extends('landing.layouts.Master')
 
-@section('title', 'Landing Page')
+@section('title', 'Register')
 
 @section('content')
     <a class="close_side_menu" href="javascript:void(0);"></a>
@@ -25,7 +25,7 @@
         </div>
     </div>
     <!-- End Breadcrumb Area -->
-    
+
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
         <div class="container">
             <div class="row gy-5 row--30">
@@ -62,8 +62,8 @@
                                 <button type="submit" class="rbt-btn btn-md btn-gradient hover-icon-reverse w-100">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Log In</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </button>
                             </div>
@@ -102,8 +102,8 @@
                                 <button type="submit" class="rbt-btn btn-md btn-gradient hover-icon-reverse w-100">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Register</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </button>
                             </div>
@@ -117,5 +117,5 @@
     </div>
 
 
-    
+
 @endsection
