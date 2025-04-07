@@ -1,10 +1,10 @@
 @extends('landing.layouts.Master')
 
-@section('title', 'Home')
+@section('title', 'FAQs')
 
 @section('content')
-    <!-- Start Banner Area -->
-    <div class="rbt-banner-area rbt-banner-2 header-transperent-spacer pt--120">
+<!-- Start Banner Area -->
+    <div class="rbt-banner-area rbt-banner-2 header-transperent-spacer">
         <div class="wrapper">
             <div class="container">
                 <div class="row">
@@ -12,7 +12,7 @@
                         <div class="banner-content text-center">
                             <div class="inner">
                                 <div class="rbt-new-badge rbt-new-badge-one mb--30">
-                                    <span class="rbt-new-badge-icon">🏆</span> The Marketplace for Teaching Excellence
+                                    <span class="rbt-new-badge-icon">🏆</span> The Leader in Online Learning
                                 </div>
                                 <h1 class="title">We teaching, educate and <span class="theme-gradient">build the
                                         future</span> of online learning</h1>
@@ -31,18 +31,10 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">React</a></h4>
                                             <p>React Js dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
-                                                More<i><svg width="17" height="12"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                            <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                            <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                                        </g>
-                                                    </svg></i></a>
+                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/service/service-06.png') }}"
-                                                alt="Education Images">
+                                            <img src="assets/images/service/service-06.png" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -57,18 +49,10 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">English</a></h4>
                                             <p>Spken english dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
-                                                More<i><svg width="17" height="12"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                            <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                            <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                                        </g>
-                                                    </svg></i></a>
+                                            <a class="transparent-button" href="Learn More">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/service/service-05.png') }}"
-                                                alt="Education Images">
+                                            <img src="assets/images/service/service-05.png" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -83,18 +67,10 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">Education</a></h4>
                                             <p>Eearning edu dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
-                                                More<i><svg width="17" height="12"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                            <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                            <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                                        </g>
-                                                    </svg></i></a>
+                                            <a class="transparent-button" href="Learn More">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/service/service-03.png') }}"
-                                                alt="Education Images">
+                                            <img src="assets/images/service/service-03.png" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -110,18 +86,10 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">Education</a></h4>
                                             <p>Lorem ipsum dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
-                                                More<i><svg width="17" height="12"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                            <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                            <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                                        </g>
-                                                    </svg></i></a>
+                                            <a class="transparent-button" href="Learn More">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/service/service-04.png') }}"
-                                                alt="Education Images">
+                                            <img src="assets/images/service/service-04.png" alt="Education Images">
                                         </div>
                                     </div>
                                 </div>
@@ -161,32 +129,25 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="rbt-portfolio-filter filter-tab-button text-center nav nav-tabs" id="rbt-myTab"
-                        role="tablist">
+                    <ul class="rbt-portfolio-filter filter-tab-button text-center nav nav-tabs" id="rbt-myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
-                                type="button" role="tab" aria-controls="all" aria-selected="true"><span
-                                    class="filter-text">All
+                            <button class="active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true"><span class="filter-text">All
                                     Course</span> <span class="course-number">06</span></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button"
-                                role="tab" aria-controls="featured" aria-selected="false"><span
+                            <button id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="false"><span
                                     class="filter-text">Featured</span> <span class="course-number">02</span></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button"
-                                role="tab" aria-controls="popular" aria-selected="false"><span
+                            <button id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button" role="tab" aria-controls="popular" aria-selected="false"><span
                                     class="filter-text">Popular</span> <span class="course-number">05</span></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button"
-                                role="tab" aria-controls="trending" aria-selected="false"><span
+                            <button id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button" role="tab" aria-controls="trending" aria-selected="false"><span
                                     class="filter-text">Trending</span> <span class="course-number">03</span></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button"
-                                role="tab" aria-controls="latest" aria-selected="false"><span
+                            <button id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab" aria-controls="latest" aria-selected="false"><span
                                     class="filter-text">Latest</span> <span class="course-number">04</span></button>
                         </li>
                     </ul>
@@ -205,8 +166,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-01.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-01.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -241,13 +201,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -268,8 +226,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -302,13 +259,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -329,8 +284,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -364,13 +318,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -391,8 +343,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -426,13 +377,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avater-01.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Patrick</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Patrick</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
 
@@ -454,8 +403,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -488,13 +436,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -515,8 +461,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-06.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-06.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -550,13 +495,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -582,8 +525,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -616,13 +558,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -643,8 +583,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -678,13 +617,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -709,8 +646,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-01.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-01.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -745,13 +681,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -772,8 +706,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -806,13 +739,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -833,8 +764,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -868,13 +798,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -895,8 +823,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -930,13 +857,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avater-01.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Patrick</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Patrick</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
 
@@ -958,8 +883,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -992,13 +916,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1023,8 +945,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1058,13 +979,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1085,8 +1004,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1120,13 +1038,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avater-01.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Patrick</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Patrick</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
 
@@ -1148,8 +1064,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1182,13 +1097,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1213,8 +1126,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-02.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1247,13 +1159,11 @@
                                             <div class="rbt-author-meta mb--10">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1274,8 +1184,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-03.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1309,13 +1218,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-03.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Slaughter</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1336,8 +1243,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-04.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1371,13 +1277,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avater-01.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avater-01.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Patrick</a> In <a
-                                                        href="#">Languages</a>
+                                                    By <a href="profile.html">Patrick</a> In <a href="#">Languages</a>
                                                 </div>
                                             </div>
 
@@ -1399,8 +1303,7 @@
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
                                             <a href="course-details.html">
-                                                <img src="{{ asset('assets/images/course/course-list-05.jpg') }}"
-                                                    alt="Card image">
+                                                <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
                                         <div class="rbt-card-body">
@@ -1433,13 +1336,11 @@
                                             <div class="rbt-author-meta mb--20">
                                                 <div class="rbt-avater">
                                                     <a href="#">
-                                                        <img src="{{ asset('assets/images/client/avatar-02.png') }}"
-                                                            alt="Sophia Jaymes">
+                                                        <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
                                                     </a>
                                                 </div>
                                                 <div class="rbt-author-info">
-                                                    By <a href="profile.html">Angela</a> In <a
-                                                        href="#">Development</a>
+                                                    By <a href="profile.html">Angela</a> In <a href="#">Development</a>
                                                 </div>
                                             </div>
                                             <div class="rbt-card-bottom">
@@ -1469,7 +1370,7 @@
             <div class="row mb--25">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h5 class="subtitle bg-secondary-opacity">Next Level Categories</h5>
+                        <h5 class="subtitle bg-secondary-opacity">Histudy Feature Category</h5>
                     </div>
                 </div>
             </div>
@@ -1479,25 +1380,25 @@
                     <div class="rbt-categori-leftbar">
                         <div class="rbt-categori-list">
                             <a class="blank" href="#"></a>
-                            <a href="/courses/web-development">Web Development</a>
-                            <a href="/courses/frontend-react">Frontend with React</a>
-                            <a href="/courses/ui-ux">UI/UX Design</a>
+                            <a href="#">Healthcare</a>
+                            <a href="#">Beauty & fashion</a>
+                            <a href="#">Education & Travel</a>
                             <a class="blank" href="#"></a>
                         </div>
                         <div class="rbt-categori-list">
                             <a class="blank" href="#"></a>
-                            <a href="/courses/backend-laravel">Backend with Laravel</a>
-                            <a href="/courses/go-programming">Go Programming</a>
-                            <a href="/courses/esp32">ESP32 Projects</a>
-                            <a href="/courses/iot-projects">IoT Projects</a>
+                            <a href="#">Kitchen</a>
+                            <a href="#">Medicle & entertain</a>
+                            <a href="#">Medicle & Science</a>
+                            <a href="#">Tour & Travel</a>
                             <a class="blank" href="#"></a>
                         </div>
                         <div class="rbt-categori-list">
                             <a class="blank" href="#"></a>
-                            <a href="/courses/private-class">Private Class</a>
-                            <a href="/courses/mentoring-project">Mentoring Project</a>
-                            <a href="/courses/popular">Popular Courses</a>
-                            <a href="/courses/latest">Latest Updates</a>
+                            <a href="#">Kitchen</a>
+                            <a href="#">Featured</a>
+                            <a href="#">Popular</a>
+                            <a href="#">Latest</a>
                             <a class="blank" href="#"></a>
                         </div>
                     </div>
@@ -1505,7 +1406,6 @@
             </div>
         </div>
     </div>
-
     <!-- End Course Category Area  -->
 
     <div class="rbt-team-area bg-color-extra2 rbt-section-gap">
@@ -1525,8 +1425,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-05.jpg') }}"
-                                alt="Blog Images">
+                        <div class="thumbnail"><img src="assets/images/team/team-05.jpg" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Aaron Griffin</h4>
@@ -1544,8 +1443,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-09.jpg') }}"
-                                alt="Blog Images">
+                        <div class="thumbnail"><img src="assets/images/team/team-09.jpg" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Rafiq Bali</h4>
@@ -1563,8 +1461,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-03.jpg') }}"
-                                alt="Blog Images">
+                        <div class="thumbnail"><img src="assets/images/team/team-03.jpg" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">Fatima Usa</h4>
@@ -1582,8 +1479,7 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="team">
-                        <div class="thumbnail"><img src="{{ asset('assets/images/team/team-07.jpg') }}"
-                                alt="Blog Images">
+                        <div class="thumbnail"><img src="assets/images/team/team-07.jpg" alt="Blog Images">
                         </div>
                         <div class="content">
                             <h4 class="title">John Due</h4>
@@ -1608,8 +1504,8 @@
             <div class="row">
                 <div class="col-lg-12 mb--60">
                     <div class="section-title text-center">
-                        <span class="subtitle bg-coral-opacity">LEARNING EXPERIENCE</span>
-                        <h2 class="title">What Our Students Say</h2>
+                        <span class="subtitle bg-coral-opacity">EDUCATION FOR EVERYONE</span>
+                        <h2 class="title">Student's Feedback</h2>
                     </div>
                 </div>
             </div>
@@ -1619,84 +1515,77 @@
                         <div class="accordion" id="accordionExamplea1">
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        What is Next Level Course and how does it work?
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Histudy ? How does it work?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExamplea1">
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExamplea1">
+
                                     <div class="accordion-body card-body">
-                                        <p class="mb--15">Next Level Course is an innovative online marketplace that
-                                            empowers educators to share their knowledge and reach learners across the globe.
-                                        </p>
-                                        <p>We connect passionate instructors with students eager to grow in web development,
-                                            IoT, and emerging tech fields—enabling real-world learning experiences through
-                                            personalized teaching.</p>
+                                        <p class="mb--15">You can run Histudy easily. Any School, University, College
+                                            can be use this
+                                            histudy education template for their educational purpose. A university can
+                                            be success you.</p>
+                                        <p>Run their online leaning management system by histudy education template any
+                                            where and time.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        How can I contact support or get help?
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How can I get the customer support?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExamplea1">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExamplea1">
                                     <div class="accordion-body card-body">
-                                        You can reach our support team by emailing
-                                        <strong>support@nextlevelcourse.com</strong> or via the Help Center on your
-                                        dashboard.
+                                        After purchasing the product need you any support you can be share with
+                                        us with sending mail to rainbowit10@gmail.com.
                                     </div>
                                 </div>
                             </div>
 
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Will I get updates and access to new materials?
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Can I get update regularly and For how long do I get updates?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExamplea1">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExamplea1">
                                     <div class="accordion-body card-body">
-                                        Absolutely! As a student, you will receive lifetime updates on all course materials
-                                        and access to new features as we continuously grow our learning platform.
+                                        Yes, We will get update the Histudy. And you can get it any time. Next
+                                        time we will comes with more feature. You can be get update for
+                                        unlimited times. Our dedicated team works for update.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
+
                     <div class="swiper testimonial-activation-1 rbt-dot-bottom-left pb--60">
                         <div class="swiper-wrapper">
-                            <!-- Start Single Testimonial -->
+                            <!-- Start Single Testimonial  -->
                             <div class="swiper-slide">
                                 <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}"
-                                                    alt="Student Image">
+                                                <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
-                                                <h5 class="title">Rizki Ananda</h5>
-                                                <span class="designation">Fullstack Developer <i>@ Freelancer</i></span>
+                                                <h5 class="title">Martha Maldonado</h5>
+                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
                                             </div>
                                         </div>
                                         <div class="description">
-                                            <p class="subtitle-3">Next Level Course changed the way I learn programming.
-                                                The mentorship and project-based approach really helped me land freelance
-                                                gigs confidently!</p>
+                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
+                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
+                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the</p>
                                             <div class="rating mt--20">
                                                 <a href="#"><i class="fa fa-star"></i></a>
                                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -1708,56 +1597,59 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Testimonial -->
+                            <!-- End Single Testimonial  -->
 
-                            <!-- Start Single Testimonial -->
+                            <!-- Start Single Testimonial  -->
                             <div class="swiper-slide">
                                 <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-02.png') }}"
-                                                    alt="Student Image">
+                                                <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
-                                                <h5 class="title">Lestari Putri</h5>
-                                                <span class="designation">Junior IoT Engineer <i>@ TechHub</i></span>
+                                                <h5 class="title">Martha Maldonado</h5>
+                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
                                             </div>
                                         </div>
                                         <div class="description">
-                                            <p class="subtitle-3">Materi IoT yang diajarkan di sini sangat aplikatif. Saya
-                                                bisa langsung praktek dengan ESP32 dan hasilkan project beneran untuk
-                                                portfolio saya.</p>
+                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
+                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
+                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the</p>
                                             <div class="rating mt--20">
                                                 <a href="#"><i class="fa fa-star"></i></a>
                                                 <a href="#"><i class="fa fa-star"></i></a>
                                                 <a href="#"><i class="fa fa-star"></i></a>
                                                 <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Testimonial -->
+                            <!-- End Single Testimonial  -->
 
-                            <!-- Start Single Testimonial -->
+                            <!-- Start Single Testimonial  -->
                             <div class="swiper-slide">
                                 <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-03.png') }}"
-                                                    alt="Student Image">
+                                                <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
-                                                <h5 class="title">Bayu Wicaksono</h5>
-                                                <span class="designation">UI/UX Designer <i>@ Startup Lokal</i></span>
+                                                <h5 class="title">Martha Maldonado</h5>
+                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
                                             </div>
                                         </div>
                                         <div class="description">
-                                            <p class="subtitle-3">Kelas desain UI/UX-nya membantu saya membangun style dan
-                                                workflow yang rapi. Plus, ada feedback langsung dari mentor tiap minggu!</p>
+                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
+                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
+                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the</p>
                                             <div class="rating mt--20">
                                                 <a href="#"><i class="fa fa-star"></i></a>
                                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -1769,148 +1661,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Testimonial -->
+                            <!-- End Single Testimonial  -->
+
                         </div>
                         <div class="rbt-swiper-pagination"></div>
                     </div>
+
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="rbt-event-area bg-color-extra2 rbt-section-gap">
-        <div class="container">
-            <div class="row mb--60">
-                <div class="col-lg-12">
-                    <div class="section-title text-center">
-                        <span class="subtitle bg-primary-opacity">OUR EVENTS</span>
-                        <h2 class="title">University Upcoming Events</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <!-- Start Single Event  -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
-                        <div class="rbt-card-img">
-                            <a href="event-details.html">
-                                <img src="{{ asset('assets/images/event/grid-type-01.jpg') }}" alt="Card image">
-                            </a>
-                        </div>
-                        <div class="rbt-card-body">
-                            <ul class="rbt-meta">
-                                <li><i class="feather-calendar"></i>11 Jan, 2024</li>
-                                <li><i class="feather-map-pin"></i>IAC Building</li>
-                            </ul>
-                            <h4 class="rbt-card-title"><a href="event-details.html">International Education Fair
-                                    2024</a></h4>
-                            <div class="read-more-btn">
-                                <a class="rbt-btn btn-border hover-icon-reverse btn-sm radius-round"
-                                    href="event-details.html">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Get Ticket</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Event  -->
-
-                <!-- Start Single Event  -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
-                        <div class="rbt-card-img">
-                            <a href="event-details.html">
-                                <img src="{{ asset('assets/images/event/grid-type-02.jpg') }}" alt="Card image">
-                            </a>
-                        </div>
-                        <div class="rbt-card-body">
-                            <ul class="rbt-meta">
-                                <li><i class="feather-map-pin"></i>Vancouver</li>
-                                <li><i class="feather-clock"></i>8:00 am - 5:00 pm</li>
-                            </ul>
-                            <h4 class="rbt-card-title"><a href="event-details.html">Painting Art Contest 2020</a></h4>
-
-                            <div class="read-more-btn">
-                                <a class="rbt-btn btn-border hover-icon-reverse btn-sm radius-round"
-                                    href="event-details.html">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Get Ticket</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Event  -->
-
-                <!-- Start Single Event  -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
-                        <div class="rbt-card-img">
-                            <a href="event-details.html">
-                                <img src="{{ asset('assets/images/event/grid-type-03.jpg') }}" alt="Card image">
-                            </a>
-                        </div>
-                        <div class="rbt-card-body">
-                            <ul class="rbt-meta">
-                                <li><i class="feather-map-pin"></i>Paris</li>
-                                <li><i class="feather-clock"></i>8:00 am - 5:00 pm</li>
-                            </ul>
-                            <h4 class="rbt-card-title"><a href="event-details.html">Histudy Education Fair 2024</a></h4>
-
-                            <div class="read-more-btn">
-                                <a class="rbt-btn btn-border hover-icon-reverse btn-sm radius-round"
-                                    href="event-details.html">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Get Ticket</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Event  -->
-
-                <!-- Start Single Event  -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="rbt-card card-list-2 event-list-card variation-01 rbt-hover">
-                        <div class="rbt-card-img">
-                            <a href="event-details.html">
-                                <img src="{{ asset('assets/images/event/grid-type-04.jpg') }}" alt="Card image">
-                            </a>
-                        </div>
-                        <div class="rbt-card-body">
-                            <ul class="rbt-meta">
-                                <li><i class="feather-map-pin"></i>IAC Building</li>
-                                <li><i class="feather-clock"></i>8:00 am - 5:00 pm</li>
-                            </ul>
-                            <h4 class="rbt-card-title"><a href="event-details.html"> Elegant Light Box Paper Cut
-                                    Dioramas</a></h4>
-
-                            <div class="read-more-btn">
-                                <a class="rbt-btn btn-border hover-icon-reverse btn-sm radius-round"
-                                    href="event-details.html">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Get Ticket</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Event  -->
             </div>
         </div>
     </div>
@@ -1927,7 +1684,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="read-more-btn text-start text-md-end">
-                        <a class="rbt-btn btn-gradient hover-icon-reverse" href="blog.html">
+                        <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                             <div class="icon-reverse-wrapper">
                                 <span class="btn-text">See All Articles</span>
                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -1940,48 +1697,34 @@
             <!-- Start Card Area -->
             <div class="row row--15">
                 <!-- Start Single Card  -->
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt--30" data-sal-delay="150" data-sal="slide-up"
-                    data-sal-duration="800">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt--30" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <div class="rbt-card variation-02 height-330 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="{{ route('Landing.DetailBlog') }}">
-                                <img src="{{ asset('assets/images/blog/blog-card-01.jpg') }}" alt="Card image"> </a>
+                                <img src="assets/images/blog/blog-card-01.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h3 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">React</a></h3>
                             <p class="rbt-card-text">It is a long established fact that a reader.</p>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="b{{ route('Landing.DetailCourse') }}">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
-                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                            </g>
-                                        </svg></i></a>
+                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Single Card  -->
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt--30" data-sal-delay="150" data-sal="slide-up"
-                    data-sal-duration="800">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt--30" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
 
                     <!-- Start Single Card  -->
                     <div class="rbt-card card-list variation-02 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="{{ route('Landing.DetailBlog') }}">
-                                <img src="{{ asset('assets/images/blog/blog-card-02.jpg') }}" alt="Card image"> </a>
+                                <img src="assets/images/blog/blog-card-02.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
                             <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Why Is Education So Famous?</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg
-                                            width="17" height="12" xmlns="http://www.w3.org/2000/svg">
-                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                            </g>
-                                        </svg></i></a>
+                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -1991,19 +1734,12 @@
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
                             <a href="{{ route('Landing.DetailBlog') }}">
-                                <img src="{{ asset('assets/images/blog/blog-card-03.jpg') }}" alt="Card image"> </a>
+                                <img src="assets/images/blog/blog-card-03.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Difficult Things About Education.</a>
-                            </h5>
+                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Difficult Things About Education.</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg
-                                            width="17" height="12" xmlns="http://www.w3.org/2000/svg">
-                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                            </g>
-                                        </svg></i></a>
+                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -2013,19 +1749,12 @@
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
                             <a href="{{ route('Landing.DetailBlog') }}">
-                                <img src="{{ asset('assets/images/blog/blog-card-04.jpg') }}" alt="Card image"> </a>
+                                <img src="assets/images/blog/blog-card-04.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Education Is So Famous, But Why?</a>
-                            </h5>
+                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Education Is So Famous, But Why?</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg
-                                            width="17" height="12" xmlns="http://www.w3.org/2000/svg">
-                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
-                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
-                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
-                                            </g>
-                                        </svg></i></a>
+                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -2036,9 +1765,4 @@
         </div>
     </div>
     <!-- End Blog Style -->
-    <div class="rbt-progress-parent">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-@endsection
+    @endsection('content')
