@@ -11,16 +11,12 @@ class LandingController extends Controller
         return view('landing.module.Home');
     }
 
-<<<<<<< HEAD
     public function allcourse()
     {
         return view('landing.allcourse');
     }
 
-    public function detail()
-=======
     public function Detail()
->>>>>>> a550de49702d3fdf26688562f9f3085983b08d5e
     {
         return view('landing.module.Detail');
     }
