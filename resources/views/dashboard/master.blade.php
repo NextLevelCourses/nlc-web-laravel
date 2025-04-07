@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -939,6 +940,8 @@
 =======
 =======
 >>>>>>> master
+=======
+>>>>>>> master
 @extends('dashboard.layouts.app')
 
 @section('title', 'Home')
@@ -947,6 +950,9 @@
 <!-- Mobile Menu Section -->
 <div class="popup-mobile-menu">
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 =======
 >>>>>>> master
@@ -2271,8 +2277,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -2852,6 +2861,7 @@
     </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Start Footer aera -->
     <footer class="rbt-footer footer-style-1 bg-color-white overflow-hidden">
         <div class="footer-top">
@@ -3025,6 +3035,9 @@
 </body>
 
 </html>
+=======
+    @endsection
+>>>>>>> master
 =======
     @endsection
 >>>>>>> master
