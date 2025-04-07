@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Route;
 
 // Landing Routes
 Route::get('/', [LandingController::class, 'Index'])->name('Landing.Home');
-Route::get('/Detail', [LandingController::class, 'Detail'])->name('Landing.Detail');
 Route::get('/AboutUs', [LandingController::class, 'AboutUs'])->name('Landing.AboutUs');
 Route::get('/Testimonial', [LandingController::class, 'Testimonial'])->name('Landing.Testimonial');
 Route::get('/Register', [LandingController::class, 'Register'])->name('Landing.Register');
