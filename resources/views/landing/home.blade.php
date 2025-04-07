@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('landing.layouts.app')
 
 @section('title', 'Dashboard')
 
@@ -444,7 +444,7 @@
                         <div class="banner-content text-center">
                             <div class="inner">
                                 <div class="rbt-new-badge rbt-new-badge-one mb--30">
-                                    <span class="rbt-new-badge-icon">🏆</span> The Leader in Online Learning
+                                    <span class="rbt-new-badge-icon">🏆</span> The Marketplace for Teaching Excellence
                                 </div>
                                 <h1 class="title">We teaching, educate and <span class="theme-gradient">build the
                                         future</span> of online learning</h1>
@@ -1798,46 +1798,47 @@
 
     <!-- Start Course Category Area  -->
     <div class="rbt-course-category rbt-section-gap overflow-hidden">
-        <div class="container">
-            <div class="row mb--25">
-                <div class="col-lg-12">
-                    <div class="section-title text-center">
-                        <h5 class="subtitle bg-secondary-opacity">Histudy Feature Category</h5>
-                    </div>
+    <div class="container">
+        <div class="row mb--25">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h5 class="subtitle bg-secondary-opacity">Next Level Categories</h5>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 col-lg-12 col-xl-12">
-                    <div class="rbt-categori-leftbar">
-                        <div class="rbt-categori-list">
-                            <a class="blank" href="#"></a>
-                            <a href="#">Healthcare</a>
-                            <a href="#">Beauty & fashion</a>
-                            <a href="#">Education & Travel</a>
-                            <a class="blank" href="#"></a>
-                        </div>
-                        <div class="rbt-categori-list">
-                            <a class="blank" href="#"></a>
-                            <a href="#">Kitchen</a>
-                            <a href="#">Medicle & entertain</a>
-                            <a href="#">Medicle & Science</a>
-                            <a href="#">Tour & Travel</a>
-                            <a class="blank" href="#"></a>
-                        </div>
-                        <div class="rbt-categori-list">
-                            <a class="blank" href="#"></a>
-                            <a href="#">Kitchen</a>
-                            <a href="#">Featured</a>
-                            <a href="#">Popular</a>
-                            <a href="#">Latest</a>
-                            <a class="blank" href="#"></a>
-                        </div>
+        <div class="row">
+            <div class="col-12 col-lg-12 col-xl-12">
+                <div class="rbt-categori-leftbar">
+                    <div class="rbt-categori-list">
+                        <a class="blank" href="#"></a>
+                        <a href="/courses/web-development">Web Development</a>
+                        <a href="/courses/frontend-react">Frontend with React</a>
+                        <a href="/courses/ui-ux">UI/UX Design</a>
+                        <a class="blank" href="#"></a>
+                    </div>
+                    <div class="rbt-categori-list">
+                        <a class="blank" href="#"></a>
+                        <a href="/courses/backend-laravel">Backend with Laravel</a>
+                        <a href="/courses/go-programming">Go Programming</a>
+                        <a href="/courses/esp32">ESP32 Projects</a>
+                        <a href="/courses/iot-projects">IoT Projects</a>
+                        <a class="blank" href="#"></a>
+                    </div>
+                    <div class="rbt-categori-list">
+                        <a class="blank" href="#"></a>
+                        <a href="/courses/private-class">Private Class</a>
+                        <a href="/courses/mentoring-project">Mentoring Project</a>
+                        <a href="/courses/popular">Popular Courses</a>
+                        <a href="/courses/latest">Latest Updates</a>
+                        <a class="blank" href="#"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- End Course Category Area  -->
 
     <div class="rbt-team-area bg-color-extra2 rbt-section-gap">
@@ -1932,177 +1933,156 @@
 
 
     <div class="rbt-testimonial-area bg-color-white rbt-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 mb--60">
-                    <div class="section-title text-center">
-                        <span class="subtitle bg-coral-opacity">EDUCATION FOR EVERYONE</span>
-                        <h2 class="title">Student's Feedback</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb--60">
+                <div class="section-title text-center">
+                    <span class="subtitle bg-coral-opacity">LEARNING EXPERIENCE</span>
+                    <h2 class="title">What Our Students Say</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="rbt-accordion-style rbt-accordion-01  accordion">
+                    <div class="accordion" id="accordionExamplea1">
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Next Level Course and how does it work?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExamplea1">
+                                <div class="accordion-body card-body">
+                                    <p class="mb--15">Next Level Course is an innovative online marketplace that empowers educators to share their knowledge and reach learners across the globe. </p>
+                                    <p>We connect passionate instructors with students eager to grow in web development, IoT, and emerging tech fields—enabling real-world learning experiences through personalized teaching.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I contact support or get help?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExamplea1">
+                                <div class="accordion-body card-body">
+                                    You can reach our support team by emailing <strong>support@nextlevelcourse.com</strong> or via the Help Center on your dashboard.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Will I get updates and access to new materials?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExamplea1">
+                                <div class="accordion-body card-body">
+                                    Absolutely! As a student, you will receive lifetime updates on all course materials and access to new features as we continuously grow our learning platform.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="rbt-accordion-style rbt-accordion-01  accordion">
-                        <div class="accordion" id="accordionExamplea1">
-                            <div class="accordion-item card">
-                                <h2 class="accordion-header card-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What is Histudy ? How does it work?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExamplea1">
 
-                                    <div class="accordion-body card-body">
-                                        <p class="mb--15">You can run Histudy easily. Any School, University, College
-                                            can be use this
-                                            histudy education template for their educational purpose. A university can
-                                            be success you.</p>
-                                        <p>Run their online leaning management system by histudy education template any
-                                            where and time.</p>
+            <div class="col-lg-6">
+                <div class="swiper testimonial-activation-1 rbt-dot-bottom-left pb--60">
+                    <div class="swiper-wrapper">
+                        <!-- Start Single Testimonial -->
+                        <div class="swiper-slide">
+                            <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
+                                <div class="inner">
+                                    <div class="clint-info-wrapper">
+                                        <div class="thumb">
+                                            <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Student Image">
+                                        </div>
+                                        <div class="client-info">
+                                            <h5 class="title">Rizki Ananda</h5>
+                                            <span class="designation">Fullstack Developer <i>@ Freelancer</i></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item card">
-                                <h2 class="accordion-header card-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How can I get the customer support?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExamplea1">
-                                    <div class="accordion-body card-body">
-                                        After purchasing the product need you any support you can be share with
-                                        us with sending mail to rainbowit10@gmail.com.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item card">
-                                <h2 class="accordion-header card-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Can I get update regularly and For how long do I get updates?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExamplea1">
-                                    <div class="accordion-body card-body">
-                                        Yes, We will get update the Histudy. And you can get it any time. Next
-                                        time we will comes with more feature. You can be get update for
-                                        unlimited times. Our dedicated team works for update.
+                                    <div class="description">
+                                        <p class="subtitle-3">Next Level Course changed the way I learn programming. The mentorship and project-based approach really helped me land freelance gigs confidently!</p>
+                                        <div class="rating mt--20">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
+                        <!-- End Single Testimonial -->
 
-                    <div class="swiper testimonial-activation-1 rbt-dot-bottom-left pb--60">
-                        <div class="swiper-wrapper">
-                            <!-- Start Single Testimonial  -->
-                            <div class="swiper-slide">
-                                <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
-                                    <div class="inner">
-                                        <div class="clint-info-wrapper">
-                                            <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
-                                            </div>
-                                            <div class="client-info">
-                                                <h5 class="title">Martha Maldonado</h5>
-                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
-                                            </div>
+                        <!-- Start Single Testimonial -->
+                        <div class="swiper-slide">
+                            <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
+                                <div class="inner">
+                                    <div class="clint-info-wrapper">
+                                        <div class="thumb">
+                                            <img src="{{ asset('assets/images/testimonial/client-02.png') }}" alt="Student Image">
                                         </div>
-                                        <div class="description">
-                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
-                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
-                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the</p>
-                                            <div class="rating mt--20">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
+                                        <div class="client-info">
+                                            <h5 class="title">Lestari Putri</h5>
+                                            <span class="designation">Junior IoT Engineer <i>@ TechHub</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="subtitle-3">Materi IoT yang diajarkan di sini sangat aplikatif. Saya bisa langsung praktek dengan ESP32 dan hasilkan project beneran untuk portfolio saya.</p>
+                                        <div class="rating mt--20">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star-half-o"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Testimonial  -->
-
-                            <!-- Start Single Testimonial  -->
-                            <div class="swiper-slide">
-                                <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
-                                    <div class="inner">
-                                        <div class="clint-info-wrapper">
-                                            <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
-                                            </div>
-                                            <div class="client-info">
-                                                <h5 class="title">Martha Maldonado</h5>
-                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
-                                            </div>
-                                        </div>
-                                        <div class="description">
-                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
-                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
-                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the</p>
-                                            <div class="rating mt--20">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Testimonial  -->
-
-                            <!-- Start Single Testimonial  -->
-                            <div class="swiper-slide">
-                                <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
-                                    <div class="inner">
-                                        <div class="clint-info-wrapper">
-                                            <div class="thumb">
-                                                <img src="{{ asset('assets/images/testimonial/client-01.png') }}" alt="Clint Images">
-                                            </div>
-                                            <div class="client-info">
-                                                <h5 class="title">Martha Maldonado</h5>
-                                                <span class="designation">Executive Chairman <i>@ Google</i></span>
-                                            </div>
-                                        </div>
-                                        <div class="description">
-                                            <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
-                                                auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus
-                                                velit. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the</p>
-                                            <div class="rating mt--20">
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                                <a href="#"><i class="fa fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Testimonial  -->
-
                         </div>
-                        <div class="rbt-swiper-pagination"></div>
-                    </div>
+                        <!-- End Single Testimonial -->
 
+                        <!-- Start Single Testimonial -->
+                        <div class="swiper-slide">
+                            <div class="rbt-testimonial-box no-box-shadow bg-gradient-7 text-white">
+                                <div class="inner">
+                                    <div class="clint-info-wrapper">
+                                        <div class="thumb">
+                                            <img src="{{ asset('assets/images/testimonial/client-03.png') }}" alt="Student Image">
+                                        </div>
+                                        <div class="client-info">
+                                            <h5 class="title">Bayu Wicaksono</h5>
+                                            <span class="designation">UI/UX Designer <i>@ Startup Lokal</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p class="subtitle-3">Kelas desain UI/UX-nya membantu saya membangun style dan workflow yang rapi. Plus, ada feedback langsung dari mentor tiap minggu!</p>
+                                        <div class="rating mt--20">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Testimonial -->
+                    </div>
+                    <div class="rbt-swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
 
     <div class="rbt-event-area bg-color-extra2 rbt-section-gap">
@@ -2397,116 +2377,88 @@
                             </ul>
 
                             <div class="contact-btn mt--30">
-                                <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="#">
-                                    <div class="icon-reverse-wrapper">
-                                        <span class="btn-text">Contact With Us</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="/contact">
+        <div class="icon-reverse-wrapper">
+            <span class="btn-text">Contact Next Level</span>
+            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Useful Links</h5>
-                            <ul class="ft-link">
-                                <li>
-                                    <a href="12-marketplace.html">Marketplace</a>
-                                </li>
-                                <li>
-                                    <a href="04-kindergarten.html">kindergarten</a>
-                                </li>
-                                <li>
-                                    <a href="13-university-classic.html">University</a>
-                                </li>
-                                <li>
-                                    <a href="09-gym-coaching.html">GYM Coaching</a>
-                                </li>
-                                <li>
-                                    <a href="faqs.html">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="about-us-01.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<!-- Bagian Links -->
+<div class="col-lg-2 col-md-6 col-sm-6 col-12">
+    <div class="footer-widget">
+        <h5 class="ft-title">Next Level</h5>
+        <ul class="ft-link">
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/mentoring-projects">Mentoring Projects</a></li>
+            <li><a href="/private-classes">Private Classes</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/faqs">FAQ</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+    </div>
+</div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Our Company</h5>
-                            <ul class="ft-link">
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="become-a-teacher.html">Become Teacher</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="instructor.html">Instructor</a>
-                                </li>
-                                <li>
-                                    <a href="event-list.html">Events</a>
-                                </li>
-                                <li>
-                                    <a href="course-filter-one-toggle.html">Course</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<!-- Bagian Company -->
+<div class="col-lg-2 col-md-6 col-sm-6 col-12">
+    <div class="footer-widget">
+        <h5 class="ft-title">For Members</h5>
+        <ul class="ft-link">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/my-courses">My Courses</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+    </div>
+</div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Get Contact</h5>
-                            <ul class="ft-link">
-                                <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>
-                                <li><span>E-mail:</span> <a href="mailto:hr@example.com">admin@example.com</a></li>
-                            </ul>
+<!-- Bagian Kontak -->
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+    <div class="footer-widget">
+        <h5 class="ft-title">Get in Touch</h5>
+        <ul class="ft-link">
+            <li><span>Phone:</span> <a href="#">+62 812-3456-7890</a></li>
+            <li><span>Email:</span> <a href="mailto:admin@nextlevelcourse.com">admin@nextlevelcourse.com</a></li>
+        </ul>
 
-                            <form class="newsletter-form mt--20" action="#">
-                                <h6 class="w-600">Full Address</h6>
-                                <p class="description">2000+ Our students are subscribe Around the World.<br /> Don’t be shy
-                                introduce yourself!</p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <form class="newsletter-form mt--20" action="#">
+            <h6 class="w-600">Full Address</h6>
+            <p class="description">Next Level Course HQ<br />Jl. Belajar No. 123, Bandung, Indonesia</p>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Copyright -->
+<div class="rbt-separator-mid">
+    <div class="container">
+        <hr class="rbt-separator m-0">
+    </div>
+</div>
+
+<div class="copyright-area copyright-style-1 ptb--20">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="#">Next Level Course</a>. All Rights Reserved.</p>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/subscription">Subscription</a></li>
+                </ul>
             </div>
         </div>
-        <div class="rbt-separator-mid">
-            <div class="container">
-                <hr class="rbt-separator m-0">
-            </div>
-        </div>
-        <!-- Start Copyright Area  -->
-        <div class="copyright-area copyright-style-1 ptb--20">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                        <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://rainbowthemes.net">Rainbow-Themes.</a> All Rights Reserved</p>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                        <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="privacy-policy.html">Privacy policy</a></li>
-                            <li><a href="subscription.html">Subscription</a></li>
-                            <li><a href="login.html">Login & Register</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
+
         <!-- End Copyright Area  -->
     </footer>
     <!-- End Footer aera -->

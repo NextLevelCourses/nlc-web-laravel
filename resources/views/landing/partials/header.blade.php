@@ -7,12 +7,12 @@
                         <div class="col-lg-12">
                             <div class="inner justify-content-center">
                                 <div class="content">
-                                    <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Limited Time Offer</span>
-                                    <span class="news-text color-white-off"><img src="{{ asset('assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Intro price. Get Histudy for Big Sale -95% off.</span>
+                                    <span class="rbt-badge variation-02 bg-color-primary color-white radius-round">Limited Time Offer!</span>
+                                    <span class="news-text color-white-off"><img src="{{ asset('assets/images/icons/hand-emojji.svg') }}" alt="Hand Emojji Images"> Learn more and unlock your skills today!</span>
                                 </div>
                                 <div class="right-button">
                                     <a class="rbt-btn-link color-white" href="https://themeforest.net/checkout/from_item/42846507?license=regular">
-                                        <span>Purchase Now <i class="feather-arrow-right"></i></span>
+                                        <span>Join the Course <i class="feather-arrow-right"></i></span>
                                     </a>
                                 </div>
                             </div>
@@ -57,15 +57,8 @@
                                         <div class="wrapper">
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                    <div class="mega-top-banner">
-                                                        <div class="content">
-                                                            <h4 class="title">Next Level Course</h4>
-                                                            <p class="description">Build your skill with structured learning paths, private classes, and mentoring projects.</p>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
-
                                             <div class="row row--15">
                                                 <!-- Kursus Utama -->
                                                 <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
@@ -145,139 +138,114 @@
                                     </ul>
                                 </li>
 
-                                <li class="with-megamenu has-menu-child-item position-static">
+                                <li class="has-dropdown has-menu-child-item">
                                     <a href="#">Platform <i class="feather-chevron-down"></i></a>
-                                    <!-- Start Mega Menu  -->
-                                    <div class="rbt-megamenu grid-item-4">
-                                        <div class="wrapper">
-                                            <div class="row row--15">
+                                    <ul class="submenu">
 
-                                                <!-- Kolom 1: Tentang & Bantuan -->
-                                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                                                    <h3 class="rbt-short-title">About</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="about-us.html">About Next Level</a></li>
-                                                        <li><a href="how-it-works.html">How It Works</a></li>
-                                                        <li><a href="faqs.html">FAQs</a></li>
-                                                        <li><a href="contact.html">Contact Us</a></li>
-                                                    </ul>
-                                                </div>
+                                        <!-- Tentang Next Level -->
+                                        <li class="has-dropdown">
+                                            <a href="#">About</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-us.html">About Next Level</a></li>
+                                                <li><a href="how-it-works.html">How It Works</a></li>
+                                                <li><a href="faqs.html">FAQs</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </li>
 
-                                                <!-- Kolom 2: Untuk Mentor -->
-                                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                                                    <h3 class="rbt-short-title">For Mentors</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="become-mentor.html">Become a Mentor</a></li>
-                                                        <li><a href="mentor-dashboard.html">Mentor Dashboard</a></li>
-                                                        <li><a href="manage-sessions.html">Manage Sessions</a></li>
-                                                    </ul>
-                                                </div>
+                                        <!-- Layanan Tambahan -->
+                                        <li class="has-dropdown">
+                                            <a href="#">Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="private-class.html">Private Class</a></li>
+                                                <li><a href="mentoring-projects.html">Mentoring Projects</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="terms.html">Terms & Policies</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                                <!-- Kolom 3: Untuk Peserta -->
-                                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                                                    <h3 class="rbt-short-title">For Learners</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="login.html">Login / Register</a></li>
-                                                        <li><a href="my-account.html">My Dashboard</a></li>
-                                                        <li><a href="my-courses.html">My Courses</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="enrollment-history.html">Enrollment History</a></li>
-                                                    </ul>
-                                                </div>
+                                <li class="with-megamenu has-menu-child-item">
+                                <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
+                                <!-- Start Mega Menu -->
+                                <div class="rbt-megamenu grid-item-2">
+                                    <div class="wrapper">
+                                        <!-- Menu Items -->
+                                        <div class="row row--15">
+                                            <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
+                                                <h3 class="rbt-short-title">Programs</h3>
+                                                <ul class="mega-menu-item">
+                                                    <li><a href="/programs/private-class">Private Class <span class="rbt-badge-card">Hot</span></a></li>
+                                                    <li><a href="/programs/mentoring-project">Mentoring Project <span class="rbt-badge-card">New</span></a></li>
+                                                    <li><a href="/programs/details">Program Details</a></li>
+                                                </ul>
+                                            </div>
 
-                                                <!-- Kolom 4: Layanan Tambahan -->
-                                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                                                    <h3 class="rbt-short-title">Services</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="private-class.html">Private Class</a></li>
-                                                        <li><a href="mentoring-projects.html">Mentoring Projects</a></li>
-                                                        <li><a href="pricing.html">Pricing</a></li>
-                                                        <li><a href="terms.html">Terms & Policies</a></li>
-                                                    </ul>
+                                            <div class="col-lg-12 col-xl-6 col-xxl-6 single-mega-item d-flex align-items-center">
+                                                <div class="btn-wrapper w-100 mt--20 mt-xl--0 text-center">
+                                                    <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 hover-transform-none" href="/join">
+                                                        <span class="icon-reverse-wrapper">
+                                                            <span class="btn-text">Join Now</span>
+                                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                                        </span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Mega Menu  -->
-                                </li>
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
 
 
 
                                 <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
+                                    <a href="#">Resources <i class="feather-chevron-down"></i></a>
                                     <!-- Start Mega Menu  -->
                                     <div class="rbt-megamenu grid-item-3">
                                         <div class="wrapper">
-                                            <div class="row row--15 single-dropdown-menu-presentation">
-                                                <div class="col-lg-4 col-xxl-4 single-mega-item">
+                                            <div class="row row--15">
+                                                <!-- Column 1 -->
+                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
+                                                    <h3 class="rbt-short-title">Blog & Articles</h3>
                                                     <ul class="mega-menu-item">
-                                                        <li><a href="style-guide.html">Private Class <span class="rbt-badge-card">Hot</span></a></li>
-                                                        <li><a href="about.html">Mentoring Project <span class="rbt-badge-card">New</span></a></li>
-                                                        <li><a href="#">Detail</a></li>
+                                                        <li><a href="/blog">Blog Grid</a></li>
+                                                        <li><a href="/blog-list">Blog List</a></li>
+                                                        <li><a href="/blog-category/self-development">Self Development</a></li>
+                                                        <li><a href="/blog-category/tech-updates">Tech Updates</a></li>
+                                                        <li><a href="/blog-category/inspiration">Inspiring Stories</a></li>
+                                                        <li><a href="/blog-category/events">Events & Webinars</a></li>
                                                     </ul>
                                                 </div>
 
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="btn-wrapper">
-                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
-                                                            <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Join Now</span>
-                                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                                            </span>
+                                                <!-- Column 2 -->
+                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
+                                                    <h3 class="rbt-short-title">Learning Guides</h3>
+                                                    <ul class="mega-menu-item">
+                                                        <li><a href="/guides/getting-started">Getting Started</a></li>
+                                                        <li><a href="/guides/mentorship-guide">Mentorship Guide</a></li>
+                                                        <li><a href="/guides/project-tips">Project Tips</a></li>
+                                                        <li><a href="/guides/exam-preparation">Exam Preparation</a></li>
+                                                        <li><a href="#">Consistency Tips <span class="rbt-badge-card">New</span></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- Column 3 -->
+                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
+                                                    <div class="rbt-ads-wrapper">
+                                                        <a class="d-block" href="/courses">
+                                                            <img src="{{ asset('assets/images/service/mobile-cat.jpg') }}" alt="Join Our Courses">
+                                                            <p class="mt--10 text-center fw-bold">Explore All Courses</p>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Mega Menu  -->
                                 </li>
 
-                                <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="#">Blog <i class="feather-chevron-down"></i></a>
-                                    <!-- Start Mega Menu  -->
-                                    <div class="rbt-megamenu grid-item-3">
-                                        <div class="wrapper">
-                                            <div class="row row--15">
-                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
-                                                    <h3 class="rbt-short-title">Blog Styles</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="blog-list.html">Blog List</a></li>
-                                                        <li><a href="blog.html">Blog Grid</a></li>
-                                                        <li><a href="blog-grid-minimal.html">Blog Grid Minimal</a></li>
-                                                        <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                                        <li><a href="post-format-standard.html">Post Format Standard</a></li>
-                                                        <li><a href="post-format-gallery.html">Post Format Gallery</a></li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
-                                                    <h3 class="rbt-short-title">Get Started</h3>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a href="post-format-quote.html">Post Format Quote</a></li>
-                                                        <li><a href="post-format-audio.html">Post Format Audio</a></li>
-                                                        <li><a href="post-format-video.html">Post Format Video</a></li>
-                                                        <li><a href="#">Media Under Title <span class="rbt-badge-card">Coming</span></a></li>
-                                                        <li><a href="#">Sticky Sidebar <span class="rbt-badge-card">Coming</span></a></li>
-                                                        <li><a href="#">Auto Masonry <span class="rbt-badge-card">Coming</span></a></li>
-                                                        <li><a href="#">Meta Overlaid <span class="rbt-badge-card">Coming</span></a></li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
-                                                    <div class="rbt-ads-wrapper">
-                                                        <a class="d-block" href="#"><img src="{{ asset('assets/images/service/mobile-cat.jpg') }}" alt="Education Images"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Mega Menu  -->
-                                </li>
                             </ul>
                         </nav>
                     </div>
