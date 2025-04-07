@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default rbt-breadcrumb-style-3">
+    <div class="rbt-breadcrumb-default rbt-breadcrumb-style-3 pt--130">
         <div class="breadcrumb-inner breadcrumb-dark">
             <img src="{{ asset('assets/images/bg/bg-image-10.jpg') }}" alt="Education Images">
         </div>

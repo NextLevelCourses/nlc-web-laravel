@@ -76,16 +76,9 @@
                                                             Intelligence
                                                             & Machine Learning <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Product Management
-                                                            &
-                                                            Startup Building</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Data Science &
-                                                            Analytics</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">IoT with ESP32 99
                                                             Project <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Leadership &
-                                                            Management</a></li>
-                                                    <li><a href="#">Entrepreneurship & Business Strategy</a></li>
+
                                                 </ul>
                                             </div>
 
@@ -99,24 +92,13 @@
                                                                 class="rbt-badge-card">Hot</span></a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Public Speaking &
                                                             Communication</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Leadership &
-                                                            Management</a></li>
+                                                    
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Entrepreneurship
                                                             &
                                                             Business Strategy</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Productivity &
                                                             Time
                                                             Management <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Personal Finance
-                                                            &
-                                                            Investment</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Marketing &
-                                                            Branding
-                                                            (Non-Digital)</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Emotional
-                                                            Intelligence
-                                                            & Self-Development</a></li>
-                                                    <li><a href="#">& More Coming</a></li>
                                                 </ul>
                                             </div>
 
@@ -129,23 +111,12 @@
                                                             Home</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Basic English &
                                                             Conversation Practice</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Typing & Computer
-                                                            Basics</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Math Fun &
                                                             Problem
                                                             Solving Games</a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Digital
-                                                            Storytelling &
-                                                            Animation <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Coding for Kids
-                                                            (Scratch / Blockly / Tynker) <span
-                                                                class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Robotics for
-                                                            Beginners
-                                                            (Arduino / LEGO Mindstorm)</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Basic English &
                                                             Conversation Practice</a></li>
-                                                    <li><a href="#">& More Coming</a></li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
@@ -154,9 +125,9 @@
                                             <div class="col-lg-12">
                                                 <div class="btn-wrapper">
                                                     <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none"
-                                                        href="#">
+                                                        href="{{ route('Landing.AllCourse') }}">
                                                         <span class="icon-reverse-wrapper">
-                                                            <span class="btn-text">Join Now</span>
+                                                            <span class="btn-text">All Course</span>
                                                             <span class="btn-icon"><i
                                                                     class="feather-arrow-right"></i></span>
                                                             <span class="btn-icon"><i
