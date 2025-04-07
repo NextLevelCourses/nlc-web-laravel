@@ -7,12 +7,12 @@
                     <div class="footer-widget">
                         <div class="logo logo-dark">
                             <a href="index.html">
-                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Edu-cause">
+                                <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}" alt="Edu-cause">
                             </a>
                         </div>
                         <div class="logo d-none logo-light">
                             <a href="index.html">
-                                <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}" alt="Edu-cause">
+                                <img src="{{ asset('assets/images/logo/logo-light.png') }}" alt="Edu-cause">
                             </a>
                         </div>
 

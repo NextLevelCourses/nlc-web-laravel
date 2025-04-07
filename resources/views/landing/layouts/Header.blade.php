@@ -37,14 +37,15 @@
                 <div class="header-left">
                     <div class="logo logo-dark">
                         <a href="index.html">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
+                            <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}" alt="Education Logo Images"
+                                width="200%">
                         </a>
                     </div>
 
                     <div class="logo d-none logo-light">
                         <a href="index.html">
-                            <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}"
-                                alt="Education Logo Images">
+                            <img src="{{ asset('assets/images/logo/logo-light.png') }}" alt="Education Logo Images"
+                                width="200%">
                         </a>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                                                                 class="rbt-badge-card">Hot</span></a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Public Speaking &
                                                             Communication</a></li>
-                                                    
+
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Entrepreneurship
                                                             &
                                                             Business Strategy</a></li>
@@ -116,7 +117,7 @@
                                                             Solving Games</a></li>
                                                     <li><a href="{{ route('Landing.DetailCourse') }}">Basic English &
                                                             Conversation Practice</a></li>
-                                                    
+
                                                 </ul>
                                             </div>
                                         </div>
@@ -320,13 +321,15 @@
                 <div class="logo">
                     <div class="logo logo-dark">
                         <a href="index.html">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
+                            {{-- <img src="{{ asset('assets/images/logo/logo-light.png') }}" alt="Education Logo Images"> --}}
+                            <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}"
+                                alt="Education Logo Images">
                         </a>
                     </div>
 
                     <div class="logo d-none logo-light">
                         <a href="index.html">
-                            <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}"
+                            <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}"
                                 alt="Education Logo Images">
                         </a>
                     </div>
