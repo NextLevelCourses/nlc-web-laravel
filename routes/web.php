@@ -11,10 +11,13 @@ Route::get('/aboutus', [LandingController::class, 'aboutus'])->name('landing.abo
 Route::get('/testimonial', [LandingController::class, 'testimonial'])->name('landing.testimonial');
 Route::get('/register', [LandingController::class, 'register'])->name('landing.register');
 Route::get('/faqs', [LandingController::class, 'faqs'])->name('landing.faqs');
+Route::get('/blog', [LandingController::class, 'blog'])->name('landing.blog');
+Route::get('/allcourse', [LandingController::class, 'allcourse'])->name('landing.allcourse');
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/instructor', [DashboardController::class, 'instructor'])->name('instructor');
 Route::get('/student', [DashboardController::class, 'student'])->name('student');
+
 
 

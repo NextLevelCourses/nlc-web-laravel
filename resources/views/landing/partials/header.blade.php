@@ -33,13 +33,13 @@
                     <div class="header-left">
                         <div class="logo logo-dark">
                             <a href="index.html">
-                                <img src="assets/images/logo/logo.png" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
 
                         <div class="logo d-none logo-light">
                             <a href="index.html">
-                                <img src="assets/images/dark/logo/logo-light.png" alt="Education Logo Images">
+                                <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}" alt="Education Logo Images">
                             </a>
                         </div>
                     </div>
@@ -108,9 +108,9 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="btn-wrapper">
-                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
+                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="{{ route('landing.allcourse') }}">
                                                             <span class="icon-reverse-wrapper">
-                                                                <span class="btn-text">Join Now</span>
+                                                                <span class="btn-text">All Course</span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                                             </span>
@@ -150,7 +150,7 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="btn-wrapper">
-                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
+                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="{{ route('landing.register') }}">
                                                             <span class="icon-reverse-wrapper">
                                                                 <span class="btn-text">Register New Account</span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -222,25 +222,25 @@
                                                     <ul class="mega-menu-item">
                                                         <li><a href="{{ route('landing.aboutus') }}">Who We Are</a></li>
                                                         <li><a href="{{ route('landing.testimonial') }}">Testimonials</a></li>
-                                                        <li><a href="careers.html">Careers</a></li>
+                                                        <li><a href="{{ route('landing.blog') }}">Next Level Blog</a></li>
                                                     </ul>
                                                 </div>
 
                                                 <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                     <h6 class="rbt-mega-menu-title">Get Involved</h6>
                                                     <ul class="mega-menu-item">
-                                                        <li><a href="partnerships.html">Partnerships</a></li>
-                                                        <li><a href="mentors.html">Become a Mentor</a></li>
-                                                        <li><a href="community.html">Join Our Community</a></li>
+                                                        <li><a href="#">Partnerships</a></li>
+                                                        <li><a href="#">Become a Mentor</a></li>
+                                                        <li><a href="#">Join Our Community</a></li>
                                                         <li><a href="{{ route('landing.faqs') }}">FAQs</a></li>
-                                                        <li><a href="contact.html">Contact Us</a></li>
+                                                        <li><a href="#">Contact Us</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="btn-wrapper">
-                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="about.html">
+                                                        <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
                                                             <span class="icon-reverse-wrapper">
                                                                 <span class="btn-text">Explore Our Journey</span>
                                                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -275,7 +275,6 @@
                         </div>
                         <!-- Start Mobile-Menu-Bar -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -315,11 +314,10 @@
 
             <nav class="mainmenu-nav">
                 <ul class="mainmenu">
-                    <li class="with-megamenu has-menu-child-item position-static">
-                        <a href="{{ route('landing.home') }}">Home <i class="feather-chevron-down"></i></a>
-                        <!-- Start Mega Menu  -->
-                        <!-- End Mega Menu  -->
-                    </li>
+                <li>
+    <a href="{{ route('landing.home') }}">Home</a>
+</li>
+
 
                     <li class="with-megamenu has-menu-child-item">
                         <a href="#">Courses <i class="feather-chevron-down"></i></a>

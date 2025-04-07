@@ -436,30 +436,6 @@
         </div>
     </div>
 
-
-
-    <div class="rbt-brand-area bg-color-white ptb--60">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="section-title text-center mb--40">
-                        <span class="small-title w-600">The Best Trasted Client in This Education World</span>
-                    </div>
-                    <ul class="brand-list brand-style-3 justify-content-center justify-content-lg-between">
-                        <li><a href="#"><img src="assets/images/brand/brand-01.png" alt="Brand Image"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/brand-02.png" alt="Brand Image"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/brand-03.png" alt="Brand Image"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/brand-05.png" alt="Brand Image"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/brand-06.png" alt="Brand Image"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
     <div class="rbt-separator-mid">
         <div class="container">
             <hr class="rbt-separator m-0">

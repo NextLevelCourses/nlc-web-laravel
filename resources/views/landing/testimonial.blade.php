@@ -4,8 +4,8 @@
 
 @section('content')
 
-<div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden pt--20">
-    <div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden">
+<!-- <div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden pt--20"> -->
+    <div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden pt--70">
         <div class="wrapper">
             <div class="container">
                 <div class="row">

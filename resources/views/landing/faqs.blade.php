@@ -4,8 +4,8 @@
 
 @section('content')
 <!-- Start Accordion Area  -->
-<div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden pt--20">
- <div class="rbt-accordion-area accordion-style-1 bg-color-extra2 rbt-section-gap">
+<!-- <div class="rbt-testimonial-area bg-color-extra2 rbt-section-gap overflow-hidden pt--20"> -->
+ <div class="rbt-accordion-area accordion-style-1 bg-color-extra2 rbt-section-gap pt--70">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1 mt_md--40 mt_sm--40">

@@ -6,11 +6,11 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
+    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-inner text-center pt--20">
+                    <div class="breadcrumb-inner text-center pt--70">
                         <h2 class="title">Login & Register</h2>
                         <ul class="page-list">
                             <li class="rbt-breadcrumb-item"><a href="index.html">Home</a></li>

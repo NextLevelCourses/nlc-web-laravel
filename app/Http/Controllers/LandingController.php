@@ -11,6 +11,11 @@ class LandingController extends Controller
         return view('landing.home');
     }
 
+    public function allcourse()
+    {
+        return view('landing.allcourse');
+    }
+
     public function detail()
     {
         return view('landing.detail');
@@ -34,5 +39,10 @@ class LandingController extends Controller
     public function faqs()
     {
         return view('landing.faqs');
+    }
+
+    public function blog()
+    {
+        return view('landing.blog');
     }
 }
