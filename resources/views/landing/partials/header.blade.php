@@ -47,7 +47,7 @@
                         <nav class="mainmenu-nav">
                             <ul class="mainmenu">
                                 <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="#">Home </a>
+                                <a href="#">Home</a>
                                 </li>
 
                                 <li class="with-megamenu has-menu-child-item">
@@ -65,12 +65,6 @@
                                                     <h3 class="rbt-short-title">Learning Tracks</h3>
                                                     <ul class="mega-menu-item">
                                                         <li><a href="/courses/web-development">Web Development</a></li>
-                                                        <li><a href="/courses/backend-laravel">Backend with Laravel</a></li>
-                                                        <li><a href="/courses/iot-projects">IoT Projects</a></li>
-                                                        <li><a href="/courses/frontend-react">Frontend with React</a></li>
-                                                        <li><a href="/courses/go-programming">Go Programming</a></li>
-                                                        <li><a href="/courses/ui-ux">UI/UX Design</a></li>
-                                                        <li><a href="/courses/esp32">ESP32 Applications</a></li>
                                                     </ul>
                                                 </div>
 
@@ -80,20 +74,6 @@
                                                     <ul class="mega-menu-item">
                                                         <li><a href="/private-classes">Private Classes</a></li>
                                                         <li><a href="/mentoring-projects">Mentoring Projects</a></li>
-                                                        <li><a href="/course-details">Course Details</a></li>
-                                                        <li><a href="/create-course">Create Your Own Course</a></li>
-                                                        <li><a href="/course-progress">Track Your Progress</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <ul class="nav-quick-access">
-                                                        <li><a href="/getting-started"><i class="feather-folder-minus"></i> Getting Started</a></li>
-                                                        <li><a href="/open-learning"><i class="feather-folder-minus"></i> Open Learning</a></li>
-                                                        <li><a href="/faq"><i class="feather-folder-minus"></i> FAQ</a></li>
-                                                        <li><a href="/support"><i class="feather-folder-minus"></i> Support</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -107,33 +87,9 @@
                                         <i class="feather-chevron-down"></i>
                                     </a>
                                     <ul class="submenu">
-                                        <li class="has-dropdown"><a href="#">Instructor Dashboard</a>
-                                            <ul class="submenu">
-                                                <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                                                <li><a href="instructor-profile.html">Profile</a></li>
-                                                <li><a href="instructor-enrolled-courses.html">Enrolled Courses</a></li>
-                                                <li><a href="instructor-wishlist.html">Wishlist</a></li>
-                                                <li><a href="instructor-reviews.html">Reviews</a></li>
-                                                <li><a href="instructor-my-quiz-attempts.html">My Quiz Attempts</a></li>
-                                                <li><a href="instructor-order-history.html">Order History</a></li>
-                                                <li><a href="instructor-course.html">My Course</a></li>
-                                                <li><a href="instructor-announcements.html">Announcements</a></li>
-                                                <li><a href="instructor-quiz-attempts.html">Quiz Attempts</a></li>
-                                                <li><a href="instructor-assignments.html">Assignments</a></li>
-                                                <li><a href="instructor-settings.html">Settings</a></li>
-                                            </ul>
+                                        <li class="has-dropdown"><a href="#">Instructor</a>
                                         </li>
-                                        <li class="has-dropdown"><a href="#">Student Dashboard</a>
-                                            <ul class="submenu">
-                                                <li><a href="student-dashboard.html">Dashboard</a></li>
-                                                <li><a href="student-profile.html">Profile</a></li>
-                                                <li><a href="student-enrolled-courses.html">Enrolled Courses</a></li>
-                                                <li><a href="student-wishlist.html">Wishlist</a></li>
-                                                <li><a href="student-reviews.html">Reviews</a></li>
-                                                <li><a href="student-my-quiz-attempts.html">My Quiz Attempts</a></li>
-                                                <li><a href="student-order-history.html">Order History</a></li>
-                                                <li><a href="student-settings.html">Settings</a></li>
-                                            </ul>
+                                        <li class="has-dropdown"><a href="#">Student</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -150,17 +106,6 @@
                                                 <li><a href="how-it-works.html">How It Works</a></li>
                                                 <li><a href="faqs.html">FAQs</a></li>
                                                 <li><a href="contact.html">Contact Us</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <!-- Layanan Tambahan -->
-                                        <li class="has-dropdown">
-                                            <a href="#">Services</a>
-                                            <ul class="submenu">
-                                                <li><a href="private-class.html">Private Class</a></li>
-                                                <li><a href="mentoring-projects.html">Mentoring Projects</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="terms.html">Terms & Policies</a></li>
                                             </ul>
                                         </li>
                                     </ul>
