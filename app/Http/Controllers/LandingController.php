@@ -10,4 +10,9 @@ class LandingController extends Controller
     {
         return view('landing.home');
     }
+
+    public function detail()
+    {
+        return view('landing.detail');
+    }
 }
