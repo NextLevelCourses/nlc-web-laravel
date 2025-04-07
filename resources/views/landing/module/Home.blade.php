@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Start Banner Area -->
-    <div class="rbt-banner-area rbt-banner-2 header-transperent-spacer pt--30">
+    <div class="rbt-banner-area rbt-banner-2 header-transperent-spacer pt--120">
         <div class="wrapper">
             <div class="container">
                 <div class="row">
