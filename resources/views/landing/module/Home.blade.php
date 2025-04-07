@@ -31,7 +31,7 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">React</a></h4>
                                             <p>React Js dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.Detail') }}">Learn
+                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
                                                 More<i><svg width="17" height="12"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <g stroke="#27374D" fill="none" fill-rule="evenodd">
@@ -57,7 +57,7 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">English</a></h4>
                                             <p>Spken english dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.Detail') }}">Learn
+                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
                                                 More<i><svg width="17" height="12"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <g stroke="#27374D" fill="none" fill-rule="evenodd">
@@ -83,7 +83,7 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">Education</a></h4>
                                             <p>Eearning edu dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.Detail') }}">Learn
+                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
                                                 More<i><svg width="17" height="12"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <g stroke="#27374D" fill="none" fill-rule="evenodd">
@@ -110,7 +110,7 @@
                                         <div class="content">
                                             <h4 class="title"><a href="#">Education</a></h4>
                                             <p>Lorem ipsum dolor sit, amet consectetur.</p>
-                                            <a class="transparent-button" href="{{ route('Landing.Detail') }}">Learn
+                                            <a class="transparent-button" href="{{ route('Landing.DetailCourse') }}">Learn
                                                 More<i><svg width="17" height="12"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <g stroke="#27374D" fill="none" fill-rule="evenodd">
@@ -1951,8 +1951,8 @@
                             <h3 class="rbt-card-title"><a href="blog-details.html">React</a></h3>
                             <p class="rbt-card-text">It is a long established fact that a reader.</p>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="b{{ route('Landing.Detail') }}">Learn More<i><svg
-                                            width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                <a class="transparent-button" href="b{{ route('Landing.DetailCourse') }}">Learn
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
                                             <g stroke="#27374D" fill="none" fill-rule="evenodd">
                                                 <path d="M10.614 0l5.629 5.629-5.63 5.629" />
                                                 <path stroke-linecap="square" d="M.663 5.572h14.594" />
