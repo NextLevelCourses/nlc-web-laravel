@@ -2336,6 +2336,7 @@
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Start Footer aera -->
     <footer class="rbt-footer footer-style-1 bg-color-white overflow-hidden">
         <div class="footer-top">
@@ -2469,6 +2470,9 @@
         </svg>
     </div>
 @endsection
+=======
+    @endsection
+>>>>>>> master
 =======
     @endsection
 >>>>>>> master
