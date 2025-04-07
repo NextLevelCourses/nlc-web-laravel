@@ -13,12 +13,12 @@ class LandingController extends Controller
 
     public function AllCourse()
     {
-        return view('landing.allcourse');
+        return view('landing.module.AllCourse');
     }
 
-    public function Detail()
+    public function DetailCourse()
     {
-        return view('landing.module.Detail');
+        return view('landing.module.DetailCourse');
     }
 
     public function AboutUs()
@@ -41,8 +41,8 @@ class LandingController extends Controller
         return view('landing.module.FAQs');
     }
 
-    public function blog()
+    public function DetailBlog()
     {
-        return view('landing.blog');
+        return view('landing.module.DetailBlog');
     }
 }

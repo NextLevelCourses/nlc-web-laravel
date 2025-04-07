@@ -1,6 +1,6 @@
-@extends('landing.layouts.app')
+@extends('landing.layouts.Master')
 
-@section('title', 'Landing Page')
+@section('title', 'Detail Blog')
 
 @section('content')
     <div class="rbt-page-banner-wrapper">
@@ -45,7 +45,8 @@
             <div class="row g-5">
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -58,7 +59,12 @@
                                     Education.</a></h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +72,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -79,7 +86,12 @@
                             </h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -87,7 +99,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -99,7 +112,12 @@
                             <h4 class="rbt-card-title"><a href="blog-details.html">Why Is Education So Famous?</a></h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +125,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -120,7 +139,12 @@
                             </h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +152,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -141,7 +166,12 @@
                             </h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +179,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -162,7 +193,12 @@
                             </h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +206,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -183,7 +220,12 @@
                                     Education.</a></h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +233,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -204,7 +247,12 @@
                                     Education?</a></h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +260,8 @@
                 <!-- End Single Card  -->
 
                 <!-- Start Single Card  -->
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    data-sal-duration="800">
                     <div class="rbt-card variation-02 rbt-hover card-minimal">
                         <div class="rbt-card-body">
                             <ul class="meta-list justify-content-start mb--30">
@@ -225,7 +274,12 @@
                             </h4>
                             <div class="rbt-card-bottom mt--40">
                                 <a class="transparent-button" href="blog-details.html">Learn
-                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                    More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke="#27374D" fill="none" fill-rule="evenodd">
+                                                <path d="M10.614 0l5.629 5.629-5.63 5.629" />
+                                                <path stroke-linecap="square" d="M.663 5.572h14.594" />
+                                            </g>
+                                        </svg></i></a>
                             </div>
                         </div>
                     </div>

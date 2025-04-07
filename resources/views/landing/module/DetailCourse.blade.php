@@ -1,6 +1,6 @@
 @extends('landing.layouts.Master')
 
-@section('title', 'Detail')
+@section('title', 'Detail Course')
 
 @section('content')
     <!-- Start breadcrumb Area -->

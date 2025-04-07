@@ -65,21 +65,25 @@
                                             <div class="col-lg-4 col-xxl-4 single-mega-item">
                                                 <h5 class="mega-menu-title">Tech & Innovation</h5>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="{{ route('Landing.Detail') }}">Software Development
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Software
+                                                            Development
                                                             (Fullstack) <span class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Cybersecurity <span
-                                                                class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Cloud Computing</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Artificial Intelligence
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Cybersecurity
+                                                            <span class="rbt-badge-card">New</span></a></li>
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Cloud
+                                                            Computing</a></li>
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Artificial
+                                                            Intelligence
                                                             & Machine Learning <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Product Management &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Product Management
+                                                            &
                                                             Startup Building</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Data Science &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Data Science &
                                                             Analytics</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">IoT with ESP32 99
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">IoT with ESP32 99
                                                             Project <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Leadership &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Leadership &
                                                             Management</a></li>
                                                     <li><a href="#">Entrepreneurship & Business Strategy</a></li>
                                                 </ul>
@@ -89,22 +93,28 @@
                                             <div class="col-lg-4 col-xxl-4 single-mega-item">
                                                 <h5 class="mega-menu-title">Business & Soft Skills</h5>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="{{ route('Landing.Detail') }}">Content Creation &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Content Creation
+                                                            &
                                                             Personal Branding <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Public Speaking &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Public Speaking &
                                                             Communication</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Leadership &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Leadership &
                                                             Management</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Entrepreneurship &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Entrepreneurship
+                                                            &
                                                             Business Strategy</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Productivity & Time
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Productivity &
+                                                            Time
                                                             Management <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Personal Finance &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Personal Finance
+                                                            &
                                                             Investment</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Marketing & Branding
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Marketing &
+                                                            Branding
                                                             (Non-Digital)</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Emotional Intelligence
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Emotional
+                                                            Intelligence
                                                             & Self-Development</a></li>
                                                     <li><a href="#">& More Coming</a></li>
                                                 </ul>
@@ -114,22 +124,26 @@
                                             <div class="col-lg-4 col-xxl-4 single-mega-item">
                                                 <h5 class="mega-menu-title">Education for All</h5>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="{{ route('Landing.Detail') }}">Science Experiments at
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Science
+                                                            Experiments at
                                                             Home</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Basic English &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Basic English &
                                                             Conversation Practice</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Typing & Computer
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Typing & Computer
                                                             Basics</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Math Fun & Problem
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Math Fun &
+                                                            Problem
                                                             Solving Games</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Digital Storytelling &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Digital
+                                                            Storytelling &
                                                             Animation <span class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Coding for Kids
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Coding for Kids
                                                             (Scratch / Blockly / Tynker) <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Robotics for Beginners
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Robotics for
+                                                            Beginners
                                                             (Arduino / LEGO Mindstorm)</a></li>
-                                                    <li><a href="{{ route('Landing.Detail') }}">Basic English &
+                                                    <li><a href="{{ route('Landing.DetailCourse') }}">Basic English &
                                                             Conversation Practice</a></li>
                                                     <li><a href="#">& More Coming</a></li>
                                                 </ul>
