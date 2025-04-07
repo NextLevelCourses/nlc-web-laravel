@@ -11,7 +11,7 @@ class LandingController extends Controller
         return view('landing.module.Home');
     }
 
-    public function allcourse()
+    public function AllCourse()
     {
         return view('landing.allcourse');
     }

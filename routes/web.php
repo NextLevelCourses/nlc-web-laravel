@@ -11,8 +11,8 @@ Route::get('/AboutUs', [LandingController::class, 'AboutUs'])->name('Landing.Abo
 Route::get('/Testimonial', [LandingController::class, 'Testimonial'])->name('Landing.Testimonial');
 Route::get('/Register', [LandingController::class, 'Register'])->name('Landing.Register');
 Route::get('/FAQs', [LandingController::class, 'FAQs'])->name('Landing.FAQs');
-Route::get('/Blog', [LandingController::class, 'blog'])->name('Landing.Blog');
-Route::get('/AllCourse', [LandingController::class, 'allcourse'])->name('Landing.AllCourse');
+Route::get('/Blog', [LandingController::class, 'Blog'])->name('Landing.Blog');
+Route::get('/AllCourse', [LandingController::class, 'AllCourse'])->name('Landing.AllCourse');
 
 //Dashboard Routes
 Route::get('/Dashboard', [DashboardController::class, 'index'])->name('dashboard');
