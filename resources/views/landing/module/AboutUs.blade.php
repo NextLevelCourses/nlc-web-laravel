@@ -1,6 +1,6 @@
-@extends('landing.layouts.app')
+@extends('landing.layouts.Master')
 
-@section('title', 'Landing Page')
+@section('title', 'About Us')
 
 @section('content')
     <!-- Start Banner Area -->
@@ -19,24 +19,25 @@
                                             <b class="is-hidden theme-gradient">Vission.</b>
                                             <b class="is-hidden theme-gradient">Planning.</b>
                                         </span>
-                                </span>
+                                    </span>
                                 </span>
                             </h1>
-                            <p class="description has-medium-font-size mt--20">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!
+                            <p class="description has-medium-font-size mt--20">Dive in and learn React.js from scratch!
+                                Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!
                             </p>
                             <div class="slider-btn rbt-button-group justify-content-center">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Log in to Start</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </a>
                                 <a class="rbt-btn hover-icon-reverse btn-white" href="#">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Contact US</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </a>
                             </div>
@@ -56,7 +57,8 @@
                 <div class="col-lg-12">
                     <div class="video-popup-wrapper">
                         <img class="w-100 rbt-radius" src="assets/images/bg/bg-image-12.jpg" alt="Video Images">
-                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-theme-color" href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
+                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-theme-color"
+                            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
                             <span class="play-icon"></span>
                         </a>
                     </div>
@@ -80,8 +82,11 @@
                         <div class="content text-start">
                             <span class="rbt-badge-6 bg-primary-opacity">About Histudy</span>
                             <h3 class="title">Welcome to Histudy for your skills with best Online courses.</h3>
-                            <p class="description mt--30"><strong>Histudy educational platform</strong> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p class="description">Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil.</p>
+                            <p class="description mt--30"><strong>Histudy educational platform</strong> ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p class="description">Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga
+                                dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique
+                                architecto nihil.</p>
                             <div class="read-more-btn mt--40">
                                 <a class="rbt-btn rbt-marquee-btn radius-round btn-gradient" href="#">
                                     <span data-text="Start Learning For Free">
@@ -119,9 +124,9 @@
                         <div class="call-to-btn text-start text-xl-end">
                             <a class="rbt-btn btn-white hover-icon-reverse" href="#">
                                 <span class="icon-reverse-wrapper">
-                            <span class="btn-text">Histudy Financial Aid</span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-text">Histudy Financial Aid</span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 </span>
                             </a>
                         </div>
@@ -139,7 +144,8 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h2 class="title">Why learn with our courses?</h2>
-                        <p class="description mt--30"><strong>Histudy educational platform</strong> ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="description mt--30"><strong>Histudy educational platform</strong> ipsum dolor sit amet
+                            consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +161,8 @@
                             </div>
                             <div class="content">
                                 <h6 class="title"><a href="#">Your Apply</a></h6>
-                                <p class="description">English Learning looking for random paragraphs, you've come to the right place.</p>
+                                <p class="description">English Learning looking for random paragraphs, you've come to the
+                                    right place.</p>
                             </div>
                             <span class="number-text">1</span>
                         </div>
@@ -172,7 +179,8 @@
                             </div>
                             <div class="content">
                                 <h6 class="title"><a href="#">We Connect</a></h6>
-                                <p class="description">Javascript Learning looking for random paragraphs, you've come to the right place.</p>
+                                <p class="description">Javascript Learning looking for random paragraphs, you've come to
+                                    the right place.</p>
                             </div>
                             <span class="number-text">2</span>
                         </div>
@@ -189,7 +197,8 @@
                             </div>
                             <div class="content">
                                 <h6 class="title"><a href="#">You Get Ready</a></h6>
-                                <p class="description">Angular Learning looking for random paragraphs, you've come to the right place.</p>
+                                <p class="description">Angular Learning looking for random paragraphs, you've come to the
+                                    right place.</p>
                             </div>
                             <span class="number-text">3</span>
                         </div>
@@ -206,7 +215,8 @@
                             </div>
                             <div class="content">
                                 <h6 class="title"><a href="#">Completed</a></h6>
-                                <p class="description">Php Learning looking for random paragraphs, you've come to the right place.</p>
+                                <p class="description">Php Learning looking for random paragraphs, you've come to the right
+                                    place.</p>
                             </div>
                             <span class="number-text">4</span>
                         </div>
@@ -246,7 +256,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-05.jpg" alt="Testimonial Images">
                             </div>
@@ -258,7 +269,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-09.jpg" alt="Testimonial Images">
                             </div>
@@ -270,7 +282,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-03.jpg" alt="Testimonial Images">
                             </div>
@@ -282,7 +295,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-07.jpg" alt="Testimonial Images">
                             </div>
@@ -294,7 +308,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-01.jpg" alt="Testimonial Images">
                             </div>
@@ -306,7 +321,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-02.jpg" alt="Testimonial Images">
                             </div>
@@ -318,7 +334,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-04.jpg" alt="Testimonial Images">
                             </div>
@@ -330,7 +347,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-06.jpg" alt="Testimonial Images">
                             </div>
@@ -342,7 +360,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-08.jpg" alt="Testimonial Images">
                             </div>
@@ -354,7 +373,8 @@
                 <!-- Start Single Team  -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-12">
                     <div class="rbt-team-modal-thumb nav nav-tabs">
-                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="rbt-team-thumbnail" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <div class="thumb">
                                 <img src="assets/images/team/team-10.jpg" alt="Testimonial Images">
                             </div>
@@ -365,7 +385,8 @@
 
             </div>
 
-            <div class="rbt-team-modal modal fade rbt-modal-default" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+            <div class="rbt-team-modal modal fade rbt-modal-default" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModal" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -379,7 +400,8 @@
                                     <div class="col-lg-4">
                                         <div class="rbt-team-thumbnail">
                                             <div class="thumb">
-                                                <img class="w-100" src="assets/images/team/team-09.jpg" alt="Testimonial Images">
+                                                <img class="w-100" src="assets/images/team/team-09.jpg"
+                                                    alt="Testimonial Images">
                                             </div>
                                         </div>
                                     </div>
@@ -389,13 +411,16 @@
                                                 <h4 class="title">Mames Mary</h4>
                                                 <span class="designation theme-gradient">English Teacher</span>
                                                 <span class="team-form">
-                                        <i class="feather-map-pin"></i>
-                                        <span class="location">CO Miego, AD,USA</span>
+                                                    <i class="feather-map-pin"></i>
+                                                    <span class="location">CO Miego, AD,USA</span>
                                                 </span>
                                             </div>
-                                            <p class="mb--15">You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose. A university can be success you.</p>
+                                            <p class="mb--15">You can run Histudy easily. Any School, University, College
+                                                can be use this histudy education template for their educational purpose. A
+                                                university can be success you.</p>
 
-                                            <p>Run their online leaning management system by histudy education template any where and time.</p>
+                                            <p>Run their online leaning management system by histudy education template any
+                                                where and time.</p>
                                             <ul class="social-icon social-default mt--20 justify-content-start">
                                                 <li><a href="https://www.facebook.com/">
                                                         <i class="feather-facebook"></i>
@@ -421,7 +446,7 @@
                                                 </li>
                                                 <li>
                                                     <a href="mailto:hello@example.com"><i
-                                                class="feather-mail"></i>example@gmail.com</a>
+                                                            class="feather-mail"></i>example@gmail.com</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -465,4 +490,4 @@
             <hr class="rbt-separator m-0">
         </div>
     </div>
-    @endsection
+@endsection
