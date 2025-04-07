@@ -65,12 +65,15 @@
                                                     <h3 class="rbt-short-title">Learning Tracks</h3>
                                                     <ul class="mega-menu-item">
                                                         <li><a href="/courses/web-development">Web Development</a></li>
+<<<<<<< HEAD
+=======
                                                         <li><a href="/courses/backend-laravel">Backend with Laravel</a></li>
                                                         <li><a href="/courses/iot-projects">IoT Projects</a></li>
                                                         <li><a href="/courses/frontend-react">Frontend with React</a></li>
                                                         <li><a href="/courses/go-programming">Go Programming</a></li>
                                                         <li><a href="/courses/ui-ux">UI/UX Design</a></li>
                                                         <li><a href="/courses/esp32">ESP32 Applications</a></li>
+>>>>>>> master
                                                     </ul>
                                                 </div>
 
@@ -80,6 +83,8 @@
                                                     <ul class="mega-menu-item">
                                                         <li><a href="/private-classes">Private Classes</a></li>
                                                         <li><a href="/mentoring-projects">Mentoring Projects</a></li>
+<<<<<<< HEAD
+=======
                                                         <li><a href="/course-details">Course Details</a></li>
                                                         <li><a href="/create-course">Create Your Own Course</a></li>
                                                         <li><a href="/course-progress">Track Your Progress</a></li>
@@ -94,6 +99,7 @@
                                                         <li><a href="/open-learning"><i class="feather-folder-minus"></i> Open Learning</a></li>
                                                         <li><a href="/faq"><i class="feather-folder-minus"></i> FAQ</a></li>
                                                         <li><a href="/support"><i class="feather-folder-minus"></i> Support</a></li>
+>>>>>>> master
                                                     </ul>
                                                 </div>
                                             </div>
@@ -107,6 +113,11 @@
                                         <i class="feather-chevron-down"></i>
                                     </a>
                                     <ul class="submenu">
+<<<<<<< HEAD
+                                        <li class="has-dropdown"><a href="#">Instructor</a>
+                                        </li>
+                                        <li class="has-dropdown"><a href="#">Student</a>
+=======
                                         <li class="has-dropdown"><a href="#">Instructor Dashboard</a>
                                             <ul class="submenu">
                                                 <li><a href="instructor-dashboard.html">Dashboard</a></li>
@@ -134,6 +145,7 @@
                                                 <li><a href="student-order-history.html">Order History</a></li>
                                                 <li><a href="student-settings.html">Settings</a></li>
                                             </ul>
+>>>>>>> master
                                         </li>
                                     </ul>
                                 </li>
@@ -152,6 +164,14 @@
                                                 <li><a href="contact.html">Contact Us</a></li>
                                             </ul>
                                         </li>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
 
                                         <!-- Layanan Tambahan -->
                                         <li class="has-dropdown">
@@ -163,6 +183,13 @@
                                                 <li><a href="terms.html">Terms & Policies</a></li>
                                             </ul>
                                         </li>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
                                     </ul>
                                 </li>
 

@@ -1,6 +1,6 @@
     <!-- JS ============================================ -->
     <!-- Vendor JS -->
-     
+    
     <script src="{{ asset('assets/js/vendor/modernizr.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
