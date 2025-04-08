@@ -16,4 +16,12 @@ Route::get('/AllCourse', [LandingController::class, 'AllCourse'])->name('Landing
 
 //Dashboard Routes
 Route::get('/Home', [DashboardController::class, 'Home'])->name('Dashboard.Home');
+Route::get('/DashboardDetailCourse', [DashboardController::class, 'DetailCourse'])->name('Dashboard.DetailCourse');
+Route::get('/MyProfile', [DashboardController::class, 'MyProfile'])->name('Dashboard.MyProfile');
+Route::get('/Wishlist', [DashboardController::class, 'Wishlist'])->name('Dashboard.Wishlist');
+Route::get('/OrderHistory', [DashboardController::class, 'OrderHistory'])->name('Dashboard.OrderHistory');
+Route::get('/CreateCourse', [DashboardController::class, 'CreateCourse'])->name('Dashboard.CreateCourse');
+Route::get('/Checkout', [DashboardController::class, 'Checkout'])->name('Dashboard.Checkout');
+Route::get('/OurCommunity', [DashboardController::class, 'OurCommunity'])->name('Dashboard.OurCommunity');
+Route::get('/Learning', [DashboardController::class, 'Learning'])->name('Dashboard.Learning');
 
