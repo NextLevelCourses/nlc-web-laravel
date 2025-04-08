@@ -15,6 +15,5 @@ Route::get('/DetailCourse', [LandingController::class, 'DetailCourse'])->name('L
 Route::get('/AllCourse', [LandingController::class, 'AllCourse'])->name('Landing.AllCourse');
 
 //Dashboard Routes
-Route::get('/Dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/Instructor', [DashboardController::class, 'instructor'])->name('instructor');
-Route::get('/Student', [DashboardController::class, 'student'])->name('student');
+Route::get('/Home', [DashboardController::class, 'Home'])->name('Dashboard.Home');
+
