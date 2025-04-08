@@ -45,4 +45,14 @@ class LandingController extends Controller
     {
         return view('landing.module.DetailBlog');
     }
+
+    public function SpecialPrograms()
+    {
+        return view('landing.module.SpecialPrograms');
+    }
+
+    public function OurCommunity()
+    {
+        return view('landing.module.OurCommunity');
+    }
 }
