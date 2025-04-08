@@ -289,7 +289,7 @@
                         <nav class="mainmenu-nav">
                             <ul class="mainmenu">
                                 <li class="with-megamenu has-menu-child-item position-static">
-                                    <a href="{{ route('Landing.Home') }}">Home</a>
+                                    <a href="{{ route('Dashboard.Home') }}">Home</a>
                             </li>
 
                             <li class="with-megamenu has-menu-child-item position-static">
@@ -487,7 +487,7 @@
                                                     <li><a href="{{ route('Landing.AboutUs') }}">Who We Are</a></li>
                                                     <li><a href="{{ route('Landing.Testimonial') }}">Testimonials</a>
                                                     </li>
-                                                    <li><a href="careers.html">Careers</a></li>
+                                                    <li><a href="{{ route('Dashboard.OurCommunity') }}">Our Community</a></li>
                                                 </ul>
                                             </div>
 
@@ -553,32 +553,32 @@
                                             </div>
                                             <div class="admin-info">
                                                 <span class="name">RainbowIT</span>
-                                                <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                                <!-- <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a> -->
                                             </div>
                                         </div>
                                         <ul class="user-list-wrapper">
                                             <li>
-                                                <a href="instructor-dashboard.html">
+                                                <a href="{{ route('Dashboard.MyProfile') }}">
                                                     <i class="feather-home"></i>
-                                                    <span>My Dashboard</span>
+                                                    <span>My Profile</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="feather-bookmark"></i>
-                                                    <span>Bookmark</span>
+                                                <a href="{{ route('Dashboard.Wishlist') }}">
+                                                    <i class="feather-heart"></i>
+                                                    <span>Wishlist</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="instructor-enrolled-courses.html">
+                                                <a href="{{ route('Dashboard.Home') }}">
                                                     <i class="feather-shopping-bag"></i>
                                                     <span>Enrolled Courses</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="instructor-wishlist.html">
-                                                    <i class="feather-heart"></i>
-                                                    <span>Wishlist</span>
+                                                <a href="{{ route('Dashboard.OrderHistory') }}">
+                                                    <i class="feather-clock"></i>
+                                                    <span>Order History</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -594,35 +594,17 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="instructor-order-history.html">
-                                                    <i class="feather-clock"></i>
-                                                    <span>Order History</span>
-                                                </a>
-                                            </li>
-                                            <li>
                                                 <a href="instructor-quiz-attempts.html">
                                                     <i class="feather-message-square"></i>
-                                                    <span>Question & Answer</span>
+                                                    <span>FAQs</span>
                                                 </a>
                                             </li>
                                         </ul>
                                         <hr class="mt--10 mb--10">
                                         <ul class="user-list-wrapper">
-                                            <li>
-                                                <a href="#">
-                                                    <i class="feather-book-open"></i>
-                                                    <span>Getting Started</span>
-                                                </a>
-                                            </li>
                                         </ul>
-                                        <hr class="mt--10 mb--10">
+
                                         <ul class="user-list-wrapper">
-                                            <li>
-                                                <a href="instructor-settings.html">
-                                                    <i class="feather-settings"></i>
-                                                    <span>Settings</span>
-                                                </a>
-                                            </li>
                                             <li>
                                                 <a href="index.html">
                                                     <i class="feather-log-out"></i>
@@ -644,7 +626,7 @@
                                             </div>
                                             <div class="admin-info">
                                                 <span class="name">RainbowIT</span>
-                                                <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                                <a class="rbt-btn-link color-primary" href="{{ route('Dashboard.MyProfile') }}">View Profile</a>
                                             </div>
                                         </div>
                                         <ul class="user-list-wrapper">
@@ -1047,7 +1029,7 @@
             <nav class="mainmenu-nav">
                 <ul class="mainmenu">
                     <li class="with-megamenu has-menu-child-item position-static">
-                        <a href="#">Home <i class="feather-chevron-down"></i></a>
+                        <a href="{{ route('Dashboard.Home') }}">Home <i class="feather-chevron-down"></i></a>
                         <!-- Start Mega Menu  -->
                         <div class="rbt-megamenu menu-skin-dark">
                             <div class="wrapper">
@@ -1601,8 +1583,8 @@
                             <li class="has-dropdown"><a href="#">Instructor Dashboard</a>
                                 <ul class="submenu">
                                     <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                                    <li><a href="instructor-profile.html">Profile</a></li>
-                                    <li><a href="instructor-enrolled-courses.html">Enrolled Courses</a></li>
+                                    <li><a href="{{ route('Dashboard.MyProfile') }}">Profile</a></li>
+                                    <li><a href="{{ route('Dashboard.Home') }}">Enrolled Courses</a></li>
                                     <li><a href="instructor-wishlist.html">Wishlist</a></li>
                                     <li><a href="instructor-reviews.html">Reviews</a></li>
                                     <li><a href="instructor-my-quiz-attempts.html">My Quiz Attempts</a></li>
@@ -1616,9 +1598,9 @@
                             </li>
                             <li class="has-dropdown"><a href="#">Student Dashboard</a>
                                 <ul class="submenu">
-                                    <li><a href="student-dashboard.html">Dashboard</a></li>
-                                    <li><a href="student-profile.html">Profile</a></li>
-                                    <li><a href="student-enrolled-courses.html">Enrolled Courses</a></li>
+                                    <li><a href="{{ route('Dashboard.Home') }}">Dashboard</a></li>
+                                    <li><a href="{{ route('Dashboard.MyProfile') }}">Profile</a></li>
+                                    <li><a href="{{ route('Dashboard.Home') }}">Enrolled Courses</a></li>
                                     <li><a href="student-wishlist.html">Wishlist</a></li>
                                     <li><a href="student-reviews.html">Reviews</a></li>
                                     <li><a href="student-my-quiz-attempts.html">My Quiz Attempts</a></li>
@@ -1652,7 +1634,7 @@
                                     <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
                                         <h3 class="rbt-short-title">Get Started</h3>
                                         <ul class="mega-menu-item">
-                                            <li><a href="profile.html">Profile</a></li>
+                                            <li><a href="{{ route('Dashboard.MyProfile') }}">Profile</a></li>
                                             <li><a href="contact.html">Contact Us</a></li>
                                             <li><a href="become-a-teacher.html">Become a Teacher</a></li>
                                             <li><a href="instructor.html">Instructor</a></li>
@@ -1669,8 +1651,8 @@
                                             <li><a href="shop.html">Shop <span class="rbt-badge-card">Sale Anything</span></a></li>
                                             <li><a href="single-product.html">Single Product</a></li>
                                             <li><a href="cart.html">Cart Page</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
+                                            <li><a href="{{ route('Dashboard.Checkout') }}">Checkout</a></li>
+                                            <li><a href="{{ route('Dashboard.Wishlist') }}">Wishlist Page</a></li>
                                             <li><a href="my-account.html">My Acount</a></li>
                                             <li><a href="login.html">Login & Register</a></li>
                                             <li><a href="subscription.html">Subscription</a></li>
@@ -1859,7 +1841,7 @@
 
             <div class="mobile-menu-bottom">
                 <div class="rbt-btn-wrapper mb--20">
-                    <a class="rbt-btn btn-border-gradient radius-round btn-sm hover-transform-none w-100 justify-content-center text-center" href="#">
+                    <a class="rbt-btn btn-border-gradient radius-round btn-sm hover-transform-none w-100 justify-content-center text-center" href="{{ route('Dashboard.Home') }}">
                         <span>Enroll Now</span>
                     </a>
                 </div>
@@ -1979,13 +1961,13 @@
                 <hr class="mb--0">
                 <div class="rbt-minicart-bottom mt--20">
                     <div class="view-cart-btn">
-                        <a class="rbt-btn btn-border icon-hover w-100 text-center" href="#">
+                        <a class="rbt-btn btn-border icon-hover w-100 text-center" href="{{ route('Dashboard.Wishlist') }}">
                             <span class="btn-text">View Cart</span>
                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                         </a>
                     </div>
                     <div class="checkout-btn mt--20">
-                        <a class="rbt-btn btn-gradient icon-hover w-100 text-center" href="#">
+                        <a class="rbt-btn btn-gradient icon-hover w-100 text-center" href="{{ route('Dashboard.Checkout') }}">
                             <span class="btn-text">Checkout</span>
                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                         </a>
@@ -1996,3 +1978,6 @@
         </div>
     </div>
     <!-- End Side Vav -->
+     <a class="rbt-close_side_menu" href="javascript:void(0);"></a>
+
+    </header>
