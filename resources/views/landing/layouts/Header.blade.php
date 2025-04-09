@@ -143,50 +143,18 @@
                                 <!-- End Mega Menu -->
                             </li>
 
-                            <!-- <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="#">Dashboard <i class="feather-chevron-down"></i></a> -->
-                                <!-- Start Mega Menu -->
-                                <!-- <div class="rbt-megamenu grid-item-2"> 
-                                    <div class="wrapper">
-                                        <div class="row row--15 single-dropdown-menu-presentation">
-                                            <div class="col-lg-6 col-xxl-6 single-mega-item">
-                                                <h6 class="rbt-mega-menu-title">User Access</h6>
-                                                <ul class="mega-menu-item">
-                                                    <li><a href="#">Instructor Dashboard</a></li>
-                                                    <li><a href="#">Student Dashboard</a></li>
-                                                    <li><a href="#">Mentor Panel</a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="col-lg-6 col-xxl-6 single-mega-item">
-                                                <h6 class="rbt-mega-menu-title">Quick Actions</h6>
-                                                <ul class="mega-menu-item">
-                                                    <li><a href="#">Profile Settings</a></li>
-                                                    <li><a href="#">Course Management</a></li>
-                                                    <li><a href="#">Payment History</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="btn-wrapper">
-                                                    <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none"
-                                                        href="#">
-                                                        <span class="icon-reverse-wrapper">
-                                                            <span class="btn-text">Register New Account</span>
-                                                            <span class="btn-icon"><i
-                                                                    class="feather-arrow-right"></i></span>
-                                                            <span class="btn-icon"><i
-                                                                    class="feather-arrow-right"></i></span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- End Mega Menu -->
-                            </li>
+                            <!-- <li class="has-dropdown has-menu-child-item">
+                                <a href="#">Dashboard
+                                    <i class="feather-chevron-down"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li class="has-dropdown"><a href="#">Instructor Dashboard</a>
+                                    </li>
+                                    <li class="has-dropdown"><a href="#">Student Dashboard</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                        
 
                             <li class="with-megamenu has-menu-child-item position-static">
                                 <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
@@ -197,23 +165,22 @@
                                             <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                 <h6 class="rbt-mega-menu-title">Private Programs</h6>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="mentoring-web.html">Biologi SMA</a></li>
-                                                    <li><a href="mentoring-data.html">Fisika SMA <span
+                                                    <li><a href="/SpecialPrograms#private-class">Biologi SMA</a></li>
+                                                    <li><a href="/SpecialPrograms#private-class">Fisika SMA <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="mentoring-uiux.html">Matematika</a></li>
-                                                    <li><a href="mentoring-business.html">Bahasa Inggris</a></li>
-                                                    <li><a href="mentoring-career.html">Career & Interview</a></li>
-                                                </ul>
-                                            </div>
+                                                    <li><a href="/SpecialPrograms#private-class">Matematika</a></li>
+                                                    <li><a href="/SpecialPrograms#private-class">Bahasa Inggris</a></li>
+                                                    </ul>
+                                            </div> 
 
                                             <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                 <h6 class="rbt-mega-menu-title">Project Based</h6>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="mentor-alex.html">Laravel Private Class</a></li>
-                                                    <li><a href="mentor-nadia.html">Fullstack Coaching <span
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Laravel Private Class</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Fullstack Coaching <span
                                                                 class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="mentor-rama.html">Design UI/UX Private</a></li>
-                                                    <li><a href="mentor-yuni.html">YFlutter Mobile Dev</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Design UI/UX Private</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">YFlutter Mobile Dev</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -238,25 +205,16 @@
                                 <!-- End Mega Menu -->
                             </li>
 
-                            <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="#">About Us <i class="feather-chevron-down"></i></a>
-                                <!-- Start Mega Menu -->
-                                <div class="rbt-megamenu grid-item-2"> <!-- 2 columns layout -->
-                                    <div class="wrapper">
-                                        <div class="row row--15 single-dropdown-menu-presentation">
-                                            <div class="col-lg-6 col-xxl-6 ">
-                                                <ul class="mega-menu-item">
-                                                    <li><a href="{{ route('Landing.AboutUs') }}">Who We Are</a></li>
-                                                    <li><a href="{{ route('Landing.Testimonial') }}">Testimonials</a>
-                                                    <li><a href="{{ route('Landing.OurCommunity') }}">Join Our Community</a></li>
-                                                    <li><a href="{{ route('Landing.FAQs') }}">FAQs</a></li>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Mega Menu -->
+                            <li class="has-dropdown has-menu-child-item">
+                                <a href="#">About Us
+                                    <i class="feather-chevron-down"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="{{ route('Landing.AboutUs') }}">Who We Are</a></li>
+                                        <li><a href="{{ route('Landing.Testimonial') }}">Testimonials</a>
+                                        <li><a href="{{ route('Landing.OurCommunity') }}">Join Our Community</a></li>
+                                        <li><a href="{{ route('Landing.FAQs') }}">FAQs</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
