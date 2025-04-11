@@ -72,7 +72,7 @@
                                 <span class="rating-count">(18 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="/private-class/laravel">Matematika Kelas 12 Private Class</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Matematika Kelas 12 Private Class</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Project Based</li>
                             <li><i class="feather-users"></i>Up to 10 Participants</li>
@@ -81,7 +81,7 @@
                         <p class="rbt-card-text">Learn by building real-world apps with professional mentors.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 500.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 <span class="rating-count">(12 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">Fisika kelas 10 Private Class</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Fisika kelas 10 Private Class</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Project Based</li>
                             <li><i class="feather-users"></i>Up to 10 Participants</li>
@@ -113,7 +113,7 @@
                         <p class="rbt-card-text">Build modern UI with real-world projects using ReactJS.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 550.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                                 <span class="rating-count">(9 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">Biologi kelas 12 Private Class</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Biologi kelas 12 Private Class</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Project Based</li>
                             <li><i class="feather-users"></i>Up to 10 Participants</li>
@@ -145,7 +145,7 @@
                         <p class="rbt-card-text">Start your programming journey with Python from scratch.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 480.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                                 <span class="rating-count">(15 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">CPNS Private Class</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">CPNS Private Class</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Project Based</li>
                             <li><i class="feather-users"></i>Up to 10 Participants</li>
@@ -177,7 +177,7 @@
                         <p class="rbt-card-text">Master UI/UX design with Figma and real app prototyping.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 600.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right" id="mentoring-project"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right" id="mentoring-project"></i></a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                                 <span class="rating-count">(21 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">Fullstack Web Mentoring</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Fullstack Web Mentoring</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Real Project</li>
                             <li><i class="feather-users"></i>Mentor Guidance</li>
@@ -220,7 +220,7 @@
                         <p class="rbt-card-text">Build real-world fullstack web apps with one-on-one guidance.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 700.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                                 <span class="rating-count">(7 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">Mobile App Mentoring</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Mobile App Mentoring</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Flutter Project</li>
                             <li><i class="feather-users"></i>1-on-1 Mentoring</li>
@@ -252,7 +252,7 @@
                         <p class="rbt-card-text">Create mobile apps from zero with expert support.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 650.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                                 <span class="rating-count">(11 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="{{ route('Landing.Register') }}">Machine Learning Mentoring</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Machine Learning Mentoring</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Case-Based</li>
                             <li><i class="feather-users"></i>1-on-1 Guidance</li>
@@ -284,7 +284,7 @@
                         <p class="rbt-card-text">Get real ML experience with industry-grade datasets.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 850.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
                                 <span class="rating-count">(14 Reviews)</span>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="/mentoring/uiux">UI/UX Project Mentoring</a></h4>
+                        <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">UI/UX Project Mentoring</a></h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i>Figma + Prototype</li>
                             <li><i class="feather-users"></i>Mentor Feedback</li>
@@ -316,7 +316,7 @@
                         <p class="rbt-card-text">Design full user journey from wireframe to prototype.</p>
                         <div class="rbt-card-bottom">
                             <div class="rbt-price"><span>Rp. 600.000</span></div>
-                            <a class="rbt-btn-link" href="{{ route('Landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
+                            <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -325,7 +325,71 @@
         </div>
     </div>
 </div>
-<div class="container mt-5">
+
+<!-- Testimonial Section -->
+<div class="rbt-testimonial-area bg-color-white rbt-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2 class="title">What Our Students Say</h2>
+                    <p class="description mt--20">Hear from participants who have taken our programs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-5 mt--20">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4">
+                <div class="rbt-card variation-02 rbt-hover">
+                    <div class="rbt-card-body">
+                        <div class="rbt-review">
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="rbt-card-text">"Private Class Laravel sangat membantu saya memahami konsep advanced. Mentor sangat berpengalaman dan sabar."</p>
+                        <div class="rbt-author-meta mb--20">
+                            <div class="rbt-avater">
+                                <img src="assets/images/testimonial/testimonial-1.jpg" alt="Author">
+                            </div>
+                            <div class="rbt-author-info">
+                                <h4 class="title">Andi Wijaya</h4>
+                                <span class="subtitle">Fullstack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4">
+                <div class="rbt-card variation-02 rbt-hover">
+                    <div class="rbt-card-body">
+                        <div class="rbt-review">
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="rbt-card-text">"Mentoring project Flutter membantu saya menyelesaikan aplikasi pertama saya yang sudah publish di Play Store."</p>
+                        <div class="rbt-author-meta mb--20">
+                            <div class="rbt-avater">
+                                <img src="assets/images/testimonial/testimonial-2.jpg" alt="Author">
+                            </div>
+                            <div class="rbt-author-info">
+                                <h4 class="title">Sarah Fitriani</h4>
+                                <span class="subtitle">Mobile Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
             <!-- Additional Information Section -->
 <div class="rbt-accordion-area rbt-section-gap bg-color-white">
     <div class="container">
@@ -427,67 +491,4 @@
         </div>
     </div>
 </div>
-
-<!-- Testimonial Section -->
-<div class="rbt-testimonial-area bg-color-white rbt-section-gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h2 class="title">What Our Students Say</h2>
-                    <p class="description mt--20">Hear from participants who have taken our programs</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row g-5 mt--20">
-            <!-- Testimonial 1 -->
-            <div class="col-lg-4">
-                <div class="rbt-card variation-02 rbt-hover">
-                    <div class="rbt-card-body">
-                        <div class="rbt-review">
-                            <div class="rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <p class="rbt-card-text">"Private Class Laravel sangat membantu saya memahami konsep advanced. Mentor sangat berpengalaman dan sabar."</p>
-                        <div class="rbt-author-meta mb--20">
-                            <div class="rbt-avater">
-                                <img src="assets/images/testimonial/testimonial-1.jpg" alt="Author">
-                            </div>
-                            <div class="rbt-author-info">
-                                <h4 class="title">Andi Wijaya</h4>
-                                <span class="subtitle">Fullstack Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Testimonial 2 -->
-            <div class="col-lg-4">
-                <div class="rbt-card variation-02 rbt-hover">
-                    <div class="rbt-card-body">
-                        <div class="rbt-review">
-                            <div class="rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <p class="rbt-card-text">"Mentoring project Flutter membantu saya menyelesaikan aplikasi pertama saya yang sudah publish di Play Store."</p>
-                        <div class="rbt-author-meta mb--20">
-                            <div class="rbt-avater">
-                                <img src="assets/images/testimonial/testimonial-2.jpg" alt="Author">
-                            </div>
-                            <div class="rbt-author-info">
-                                <h4 class="title">Sarah Fitriani</h4>
-                                <span class="subtitle">Mobile Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 @endsection

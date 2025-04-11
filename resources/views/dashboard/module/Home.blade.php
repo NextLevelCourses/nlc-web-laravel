@@ -350,7 +350,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="course-details.html">
+                                    <a href="#">
                                         <img src="assets/images/course/course-online-01.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -376,7 +376,7 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="course-details.html">React Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">React Front To Back</a>
                                     </h4>
 
                                     <ul class="rbt-meta">

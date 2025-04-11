@@ -1,6 +1,6 @@
 @extends('landing.layouts.Master')
 
-@section('title', 'FAQs')
+@section('title','Landing Page')
 
 @section('content')
 <!-- Start Banner Area -->
@@ -75,7 +75,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-01.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -97,7 +97,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">React Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">React Front To
                                                     Back</a>
                                             </h4>
 
@@ -123,7 +123,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -135,7 +135,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -156,7 +156,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">PHP Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">PHP Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -181,7 +181,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -214,7 +214,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Angular Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -240,7 +240,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -274,7 +274,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Web Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web Front To
                                                     Back</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -300,7 +300,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -312,7 +312,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -333,7 +333,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">SQL Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -358,7 +358,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -370,7 +370,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-06.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -391,7 +391,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">JS Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">JS Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -417,7 +417,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -434,7 +434,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -455,7 +455,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">PHP Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">PHP Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -480,7 +480,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -492,7 +492,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -513,7 +513,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Angular Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -539,7 +539,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -555,7 +555,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-01.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -577,7 +577,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">React Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">React Front To
                                                     Back</a>
                                             </h4>
 
@@ -603,7 +603,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -615,7 +615,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -636,7 +636,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">PHP Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">PHP Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -661,7 +661,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -673,7 +673,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -694,7 +694,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Angular Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -720,7 +720,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -732,7 +732,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -754,7 +754,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Web Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web Front To
                                                     Back</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -780,7 +780,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -792,7 +792,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -813,7 +813,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">SQL Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -838,7 +838,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -854,7 +854,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -875,7 +875,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Angular Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -901,7 +901,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -913,7 +913,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -935,7 +935,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Web Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web Front To
                                                     Back</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -961,7 +961,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -973,7 +973,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -994,7 +994,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">SQL Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -1019,7 +1019,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -1035,7 +1035,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-02.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -1056,7 +1056,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">PHP Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">PHP Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -1081,7 +1081,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -1093,7 +1093,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-03.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -1114,7 +1114,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Angular Zero to
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to
                                                     Mastery</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -1140,7 +1140,7 @@
                                                     <span class="current-price">$80</span>
                                                     <span class="off-price">$100</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -1152,7 +1152,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-04.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -1174,7 +1174,7 @@
                                                 </div>
                                             </div>
 
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">Web Front To
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web Front To
                                                     Back</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -1200,7 +1200,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link" href="{{ route('Landing.DetailCourse') }}">Learn
+                                                <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                                     More<i class="feather-arrow-right"></i></a>
                                             </div>
                                         </div>
@@ -1212,7 +1212,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="rbt-card variation-01 rbt-hover card-list-2">
                                         <div class="rbt-card-img">
-                                            <a href="{{ route('Landing.DetailCourse') }}">
+                                            <a href="{{ route('landing.DetailCourseLanding') }}">
                                                 <img src="assets/images/course/course-list-05.jpg" alt="Card image">
                                             </a>
                                         </div>
@@ -1233,7 +1233,7 @@
                                                             class="feather-bookmark"></i></a>
                                                 </div>
                                             </div>
-                                            <h4 class="rbt-card-title"><a href="{{ route('Landing.DetailCourse') }}">SQL Beginner
+                                            <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL Beginner
                                                     Advanced</a>
                                             </h4>
                                             <ul class="rbt-meta">
@@ -1258,7 +1258,7 @@
                                                     <span class="current-price">$60</span>
                                                     <span class="off-price">$120</span>
                                                 </div>
-                                                <a class="rbt-btn-link left-icon" href="{{ route('Landing.DetailCourse') }}"><i
+                                                <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourseLanding') }}"><i
                                                         class="feather-shopping-cart"></i> Add To Cart</a>
                                             </div>
                                         </div>
@@ -1610,14 +1610,14 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt--30" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <div class="rbt-card variation-02 height-330 rbt-hover">
                         <div class="rbt-card-img">
-                            <a href="{{ route('Landing.DetailBlog') }}">
+                            <a href="{{ route('landing.DetailBlog') }}">
                                 <img src="assets/images/blog/blog-card-01.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h3 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">React</a></h3>
+                            <h3 class="rbt-card-title"><a href="{{ route('landing.DetailBlog') }}">React</a></h3>
                             <p class="rbt-card-text">It is a long established fact that a reader.</p>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                <a class="transparent-button" href="{{ route('landing.DetailBlog') }}">Learn More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -1628,13 +1628,13 @@
                     <!-- Start Single Card  -->
                     <div class="rbt-card card-list variation-02 rbt-hover">
                         <div class="rbt-card-img">
-                            <a href="{{ route('Landing.DetailBlog') }}">
+                            <a href="{{ route('landing.DetailBlog') }}">
                                 <img src="assets/images/blog/blog-card-02.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Why Is Education So Famous?</a></h5>
+                            <h5 class="rbt-card-title"><a href="{{ route('landing.DetailBlog') }}">Why Is Education So Famous?</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                <a class="transparent-button" href="{{ route('landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -1643,13 +1643,13 @@
                     <!-- Start Single Card  -->
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
-                            <a href="{{ route('Landing.DetailBlog') }}">
+                            <a href="{{ route('landing.DetailBlog') }}">
                                 <img src="assets/images/blog/blog-card-03.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Difficult Things About Education.</a></h5>
+                            <h5 class="rbt-card-title"><a href="{{ route('landing.DetailBlog') }}">Difficult Things About Education.</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                <a class="transparent-button" href="{{ route('landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>
@@ -1658,13 +1658,13 @@
                     <!-- Start Single Card  -->
                     <div class="rbt-card card-list variation-02 rbt-hover mt--30">
                         <div class="rbt-card-img">
-                            <a href="{{ route('Landing.DetailBlog') }}">
+                            <a href="{{ route('landing.DetailBlog') }}">
                                 <img src="assets/images/blog/blog-card-04.jpg" alt="Card image"> </a>
                         </div>
                         <div class="rbt-card-body">
-                            <h5 class="rbt-card-title"><a href="{{ route('Landing.DetailBlog') }}">Education Is So Famous, But Why?</a></h5>
+                            <h5 class="rbt-card-title"><a href="{{ route('landing.DetailBlog') }}">Education Is So Famous, But Why?</a></h5>
                             <div class="rbt-card-bottom">
-                                <a class="transparent-button" href="{{ route('Landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
+                                <a class="transparent-button" href="{{ route('landing.DetailBlog') }}">Read Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"><g stroke="#27374D" fill="none" fill-rule="evenodd"><path d="M10.614 0l5.629 5.629-5.63 5.629"/><path stroke-linecap="square" d="M.663 5.572h14.594"/></g></svg></i></a>
                             </div>
                         </div>
                     </div>

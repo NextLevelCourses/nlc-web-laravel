@@ -16,12 +16,12 @@ class LandingController extends Controller
         return view('landing.module.AllCourse');
     }
 
-    public function DetailCourse()
+    public function DetailCourseLanding()
     {
-        return view('landing.module.DetailCourse');
+        return view('landing.module.DetailCourseLanding');
     }
 
-    public function AboutUs()
+    public function About()
     {
         return view('landing.module.AboutUs');
     }

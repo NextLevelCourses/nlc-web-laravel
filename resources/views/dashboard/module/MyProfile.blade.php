@@ -3,11 +3,12 @@
 @section('title', 'My Profile')
 
 @section('content')
-    <div class="rbt-page-banner-wrapper">
+        <div class="rbt-page-banner-wrapper">
         <!-- Start Banner BG Image  -->
         <div class="rbt-banner-image"></div>
         <!-- End Banner BG Image  -->
     </div>
+
     <!-- Start Card Style -->
     <div class="rbt-dashboard-area rbt-section-overlayping-top rbt-section-gapBottom">
         <div class="container">
@@ -15,468 +16,214 @@
                 <div class="col-lg-12">
                     <!-- Start Dashboard Top  -->
                     <div class="rbt-dashboard-content-wrapper">
-                        <div class="tutor-bg-photo bg_image bg_image--22 height-350">
-                            <!-- <img src="assets/images/bg/bg-image-22.jpg" alt=""> -->
-                        </div>
+                        <div class="tutor-bg-photo bg_image bg_image--23 height-350"></div>
                         <!-- Start Tutor Information  -->
                         <div class="rbt-tutor-information">
                             <div class="rbt-tutor-information-left">
                                 <div class="thumbnail rbt-avatars size-lg">
-                                    <img src="assets/images/team/avatar.jpg" alt="Instructor">
+                                    <img src="assets/images/team/avatar-2.jpg" alt="Instructor">
                                 </div>
                                 <div class="tutor-content">
-                                    <h5 class="title">John Due</h5>
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span class="rating-count"> (15 Reviews)</span>
-                                    </div>
+                                    <h5 class="title">Emily Hannah</h5>
                                     <ul class="rbt-meta rbt-meta-white mt--5">
-                                        <li><i class="feather-book"></i>20 Courses</li>
-                                        <li><i class="feather-users"></i>40 Students</li>
+                                        <li><i class="feather-book"></i>5 Courses Enroled</li>
+                                        <li><i class="feather-award"></i>4 Certificate</li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="rbt-tutor-information-right">
+                                <div class="tutor-btn">
+                                    <a class="rbt-btn btn-md hover-icon-reverse" href="#">
+                                        <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Become an Instructor</span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <!-- End Tutor Information  -->
                     </div>
                     <!-- End Dashboard Top  -->
-                </div>
-                <div class="col-lg-12 mt--30">
-                    <div class="profile-content rbt-shadow-box">
-                        <h4 class="rbt-title-style-3">Biography</h4>
-                        <div class="row g-5">
-                            <div class="col-lg-8">
-                                <p class="mt--10 mb--20">I'm the Front-End Developer for #Rainbow IT in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-                                <ul class="social-icon social-default justify-content-start">
-                                    <li><a href="https://www.facebook.com/">
-                                            <i class="feather-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://www.twitter.com">
-                                            <i class="feather-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/">
-                                            <i class="feather-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkdin.com/">
-                                            <i class="feather-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="rbt-information-list mt--15">
-                                    <li>
-                                        <a href="#"><i class="feather-phone"></i>+1-202-555-0174</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:hello@example.com"><i class="feather-mail"></i>example@gmail.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2 offset-lg-2">
-                                <div class="feature-sin best-seller-badge text-end h-100">
-                                    <span class="rbt-badge-2 w-100 text-center badge-full-height">
-                                        <span class="image"><img src="assets/images/icons/card-icon-1.png" alt="Best Seller Icon"></span> Bestseller
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Start Card Area -->
-            <div class="rbt-profile-course-area mt--60">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="sction-title">
-                            <h2 class="rbt-title-style-3">Courses</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 mt--5">
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-01.jpg" alt="Card image">
-                                    <div class="rbt-badge-3 bg-white">
-                                        <span>-40%</span>
-                                        <span>Off</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span class="rating-count"> (15 Reviews)</span>
-                                    </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
+                    <div class="row g-5">
+                        <div class="col-lg-3">
+                            <!-- Start Dashboard Sidebar  -->
+                            <div class="rbt-default-sidebar sticky-top rbt-shadow-box rbt-gradient-border">
+                                <div class="inner">
+                                    <div class="content-item-content">
 
-                                <h4 class="rbt-card-title"><a href="course-details.html">React Front To Back</a>
-                                </h4>
-
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>12 Lessons</li>
-                                    <li><i class="feather-users"></i>50 Students</li>
-                                </ul>
-
-                                <p class="rbt-card-text">It is a long established fact that a reader will be
-                                    distracted.</p>
-                                <div class="rbt-author-meta mb--10">
-                                    <div class="rbt-avater">
-                                        <a href="#">
-                                            <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
-                                        </a>
-                                    </div>
-                                    <div class="rbt-author-info">
-                                        By <a href="profile.html">Angela</a> In <a href="#">Development</a>
-                                    </div>
-                                </div>
-                                <div class="rbt-card-bottom">
-                                    <div class="rbt-price">
-                                        <span class="current-price">$60</span>
-                                        <span class="off-price">$120</span>
-                                    </div>
-                                    <a class="rbt-btn-link" href="course-details.html">Learn
-                                        More<i class="feather-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Card  -->
-
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-02.jpg" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span class="rating-count"> (15 Reviews)</span>
-                                    </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">PHP Beginner Advanced</a>
-                                </h4>
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>12 Lessons</li>
-                                    <li><i class="feather-users"></i>50 Students</li>
-                                </ul>
-
-                                <p class="rbt-card-text">It is a long established fact that a reader will be
-                                    distracted.</p>
-
-                                <div class="rbt-progress-style-1 mb--20 mt--10">
-                                    <div class="single-progress">
-                                        <h6 class="rbt-title-style-2 mb--10">Complete</h6>
-                                        <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft bar-color-success" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="rbt-default-sidebar-wrapper">
+                                            <div class="section-title mb--20">
+                                                <h6 class="rbt-title-style-2">Welcome, Jone Due</h6>
                                             </div>
-                                            <span class="rbt-title-style-2 progress-number">90%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <nav class="mainmenu-nav">
+                                                <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                                    <li><a href="student-dashboard.html"><i class="feather-home"></i><span>Dashboard</span></a></li>
+                                                    <li><a href="student-profile.html"><i class="feather-user"></i><span>My Profile</span></a></li>
+                                                    <li><a href="student-enrolled-courses.html"><i class="feather-book-open"></i><span>Enrolled Courses</span></a></li>
+                                                    <li><a href="student-wishlist.html"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
+                                                    <li><a href="student-reviews.html"><i class="feather-star"></i><span>Reviews</span></a></li>
+                                                    <li><a href="student-my-quiz-attempts.html"><i class="feather-help-circle"></i><span>My Quiz Attempts</span></a></li>
+                                                    <li><a href="student-order-history.html"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
+                                                </ul>
+                                            </nav>
 
-                                <div class="rbt-card-bottom">
-                                    <a class="rbt-btn btn-sm bg-primary-opacity w-100 text-center" href="#">Download Certificate</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Card  -->
-
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-03.jpg" alt="Card image">
-                                    <div class="rbt-badge-3 bg-white">
-                                        <span>-10%</span>
-                                        <span>Off</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span class="rating-count"> (5 Reviews)</span>
-                                    </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">Angular Zero to Mastery</a>
-                                </h4>
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>8 Lessons</li>
-                                    <li><i class="feather-users"></i>30 Students</li>
-                                </ul>
-                                <p class="rbt-card-text">Angular Js long fact that a reader will be distracted by
-                                    the readable.</p>
-
-                                <div class="rbt-author-meta mb--20">
-                                    <div class="rbt-avater">
-                                        <a href="#">
-                                            <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
-                                        </a>
-                                    </div>
-                                    <div class="rbt-author-info">
-                                        By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
-                                    </div>
-                                </div>
-                                <div class="rbt-card-bottom">
-                                    <div class="rbt-price">
-                                        <span class="current-price">$80</span>
-                                        <span class="off-price">$100</span>
-                                    </div>
-                                    <a class="rbt-btn-link" href="course-details.html">Learn
-                                        More<i class="feather-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Card  -->
-
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-04.jpg" alt="Card image">
-                                    <div class="rbt-badge-3 bg-white">
-                                        <span>-40%</span>
-                                        <span>Off</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span class="rating-count"> (15 Reviews)</span>
-                                    </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
-
-                                <h4 class="rbt-card-title"><a href="course-details.html">Web Front To Back</a>
-                                </h4>
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>20 Lessons</li>
-                                    <li><i class="feather-users"></i>40 Students</li>
-                                </ul>
-                                <p class="rbt-card-text">Web Js long fact that a reader will be distracted by
-                                    the readable.</p>
-
-                                <div class="rbt-progress-style-1 mb--20 mt--10">
-                                    <div class="single-progress">
-                                        <h6 class="rbt-title-style-2 mb--10">Complete</h6>
-                                        <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft bar-color-success" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="section-title mt--40 mb--20">
+                                                <h6 class="rbt-title-style-2">User</h6>
                                             </div>
-                                            <span class="rbt-title-style-2 progress-number">45%</span>
+
+                                            <nav class="mainmenu-nav">
+                                                <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                                    <li><a href="student-settings.html"><i class="feather-settings"></i><span>Settings</span></a></li>
+                                                    <li><a href="index.html"><i class="feather-log-out"></i><span>Logout</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Dashboard Sidebar  -->
+                        </div>
+                        <div class="col-lg-9">
+                            <!-- Start Instructor Profile  -->
+                            <div class="rbt-dashboard-content bg-color-white rbt-shadow-box">
+                                <div class="content">
+                                    <div class="section-title">
+                                        <h4 class="rbt-title-style-3">My Profile</h4>
+                                    </div>
+                                    <!-- Start Profile Row  -->
+                                    <div class="rbt-profile-row row row--15">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="rbt-profile-content b2">Registration Date</div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="rbt-profile-content b2">February 25, 2025 6:01 am</div>
                                         </div>
                                     </div>
-                                </div>
+                                    <!-- End Profile Row  -->
 
-                                <div class="rbt-card-bottom">
-                                    <a class="rbt-btn btn-sm bg-primary-opacity w-100 text-center" href="#">Download Certificate</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Card  -->
-
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-05.jpg" alt="Card image">
-                                    <div class="rbt-badge-3 bg-white">
-                                        <span>-20%</span>
-                                        <span>Off</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                                    <!-- Start Profile Row  -->
+                                    <div class="rbt-profile-row row row--15 mt--15">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="rbt-profile-content b2">First Name</div>
                                         </div>
-                                        <span class="rating-count"> (15 Reviews)</span>
-                                    </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">SQL Beginner Advanced</a>
-                                </h4>
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>12 Lessons</li>
-                                    <li><i class="feather-users"></i>50 Students</li>
-                                </ul>
-                                <p class="rbt-card-text">It is a long established fact that a reader will be
-                                    distracted
-                                    by the readable.</p>
-                                <div class="rbt-author-meta mb--20">
-                                    <div class="rbt-avater">
-                                        <a href="#">
-                                            <img src="assets/images/client/avatar-02.png" alt="Sophia Jaymes">
-                                        </a>
-                                    </div>
-                                    <div class="rbt-author-info">
-                                        By <a href="profile.html">Angela</a> In <a href="#">Development</a>
-                                    </div>
-                                </div>
-                                <div class="rbt-card-bottom">
-                                    <div class="rbt-price">
-                                        <span class="current-price">$60</span>
-                                        <span class="off-price">$120</span>
-                                    </div>
-                                    <a class="rbt-btn-link left-icon" href="course-details.html"><i
-                                            class="feather-shopping-cart"></i> Add To Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Card  -->
-
-                    <!-- Start Single Card  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="rbt-card variation-01 rbt-hover">
-                            <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-06.jpg" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="rbt-card-body">
-                                <div class="rbt-card-top">
-                                    <div class="rbt-review">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="rbt-profile-content b2">Emily</div>
                                         </div>
-                                        <span class="rating-count"> (5 Reviews)</span>
                                     </div>
-                                    <div class="rbt-bookmark-btn">
-                                        <a class="rbt-round-btn" title="Bookmark" href="#"><i
-                                                class="feather-bookmark"></i></a>
-                                    </div>
-                                </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">JS Zero to Mastery</a>
-                                </h4>
-                                <ul class="rbt-meta">
-                                    <li><i class="feather-book"></i>8 Lessons</li>
-                                    <li><i class="feather-users"></i>30 Students</li>
-                                </ul>
-                                <p class="rbt-card-text">Angular Js long fact that a reader will be distracted by
-                                    the readable.</p>
+                                    <!-- End Profile Row  -->
 
-                                <div class="rbt-author-meta mb--20">
-                                    <div class="rbt-avater">
-                                        <a href="#">
-                                            <img src="assets/images/client/avatar-03.png" alt="Sophia Jaymes">
-                                        </a>
+                                    <!-- Start Profile Row  -->
+                                    <div class="rbt-profile-row row row--15 mt--15">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="rbt-profile-content b2">Username</div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="rbt-profile-content b2">instructor</div>
+                                        </div>
                                     </div>
-                                    <div class="rbt-author-info">
-                                        By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
+                                    <!-- End Profile Row  -->
+
+                                    <!-- Start Profile Row  -->
+                                    <div class="rbt-profile-row row row--15 mt--15">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="rbt-profile-content b2">Email</div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="rbt-profile-content b2">example@gmail.com</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="rbt-card-bottom">
-                                    <div class="rbt-price">
-                                        <span class="current-price">$80</span>
-                                        <span class="off-price">$100</span>
+                                    <!-- End Profile Row  -->
+
+                                    <!-- Start Profile Row  -->
+                                    <div class="rbt-profile-row row row--15 mt--15">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="rbt-profile-content b2">Phone Number</div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="rbt-profile-content b2">+1-202-555-0174</div>
+                                        </div>
                                     </div>
-                                    <a class="rbt-btn-link" href="course-details.html">Learn
-                                        More<i class="feather-arrow-right"></i></a>
+                                    <!-- End Profile Row  -->
+
+                                    <!-- Start Change Password Section -->
+                                    <div class="rbt-profile-row row row--15 mt--30">
+                                        <div class="col-lg-12">
+                                            <div class="section-title mt--20 mb--10">
+                                                <h4 class="rbt-title-style-3">Change Password</h4>
+                                            </div>
+
+                                            <!-- Success Alert -->
+                                            @if(session('success'))
+                                                <div class="alert alert-success">
+                                                    {{ session('success') }}
+                                                </div>
+                                            @endif
+
+                                            <!-- Error Alert -->
+                                            @if ($errors->any())
+                                                <div class="alert alert-danger">
+                                                    <ul class="mb-0">
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
+
+                                            <form method="POST" action="#">
+                                                @csrf
+                                                <div class="row g-4">
+                                                    <div class="col-md-4">
+                                                        <label for="current_password" class="form-label">Current Password</label>
+                                                        <input type="password" class="form-control" id="current_password" name="current_password" required>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="new_password" class="form-label">New Password</label>
+                                                        <input type="password" class="form-control" id="new_password" name="new_password" required>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="new_password_confirmation" class="form-label">Confirm Password</label>
+                                                        <input type="password" class="form-control" id="new_password_confirmation" name="new_password_confirmation" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt--20">
+                                                    <button type="submit" class="rbt-btn btn-gradient hover-icon-reverse">
+                                                        <span class="icon-reverse-wrapper">
+                                                            <span class="btn-text">Update Password</span>
+                                                            <span class="btn-icon"><i class="feather-lock"></i></span>
+                                                            <span class="btn-icon"><i class="feather-lock"></i></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- End Change Password Section -->
+
+                                    <!-- End Profile Row  -->
                                 </div>
                             </div>
+                            <!-- End Instructor Profile  -->
+
                         </div>
                     </div>
-                    <!-- End Single Card  -->
-                </div>
-            </div>
-            <!-- End Card Area -->
 
-            <div class="row">
-                <div class="col-lg-12 mt--60">
-                    <nav>
-                        <ul class="rbt-pagination">
-                            <li><a href="#" aria-label="Previous"><i class="feather-chevron-left"></i></a></li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#" aria-label="Next"><i class="feather-chevron-right"></i></a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Card Style -->
+
+
+
+
     <div class="rbt-separator-mid">
         <div class="container">
             <hr class="rbt-separator m-0">

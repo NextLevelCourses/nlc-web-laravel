@@ -21,19 +21,20 @@
                         </p>
 
                         <ul class="social-icon social-default justify-content-start">
-                            <li><a href="https://www.facebook.com/">
-                                    <i class="feather-facebook"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.twitter.com">
-                                    <i class="feather-twitter"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.instagram.com/">
+                            <li><a href="https://www.instagram.com/nextlevelcourse_official">
                                     <i class="feather-instagram"></i>
                                 </a>
                             </li>
-                            <li><a href="https://www.linkdin.com/">
+                            <li><a>
+                                    <i class="feather-facebook"></i>
+                                </a>
+                            </li>
+                            <li><a>
+                                    <i class="feather-twitter"></i>
+                                </a>
+                            </li>
+                
+                            <li><a>
                                     <i class="feather-linkedin"></i>
                                 </a>
                             </li>

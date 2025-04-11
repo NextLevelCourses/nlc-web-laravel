@@ -11,9 +11,9 @@ class DashboardController extends Controller
         return view('dashboard.module.Home');
     }
 
-    public function DetailCourse()
+    public function DetailCourseDashboard()
     {
-        return view('dashboard.module.DetailCourse');
+        return view('dashboard.module.DetailCourseDashboard');
     }
 
     public function MyProfile()
@@ -48,4 +48,23 @@ class DashboardController extends Controller
     {
         return view('dashboard.module.Learning');
     }
+
+    public function AboutUs()
+    {
+        return view('dashboard.module.AboutUs');
+    }
+
+    public function Cart()
+    {
+        return view('dashboard.module.Cart');
+    }
+
+    public function MyCommunity()
+    {
+        return view('dashboard.module.MyCommunity');
+    }
+
+    
+    
+
 }
