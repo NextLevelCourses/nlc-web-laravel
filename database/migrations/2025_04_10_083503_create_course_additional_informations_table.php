@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('total_course_duration_minute', 45)->nullable();
             $table->text('tags')->nullable();
             $table->text('target_audience')->nullable();
-            $table->foreignId('courses_id')->constrained('courses')->onDelete('cascade');
-            
+            $table->foreignId('courses_id')->references('id')->on('courses');
             $table->timestamps();
         });
     }

@@ -19,11 +19,8 @@ return new class extends Migration
             $table->string('photo', 45)->nullable();
             $table->string('provinsi', 45)->nullable();
             $table->string('city', 45)->nullable();
-            $table->unsignedBigInteger('users_id');
+            $table->foreignId('users_id')->references('id')->on('users');
             $table->timestamps();
-
-            // Foreign key ke tabel users
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

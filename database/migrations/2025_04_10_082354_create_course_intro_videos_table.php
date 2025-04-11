@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('source', 45);
             $table->string('link', 45);
-            $table->foreignId('courses_id')->constrained('courses'); // Assuming the parent table is 'courses'
+            $table->foreignId('courses_id')->references('id')->on('courses'); // Assuming the parent table is 'courses'
             $table->timestamps();
         });
     }

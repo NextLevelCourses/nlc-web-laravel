@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('course_certificate', function (Blueprint $table) {
+        Schema::create('course_certificates', function (Blueprint $table) {
             $table->id();
-            $table->enum('orientation', ['landscape', 'potrait']); 
+            $table->enum('orientation', ['landscape', 'potrait']);
             $table->string('file', 45);
-            $table->foreignId('courses_id')->constrained('courses'); // Assuming the parent table is 'courses'
-            
+            $table->foreignId('courses_id')->references('id')->on('courses'); // Assuming the parent table is 'courses'
+
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('course_certificate');
+        Schema::dropIfExists('course_certificates');
     }
 };

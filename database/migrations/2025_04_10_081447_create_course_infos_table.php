@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('discount_price', 120)->nullable();
             $table->enum('status_price', ['paid', 'free'])->default('free');
             $table->string('thumbnail', 45)->nullable();
-            $table->unsignedInteger('categories_id');
+            $table->foreignId('categories_id')->references('id')->on('categories');
             $table->timestamps();
 
             // Optional: Tambahkan foreign key jika tabel courses dan categories ada
