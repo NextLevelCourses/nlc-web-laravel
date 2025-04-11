@@ -1,4 +1,5 @@
-<header class="rbt-header rbt-header-10">
+ <!-- Start Header Area -->
+    <header class="rbt-header rbt-header-10">
         <div class="rbt-sticky-placeholder"></div>
 
         <!-- Start Header Top  -->

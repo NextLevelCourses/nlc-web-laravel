@@ -25,8 +25,6 @@
                                 <p class="description has-medium-font-size mt--20">
     Mulai perjalanan belajarmu bersama Next Level Course! Pelajari berbagai materi dari dasar hingga level expert—semua disajikan dengan cara yang aplikatif, menarik, dan mudah diikuti.
 </p>
-
-
                                 <div class="slider-btn rbt-button-group justify-content-center">
                                     <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ route('landing.Register') }}">
                                         <span class="icon-reverse-wrapper">

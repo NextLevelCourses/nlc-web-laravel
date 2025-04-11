@@ -1,30 +1,32 @@
 @extends('dashboard.layouts.Master')
 
-@section('title', '')
+@section('title', 'Cart')
 
 @section('content')
-    <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-inner text-center">
-                        <h2 class="title">Cart</h2>
-                        <ul class="page-list">
-                            <li class="rbt-breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li>
-                                <div class="icon-right"><i class="feather-chevron-right"></i></div>
-                            </li>
-                            <li class="rbt-breadcrumb-item active">Cart</li>
-                        </ul>
-                    </div>
+<!-- Start Learning Cart Header -->
+<div class="rbt-breadcrumb-default ptb--25 ptb_md--50 ptb_sm--30 bg-gradient-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner text-center">
+                    <h2 class="title">Your Learning Cart is Ready!</h2>
+                    <div class="slider-btn rbt-button-group justify-content-center">
+                                    <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ route('Dashboard.Home') }}">
+                                        <span class="icon-reverse-wrapper">
+                                            <span class="btn-text">Add Course</span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Breadcrumb Area -->
+</div>
+<!-- End Learning Cart Header -->
 
-    <div class="rbt-cart-area bg-color-white rbt-section-gap">
+    <div class="rbt-cart-area bg-color-white pt--20">
         <div class="cart_area">
             <div class="container">
                 <div class="row">
@@ -43,52 +45,104 @@
                                             <th class="pro-remove">Remove</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/1.jpg" alt="Product"></a></td>
-                                            <td class="pro-title"><a href="#">Miracle Morning</a></td>
-                                            <td class="pro-price"><span>$48.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="1"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$100.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/7.jpg" alt="Product"></a></td>
-                                            <td class="pro-title"><a href="#">Happy Strong</a></td>
-                                            <td class="pro-price"><span>$100.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="2"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$120.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/3.jpg" alt="Product"></a></td>
-                                            <td class="pro-title"><a href="#">Rich Dad Poor Dad</a></td>
-                                            <td class="pro-price"><span>$59.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="1"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$150.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/4.jpg" alt="Product"></a></td>
-                                            <td class="pro-title"><a href="#">Momentum Theorem</a></td>
-                                            <td class="pro-price"><span>$250.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="1"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$270.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                        <tbody>
+    <!-- Item 1 -->
+    <tr>
+        <td class="pro-thumbnail">
+            <a href="#"><img src="{{ asset('assets/images/product/1.jpg') }}" alt="Miracle Morning"></a>
+        </td>
+        <td class="pro-title">
+            <a href="#">Miracle Morning</a>
+        </td>
+        <td class="pro-price">
+            <span>$48.00</span>
+        </td>
+        <td class="pro-quantity">
+            <div class="pro-qty">
+                <input type="text" value="1" class="form-control text-center">
+            </div>
+        </td>
+        <td class="pro-subtotal">
+            <span>$100.00</span>
+        </td>
+        <td class="pro-remove">
+            <a href="#"><i class="feather-x text-danger"></i></a>
+        </td>
+    </tr>
+
+    <!-- Item 2 -->
+    <tr>
+        <td class="pro-thumbnail">
+            <a href="#"><img src="{{ asset('assets/images/product/7.jpg') }}" alt="Happy Strong"></a>
+        </td>
+        <td class="pro-title">
+            <a href="#">Happy Strong</a>
+        </td>
+        <td class="pro-price">
+            <span>$100.00</span>
+        </td>
+        <td class="pro-quantity">
+            <div class="pro-qty">
+                <input type="text" value="2" class="form-control text-center">
+            </div>
+        </td>
+        <td class="pro-subtotal">
+            <span>$120.00</span>
+        </td>
+        <td class="pro-remove">
+            <a href="#"><i class="feather-x text-danger"></i></a>
+        </td>
+    </tr>
+
+    <!-- Item 3 -->
+    <tr>
+        <td class="pro-thumbnail">
+            <a href="#"><img src="{{ asset('assets/images/product/3.jpg') }}" alt="Rich Dad Poor Dad"></a>
+        </td>
+        <td class="pro-title">
+            <a href="#">Rich Dad Poor Dad</a>
+        </td>
+        <td class="pro-price">
+            <span>$59.00</span>
+        </td>
+        <td class="pro-quantity">
+            <div class="pro-qty">
+                <input type="text" value="1" class="form-control text-center">
+            </div>
+        </td>
+        <td class="pro-subtotal">
+            <span>$150.00</span>
+        </td>
+        <td class="pro-remove">
+            <a href="#"><i class="feather-x text-danger"></i></a>
+        </td>
+    </tr>
+
+    <!-- Item 4 -->
+    <tr>
+        <td class="pro-thumbnail">
+            <a href="#"><img src="{{ asset('assets/images/product/4.jpg') }}" alt="Momentum Theorem"></a>
+        </td>
+        <td class="pro-title">
+            <a href="#">Momentum Theorem</a>
+        </td>
+        <td class="pro-price">
+            <span>$250.00</span>
+        </td>
+        <td class="pro-quantity">
+            <div class="pro-qty">
+                <input type="text" value="1" class="form-control text-center">
+            </div>
+        </td>
+        <td class="pro-subtotal">
+            <span>$270.00</span>
+        </td>
+        <td class="pro-remove">
+            <a href="#"><i class="feather-x text-danger"></i></a>
+        </td>
+    </tr>
+</tbody>
+
                                 </table>
                             </div>
                         </form>
@@ -162,4 +216,4 @@
             <hr class="rbt-separator m-0">
         </div>
     </div>
-    @endection
+@endsection

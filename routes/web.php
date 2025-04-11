@@ -24,7 +24,6 @@ Route::get('/Wishlist', [DashboardController::class, 'Wishlist'])->name('Dashboa
 Route::get('/OrderHistory', [DashboardController::class, 'OrderHistory'])->name('Dashboard.OrderHistory');
 Route::get('/CreateCourse', [DashboardController::class, 'CreateCourse'])->name('Dashboard.CreateCourse');
 Route::get('/Checkout', [DashboardController::class, 'Checkout'])->name('Dashboard.Checkout');
-Route::get('/DashboardOurCommunity', [DashboardController::class, 'OurCommunity'])->name('Dashboard.OurCommunity');
 Route::get('/Learning', [DashboardController::class, 'Learning'])->name('Dashboard.Learning');
 Route::get('/AboutUs', [DashboardController::class, 'AboutUs'])->name('Dashboard.AboutUs');
 Route::get('/Cart', [DashboardController::class, 'Cart'])->name('Dashboard.Cart');

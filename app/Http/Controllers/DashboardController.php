@@ -39,10 +39,6 @@ class DashboardController extends Controller
     {
         return view('dashboard.module.Checkout');
     }
-    public function OurCommunity()
-    {
-        return view('dashboard.module.OurCommunity');
-    }
 
     public function Learning()
     {
