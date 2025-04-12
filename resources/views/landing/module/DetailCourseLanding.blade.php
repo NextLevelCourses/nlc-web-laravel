@@ -17,7 +17,7 @@
                             <li>
                                 <div class="icon-right"><i class="feather-chevron-right"></i></div>
                             </li>
-                            <li class="rbt-breadcrumb-item active">Web Development</li>
+                            <li class="rbt-breadcrumb-item active">Detail Course</li>
                         </ul>
                         <h2 class="title">The Complete Histudy 2024: From Zero to Expert!</h2>
                         <p class="description">Master Python by building 100 projects in 100 days. Learn data
@@ -1260,7 +1260,7 @@
                                                 <span class="current-price">$60</span>
                                                 <span class="off-price">$120</span>
                                             </div>
-                                            <a class="rbt-btn-link left-icon" href="course-details.html"><i
+                                            <a class="rbt-btn-link left-icon" href="{{ route('landing.Register') }}"><i
                                                     class="feather-shopping-cart"></i> Add To Cart</a>
                                         </div>
                                     </div>
@@ -1305,14 +1305,14 @@
                                 </div>
 
                                 <div class="add-to-card-button mt--15">
-                                    <a class="rbt-btn btn-gradient icon-hover w-100 d-block text-center" href="#">
+                                    <a class="rbt-btn btn-gradient icon-hover w-100 d-block text-center" href="{{ route('landing.Register') }}">
                                         <span class="btn-text">Add to Cart</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </a>
                                 </div>
 
                                 <div class="buy-now-btn mt--15">
-                                    <a class="rbt-btn btn-border icon-hover w-100 d-block text-center" href="#">
+                                    <a class="rbt-btn btn-border icon-hover w-100 d-block text-center" href="{{ route('landing.Register') }}">
                                         <span class="btn-text">Buy Now</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </a>
@@ -1577,7 +1577,7 @@
                                     <span class="current-price">$60</span>
                                     <span class="off-price">$120</span>
                                 </div>
-                                <a class="rbt-btn-link left-icon" href="course-details.html"><i
+                                <a class="rbt-btn-link left-icon" href="{{ route('landing.Register') }}"><i
                                         class="feather-shopping-cart"></i> Add To Cart</a>
                             </div>
                         </div>
