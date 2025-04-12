@@ -1,23 +1,21 @@
-@extends('landing.layouts.Master')
+@extends('dashboard.layouts.Master')
 
-@section('title', 'All Course')
+@section('title', 'Home')
 
 @section('content')
-    <a class="close_side_menu" href="javascript:void(0);"></a>
-
-    <div class="rbt-page-banner-wrapper">
+<div class="rbt-page-banner-wrapper">
         <!-- Start Banner BG Image  -->
         <div class="rbt-banner-image"></div>
         <!-- End Banner BG Image  -->
         <div class="rbt-banner-content">
             <!-- Start Banner Content Top  -->
-            <div class="rbt-banner-content-top pt--70">
+            <div class="rbt-banner-content-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- Start Breadcrumb Area  -->
                             <ul class="page-list">
-                                <li class="rbt-breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="rbt-breadcrumb-item"><a href="#">Home</a></li>
                                 <li>
                                     <div class="icon-right"><i class="feather-chevron-right"></i></div>
                                 </li>
@@ -45,11 +43,8 @@
                             <div class="rbt-sorting-list d-flex flex-wrap align-items-center">
                                 <div class="rbt-short-item switch-layout-container">
                                     <ul class="course-switch-layout">
-                                        <li class="course-switch-item"><button class="rbt-grid-view active"
-                                                title="Grid Layout"><i class="feather-grid"></i> <span
-                                                    class="text">Grid</span></button></li>
-                                        <li class="course-switch-item"><button class="rbt-list-view" title="List Layout"><i
-                                                    class="feather-list"></i> <span class="text">List</span></button></li>
+                                        <li class="course-switch-item"><button class="rbt-grid-view active" title="Grid Layout"><i class="feather-grid"></i> <span class="text">Grid</span></button></li>
+                                        <li class="course-switch-item"><button class="rbt-list-view" title="List Layout"><i class="feather-list"></i> <span class="text">List</span></button></li>
                                     </ul>
                                 </div>
                                 <div class="rbt-short-item">
@@ -58,8 +53,7 @@
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-12 col-md-12">
-                            <div
-                                class="rbt-sorting-list d-flex flex-wrap align-items-end justify-content-start justify-content-xl-end">
+                            <div class="rbt-sorting-list d-flex flex-wrap align-items-end justify-content-start justify-content-xl-end">
                                 <div class="rbt-short-item">
                                     <form action="#" class="rbt-search-style me-0">
                                         <input type="text" placeholder="Search Your Course..">
@@ -96,62 +90,50 @@
                                         <div class="rbt-single-widget rbt-widget-categories has-show-more">
                                             <div class="inner">
                                                 <h4 class="rbt-widget-title-2">Categories</h4>
-                                                <ul
-                                                    class="rbt-sidebar-list-wrapper categories-list-check has-show-more-inner-content">
+                                                <ul class="rbt-sidebar-list-wrapper categories-list-check has-show-more-inner-content">
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-1" type="checkbox" name="cat-list-1">
-                                                        <label for="cat-list-1">Art &amp; Humanities <span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="cat-list-1">Art &amp; Humanities <span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-2" type="checkbox" name="cat-list-2">
-                                                        <label for="cat-list-2">Web Design <span
-                                                                class="rbt-lable count">20</span></label>
+                                                        <label for="cat-list-2">Web Design <span class="rbt-lable count">20</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-3" type="checkbox" name="cat-list-3">
-                                                        <label for="cat-list-3">Graphic Design <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <label for="cat-list-3">Graphic Design <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-4" type="checkbox" name="cat-list-4">
-                                                        <label for="cat-list-4">Art &amp; Humanities <span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="cat-list-4">Art &amp; Humanities <span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-5" type="checkbox" name="cat-list-5">
-                                                        <label for="cat-list-5">Technology <span
-                                                                class="rbt-lable count">20</span></label>
+                                                        <label for="cat-list-5">Technology <span class="rbt-lable count">20</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-6" type="checkbox" name="cat-list-6">
-                                                        <label for="cat-list-6">Humanities Art <span
-                                                                class="rbt-lable count">25</span></label>
+                                                        <label for="cat-list-6">Humanities Art <span class="rbt-lable count">25</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-7" type="checkbox" name="cat-list-7">
-                                                        <label for="cat-list-7">Management <span
-                                                                class="rbt-lable count">50</span></label>
+                                                        <label for="cat-list-7">Management <span class="rbt-lable count">50</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-8" type="checkbox" name="cat-list-8">
-                                                        <label for="cat-list-8">Photoshop <span
-                                                                class="rbt-lable count">45</span></label>
+                                                        <label for="cat-list-8">Photoshop <span class="rbt-lable count">45</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-9" type="checkbox" name="cat-list-9">
-                                                        <label for="cat-list-9">Online Course <span
-                                                                class="rbt-lable count">45</span></label>
+                                                        <label for="cat-list-9">Online Course <span class="rbt-lable count">45</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-10" type="checkbox" name="cat-list-10">
-                                                        <label for="cat-list-10">English Clud <span
-                                                                class="rbt-lable count">45</span></label>
+                                                        <label for="cat-list-10">English Clud <span class="rbt-lable count">45</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="cat-list-11" type="checkbox" name="cat-list-11">
-                                                        <label for="cat-list-11">Graphic Design <span
-                                                                class="rbt-lable count">45</span></label>
+                                                        <label for="cat-list-11">Graphic Design <span class="rbt-lable count">45</span></label>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -170,12 +152,12 @@
                                                         <input id="cat-radio-1" type="radio" name="rbt-radio">
                                                         <label for="cat-radio-1">
                                                             <span class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                            </span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
                                                             <span class="rbt-lable count">5</span>
                                                         </label>
                                                     </li>
@@ -183,12 +165,12 @@
                                                         <input id="cat-radio-2" type="radio" name="rbt-radio">
                                                         <label for="cat-radio-2">
                                                             <span class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                            </span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                        </span>
                                                             <span class="rbt-lable count">4</span>
                                                         </label>
                                                     </li>
@@ -196,12 +178,12 @@
                                                         <input id="cat-radio-3" type="radio" name="rbt-radio">
                                                         <label for="cat-radio-3">
                                                             <span class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                            </span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                        </span>
                                                             <span class="rbt-lable count">3</span>
                                                         </label>
                                                     </li>
@@ -209,12 +191,12 @@
                                                         <input id="cat-radio-4" type="radio" name="rbt-radio">
                                                         <label for="cat-radio-4">
                                                             <span class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                            </span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                        </span>
                                                             <span class="rbt-lable count">2</span>
                                                         </label>
                                                     </li>
@@ -223,12 +205,12 @@
                                                         <input id="cat-radio-5" type="radio" name="rbt-radio">
                                                         <label for="cat-radio-5">
                                                             <span class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                                <i class="off fas fa-star"></i>
-                                                            </span>
+                            <i class="fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                            <i class="off fas fa-star"></i>
+                        </span>
                                                             <span class="rbt-lable count">1</span>
                                                         </label>
                                                     </li>
@@ -246,23 +228,19 @@
                                                 <ul class="rbt-sidebar-list-wrapper instructor-list-check">
                                                     <li class="rbt-check-group">
                                                         <input id="ins-list-1" type="checkbox" name="ins-list-1">
-                                                        <label for="ins-list-1">Slaughter <span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="ins-list-1">Slaughter <span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="ins-list-2" type="checkbox" name="ins-list-2">
-                                                        <label for="ins-list-2">Patrick <span
-                                                                class="rbt-lable count">20</span></label>
+                                                        <label for="ins-list-2">Patrick <span class="rbt-lable count">20</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="ins-list-3" type="checkbox" name="ins-list-3">
-                                                        <label for="ins-list-3">Angela <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <label for="ins-list-3">Angela <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="ins-list-4" type="checkbox" name="ins-list-4">
-                                                        <label for="ins-list-4">Fatima Asrafy <span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="ins-list-4">Fatima Asrafy <span class="rbt-lable count">15</span></label>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -278,18 +256,15 @@
                                                 <ul class="rbt-sidebar-list-wrapper prices-list-check">
                                                     <li class="rbt-check-group">
                                                         <input id="prices-list-1" type="checkbox" name="prices-list-1">
-                                                        <label for="prices-list-1">All <span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="prices-list-1">All <span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="prices-list-2" type="checkbox" name="prices-list-2">
-                                                        <label for="prices-list-2">Free <span
-                                                                class="rbt-lable count">0</span></label>
+                                                        <label for="prices-list-2">Free <span class="rbt-lable count">0</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="prices-list-3" type="checkbox" name="prices-list-3">
-                                                        <label for="prices-list-3">Paid <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <label for="prices-list-3">Paid <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -305,23 +280,19 @@
                                                 <ul class="rbt-sidebar-list-wrapper lavels-list-check">
                                                     <li class="rbt-check-group">
                                                         <input id="lavels-list-1" type="checkbox" name="lavels-list-1">
-                                                        <label for="lavels-list-1">All Levels<span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <label for="lavels-list-1">All Levels<span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="lavels-list-2" type="checkbox" name="lavels-list-2">
-                                                        <label for="lavels-list-2">Beginner <span
-                                                                class="rbt-lable count">0</span></label>
+                                                        <label for="lavels-list-2">Beginner <span class="rbt-lable count">0</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="lavels-list-3" type="checkbox" name="lavels-list-3">
-                                                        <label for="lavels-list-3">Intermediate <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <label for="lavels-list-3">Intermediate <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
                                                         <input id="lavels-list-4" type="checkbox" name="lavels-list-4">
-                                                        <label for="lavels-list-4">Expert <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <label for="lavels-list-4">Expert <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -336,28 +307,20 @@
                                                 <h4 class="rbt-widget-title-2">Features</h4>
                                                 <ul class="rbt-sidebar-list-wrapper features-list-check">
                                                     <li class="rbt-check-group">
-                                                        <input id="features-list-1" type="checkbox"
-                                                            name="features-list-1">
-                                                        <label for="features-list-1">SubTitle<span
-                                                                class="rbt-lable count">15</span></label>
+                                                        <input id="features-list-1" type="checkbox" name="features-list-1">
+                                                        <label for="features-list-1">SubTitle<span class="rbt-lable count">15</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
-                                                        <input id="features-list-2" type="checkbox"
-                                                            name="features-list-2">
-                                                        <label for="features-list-2">Quizzes <span
-                                                                class="rbt-lable count">0</span></label>
+                                                        <input id="features-list-2" type="checkbox" name="features-list-2">
+                                                        <label for="features-list-2">Quizzes <span class="rbt-lable count">0</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
-                                                        <input id="features-list-3" type="checkbox"
-                                                            name="features-list-3">
-                                                        <label for="features-list-3">Coding Skill <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <input id="features-list-3" type="checkbox" name="features-list-3">
+                                                        <label for="features-list-3">Coding Skill <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                     <li class="rbt-check-group">
-                                                        <input id="features-list-4" type="checkbox"
-                                                            name="features-list-4">
-                                                        <label for="features-list-4">Practice Test <span
-                                                                class="rbt-lable count">10</span></label>
+                                                        <input id="features-list-4" type="checkbox" name="features-list-4">
+                                                        <label for="features-list-4">Practice Test <span class="rbt-lable count">10</span></label>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -387,7 +350,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="#">
                                         <img src="assets/images/course/course-online-01.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -413,7 +376,7 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">React Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">React Front To Back</a>
                                     </h4>
 
                                     <ul class="rbt-meta">
@@ -438,7 +401,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -450,7 +413,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-02.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -471,7 +434,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">PHP Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">PHP Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -495,7 +458,8 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon" href="{{ route('Dashboard.DetailCourseDashboard') }}"><i
+                                                class="feather-shopping-cart"></i> Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -506,7 +470,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-03.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-10%</span>
@@ -531,7 +495,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Angular Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">Angular Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -555,7 +519,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -567,7 +531,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-04.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -593,7 +557,7 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Web Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">Web Front To Back</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>20 Lessons</li>
@@ -617,7 +581,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -629,7 +593,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-05.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-20%</span>
@@ -654,7 +618,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">SQL Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">SQL Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -678,7 +642,8 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon" href="{{ route('Dashboard.DetailCourseDashboard') }}"><i
+                                                class="feather-shopping-cart"></i> Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -689,7 +654,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-06.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -710,7 +675,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">JS Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">JS Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -734,7 +699,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -746,7 +711,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-04.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -772,7 +737,7 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Web Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">Web Front To Back</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>20 Lessons</li>
@@ -796,7 +761,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -808,7 +773,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-05.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-20%</span>
@@ -833,7 +798,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">SQL Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">SQL Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -857,7 +822,8 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon" href="{{ route('Dashboard.DetailCourseDashboard') }}"><i
+                                                class="feather-shopping-cart"></i> Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -868,7 +834,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('Dashboard.DetailCourseDashboard') }}">
                                         <img src="assets/images/course/course-online-06.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -889,7 +855,7 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">JS Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('Dashboard.DetailCourseDashboard') }}">JS Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -913,7 +879,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('Dashboard.DetailCourseDashboard') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -926,13 +892,11 @@
                         <div class="col-lg-12 mt--60">
                             <nav>
                                 <ul class="rbt-pagination">
-                                    <li><a href="#" aria-label="Previous"><i class="feather-chevron-left"></i></a>
-                                    </li>
+                                    <li><a href="#" aria-label="Previous"><i class="feather-chevron-left"></i></a></li>
                                     <li><a href="#">1</a></li>
                                     <li class="active"><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
-                                    <li><a href="#" aria-label="Next"><i class="feather-chevron-right"></i></a>
-                                    </li>
+                                    <li><a href="#" aria-label="Next"><i class="feather-chevron-right"></i></a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -948,5 +912,4 @@
             <hr class="rbt-separator m-0">
         </div>
     </div>
-
-@endsection
+    @endsection
