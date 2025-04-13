@@ -63,9 +63,9 @@
                                                     <li><a href="{{ route('Dashboard.Home') }}"><i class="feather-home"></i><span>Dashboard</span></a></li>
                                                     <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-user"></i><span>My Profile</span></a></li>
                                                     <li><a href="{{ route('Dashboard.EnrolledCourses') }}"><i class="feather-book-open"></i><span>Enrolled Courses</span></a></li>
-                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
-                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-star"></i><span>Reviews</span></a></li>
-                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.Wishlist') }}"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
+                                                    <li><a href="#"><i class="feather-star"></i><span>Reviews</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.OrderHistory') }}"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
                                                 </ul>
                                             </nav>
 
@@ -75,7 +75,7 @@
 
                                             <nav class="mainmenu-nav">
                                                 <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                                                    <li><a href="index.html"><i class="feather-log-out"></i><span>Logout</span></a></li>
+                                                    <li><a href="{{ route('landing.Register') }}"><i class="feather-log-out"></i><span>Logout</span></a></li>
                                                 </ul>
                                             </nav>
                                         </div>

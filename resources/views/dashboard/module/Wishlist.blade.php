@@ -50,7 +50,31 @@
                                             <div class="pro-qty"><input type="text" value="1"></div>
                                         </td>
                                         <td class="pro-addtocart">
-                                            <button class="rbt-btn btn-gradient">add to cart</button>
+                                            <button class="rbt-btn btn-gradient" onclick="addToCart(1)">Add to Cart</button>
+
+                                            <script>
+                                                function addToCart(productId) {
+                                                    fetch("{{ route('Dashboard.Cart') }}", {
+                                                        method: "POST",
+                                                        headers: {
+                                                            "Content-Type": "application/json",
+                                                            "X-CSRF-TOKEN": '{{ csrf_token() }}'
+                                                        },
+                                                        body: JSON.stringify({ product_id: productId })
+                                                    })
+                                                    .then(response => response.json())
+                                                    .then(data => {
+                                                        alert(data.message); // Menampilkan alert sukses
+                                                        console.log('Cart sekarang:', data.cart); // Lihat cart di console
+                                                    })
+                                                    .catch(error => {
+                                                        console.error('Gagal:', error);
+                                                        alert('Gagal menambahkan ke cart');
+                                                    });
+                                                }
+                                            </script>
+                                            
+                                            <!-- <button class="rbt-btn btn-gradient">add to cart</button> -->
                                         </td>
                                         <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
                                         </td>
