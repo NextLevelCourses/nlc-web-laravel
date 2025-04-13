@@ -493,40 +493,18 @@
                                                     <span>My Profile</span>
                                                 </a>
                                             </li>
+
                                             <li>
-                                                <a href="{{ route('Dashboard.Wishlist') }}">
-                                                    <i class="feather-heart"></i>
-                                                    <span>Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('Dashboard.Home') }}">
-                                                    <i class="feather-shopping-bag"></i>
-                                                    <span>Enrolled Courses</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('Dashboard.OrderHistory') }}">
+                                                <a href="#">
                                                     <i class="feather-clock"></i>
                                                     <span>Order History</span>
                                                 </a>
                                             </li>
+
                                             <li>
-                                                <a href="instructor-reviews.html">
-                                                    <i class="feather-star"></i>
-                                                    <span>Reviews</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-my-quiz-attempts.html">
-                                                    <i class="feather-list"></i>
-                                                    <span>My Quiz Attempts</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-quiz-attempts.html">
-                                                    <i class="feather-message-square"></i>
-                                                    <span>FAQs</span>
+                                                <a href="{{ route('Dashboard.EnrolledCourses') }}">
+                                                    <i class="feather-shopping-bag"></i>
+                                                    <span>My Courses</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -536,7 +514,7 @@
 
                                         <ul class="user-list-wrapper">
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ route('landing.Register') }}">
                                                     <i class="feather-log-out"></i>
                                                     <span>Logout</span>
                                                 </a>

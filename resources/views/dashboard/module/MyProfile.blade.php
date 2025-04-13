@@ -60,12 +60,12 @@
                                             </div>
                                             <nav class="mainmenu-nav">
                                                 <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                                                    <li><a href="student-dashboard.html"><i class="feather-home"></i><span>Dashboard</span></a></li>
-                                                    <li><a href="student-profile.html"><i class="feather-user"></i><span>My Profile</span></a></li>
-                                                    <li><a href="student-enrolled-courses.html"><i class="feather-book-open"></i><span>Enrolled Courses</span></a></li>
-                                                    <li><a href="student-wishlist.html"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
-                                                    <li><a href="student-reviews.html"><i class="feather-star"></i><span>Reviews</span></a></li>
-                                                    <li><a href="student-order-history.html"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.Home') }}"><i class="feather-home"></i><span>Dashboard</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-user"></i><span>My Profile</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.EnrolledCourses') }}"><i class="feather-book-open"></i><span>Enrolled Courses</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-star"></i><span>Reviews</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
                                                 </ul>
                                             </nav>
 
@@ -75,7 +75,6 @@
 
                                             <nav class="mainmenu-nav">
                                                 <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                                                    <li><a href="student-settings.html"><i class="feather-settings"></i><span>Settings</span></a></li>
                                                     <li><a href="index.html"><i class="feather-log-out"></i><span>Logout</span></a></li>
                                                 </ul>
                                             </nav>
@@ -93,59 +92,61 @@
                                     <div class="section-title">
                                         <h4 class="rbt-title-style-3">My Profile</h4>
                                     </div>
-                                    <!-- Start Profile Row  -->
+
+                                    <!-- Start Profile Row -->
                                     <div class="rbt-profile-row row row--15">
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rbt-profile-content b2">Registration Date</div>
+                                            <label class="rbt-profile-content b2">Registration Date</label>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
-                                            <div class="rbt-profile-content b2">February 25, 2025 6:01 am</div>
+                                            <input type="text" class="form-control" value="February 25, 2025 6:01 am" readonly />
                                         </div>
                                     </div>
-                                    <!-- End Profile Row  -->
+                                    <!-- End Profile Row -->
 
-                                    <!-- Start Profile Row  -->
                                     <div class="rbt-profile-row row row--15 mt--15">
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rbt-profile-content b2">First Name</div>
+                                            <label class="rbt-profile-content b2">First Name</label>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
-                                            <div class="rbt-profile-content b2">Emily</div>
+                                            <input type="text" class="form-control" value="Emily" />
                                         </div>
                                     </div>
-                                    <!-- End Profile Row  -->
 
-                                    <!-- Start Profile Row  -->
                                     <div class="rbt-profile-row row row--15 mt--15">
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rbt-profile-content b2">Username</div>
+                                            <label class="rbt-profile-content b2">Username</label>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
-                                            <div class="rbt-profile-content b2">instructor</div>
+                                            <input type="text" class="form-control" value="instructor" />
                                         </div>
                                     </div>
-                                    <!-- End Profile Row  -->
 
-                                    <!-- Start Profile Row  -->
                                     <div class="rbt-profile-row row row--15 mt--15">
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rbt-profile-content b2">Email</div>
+                                            <label class="rbt-profile-content b2">Email</label>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
-                                            <div class="rbt-profile-content b2">example@gmail.com</div>
+                                            <input type="email" class="form-control" value="example@gmail.com" />
                                         </div>
                                     </div>
-                                    <!-- End Profile Row  -->
 
-                                    <!-- Start Profile Row  -->
                                     <div class="rbt-profile-row row row--15 mt--15">
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rbt-profile-content b2">Phone Number</div>
+                                            <label class="rbt-profile-content b2">Phone Number</label>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
-                                            <div class="rbt-profile-content b2">+1-202-555-0174</div>
+                                            <input type="text" class="form-control" value="+1-202-555-0174" />
                                         </div>
                                     </div>
+
+                                    <!-- Update Button -->
+                                    <div class="text-end mt--30">
+                                        <button class="rbt-btn btn-gradient btn-md radius-round-10 btn btn-primary">Update Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+
                                     <!-- End Profile Row  -->
 
                                     <!-- Start Change Password Section -->
