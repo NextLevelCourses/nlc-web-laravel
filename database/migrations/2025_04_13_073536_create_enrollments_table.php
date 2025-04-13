@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('course_sections', function (Blueprint $table) {
+        Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('courses_id')->references('id')->on('courses');
-            $table->string('name', 128);
-            $table->string('topic_summary', 128)->nullable();
-            $table->tinyInteger('status_cart')->default(0);
             $table->timestamps();
         });
     }
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('course_sections');
+        Schema::dropIfExists('enrollments');
     }
 };
