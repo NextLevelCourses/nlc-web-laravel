@@ -28,4 +28,5 @@ Route::get('/Learning', [DashboardController::class, 'Learning'])->name('Dashboa
 Route::get('/AboutUs', [DashboardController::class, 'AboutUs'])->name('Dashboard.AboutUs');
 Route::get('/Cart', [DashboardController::class, 'Cart'])->name('Dashboard.Cart');
 Route::get('/MyCommunity', [DashboardController::class, 'MyCommunity'])->name('Dashboard.MyCommunity');
+Route::get('/Mentoring', [DashboardController::class, 'Mentoring'])->name('Dashboard.Mentoring');
 
