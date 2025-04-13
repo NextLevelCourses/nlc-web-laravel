@@ -862,49 +862,54 @@
         </div>
 
 
-        <!-- Start Modal Area  -->
-        <div class="rbt-default-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="rbt-round-btn" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="feather-x"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="inner rbt-default-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h5 class="modal-title mb--20" id="exampleModalLabel">Add Topic</h5>
-                                    <div class="course-field mb--20">
-                                        <label for="modal-field-1">Topic Name</label>
-                                        <input id="modal-field-1" type="text">
-                                        <small><i class="feather-info"></i> Topic titles are displayed publicly wherever
-                                            required. Each topic may contain one or more lessons, quiz and
-                                            assignments.</small>
-                                    </div>
-                                    <div class="course-field mb--20">
-                                        <label for="modal-field-2">Topic Summary</label>
-                                        <textarea id="modal-field-2"></textarea>
-                                        <small><i class="feather-info"></i> Add a summary of short text to prepare
-                                            students for the activities for the topic. The text is shown on the course
-                                            page beside the tooltip beside the topic name.</small>
-                                    </div>
+      <!-- Start Modal Area -->
+    <div class="rbt-default-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="rbt-round-btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="feather-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner rbt-default-form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h5 class="modal-title mb--20" id="exampleModalLabel">Add Topic</h5>
+                                <div class="course-field mb--20">
+                                    <label for="modal-field-1">Topic Name</label>
+                                    <input id="modal-field-1" type="text" class="form-control">
+                                    <small><i class="feather-info"></i> Topic titles are displayed publicly wherever required. Each topic may contain one or more lessons, quiz and assignments.</small>
+                                </div>
+                                <div class="course-field mb--20">
+                                    <label for="modal-field-2">Topic Summary</label>
+                                    <textarea id="modal-field-2" class="form-control"></textarea>
+                                    <small><i class="feather-info"></i> Add a summary of short text to prepare students for the activities for the topic. The text is shown on the course page beside the tooltip beside the topic name.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="top-circle-shape"></div>
-                    <div class="modal-footer pt--30">
-                        <div class="modal-footer pt--30">
-                        <button type="button" class="rbt-btn btn-border btn-md radius-round-10" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="rbt-btn btn-gradient btn-md radius-round-10" data-bs-dismiss="modal">OK</button>
-                    </div>
+                </div>
+                
+                <div class="mb--20 position-relative">
+                    <label for="buy-by-section" class="form-label small d-flex justify-content-between align-items-center">
+                        Buy by Section?
+                        <i class="feather-chevron-down"></i>
+                    </label>
+                    <select id="buy-by-section" class="form-select form-select-sm rounded-pill shadow-sm">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
 
-                    </div>
+                <div class="top-circle-shape"></div>
+                <div class="modal-footer pt--30">
+                    <button type="button" class="rbt-btn btn-border btn-md radius-round-10 btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="rbt-btn btn-gradient btn-md radius-round-10 btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
+    </div>
         <!-- End Modal Area  -->
 
         <!-- Start Topic Area  -->

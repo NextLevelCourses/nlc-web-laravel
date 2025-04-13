@@ -474,7 +474,7 @@
                             </li>
 
                             <li class="account-access rbt-user-wrapper d-none d-xl-block">
-                                <a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-user"></i>Admin</a>
+                                <a href="#"><i class="feather-user"></i>Admin</a>
                                 <div class="rbt-user-menu-list-wrapper">
                                     <div class="inner">
                                         <div class="rbt-admin-profile">
