@@ -1,28 +1,27 @@
-#=========================================== BEGIN::exec docker ============================
-docker-nlc-start:
-	docker compose -f dev.Docker-Compose.yml up -d
-#stop docker nlc
-docker-nlc-stop:
-	docker compose -f dev.Docker-Compose.yml down
-#list docker nlc
-docker-nlc-container:
-	docker compose -f dev.Docker-Compose.yml ps
-#list docker images
-docker-nlc-images:
-	docker image ls
-#restart docker nlc
-docker-nlc-restart:
-	docker compose -f dev.Docker-Compose.yml restart
-#logs docker nlc
-docker-nlc-logs:
-	docker compose -f dev.Docker-Compose.yml logs -f
-#build docker nlc
-docker-nlc-build:
-	docker compose -f dev.Docker-Compose.yml build app
-#=========================================== END::exec docker ============================
 
 #=========================================== BEGIN::exec docker app:development ============================
-#exec run migrate only
+dev-docker-nlc-start:
+	docker compose -f dev.Docker-Compose.yml up -d
+#stop docker nlc
+dev-docker-nlc-stop:
+	docker compose -f dev.Docker-Compose.yml down
+#list docker nlc
+dev-docker-nlc-container:
+	docker compose -f dev.Docker-Compose.yml ps
+#list docker images
+dev-docker-nlc-images:
+	docker image ls
+#restart docker nlc
+dev-docker-nlc-restart:
+	docker compose -f dev.Docker-Compose.yml restart
+#logs docker nlc
+dev-docker-nlc-logs:
+	docker compose -f dev.Docker-Compose.yml logs -f
+#build docker nlc
+dev-docker-nlc-build:
+	docker compose -f dev.Docker-Compose.yml build app
+
+#================================================== migration ========================================
 dev-docker-nlc-migrate:
 	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate
 dev-docker-nlc-migrate-rollback:
@@ -41,6 +40,28 @@ dev-docker-nlc-composer:
 
 
 #=========================================== BEGIN::exec docker app:production ============================
+prod-docker-nlc-start:
+	docker compose -f prod.Docker-Compose.yml up -d
+#stop docker nlc
+prod-docker-nlc-stop:
+	docker compose -f prod.Docker-Compose.yml down
+#list docker nlc
+prod-docker-nlc-container:
+	docker compose -f prod.Docker-Compose.yml ps
+#list docker images
+prod-docker-nlc-images:
+	docker image ls
+#restart docker nlc
+prod-docker-nlc-restart:
+	docker compose -f prod.Docker-Compose.yml restart
+#logs docker nlc
+prod-docker-nlc-logs:
+	docker compose -f prod.Docker-Compose.yml logs -f
+#build docker nlc
+prod-docker-nlc-build:
+	docker compose -f prod.Docker-Compose.yml build app
+
+#===================================================== migration ===========================================
 #exec run migrate only
 prod-docker-nlc-migrate:
 	docker compose -f prod.Docker-Compose.yml exec app php artisan migrate
