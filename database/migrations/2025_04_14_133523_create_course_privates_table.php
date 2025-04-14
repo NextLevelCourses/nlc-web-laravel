@@ -11,10 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('enrollments', function (Blueprint $table) {
+        //course private for private class
+        Schema::create('course_privates', function (Blueprint $table) {
             $table->id();
             $table->foreignId('users_id')->references('id')->on('users');
-            $table->foreignId('courses_id')->references('id')->on('courses');
+            $table->string('title', 45);
+            $table->text('description');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->enum('status', ['general', 'project']); //status private class if mentoring project or private mentoring
             $table->timestamps();
         });
     }
@@ -24,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('enrollments');
+        Schema::dropIfExists('course_privates');
     }
 };
