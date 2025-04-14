@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('users_id')->references('id')->on('users');
+            $table->foreignId('courses_id')->references('id')->on('courses');
             $table->timestamps();
         });
     }

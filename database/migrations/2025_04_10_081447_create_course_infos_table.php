@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('course_infos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('course_id')->constrained();
             $table->string('title', 45);
             $table->string('slug', 45);
             $table->text('about')->nullable();
@@ -25,6 +24,7 @@ return new class extends Migration
             $table->string('discount_price', 120)->nullable();
             $table->enum('status_price', ['paid', 'free'])->default('free');
             $table->string('thumbnail', 45)->nullable();
+            $table->foreignId('courses_id')->references('id')->on('courses');
             $table->foreignId('categories_id')->references('id')->on('categories');
             $table->timestamps();
 
