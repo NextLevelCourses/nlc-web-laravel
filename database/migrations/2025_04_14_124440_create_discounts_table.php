@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('discounts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('courses_id')->references('id')->on('courses');
-            $table->string('code');
+            $table->string('code')->unique();
             $table->decimal('value');
             $table->dateTime('expired_at');
             $table->timestamps();
