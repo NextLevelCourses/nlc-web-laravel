@@ -890,19 +890,9 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="mb--20 position-relative">
-                    <label for="buy-by-section" class="form-label small d-flex justify-content-between align-items-center">
-                        Buy by Section?
-                        <i class="feather-chevron-down"></i>
-                    </label>
-                    <select id="buy-by-section" class="form-select form-select-sm rounded-pill shadow-sm">
-                        <option value="no">No</option>
-                        <option value="yes">Yes</option>
-                    </select>
+                <div class="course-field mb--20">
+                    <p class="rbt-checkbox-wrapper mb--5 d-flex"><input id="rbt-checkbox-11" name="rbt-checkbox-11" type="checkbox" value="yes"><label for="rbt-checkbox-11">Enable Course Preview</label></p>
                 </div>
-
-                <div class="top-circle-shape"></div>
                 <div class="modal-footer pt--30">
                     <button type="button" class="rbt-btn btn-border btn-md radius-round-10 btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="rbt-btn btn-gradient btn-md radius-round-10 btn btn-primary" data-bs-dismiss="modal">OK</button>
@@ -1482,7 +1472,7 @@
         </div>
         <!-- Assignment Modal -->
 
-        <div class="rbt-separator-mid">
+        <!-- <div class="rbt-separator-mid">
             <div class="container">
                 <hr class="rbt-separator m-0">
             </div>
@@ -1491,11 +1481,11 @@
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-12">
-                        <div class="inner text-center">
+                        <div class="inner text-center"> -->
 
-                            <div class="logo logo-dark">
+                            <!-- <div class="logo logo-dark">
                                 <a href="index.html">
-                                    <img src="assets/images/logo/logo.png" alt="Education Logo Images">
+                                    <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}" alt="Education Logo Images">
                                 </a>
                             </div>
 
@@ -1503,16 +1493,16 @@
                                 <a href="index.html">
                                     <img src="assets/images/dark/logo/logo-light.png" alt="Education Logo Images">
                                 </a>
-                            </div>
+                            </div> -->
                             <!-- Social icone Area -->
-                            <ul class="social-icon social-default">
+                            <!-- <ul class="social-icon social-default">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
+                            </ul> -->
                             <!-- End -->
-                            <div class="text mt--20">
+                            <!-- <div class="text mt--20">
                                 <p>© 2024 <a target="_blank" href="https://rainbowthemes.net/portfolio">Rainbow-Themes</a>. All
                                     Rights Reserved.</p>
                             </div>
@@ -1520,7 +1510,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <div class="rbt-progress-parent">

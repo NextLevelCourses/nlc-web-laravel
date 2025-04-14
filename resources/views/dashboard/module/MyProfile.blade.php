@@ -86,143 +86,129 @@
                             <!-- End Dashboard Sidebar  -->
                         </div>
                         <div class="col-lg-9">
-                            <!-- Start Instructor Profile  -->
+                            <!-- Start Instructor Profile -->
                             <div class="rbt-dashboard-content bg-color-white rbt-shadow-box">
                                 <div class="content">
                                     <div class="section-title">
                                         <h4 class="rbt-title-style-3">My Profile</h4>
                                     </div>
 
-                                    <!-- Start Profile Row -->
-                                    <div class="rbt-profile-row row row--15">
-                                        <div class="col-lg-4 col-md-4">
-                                            <label class="rbt-profile-content b2">Registration Date</label>
-                                        </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <input type="text" class="form-control" value="February 25, 2025 6:01 am" readonly />
-                                        </div>
-                                    </div>
-                                    <!-- End Profile Row -->
+            <!-- Alert Messages -->
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
 
-                                    <div class="rbt-profile-row row row--15 mt--15">
-                                        <div class="col-lg-4 col-md-4">
-                                            <label class="rbt-profile-content b2">First Name</label>
-                                        </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <input type="text" class="form-control" value="Emily" />
-                                        </div>
-                                    </div>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul class="mb-0">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
-                                    <div class="rbt-profile-row row row--15 mt--15">
-                                        <div class="col-lg-4 col-md-4">
-                                            <label class="rbt-profile-content b2">Username</label>
-                                        </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <input type="text" class="form-control" value="instructor" />
-                                        </div>
-                                    </div>
+            <!-- Start Form -->
+            <form method="POST" action="#">
+                @csrf
 
-                                    <div class="rbt-profile-row row row--15 mt--15">
-                                        <div class="col-lg-4 col-md-4">
-                                            <label class="rbt-profile-content b2">Email</label>
-                                        </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <input type="email" class="form-control" value="example@gmail.com" />
-                                        </div>
-                                    </div>
+                <!-- Start Profile Row -->
+                <div class="rbt-profile-row row row--15">
+                    <div class="col-lg-4 col-md-4">
+                        <label class="rbt-profile-content b2">Registration Date</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" value="February 25, 2025 6:01 am" readonly />
+                    </div>
+                </div>
 
-                                    <div class="rbt-profile-row row row--15 mt--15">
-                                        <div class="col-lg-4 col-md-4">
-                                            <label class="rbt-profile-content b2">Phone Number</label>
-                                        </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <input type="text" class="form-control" value="+1-202-555-0174" />
-                                        </div>
-                                    </div>
+                <div class="rbt-profile-row row row--15 mt--15">
+                    <div class="col-lg-4 col-md-4">
+                        <label class="rbt-profile-content b2">First Name</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" name="first_name" value="Emily" />
+                    </div>
+                </div>
 
-                                    <!-- Update Button -->
-                                    <div class="text-end mt--30">
-                                        <button class="rbt-btn btn-gradient btn-md radius-round-10 btn btn-primary">Update Profile</button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="rbt-profile-row row row--15 mt--15">
+                    <div class="col-lg-4 col-md-4">
+                        <label class="rbt-profile-content b2">Username</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" name="username" value="instructor" />
+                    </div>
+                </div>
 
-                                    <!-- End Profile Row  -->
+                <div class="rbt-profile-row row row--15 mt--15">
+                    <div class="col-lg-4 col-md-4">
+                        <label class="rbt-profile-content b2">Email</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="email" class="form-control" name="email" value="example@gmail.com" />
+                    </div>
+                </div>
 
-                                    <!-- Start Change Password Section -->
-                                    <div class="rbt-profile-row row row--15 mt--30">
-                                        <div class="col-lg-12">
-                                            <div class="section-title mt--20 mb--10">
-                                                <h4 class="rbt-title-style-3">Change Password</h4>
-                                            </div>
+                <div class="rbt-profile-row row row--15 mt--15">
+                    <div class="col-lg-4 col-md-4">
+                        <label class="rbt-profile-content b2">Phone Number</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" value="+1-202-555-0174" />
+                    </div>
+                </div>
 
-                                            <!-- Success Alert -->
-                                            @if(session('success'))
-                                                <div class="alert alert-success">
-                                                    {{ session('success') }}
-                                                </div>
-                                            @endif
-
-                                            <!-- Error Alert -->
-                                            @if ($errors->any())
-                                                <div class="alert alert-danger">
-                                                    <ul class="mb-0">
-                                                        @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endif
-
-                                            <form method="POST" action="#">
-                                                @csrf
-                                                <div class="row g-4">
-                                                    <div class="col-md-4">
-                                                        <label for="current_password" class="form-label">Current Password</label>
-                                                        <input type="password" class="form-control" id="current_password" name="current_password" required>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <label for="new_password" class="form-label">New Password</label>
-                                                        <input type="password" class="form-control" id="new_password" name="new_password" required>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <label for="new_password_confirmation" class="form-label">Confirm Password</label>
-                                                        <input type="password" class="form-control" id="new_password_confirmation" name="new_password_confirmation" required>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mt--20">
-                                                    <button type="submit" class="rbt-btn btn-gradient hover-icon-reverse">
-                                                        <span class="icon-reverse-wrapper">
-                                                            <span class="btn-text">Update Password</span>
-                                                            <span class="btn-icon"><i class="feather-lock"></i></span>
-                                                            <span class="btn-icon"><i class="feather-lock"></i></span>
-                                                        </span>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <!-- End Change Password Section -->
-
-                                    <!-- End Profile Row  -->
-                                </div>
-                            </div>
-                            <!-- End Instructor Profile  -->
-
+                <!-- Change Password Form -->
+                <form method="POST" action="#">
+                    @csrf
+                    <div class="rbt-profile-row row row--15 mt--15">
+                        <div class="col-lg-4 col-md-4">
+                            <label class="rbt-profile-content b2">Current Password</label>
+                        </div>
+                        <div class="col-lg-8 col-md-8">
+                            <input type="password" class="form-control" name="current_password" required />
                         </div>
                     </div>
 
+                    <div class="row row--15 mt--15">
+                        <div class="col-lg-4 col-md-4">
+                            <label class="rbt-profile-content b2">New Password</label>
+                        </div>
+                        <div class="col-lg-8 col-md-8">
+                            <input type="password" class="form-control" name="new_password" required />
+                        </div>
+                    </div>
+
+                    <div class="row row--15 mt--15">
+                        <div class="col-lg-4 col-md-4">
+                            <label class="rbt-profile-content b2">Confirm Password</label>
+                        </div>
+                        <div class="col-lg-8 col-md-8">
+                            <input type="password" class="form-control" name="new_password_confirmation" required />
+                        </div>
+                    </div>
+
+                <!-- Save Changes Button -->
+                <div class="mt--30 text-end">
+                    <button type="submit" class="rbt-btn btn-gradient hover-icon-reverse">
+                        <span class="icon-reverse-wrapper">
+                            <span class="btn-text">Save Changes</span>
+                            <span class="btn-icon"><i class="feather-save"></i></span>
+                            <span class="btn-icon"><i class="feather-save"></i></span>
+                        </span>
+                    </button>
                 </div>
-            </div>
+
+            </form>
+            <!-- End Form -->
         </div>
     </div>
-    <!-- End Card Style -->
+</div>
+                            
 
-
-
+                                
 
     <div class="rbt-separator-mid">
         <div class="container">

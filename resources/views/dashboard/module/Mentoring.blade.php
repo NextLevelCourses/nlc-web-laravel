@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <h4 class="rbt-card-title">
-                            <a href="{{ route('landing.Register') }}">Matematika Kelas 12 Private Class</a>
+                            <a href="{{ route('Dashboard.DetailCourseDashboard') }}">Matematika Kelas 12 Private Class</a>
                         </h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-layers"></i> Project Based</li>

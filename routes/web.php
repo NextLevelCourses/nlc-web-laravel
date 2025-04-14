@@ -31,4 +31,3 @@ Route::get('/MyCommunity', [DashboardController::class, 'MyCommunity'])->name('D
 Route::get('/Mentoring', [DashboardController::class, 'Mentoring'])->name('Dashboard.Mentoring');
 Route::get('/EnrolledCourses', [DashboardController::class, 'EnrolledCourses'])->name('Dashboard.EnrolledCourses');
 
-
