@@ -6,39 +6,39 @@ services:
         user: nextlevelcourse
         uid: 1000
       context: ./
-      dockerfile: dev.Dockerfile
+      dockerfile: prod.Dockerfile
     image: nextlevelcourse
-    container_name: nextlevelcoursedevelopment-app
+    container_name: nextlevelcourseproduction-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ./:/var/www
     depends_on:
-      - nextlevelcoursedevelopment-db-mysql
+      - nextlevelcourseproduction-db-mysql
     networks:
-      - nextlevelcoursedevelopment
+      - nextlevelcourseproduction
 
-  nextlevelcoursedevelopment-db-mysql:
+  nextlevelcourseproduction-db-mysql:
     image: mysql:8.0
-    container_name: nextlevelcoursedevelopment-mysql
+    container_name: nextlevelcourseproduction-mysql
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: dev_next_level_course
+      MYSQL_DATABASE: prod_next_level_course
       MYSQL_ROOT_PASSWORD: MLtalBcE867g
       MYSQL_PASSWORD: MLtalBcE867g
       MYSQL_USER: next_level_course
-      SERVICE_TAGS: development
+      SERVICE_TAGS: production
       SERVICE_NAME: mysql
     volumes:
       - ./nlc-compose/mysql:/docker-entrypoint-initdb.d
       - ./nlc-compose/mysql/logs:/var/log/mysql
       - ./nlc-compose/mysql/data:/var/lib/mysql
     networks:
-      - nextlevelcoursedevelopment
+      - nextlevelcourseproduction
 
   nginx:
     image: nginx:alpine
-    container_name: nextlevelcoursedevelopment-nginx
+    container_name: nextlevelcourseproduction-nginx
     restart: unless-stopped
     ports:
       - 8084:80
@@ -46,25 +46,25 @@ services:
       - ./:/var/www
       - ./nlc-compose/nginx:/etc/nginx/conf.d/
     networks:
-      - nextlevelcoursedevelopment
+      - nextlevelcourseproduction
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    container_name: nextlevelcoursedevelopment-phpmyadmin
+    container_name: nextlevelcourseproduction-phpmyadmin
     ports:
       - 8085:80
     links:
-      - nextlevelcoursedevelopment-db-mysql
+      - nextlevelcourseproduction-db-mysql
     restart: unless-stopped
     environment:
-      PMA_HOST: nextlevelcoursedevelopment-db-mysql
+      PMA_HOST: nextlevelcourseproduction-db-mysql
       PMA_USER: next_level_course
       PMA_PASSWORD: MLtalBcE867g
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     networks:
-      - nextlevelcoursedevelopment
+      - nextlevelcourseproduction
 
 networks:
-  nextlevelcoursedevelopment:
+  nextlevelcourseproduction:
     driver: bridge

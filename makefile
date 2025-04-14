@@ -1,29 +1,32 @@
-#dev docker nlc
-#start docker nlc
-dev-docker-nlc-start:
+#=========================================== BEGIN::exec docker ============================
+docker-nlc-start:
 	docker compose -f dev.Docker-Compose.yml up -d
 #stop docker nlc
-dev-docker-nlc-stop:
+docker-nlc-stop:
 	docker compose -f dev.Docker-Compose.yml down
 #list docker nlc
-dev-docker-nlc-container:
+docker-nlc-container:
 	docker compose -f dev.Docker-Compose.yml ps
 #list docker images
-dev-docker-nlc-images:
+docker-nlc-images:
 	docker image ls
 #restart docker nlc
-dev-docker-nlc-restart:
+docker-nlc-restart:
 	docker compose -f dev.Docker-Compose.yml restart
 #logs docker nlc
-dev-docker-nlc-logs:
+docker-nlc-logs:
 	docker compose -f dev.Docker-Compose.yml logs -f
 #build docker nlc
-dev-docker-nlc-build:
+docker-nlc-build:
 	docker compose -f dev.Docker-Compose.yml build app
-#=========================================== BEGIN::exec app ============================
-#exec run migration
+#=========================================== END::exec docker ============================
+
+#=========================================== BEGIN::exec docker app:development ============================
+#exec run migrate only
 dev-docker-nlc-migrate:
 	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate
+dev-docker-nlc-migrate-rollback:
+	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate:rollback
 #exec run migrate refresh
 dev-docker-nlc-refresh:
 	docker compose -f dev.Docker-Compose.yml exec app php artisan migrate:refresh
@@ -33,11 +36,30 @@ dev-docker-nlc-seed:
 #exec app docker via composer install
 dev-docker-nlc-composer:
 	docker compose -f dev.Docker-Compose.yml exec app composer install
-#=========================================== END::exec app ============================
+#=========================================== END::exec docker app:development ============================
 
 
 
-#=========================================== app nlc ============================
+#=========================================== BEGIN::exec docker app:production ============================
+#exec run migrate only
+prod-docker-nlc-migrate:
+	docker compose -f prod.Docker-Compose.yml exec app php artisan migrate
+prod-docker-nlc-migrate-rollback:
+	docker compose -f prod.Docker-Compose.yml exec app php artisan migrate:rollback
+#exec run migrate refresh
+prod-docker-nlc-refresh:
+	docker compose -f prod.Docker-Compose.yml exec app php artisan migrate:refresh
+#exec run seeder
+prod-docker-nlc-seed:
+	docker compose -f prod.Docker-Compose.yml exec app php artisan db:seed
+#exec app docker via composer install
+prod-docker-nlc-composer:
+	docker compose -f prod.Docker-Compose.yml exec app composer install
+#=========================================== END::exec docker app:production ============================
+
+
+
+#=========================================== BEGIN::exec local app ============================
 #run app nlc via shell
 nlc-serve:
 	php artisan serve
@@ -57,3 +79,4 @@ nlc-rollback:
 #generate key
 nlc-key-generate:
 	php artisan key:generate
+#=========================================== END::exec local app ============================
