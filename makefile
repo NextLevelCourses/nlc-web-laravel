@@ -87,6 +87,7 @@ nlc-serve:
 #migrate schema
 nlc-migrate:
 	php artisan migrate
+	php artisan db:seed
 #seed database
 nlc-seed:
 	php artisan db:seed
