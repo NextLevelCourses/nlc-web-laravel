@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Arguments define in dev-docker-compose.yml
+# Arguments define in prod-docker-compose.yml
 ARG user
 ARG uid
 

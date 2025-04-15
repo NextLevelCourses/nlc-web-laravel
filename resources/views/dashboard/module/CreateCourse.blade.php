@@ -861,51 +861,61 @@
             </div>
         </div>
 
-
-        <!-- Start Modal Area  -->
+            <!-- Start Modal Area -->
         <div class="rbt-default-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+
                     <div class="modal-header">
-                        <button type="button" class="rbt-round-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="rbt-round-btn btn-close" data-bs-dismiss="modal" aria-label="Close">
                             <i class="feather-x"></i>
                         </button>
                     </div>
+
                     <div class="modal-body">
                         <div class="inner rbt-default-form">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h5 class="modal-title mb--20" id="exampleModalLabel">Add Topic</h5>
+
+                                    <!-- Topic Name -->
                                     <div class="course-field mb--20">
                                         <label for="modal-field-1">Topic Name</label>
-                                        <input id="modal-field-1" type="text">
-                                        <small><i class="feather-info"></i> Topic titles are displayed publicly wherever
-                                            required. Each topic may contain one or more lessons, quiz and
-                                            assignments.</small>
+                                        <input id="modal-field-1" type="text" class="form-control">
+                                        <small><i class="feather-info"></i> Topic titles are displayed publicly wherever required. Each topic may contain one or more lessons, quiz and assignments.</small>
                                     </div>
+
+                                    <!-- Topic Summary -->
                                     <div class="course-field mb--20">
                                         <label for="modal-field-2">Topic Summary</label>
-                                        <textarea id="modal-field-2"></textarea>
-                                        <small><i class="feather-info"></i> Add a summary of short text to prepare
-                                            students for the activities for the topic. The text is shown on the course
-                                            page beside the tooltip beside the topic name.</small>
+                                        <textarea id="modal-field-2" class="form-control"></textarea>
+                                        <small><i class="feather-info"></i> Add a summary of short text to prepare students for the activities for the topic. The text is shown on the course page beside the tooltip beside the topic name.</small>
                                     </div>
+
+                                    <!-- Enable Cart (Checkbox) -->
+                                    <div class="course-field mb--20">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input me-2" type="checkbox" id="rbt-checkbox-11" name="rbt-checkbox-11" value="yes">
+                                            <label class="form-check-label mb-0" for="rbt-checkbox-11">Enable Cart</label>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="top-circle-shape"></div>
+
+                    <!-- Modal Footer -->
                     <div class="modal-footer pt--30">
-                        <div class="modal-footer pt--30">
-                        <button type="button" class="rbt-btn btn-border btn-md radius-round-10" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="rbt-btn btn-gradient btn-md radius-round-10" data-bs-dismiss="modal">OK</button>
+                        <button type="button" class="rbt-btn btn-border btn-md radius-round-10 btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="rbt-btn btn-gradient btn-md radius-round-10 btn btn-primary" data-bs-dismiss="modal">OK</button>
                     </div>
 
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- End Modal Area  -->
+        <!-- End Modal Area -->
+
 
         <!-- Start Topic Area  -->
         <div class="rbt-default-modal modal fade" id="UpdateTopic" tabindex="-1" aria-labelledby="UpdateTopicLabel" aria-hidden="true">
@@ -1022,7 +1032,6 @@
                                                             class="feather-paperclip"></i></span></span></button><input type="file" style="display: none;"></div>
                                     </div>
                                     <div class="course-field mb--20">
-                                        <p class="rbt-checkbox-wrapper mb--5 d-flex"><input id="rbt-checkbox-11" name="rbt-checkbox-11" type="checkbox" value="yes"><label for="rbt-checkbox-11">Enable Course Preview</label></p>
                                     </div>
                                 </div>
                             </div>
@@ -1477,7 +1486,7 @@
         </div>
         <!-- Assignment Modal -->
 
-        <div class="rbt-separator-mid">
+        <!-- <div class="rbt-separator-mid">
             <div class="container">
                 <hr class="rbt-separator m-0">
             </div>
@@ -1486,11 +1495,11 @@
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-12">
-                        <div class="inner text-center">
+                        <div class="inner text-center"> -->
 
-                            <div class="logo logo-dark">
+                            <!-- <div class="logo logo-dark">
                                 <a href="index.html">
-                                    <img src="assets/images/logo/logo.png" alt="Education Logo Images">
+                                    <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}" alt="Education Logo Images">
                                 </a>
                             </div>
 
@@ -1498,16 +1507,16 @@
                                 <a href="index.html">
                                     <img src="assets/images/dark/logo/logo-light.png" alt="Education Logo Images">
                                 </a>
-                            </div>
+                            </div> -->
                             <!-- Social icone Area -->
-                            <ul class="social-icon social-default">
+                            <!-- <ul class="social-icon social-default">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
+                            </ul> -->
                             <!-- End -->
-                            <div class="text mt--20">
+                            <!-- <div class="text mt--20">
                                 <p>© 2024 <a target="_blank" href="https://rainbowthemes.net/portfolio">Rainbow-Themes</a>. All
                                     Rights Reserved.</p>
                             </div>
@@ -1515,13 +1524,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
-
-    <div class="rbt-progress-parent">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-    <!-- End Create Course Form -->
 @endsection
