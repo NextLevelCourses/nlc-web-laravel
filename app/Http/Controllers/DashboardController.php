@@ -60,7 +60,15 @@ class DashboardController extends Controller
         return view('dashboard.module.MyCommunity');
     }
 
-    
-    
+    public function Mentoring()
+    {
+        return view('dashboard.module.Mentoring');
+    }
 
+    public function EnrolledCourses()
+    {
+        return view('dashboard.module.EnrolledCourses');
+    }
+
+    
 }

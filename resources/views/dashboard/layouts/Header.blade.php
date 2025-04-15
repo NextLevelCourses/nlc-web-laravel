@@ -299,8 +299,7 @@
                                 </a>
                                 <ul class="submenu">
                                     <li><a href="{{ route('Dashboard.MyProfile') }}">Profile Setting</a></li>
-                                    <li><a href="#">My Learning</a></li>
-                                    <li><a href="#">Payment History</a></li>
+                                    <li><a href="{{ route('Dashboard.EnrolledCourses') }}">My Course</a></li>
                                 </ul>
                             </li>
 
@@ -393,7 +392,7 @@
 
 
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
+                                <a href="#">Mentoring <i class="feather-chevron-down"></i></a>
                                 <!-- Start Mega Menu -->
                                 <div class="rbt-megamenu grid-item-2"> <!-- 2 columns layout -->
                                     <div class="wrapper">
@@ -401,22 +400,22 @@
                                             <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                 <h6 class="rbt-mega-menu-title">Private Programs</h6>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="/SpecialPrograms#private-class">Biologi SMA</a></li>
-                                                    <li><a href="/SpecialPrograms#private-class">Fisika SMA <span
+                                                    <li><a href="#">Biologi SMA</a></li>
+                                                    <li><a href="#">Fisika SMA <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="/SpecialPrograms#private-class">Matematika</a></li>
-                                                    <li><a href="/SpecialPrograms#private-class">Bahasa Inggris</a></li>
+                                                    <li><a href="#">Matematika</a></li>
+                                                    <li><a href="#">Bahasa Inggris</a></li>
                                                     </ul>
                                             </div> 
 
                                             <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                 <h6 class="rbt-mega-menu-title">Project Based</h6>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Laravel Private Class</a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Fullstack Coaching <span
+                                                    <li><a href="#">Laravel Private Class</a></li>
+                                                    <li><a href="#">Fullstack Coaching <span
                                                                 class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Design UI/UX Private</a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Flutter Mobile Dev</a></li>
+                                                    <li><a href="#">Design UI/UX Private</a></li>
+                                                    <li><a href="#">Flutter Mobile Dev</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -424,9 +423,9 @@
                                             <div class="col-lg-12">
                                                 <div class="btn-wrapper">
                                                     <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none"
-                                                        href="#">
+                                                        href="{{ route('Dashboard.Mentoring') }}">
                                                         <span class="icon-reverse-wrapper">
-                                                            <span class="btn-text">View All Special Programs</span>
+                                                            <span class="btn-text">View All Mentoring</span>
                                                             <span class="btn-icon"><i
                                                                     class="feather-arrow-right"></i></span>
                                                             <span class="btn-icon"><i
@@ -474,7 +473,7 @@
                             </li>
 
                             <li class="account-access rbt-user-wrapper d-none d-xl-block">
-                                <a href="{{ route('Dashboard.MyProfile') }}"><i class="feather-user"></i>Admin</a>
+                                <a href="#"><i class="feather-user"></i>Admin</a>
                                 <div class="rbt-user-menu-list-wrapper">
                                     <div class="inner">
                                         <div class="rbt-admin-profile">
@@ -493,40 +492,18 @@
                                                     <span>My Profile</span>
                                                 </a>
                                             </li>
+
                                             <li>
-                                                <a href="{{ route('Dashboard.Wishlist') }}">
-                                                    <i class="feather-heart"></i>
-                                                    <span>Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('Dashboard.Home') }}">
-                                                    <i class="feather-shopping-bag"></i>
-                                                    <span>Enrolled Courses</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('Dashboard.OrderHistory') }}">
+                                                <a href="#">
                                                     <i class="feather-clock"></i>
                                                     <span>Order History</span>
                                                 </a>
                                             </li>
+
                                             <li>
-                                                <a href="instructor-reviews.html">
-                                                    <i class="feather-star"></i>
-                                                    <span>Reviews</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-my-quiz-attempts.html">
-                                                    <i class="feather-list"></i>
-                                                    <span>My Quiz Attempts</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-quiz-attempts.html">
-                                                    <i class="feather-message-square"></i>
-                                                    <span>FAQs</span>
+                                                <a href="{{ route('Dashboard.EnrolledCourses') }}">
+                                                    <i class="feather-shopping-bag"></i>
+                                                    <span>My Courses</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -536,7 +513,7 @@
 
                                         <ul class="user-list-wrapper">
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ route('landing.Register') }}">
                                                     <i class="feather-log-out"></i>
                                                     <span>Logout</span>
                                                 </a>
