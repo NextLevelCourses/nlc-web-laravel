@@ -299,8 +299,7 @@
                                 </a>
                                 <ul class="submenu">
                                     <li><a href="{{ route('Dashboard.MyProfile') }}">Profile Setting</a></li>
-                                    <li><a href="#">My Learning</a></li>
-                                    <li><a href="#">Payment History</a></li>
+                                    <li><a href="{{ route('Dashboard.EnrolledCourses') }}">My Course</a></li>
                                 </ul>
                             </li>
 

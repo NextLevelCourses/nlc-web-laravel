@@ -891,7 +891,7 @@
                     </div>
                 </div>
                 <div class="course-field mb--20">
-                    <p class="rbt-checkbox-wrapper mb--5 d-flex"><input id="rbt-checkbox-11" name="rbt-checkbox-11" type="checkbox" value="yes"><label for="rbt-checkbox-11">Enable Course Preview</label></p>
+                    <p class="rbt-checkbox-wrapper mb--5 d-flex"><input id="rbt-checkbox-11" name="rbt-checkbox-11" type="checkbox" value="yes"><label for="rbt-checkbox-11">Enable Cart</label></p>
                 </div>
                 <div class="modal-footer pt--30">
                     <button type="button" class="rbt-btn btn-border btn-md radius-round-10 btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -1512,11 +1512,4 @@
             </div>
         </div> -->
     </main>
-
-    <div class="rbt-progress-parent">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-    <!-- End Create Course Form -->
 @endsection

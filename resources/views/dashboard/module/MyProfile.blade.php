@@ -35,7 +35,7 @@
                                 <div class="tutor-btn">
                                     <a class="rbt-btn btn-md hover-icon-reverse" href="#">
                                         <span class="icon-reverse-wrapper">
-                        <span class="btn-text">Become an Instructor</span>
+                                        <span class="btn-text">Become an Instructor</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         </span>
@@ -202,17 +202,13 @@
                 </div>
 
             </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+           
+            
+            @endsection
             <!-- End Form -->
-        </div>
-    </div>
-</div>
-                            
-
-                                
-
-    <div class="rbt-separator-mid">
-        <div class="container">
-            <hr class="rbt-separator m-0">
-        </div>
-    </div>
-    @endsection
