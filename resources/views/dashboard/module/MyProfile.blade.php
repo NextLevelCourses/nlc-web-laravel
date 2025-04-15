@@ -189,8 +189,8 @@
                             <input type="password" class="form-control" name="new_password_confirmation" required />
                         </div>
                     </div>
-
-                <!-- Save Changes Button -->
+            </form>
+             <!-- Save Changes Button -->
                 <div class="mt--30 text-end">
                     <button type="submit" class="rbt-btn btn-gradient hover-icon-reverse">
                         <span class="icon-reverse-wrapper">
@@ -200,8 +200,6 @@
                         </span>
                     </button>
                 </div>
-
-            </form>
             </div>
             </div>
             </div>

@@ -887,7 +887,7 @@
                                     <small><i class="feather-info"></i> Add a summary of short text to prepare students for the activities for the topic. The text is shown on the course page beside the tooltip beside the topic name.</small>
                                 </div>
                             </div>
-                        </div>
+                        </div>e 
                     </div>
                 </div>
                 <div class="course-field mb--20">
@@ -1017,7 +1017,6 @@
                                                             class="feather-paperclip"></i></span></span></button><input type="file" style="display: none;"></div>
                                     </div>
                                     <div class="course-field mb--20">
-                                        <p class="rbt-checkbox-wrapper mb--5 d-flex"><input id="rbt-checkbox-11" name="rbt-checkbox-11" type="checkbox" value="yes"><label for="rbt-checkbox-11">Enable Course Preview</label></p>
                                     </div>
                                 </div>
                             </div>
