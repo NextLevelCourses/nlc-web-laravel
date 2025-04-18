@@ -7,12 +7,10 @@ use Illuminate\Http\Request;
 abstract class ConstantAuth
 {
     /**
-     * @var $Request
+     * @method $ConstRuleLogin
      */
 
-    public const Request = Request::class;
-
-    public function rulesLogin(): array
+    public function ConstRuleLogin(): array
     {
         return array(
             'umail' => 'required',
@@ -20,7 +18,11 @@ abstract class ConstantAuth
         );
     }
 
-    public function messageLogin(): array
+    /**
+     * @method $ConstMessageLogin
+     */
+
+    public function ConstMessageLogin(): array
     {
         return array(
             'umail.required' => 'The username or email field is required.',
@@ -28,5 +30,9 @@ abstract class ConstantAuth
         );
     }
 
-    public function logLogin() {}
+    /**
+     * @method $ConstLogLogin
+     */
+
+    public function ConstLogLogin() {}
 }
