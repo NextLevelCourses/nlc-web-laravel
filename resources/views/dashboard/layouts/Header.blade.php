@@ -527,7 +527,7 @@
 
                                      <ul class="user-list-wrapper">
                                          <li>
-                                             <a href="{{ route('landing.Register') }}">
+                                             <a href="{{ route('landing.Authentication') }}">
                                                  <i class="feather-log-out"></i>
                                                  <span>Logout</span>
                                              </a>

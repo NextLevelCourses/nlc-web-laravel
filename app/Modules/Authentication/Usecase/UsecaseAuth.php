@@ -2,4 +2,32 @@
 
 namespace App\Modules\Authentication\Usecase;
 
-class UsecaseAuth {}
+use App\Modules\Authentication\Request\RequestAuth;
+use App\Modules\Authentication\Constant\ConstantAuth;
+use App\Modules\Authentication\Services\ServicesAuth;
+use App\Modules\Authentication\Interface\InterfaceAuth;
+use Illuminate\Http\Request;
+
+class UsecaseAuth extends ServicesAuth implements InterfaceAuth
+{
+    public function __construct(
+        private RequestAuth $requestAuth,
+        private ConstantAuth $constantAuth,
+        private Request $request
+    ) {}
+
+    public function LoginCase()
+    {
+        try {
+            $this->requestAuth->RequestLogin($this->request, $this->constantAuth->rulesLogin(), $this->constantAuth->messageLogin());
+            $this->LoginServices();
+        } catch (\Exception $e) {
+        }
+    }
+
+    public function RegisterCase() {}
+
+    public function LogoutCase() {}
+
+    public function ProfileCase() {}
+}

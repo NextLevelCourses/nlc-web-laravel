@@ -61,8 +61,8 @@
                             <li><a href="{{ route('Dashboard.MyProfile') }}">Profile</a></li>
                             <li><a href="{{ route('Dashboard.OrderHistory') }}">Payments</a></li>
                             <li><a href="#">Certificates</a></li>
-                            <li><a href="{{ route('landing.Register') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
-                            <form id="logout-form" action="{{ route('landing.Register') }}" method="POST" style="display: none;">
+                            <li><a href="{{ route('landing.Authentication') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                            <form id="logout-form" action="{{ route('landing.Authentication') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
                         </ul>

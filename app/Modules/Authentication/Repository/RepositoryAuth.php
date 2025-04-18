@@ -2,4 +2,7 @@
 
 namespace App\Modules\Authentication\Repository;
 
-class RepositoryAuth {}
+class RepositoryAuth
+{
+    public function LoginRepository() {}
+}

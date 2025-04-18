@@ -29,9 +29,9 @@ class HandlerLanding
         return view('landing.module.Testimonial');
     }
 
-    public function Register()
+    public function Authentication()
     {
-        return view('landing.module.Register');
+        return view('landing.module.Authentication');
     }
 
     public function FAQs()

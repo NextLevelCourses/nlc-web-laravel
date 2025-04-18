@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Modules\Dashboard\Route;
+
 use App\Modules\Dashboard\Handler\HandlerDashboard;
 use Illuminate\Support\Facades\Route;
 

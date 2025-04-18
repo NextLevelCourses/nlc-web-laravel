@@ -1,12 +1,14 @@
 <?php
 
-use App\Modules\Landing\Handler\HandlerLanding;
+namespace App\Modules\Landing\Route;
+
 use Illuminate\Support\Facades\Route;
+use App\Modules\Landing\Handler\HandlerLanding;
 
 Route::get('/', [HandlerLanding::class, 'Index'])->name('landing.Home');
 Route::get('/About', [HandlerLanding::class, 'About'])->name('landing.About');
 Route::get('/Testimonial', [HandlerLanding::class, 'Testimonial'])->name('landing.Testimonial');
-Route::get('/Register', [HandlerLanding::class, 'Register'])->name('landing.Register');
+Route::get('/Authentication', [HandlerLanding::class, 'Authentication'])->name('landing.Authentication');
 Route::get('/FAQs', [HandlerLanding::class, 'FAQs'])->name('landing.FAQs');
 Route::get('/DetailBlog', [HandlerLanding::class, 'DetailBlog'])->name('landing.DetailBlog');
 Route::get('/DetailCourseLanding', [HandlerLanding::class, 'DetailCourseLanding'])->name('landing.DetailCourseLanding');

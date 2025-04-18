@@ -2,4 +2,9 @@
 
 namespace App\Modules\Authentication\Services;
 
-class ServicesAuth {}
+use App\Modules\Authentication\Repository\RepositoryAuth;
+
+class ServicesAuth extends RepositoryAuth
+{
+    public function LoginServices() {}
+}
