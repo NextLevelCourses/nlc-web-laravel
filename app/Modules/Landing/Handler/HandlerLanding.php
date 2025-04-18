@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Landing\Handler;
 
-use Illuminate\Http\Request;
-
-class LandingController extends Controller
+class HandlerLanding
 {
     public function Index()
     {
