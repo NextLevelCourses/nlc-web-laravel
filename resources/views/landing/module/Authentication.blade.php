@@ -88,9 +88,11 @@
                 <!-- Register Form -->
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
-                        <div class="alert alert-success" role="alert">
-                            A simple success alert—check it out!
-                        </div>
+                        @session('success')
+                            <div class="alert alert-success" role="alert">
+                                {{ $message }}
+                            </div>
+                        @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
                             @csrf
@@ -130,7 +132,7 @@
                 <div class="modal-content"
                     style="border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15);border:none">
                     <div class="modal-header" style="background:#f8f9fa;border-bottom:1px solid #eee;padding:20px 25px">
-                        <h5 class="modal-title" style="font-weight:600;color:#333">Reset Your Password</h5>
+                        <h5 class="modal-title" style="font-weight:600;color:#333">{{ __('Forgot Password') }}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                             style="background-size:60%"></button>
                     </div>

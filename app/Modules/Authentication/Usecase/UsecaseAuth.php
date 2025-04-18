@@ -19,11 +19,13 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
     public function LoginCase()
     {
         $this->requestAuth->RequestLogin($this->request, $this->constantAuth->ConstRuleLogin(), $this->constantAuth->ConstMessageLogin());
+        $this->LoginServices();
     }
 
     public function RegisterCase()
     {
         $this->requestAuth->RequestRegister($this->request, $this->constantAuth->ConstRuleRegister(), $this->constantAuth->ConstMessageRegister());
+        $this->RegisterServices();
     }
 
     public function LogoutCase() {}
