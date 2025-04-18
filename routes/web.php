@@ -15,6 +15,7 @@ Route::get('/DetailCourseLanding', [LandingController::class, 'DetailCourseLandi
 Route::get('/AllCourse', [LandingController::class, 'AllCourse'])->name('landing.AllCourse');
 Route::get('/SpecialPrograms', [LandingController::class, 'SpecialPrograms'])->name('landing.SpecialPrograms');
 Route::get('/OurCommunity', [LandingController::class, 'OurCommunity'])->name('landing.OurCommunity');
+Route::get('/ResetPassword', [LandingController::class, 'ResetPassword'])->name('landing.ResetPassword');
 
 //Dashboard Routes
 Route::get('/Home', [DashboardController::class, 'Home'])->name('Dashboard.Home');

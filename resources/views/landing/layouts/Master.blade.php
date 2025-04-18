@@ -13,8 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
 
-    <!-- CSS
-============================================ -->
+    <!-- CSS ============================================ -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick-theme.css') }}">
@@ -99,6 +98,10 @@
 <script src="{{ asset('assets/js/vendor/plyr.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
+
+<!-- Import SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 <!-- Main JS -->
 <script src="{{ asset('assets/js/main.js') }}"></script>

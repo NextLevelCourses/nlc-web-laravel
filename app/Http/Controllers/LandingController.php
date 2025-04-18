@@ -55,4 +55,9 @@ class LandingController extends Controller
     {
         return view('landing.module.OurCommunity');
     }
+
+    public function ResetPassword()
+    {
+        return view('landing.module.ResetPassword');
+    }
 }
