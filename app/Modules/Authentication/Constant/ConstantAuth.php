@@ -2,9 +2,7 @@
 
 namespace App\Modules\Authentication\Constant;
 
-use Illuminate\Http\Request;
-
-abstract class ConstantAuth
+class ConstantAuth
 {
     /**
      * @method $ConstRuleLogin
@@ -19,14 +17,36 @@ abstract class ConstantAuth
     }
 
     /**
+     * @method $ConstRuleRegister
+     */
+
+    public function ConstRuleRegister(): array
+    {
+        return array(
+            'email' => 'required',
+        );
+    }
+
+    /**
      * @method $ConstMessageLogin
      */
 
     public function ConstMessageLogin(): array
     {
         return array(
-            'umail.required' => 'The username or email field is required.',
-            'password.required' => 'The password field is required.',
+            'umail.required' => 'The username or email wajib di isi.',
+            'password.required' => 'The password wajib di isi.',
+        );
+    }
+
+    /**
+     * @method $ConstMessageRegister
+     */
+
+    public function ConstMessageRegister(): array
+    {
+        return array(
+            'email.required' => 'The email wajib di isi.',
         );
     }
 

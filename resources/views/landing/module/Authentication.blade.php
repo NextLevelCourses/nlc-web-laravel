@@ -33,16 +33,29 @@
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                         <h3 class="title">Login</h3>
-                        <form class="max-width-auto">
+                        <form class="max-width-auto" method="POST" action="{{ route('auth.login') }}">
+                            @csrf
                             <div class="form-group">
-                                <input name="con_name" type="text" />
+                                <input name="umail" type="text"
+                                    class="form-control @error('umail') is-invalid @enderror" />
                                 <label>Username or email *</label>
                                 <span class="focus-border"></span>
+                                @error('umail')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                             <div class="form-group">
-                                <input name="con_email" type="password" />
+                                <input name="password" type="password"
+                                    class="form-control @error('password') is-invalid @enderror" />
                                 <label>Password *</label>
                                 <span class="focus-border"></span>
+                                @error('password')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
 
                             <div class="row mb--30">
@@ -75,12 +88,22 @@
                 <!-- Register Form -->
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
+                        <div class="alert alert-success" role="alert">
+                            A simple success alert—check it out!
+                        </div>
                         <h3 class="title">Register</h3>
-                        <form class="max-width-auto">
+                        <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
+                            @csrf
                             <div class="form-group">
-                                <input name="register-email" type="email" required />
+                                <input name="email" type="email"
+                                    class="form-control @error('email') is-invalid @enderror" />
                                 <label>Email address *</label>
                                 <span class="focus-border"></span>
+                                @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
 
                             <div class="form-submit-group">
@@ -117,7 +140,8 @@
                                 xmlns="http://www.w3.org/2000/svg" style="color:#6c757d">
                                 <path
                                     d="M12 15V17M6 21H18C19.1046 21 20 20.1046 20 19V13C20 11.8954 19.1046 11 18 11H6C4.89543 11 4 11.8954 4 13V19C4 20.1046 4.89543 21 6 21ZM16 11V7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7V11H16Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <p class="mb-0" style="color:#6c757d">Enter your email to receive reset instructions</p>
                         </div>
