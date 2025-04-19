@@ -23,7 +23,7 @@ class ConstantAuth
     protected function ConstRuleRegister(): array
     {
         return array(
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users,email',
         );
     }
 
@@ -47,7 +47,8 @@ class ConstantAuth
     {
         return array(
             'email.required' => 'The email wajib di isi.',
-            'email.email' => 'harus sesuai dengan format email: @'
+            'email.email' => 'harus sesuai dengan format email: @',
+            'email.unique' => 'email sudah terdaftar harap daftar dengan email lain',
         );
     }
 
@@ -55,7 +56,7 @@ class ConstantAuth
      * @method $ConstMessageLog
      */
 
-    protected function ConstMessageLog($message): string
+    protected function ConstMessageLog(string $message = 'not message here'): string
     {
         return "Telah terjadi kesalahan: {$message} ";
     }

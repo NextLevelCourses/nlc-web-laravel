@@ -12,16 +12,25 @@ class HandlerAuth extends ConstantAuth
     public function __construct(
         private UsecaseAuth $usecaseAuth,
         private Request $request,
-        private DomainErrorLogAuth $domainErrorLogAuth,
     ) {}
     public function login()
     {
-        return $this->usecaseAuth->LoginCase($this->request, $this->ConstRuleLogin(), $this->ConstMessageLogin());
+        return $this->usecaseAuth->LoginCase(
+            $this->request,
+            $this->ConstRuleLogin(),
+            $this->ConstMessageLogin()
+        );
     }
 
     public function register()
     {
-        return $this->usecaseAuth->RegisterCase($this->request, $this->ConstRuleRegister(), $this->ConstMessageRegister());
+        return $this->usecaseAuth->RegisterCase(
+            $this->request,
+            $this->ConstRuleRegister(),
+            $this->ConstMessageRegister(),
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+        );
     }
 
     public function logout()
