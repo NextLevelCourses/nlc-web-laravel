@@ -2,10 +2,8 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Modules\Authentication\Mail\MailAuth;
 use Illuminate\Support\Str;
 use App\Modules\Authentication\Repository\RepositoryAuth;
-use Illuminate\Support\Facades\Mail;
 
 class ServicesAuth extends RepositoryAuth
 {
