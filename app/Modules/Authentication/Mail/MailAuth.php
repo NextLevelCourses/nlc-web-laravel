@@ -35,6 +35,6 @@ class MailAuth extends Mailable
 
     public function build()
     {
-        return $this->view('auth.email.Email');
+        return $this->view('auth.email.Email')->subject('Verification Account');
     }
 }
