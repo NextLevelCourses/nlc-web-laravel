@@ -20,13 +20,9 @@ class ServicesAuth extends RepositoryAuth
             $this->RandomPassword(),
             $this->RolesID(),
             $this->TokenVerification(),
+            now(),
+            $request->getClientIp(),
         );
-        $this->SendMailVerification($request->input('email'), $this->RandomUsername(), $this->RandomPassword(), now(), $request->getClientIp());
-    }
-
-    private static function SendMailVerification($email, $username, $password, $date_registered, $ip): void
-    {
-        Mail::to($email)->send(new MailAuth($username, $password, $date_registered, $ip, $email));
     }
 
     private static function RandomName(): string
