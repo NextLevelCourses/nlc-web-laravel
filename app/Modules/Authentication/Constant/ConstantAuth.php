@@ -8,7 +8,7 @@ class ConstantAuth
      * @method $ConstRuleLogin
      */
 
-    public function ConstRuleLogin(): array
+    protected function ConstRuleLogin(): array
     {
         return array(
             'umail' => 'required',
@@ -20,10 +20,10 @@ class ConstantAuth
      * @method $ConstRuleRegister
      */
 
-    public function ConstRuleRegister(): array
+    protected function ConstRuleRegister(): array
     {
         return array(
-            'email' => 'required',
+            'email' => 'required|email',
         );
     }
 
@@ -31,7 +31,7 @@ class ConstantAuth
      * @method $ConstMessageLogin
      */
 
-    public function ConstMessageLogin(): array
+    protected function ConstMessageLogin(): array
     {
         return array(
             'umail.required' => 'The username or email wajib di isi.',
@@ -43,10 +43,11 @@ class ConstantAuth
      * @method $ConstMessageRegister
      */
 
-    public function ConstMessageRegister(): array
+    protected function ConstMessageRegister(): array
     {
         return array(
             'email.required' => 'The email wajib di isi.',
+            'email.email' => 'harus sesuai dengan format email: @'
         );
     }
 
@@ -54,5 +55,8 @@ class ConstantAuth
      * @method $ConstLogLogin
      */
 
-    public function ConstLogLogin() {}
+    protected function ConstUserLog($message): string
+    {
+        return "Telah terjadi kesalahan: {$message} ";
+    }
 }

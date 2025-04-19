@@ -90,14 +90,19 @@
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                         @session('success')
                             <div class="alert alert-success" role="alert">
-                                {{ $message }}
+                                {{ $value }}
+                            </div>
+                        @endsession
+                        @session('error')
+                            <div class="alert alert-danger" role="alert">
+                                {{ $value }}
                             </div>
                         @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
                             @csrf
                             <div class="form-group">
-                                <input name="email" type="email"
+                                <input name="email" type="text"
                                     class="form-control @error('email') is-invalid @enderror" />
                                 <label>Email address *</label>
                                 <span class="focus-border"></span>

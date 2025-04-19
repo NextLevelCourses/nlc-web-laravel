@@ -7,8 +7,8 @@ interface InterfaceAuth
     /**
      * prepare method for prepare case business authentication
      */
-    public function LoginCase();
-    public function RegisterCase();
+    public function LoginCase($ConstRuleLogin, $ConstMessageLogin);
+    public function RegisterCase($ConstRuleRegister, $ConstMessageRegister);
     public function LogoutCase();
     public function ProfileCase();
 }
