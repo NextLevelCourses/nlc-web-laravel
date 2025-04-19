@@ -2,25 +2,21 @@
 
 namespace App\Modules\Authentication\Usecase;
 
+use App\Modules\Authentication\Domain\DomainAuth;
 use App\Modules\Authentication\Request\RequestAuth;
 use App\Modules\Authentication\Services\ServicesAuth;
 use App\Modules\Authentication\Interface\InterfaceAuth;
-use App\Modules\Authentication\Domain\DomainErrorLogAuth;
-use App\Modules\Authentication\Domain\DomainUserAuth;
 use Illuminate\Support\Facades\DB;
 
 class UsecaseAuth extends ServicesAuth implements InterfaceAuth
 {
     public function __construct(
         private RequestAuth $requestAuth,
-        private DomainErrorLogAuth $domainErrorLogAuth,
+        private DomainAuth $domainAuth,
     ) {}
 
-    public function LoginCase(
-        $request,
-        $ConstRuleLogin,
-        $ConstMessageLogin
-    ) {
+    public function LoginCase($request, $ConstRuleLogin, $ConstMessageLogin)
+    {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
@@ -29,13 +25,8 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         $this->LoginServices();
     }
 
-    public function RegisterCase(
-        $request,
-        $ConstRuleRegister,
-        $ConstMessageRegister,
-        $currentRoute,
-        $currentPath,
-    ) {
+    public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath)
+    {
         $this->requestAuth->RequestRegister(
             $request,
             $ConstRuleRegister,
@@ -49,7 +40,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
             return redirect()->route('landing.Authentication')->with('success', 'Berhasil Registrasi');
         } catch (\Exception $error) {
             DB::rollBack();
-            $this->domainErrorLogAuth->insert($error->getMessage(), $currentRoute, $currentPath);
+            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
             return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
         }
     }
