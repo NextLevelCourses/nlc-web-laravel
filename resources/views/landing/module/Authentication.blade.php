@@ -36,8 +36,7 @@
                         <form class="max-width-auto" method="POST" action="{{ route('auth.login') }}">
                             @csrf
                             <div class="form-group">
-                                <input name="umail" type="text"
-                                    class="form-control @error('umail') is-invalid @enderror" />
+                                <input name="umail" type="text" class=" @error('umail') is-invalid @enderror" />
                                 <label>Username or email *</label>
                                 <span class="focus-border"></span>
                                 @error('umail')
@@ -47,8 +46,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input name="password" type="password"
-                                    class="form-control @error('password') is-invalid @enderror" />
+                                <input name="password" type="password" class=" @error('password') is-invalid @enderror" />
                                 <label>Password *</label>
                                 <span class="focus-border"></span>
                                 @error('password')
@@ -102,8 +100,7 @@
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
                             @csrf
                             <div class="form-group">
-                                <input name="email" type="text"
-                                    class="form-control @error('email') is-invalid @enderror" />
+                                <input name="email" type="text" class=" @error('email') is-invalid @enderror" />
                                 <label>Email address *</label>
                                 <span class="focus-border"></span>
                                 @error('email')
