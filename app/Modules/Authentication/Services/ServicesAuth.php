@@ -14,7 +14,7 @@ class ServicesAuth extends RepositoryAuth
         return $this->RegisterRepository(
             $this->RandomName(),
             $this->RandomUsername(),
-            $request->email,
+            $request->input('email'),
             $this->RandomPassword(),
             $this->RolesID(),
         );
