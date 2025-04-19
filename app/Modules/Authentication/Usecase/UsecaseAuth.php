@@ -15,6 +15,11 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         private DomainAuth $domainAuth,
     ) {}
 
+    /**
+     * @method LoginCase
+     * user account login for generate session
+     */
+
     public function LoginCase($request, $ConstRuleLogin, $ConstMessageLogin)
     {
         $this->requestAuth->RequestLogin(
@@ -24,6 +29,12 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         );
         $this->LoginServices();
     }
+
+    /**
+     * @method RegisterCase
+     * register user account
+     */
+
 
     public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath, $successRegisterMessage, $errorRegisterMessage)
     {
@@ -45,7 +56,23 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         }
     }
 
+    /**
+     * @method VerificationAccount
+     *  verif account use of tokens
+     */
+
+    public function VerificationAccount($token) {}
+
+    /**
+     * @method LogoutCase
+     * logout account
+     */
     public function LogoutCase() {}
 
+
+    /**
+     * @method ProfileCase
+     * get profile by sessions
+     */
     public function ProfileCase() {}
 }

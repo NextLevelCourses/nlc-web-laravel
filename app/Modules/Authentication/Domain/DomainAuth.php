@@ -16,4 +16,6 @@ class DomainAuth
     {
         DB::insert('INSERT INTO users (name,username,email,password,roles_id,remember_token,created_at,updated_at) values (?, ?, ?, ?, ?, ?, ?, ?)', [$name, $username, $email, Hash::make($password), $roles_id, $token_verification, now(), now()]);
     }
+
+    public function DomainVerifyAccountByTokens($token) {}
 }

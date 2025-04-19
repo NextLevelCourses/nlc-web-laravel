@@ -34,6 +34,11 @@ class HandlerAuth extends ConstantAuth
         );
     }
 
+    public function verification($token)
+    {
+        return $this->usecaseAuth->VerificationAccount($token);
+    }
+
     public function logout()
     {
         return $this->usecaseAuth->LogoutCase();
