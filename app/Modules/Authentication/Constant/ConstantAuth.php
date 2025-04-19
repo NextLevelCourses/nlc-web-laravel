@@ -83,4 +83,9 @@ class ConstantAuth
      * @var $success_register
      */
     protected const SUCCESS_REGISTER = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
+
+    /**
+     * @var $failed_register
+     */
+    protected const FAILED_REGISTER = 'Gagal registrasi, maaf ada kesalahan sistem';
 }

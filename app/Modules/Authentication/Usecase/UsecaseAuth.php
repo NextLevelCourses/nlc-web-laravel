@@ -25,7 +25,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         $this->LoginServices();
     }
 
-    public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath, $successRegister)
+    public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath, $successRegisterMessage, $errorRegisterMessage)
     {
         $this->requestAuth->RequestRegister(
             $request,
@@ -37,11 +37,11 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         try {
             $this->RegisterServices($request, $currentRoute);
             DB::commit();
-            return redirect()->route('landing.Authentication')->with('success', $successRegister);
+            return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
             DB::rollBack();
             $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
-            return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
+            return redirect()->route('landing.Authentication')->with('error', $errorRegisterMessage);
         }
     }
 

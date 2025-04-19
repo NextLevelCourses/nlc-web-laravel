@@ -20,8 +20,15 @@ class MailAuth extends Mailable
      * @return void
 
      */
-
-    public function __construct() {}
+    protected $username, $password, $date_registered, $ip, $email;
+    public function __construct($username, $password, $date_registered, $ip, $email)
+    {
+        $this->username = $username;
+        $this->password = $password;
+        $this->date_registered = $date_registered;
+        $this->ip = $ip;
+        $this->email = $email;
+    }
 
     /**
 
@@ -35,6 +42,12 @@ class MailAuth extends Mailable
 
     public function build()
     {
-        return $this->view('auth.email.Email')->subject('Verification Account');
+        return $this->view('auth.email.Email')->subject('Verification Account')->compact(
+            $this->username,
+            $this->password,
+            $this->date_registered,
+            $this->ip,
+            $this->email,
+        );
     }
 }
