@@ -11,9 +11,9 @@ class ServicesAuth extends RepositoryAuth
 {
     protected function LoginServices() {}
 
-    protected function RegisterServices($request)
+    protected function RegisterServices($request): void
     {
-        return $this->RegisterRepository(
+        $this->RegisterRepository(
             $this->RandomName(),
             $this->RandomUsername(),
             $request->input('email'),
@@ -21,7 +21,12 @@ class ServicesAuth extends RepositoryAuth
             $this->RolesID(),
             $this->TokenVerification(),
         );
-        // Mail::to($request->input('email'))->send(new MailAuth());
+        $this->SendMailVerification($request->input('email'));
+    }
+
+    private static function SendMailVerification($email): void
+    {
+        Mail::to($email)->send(new MailAuth());
     }
 
     private static function RandomName(): string
