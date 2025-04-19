@@ -78,4 +78,9 @@ class ConstantAuth
     {
         return $request->path();
     }
+
+    /**
+     * @var $success_register
+     */
+    protected const SUCCESS_REGISTER = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
 }
