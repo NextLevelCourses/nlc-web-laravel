@@ -8,9 +8,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-inner text-center pt--70">
+                    <div class="breadcrumb-inner text-center pt--10">
                         <h2 class="title">Your Learning Cart is Ready!</h2>
-                        <div class="slider-btn rbt-button-group justify-content-center">
+                        <div class="slider-btn rbt-button-group justify-content-center pt--40">
                         <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ route('Dashboard.Home') }}">
                         <span class="icon-reverse-wrapper">
                         <span class="btn-text">Add Course</span>
