@@ -7,13 +7,13 @@ use App\Modules\Authentication\Services\ServicesAuth;
 use App\Modules\Authentication\Interface\InterfaceAuth;
 use App\Modules\Authentication\Domain\DomainErrorLogAuth;
 use App\Modules\Authentication\Domain\DomainUserAuth;
+use Illuminate\Support\Facades\DB;
 
 class UsecaseAuth extends ServicesAuth implements InterfaceAuth
 {
     public function __construct(
         private RequestAuth $requestAuth,
         private DomainErrorLogAuth $domainErrorLogAuth,
-        private DomainUserAuth $domainUser,
     ) {}
 
     public function LoginCase(
@@ -42,11 +42,15 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
             $ConstMessageRegister
         );
 
+        DB::beginTransaction();
         try {
-            return $this->RegisterServices($request);
+            $this->RegisterServices($request, $currentRoute);
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', 'Berhasil Registrasi');
         } catch (\Exception $error) {
+            DB::rollBack();
             $this->domainErrorLogAuth->insert($error->getMessage(), $currentRoute, $currentPath);
-            return redirect()->route($currentRoute)->with('error', $error->getMessage());
+            return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
         }
     }
 

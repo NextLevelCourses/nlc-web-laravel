@@ -2,6 +2,7 @@
 
 namespace App\Modules\Authentication\Services;
 
+use Illuminate\Support\Str;
 use App\Modules\Authentication\Repository\RepositoryAuth;
 
 class ServicesAuth extends RepositoryAuth
@@ -10,14 +11,32 @@ class ServicesAuth extends RepositoryAuth
 
     protected function RegisterServices($request)
     {
-        if (!$this->ValidateInputEmail($request)) {
-            return redirect()->route('landing.Authentication')->with('success', 'Email Valid');
-        }
-        return redirect()->route('landing.Authentication')->with('error', 'Email Not Valid');
+        return $this->RegisterRepository(
+            $this->RandomName(),
+            $this->RandomUsername(),
+            $request->email,
+            $this->RandomPassword(),
+            $this->RolesID(),
+        );
     }
 
-    private function ValidateInputEmail($request): bool
+    private static function RandomName(): string
     {
-        return (str_contains($request->input('email'), 'gmail.com')) || (str_contains($request->input('email'), 'yahoo.com')) ? false : true;
+        return 'NLC-' . Str::random(4);
+    }
+
+    private static function RandomUsername(): string
+    {
+        return 'nlc-' . Str::random(4);
+    }
+
+    private static function RandomPassword(): string
+    {
+        return Str::random(10);
+    }
+
+    private static function RolesID(): int
+    {
+        return 1;
     }
 }
