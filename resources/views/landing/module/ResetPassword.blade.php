@@ -3,6 +3,8 @@
 @section('title', 'Reset Password')
 
 @section('content')
+
+
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start breadcrumb Area -->
@@ -21,9 +23,13 @@
     <!-- End Breadcrumb Area -->
 
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
-        <div class="container">
-            <div class="row justify-content-center gy-5 row--30">
+         <div class="container">
+            <div class="row">
+                  <div class="col-lg-12" style="position: relative; height: 50vh;">
+                          <div class="col-lg-6 col-md-8" style="position: absolute; top: 40%; left: 63%; transform: translate(-50%, -50%);">
+                <!-- <div class="col-lg-12 d-flex justify-content-center align-items-center"> -->
                 <!-- Login Form -->
+                 
                 <div class="col-lg-6 col-md-8">
                     <div class="rbt-contact-form contact-form-style-1">
                         <h3 class="title text-center mb-4">Reset Password</h3>
@@ -52,54 +58,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+                </div>
+            </div>
+            
+        
 
-    <script>
-    document.getElementById("resetPasswordForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Mencegah form submit biasa
-
-        var newPassword = document.querySelector('input[name="new_password"]').value;
-        var confirmPassword = document.querySelector('input[name="confirm_password"]').value;
-
-        Swal.fire({
-            title: "Do you want to save the changes?",
-            showDenyButton: true,
-            showCancelButton: true,
-            confirmButtonText: "Save",
-            denyButtonText: `Don't save`,
-            customClass: {
-                popup: 'swal-popup-large', // Menggunakan class CSS kustom
-                title: 'swal-title-large', // Mengubah ukuran judul
-                content: 'swal-content-large' // Mengubah ukuran konten
-            },
-            // Mengubah ukuran popup melalui 'width' dan 'padding'
-            width: '500px',  // Menyesuaikan lebar popup
-            padding: '50px',  // Menyesuaikan padding di dalam popup
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire("Saved!", "", "success");
-            } else if (result.isDenied) {
-                Swal.fire("Changes are not saved", "", "info");
-            }
-        });
-    });
-</script>
-
-<style>
-    /* CSS kustom untuk memperbesar teks dalam popup Swal */
-    .swal-popup-large {
-        font-size: 1.5rem; /* Ukuran font untuk konten popup */
-    }
-
-    .swal-title-large {
-        font-size: 2rem; /* Ukuran font untuk judul */
-        font-weight: bold; /* Menebalkan judul */
-    }
-
-    .swal-content-large {
-        font-size: 1.25rem; /* Ukuran font untuk konten */
-    }
-</style>
-
-@endsection
+@endsection 
