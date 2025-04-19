@@ -2,8 +2,10 @@
 
 namespace App\Modules\Authentication\Services;
 
+use App\Modules\Authentication\Mail\MailAuth;
 use Illuminate\Support\Str;
 use App\Modules\Authentication\Repository\RepositoryAuth;
+use Illuminate\Support\Facades\Mail;
 
 class ServicesAuth extends RepositoryAuth
 {
@@ -17,7 +19,9 @@ class ServicesAuth extends RepositoryAuth
             $request->input('email'),
             $this->RandomPassword(),
             $this->RolesID(),
+            $this->TokenVerification(),
         );
+        // Mail::to($request->input('email'))->send(new MailAuth());
     }
 
     private static function RandomName(): string
@@ -38,5 +42,10 @@ class ServicesAuth extends RepositoryAuth
     private static function RolesID(): int
     {
         return 1;
+    }
+
+    private static function TokenVerification(): string
+    {
+        return Str::random(20);
     }
 }

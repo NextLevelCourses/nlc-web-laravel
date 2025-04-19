@@ -8,14 +8,15 @@ class RepositoryAuth extends DomainAuth
 {
     public function LoginRepository() {}
 
-    public function RegisterRepository(string $name, string $username, string $email, string $password, int $roles_id): void
+    public function RegisterRepository(string $name, string $username, string $email, string $password, int $roles_id, string $token_verification): void
     {
         $this->DomainUserRegister(
             $name,
             $username,
             $email,
             $password,
-            $roles_id
+            $roles_id,
+            $token_verification,
         );
     }
 }
