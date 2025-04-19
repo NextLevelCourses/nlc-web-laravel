@@ -3,7 +3,6 @@
 namespace App\Modules\Authentication\Handler;
 
 use App\Modules\Authentication\Constant\ConstantAuth;
-use App\Modules\Authentication\Domain\DomainErrorLogAuth;
 use App\Modules\Authentication\Usecase\UsecaseAuth;
 use Illuminate\Http\Request;
 
