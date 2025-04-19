@@ -52,11 +52,29 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstLogLogin
+     * @method $ConstMessageLog
      */
 
-    protected function ConstUserLog($message): string
+    protected function ConstMessageLog($message): string
     {
         return "Telah terjadi kesalahan: {$message} ";
+    }
+
+    /**
+     * @method $ConstCurrentRouteLog
+     */
+
+    protected function ConstCurrentRouteLog($request)
+    {
+        return $request->route()->getName();
+    }
+
+    /**
+     * @method $ConstCurrentPathLog
+     */
+
+    protected function ConstCurrentPathLog($request)
+    {
+        return $request->path();
     }
 }
