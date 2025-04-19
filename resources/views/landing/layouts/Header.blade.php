@@ -77,7 +77,8 @@
                                                             Intelligence
                                                             & Machine Learning <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">IoT with ESP32 99
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">IoT with
+                                                            ESP32 99
                                                             Project <span class="rbt-badge-card">New</span></a></li>
 
                                                 </ul>
@@ -87,17 +88,20 @@
                                             <div class="col-lg-4 col-xxl-4 single-mega-item">
                                                 <h5 class="mega-menu-title">Business & Soft Skills</h5>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Content Creation
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Content
+                                                            Creation
                                                             &
                                                             Personal Branding <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Public Speaking &
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Public
+                                                            Speaking &
                                                             Communication</a></li>
 
                                                     <li><a href="{{ route('landing.DetailCourseLanding') }}">Entrepreneurship
                                                             &
                                                             Business Strategy</a></li>
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Productivity &
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Productivity
+                                                            &
                                                             Time
                                                             Management <span class="rbt-badge-card">New</span></a></li>
                                                 </ul>
@@ -110,12 +114,14 @@
                                                     <li><a href="{{ route('landing.DetailCourseLanding') }}">Science
                                                             Experiments at
                                                             Home</a></li>
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Basic English &
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Basic
+                                                            English &
                                                             Conversation Practice</a></li>
                                                     <li><a href="{{ route('landing.DetailCourseLanding') }}">Math Fun &
                                                             Problem
                                                             Solving Games</a></li>
-                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Basic English &
+                                                    <li><a href="{{ route('landing.DetailCourseLanding') }}">Basic
+                                                            English &
                                                             Conversation Practice</a></li>
 
                                                 </ul>
@@ -154,7 +160,7 @@
                                     </li>
                                 </ul>
                             </li> -->
-                        
+
 
                             <li class="with-megamenu has-menu-child-item position-static">
                                 <a href="#">Special Programs <i class="feather-chevron-down"></i></a>
@@ -169,18 +175,22 @@
                                                     <li><a href="/SpecialPrograms#private-class">Fisika SMA <span
                                                                 class="rbt-badge-card">Hot</span></a></li>
                                                     <li><a href="/SpecialPrograms#private-class">Matematika</a></li>
-                                                    <li><a href="/SpecialPrograms#private-class">Bahasa Inggris</a></li>
-                                                    </ul>
-                                            </div> 
+                                                    <li><a href="/SpecialPrograms#private-class">Bahasa Inggris</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
                                             <div class="col-lg-6 col-xxl-6 single-mega-item">
                                                 <h6 class="rbt-mega-menu-title">Project Based</h6>
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Laravel Private Class</a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Fullstack Coaching <span
-                                                                class="rbt-badge-card">New</span></a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Design UI/UX Private</a></li>
-                                                    <li><a href="/SpecialPrograms#mentoring-project">Flutter Mobile Dev</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Laravel Private
+                                                            Class</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Fullstack Coaching
+                                                            <span class="rbt-badge-card">New</span></a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Design UI/UX
+                                                            Private</a></li>
+                                                    <li><a href="/SpecialPrograms#mentoring-project">Flutter Mobile
+                                                            Dev</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -211,9 +221,9 @@
                                 </a>
                                 <ul class="submenu">
                                     <li><a href="{{ route('landing.About') }}">Who We Are</a></li>
-                                        <li><a href="{{ route('landing.Testimonial') }}">Testimonials</a>
-                                        <li><a href="{{ route('landing.OurCommunity') }}">Join Our Community</a></li>
-                                        <li><a href="{{ route('landing.FAQs') }}">FAQs</a></li>
+                                    <li><a href="{{ route('landing.Testimonial') }}">Testimonials</a>
+                                    <li><a href="{{ route('landing.OurCommunity') }}">Join Our Community</a></li>
+                                    <li><a href="{{ route('landing.FAQs') }}">FAQs</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -223,7 +233,7 @@
                 <div class="header-right">
                     <div class="rbt-btn-wrapper d-none d-xl-block">
                         <a class="rbt-btn rbt-switch-btn btn-gradient btn-sm hover-transform-none"
-                            href="{{ route('landing.Register') }}">
+                            href="{{ route('landing.Authentication') }}">
                             <span data-text="Join Now">Join Now</span>
                         </a>
                     </div>
@@ -251,7 +261,7 @@
                 <div class="logo">
                     <div class="logo logo-dark">
                         <a href="{{ route('landing.Home') }}">
-                
+
                             <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}"
                                 alt="Education Logo Images">
                         </a>
@@ -280,60 +290,60 @@
         </div>
 
         <nav class="mainmenu-nav">
-    <ul class="mainmenu">
-        <!-- Home -->
-        <!-- Home -->
-        <li>
-            <a href="{{ route('landing.Home') }}">Home</a>
-        </li>
+            <ul class="mainmenu">
+                <!-- Home -->
+                <!-- Home -->
+                <li>
+                    <a href="{{ route('landing.Home') }}">Home</a>
+                </li>
 
-        <!-- Courses -->
-        <li>
-            <a href="{{ route('landing.AllCourse') }}">Courses</a>
-        </li>
+                <!-- Courses -->
+                <li>
+                    <a href="{{ route('landing.AllCourse') }}">Courses</a>
+                </li>
 
-        <!-- Special Program -->
-        <li>
-            <a href="{{ route('landing.SpecialPrograms') }}">Special Program</a>
-        </li>
+                <!-- Special Program -->
+                <li>
+                    <a href="{{ route('landing.SpecialPrograms') }}">Special Program</a>
+                </li>
 
-        <!-- About Us -->
-        <li class="with-megamenu has-menu-child-item position-static">
-            <a href="#">About Us <i class="feather-chevron-down"></i></a>
+                <!-- About Us -->
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="#">About Us <i class="feather-chevron-down"></i></a>
 
-            <!-- Start Mega Menu -->
-            <div class="rbt-megamenu grid-item-4">
-                <div class="wrapper">
-                    <div class="row row--15">
-                        <!-- Column 1 -->
-                        <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                            <ul class="mega-menu-item">
-                                <li><a href="about-us-01.html">Who We Are</a></li>
-                                <li><a href="about-us-02.html">Testimonial</a></li>
-                                <li><a href="event-grid.html">Our Community</a></li>
-                                <li><a href="event-list.html">FAQs</a></li>
-                            </ul>
-                        </div>
+                    <!-- Start Mega Menu -->
+                    <div class="rbt-megamenu grid-item-4">
+                        <div class="wrapper">
+                            <div class="row row--15">
+                                <!-- Column 1 -->
+                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
+                                    <ul class="mega-menu-item">
+                                        <li><a href="about-us-01.html">Who We Are</a></li>
+                                        <li><a href="about-us-02.html">Testimonial</a></li>
+                                        <li><a href="event-grid.html">Our Community</a></li>
+                                        <li><a href="event-list.html">FAQs</a></li>
+                                    </ul>
+                                </div>
 
-                        <!-- Column 2 (empty, for future content maybe) -->
-                        <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
-                            <div class="mega-category-item">
-                                <!-- Optional content -->
+                                <!-- Column 2 (empty, for future content maybe) -->
+                                <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
+                                    <div class="mega-category-item">
+                                        <!-- Optional content -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- End Mega Menu -->
-        </li>
-    </ul>
-</nav>
+                    <!-- End Mega Menu -->
+                </li>
+            </ul>
+        </nav>
 
 
         <div class="mobile-menu-bottom">
             <div class="rbt-btn-wrapper mb--20">
                 <a class="rbt-btn btn-border-gradient radius-round btn-sm hover-transform-none w-100 justify-content-center text-center"
-                    href="{{ route('landing.Register') }}">
+                    href="{{ route('landing.Authentication') }}">
                     <span>Join Now</span>
                 </a>
             </div>
@@ -345,7 +355,7 @@
                             <i class="feather-instagram"></i>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>

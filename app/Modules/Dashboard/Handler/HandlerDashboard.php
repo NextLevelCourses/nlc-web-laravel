@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Dashboard\Handler;
 
-use Illuminate\Http\Request;
-
-class DashboardController extends Controller
+class HandlerDashboard
 {
     public function Home()
     {
@@ -69,6 +67,4 @@ class DashboardController extends Controller
     {
         return view('dashboard.module.EnrolledCourses');
     }
-
-    
 }

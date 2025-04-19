@@ -1,6 +1,6 @@
 @extends('dashboard.layouts.Master')
 
-@section('title', 'Detail Course')
+@section('title', 'Wishlist')
 
 @section('content')
     <!-- Start breadcrumb Area -->
@@ -43,7 +43,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/1.jpg" alt="Product"></a></td>
+                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/1.jpg"
+                                                    alt="Product"></a></td>
                                         <td class="pro-title"><a href="#">Miracle Morning</a></td>
                                         <td class="pro-price"><span>$295.00</span></td>
                                         <td class="pro-quantity">
@@ -55,60 +56,68 @@
                                             <script>
                                                 function addToCart(productId) {
                                                     fetch("{{ route('Dashboard.Cart') }}", {
-                                                        method: "POST",
-                                                        headers: {
-                                                            "Content-Type": "application/json",
-                                                            "X-CSRF-TOKEN": '{{ csrf_token() }}'
-                                                        },
-                                                        body: JSON.stringify({ product_id: productId })
-                                                    })
-                                                    .then(response => response.json())
-                                                    .then(data => {
-                                                        alert(data.message); // Menampilkan alert sukses
-                                                        console.log('Cart sekarang:', data.cart); // Lihat cart di console
-                                                    })
-                                                    .catch(error => {
-                                                        console.error('Gagal:', error);
-                                                        alert('Gagal menambahkan ke cart');
-                                                    });
+                                                            method: "POST",
+                                                            headers: {
+                                                                "Content-Type": "application/json",
+                                                                "X-CSRF-TOKEN": '{{ csrf_token() }}'
+                                                            },
+                                                            body: JSON.stringify({
+                                                                product_id: productId
+                                                            })
+                                                        })
+                                                        .then(response => response.json())
+                                                        .then(data => {
+                                                            alert(data.message); // Menampilkan alert sukses
+                                                            console.log('Cart sekarang:', data.cart); // Lihat cart di console
+                                                        })
+                                                        .catch(error => {
+                                                            console.error('Gagal:', error);
+                                                            alert('Gagal menambahkan ke cart');
+                                                        });
                                                 }
                                             </script>
-                                            
+
                                             <!-- <button class="rbt-btn btn-gradient">add to cart</button> -->
                                         </td>
                                         <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/7.jpg" alt="Product"></a></td>
+                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/7.jpg"
+                                                    alt="Product"></a></td>
                                         <td class="pro-title"><a href="#">Happy Strong</a></td>
                                         <td class="pro-price"><span>$275.00</span></td>
                                         <td class="pro-quantity">
                                             <div class="pro-qty"><input type="text" value="2"></div>
                                         </td>
-                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button></td>
+                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button>
+                                        </td>
                                         <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/3.jpg" alt="Product"></a></td>
+                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/3.jpg"
+                                                    alt="Product"></a></td>
                                         <td class="pro-title"><a href="#">Rich Dad Poor Dad</a></td>
                                         <td class="pro-price"><span>$295.00</span></td>
                                         <td class="pro-quantity">
                                             <div class="pro-qty"><input type="text" value="1"></div>
                                         </td>
-                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button></td>
+                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button>
+                                        </td>
                                         <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/4.jpg" alt="Product"></a></td>
+                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/4.jpg"
+                                                    alt="Product"></a></td>
                                         <td class="pro-title"><a href="#">Momentum Theorem</a></td>
                                         <td class="pro-price"><span>$110.00</span></td>
                                         <td class="pro-quantity">
                                             <div class="pro-qty"><input type="text" value="1"></div>
                                         </td>
-                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button></td>
+                                        <td class="pro-addtocart"><button class="rbt-btn btn-gradient">add to cart</button>
+                                        </td>
                                         <td class="pro-remove"><a href="#"><i class="feather-x"></i></a>
                                         </td>
                                     </tr>
