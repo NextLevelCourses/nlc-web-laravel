@@ -6,12 +6,12 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="footer-widget">
                         <div class="logo logo-dark">
-                            <a href="index.html">
+                            <a href="{{ route('landing.Home') }}">
                                 <img src="{{ asset('assets/images/dark/logo/logo-dark.png') }}" alt="Edu-cause">
                             </a>
                         </div>
                         <div class="logo d-none logo-light">
-                            <a href="index.html">
+                            <a href="{{ route('landing.Home') }}">
                                 <img src="{{ asset('assets/images/logo/logo-light.png') }}" alt="Edu-cause">
                             </a>
                         </div>
@@ -25,23 +25,22 @@
                                     <i class="feather-instagram"></i>
                                 </a>
                             </li>
-                            <li><a>
+                            <li><a href="#">
                                     <i class="feather-facebook"></i>
                                 </a>
                             </li>
-                            <li><a>
+                            <li><a href="#">
                                     <i class="feather-twitter"></i>
                                 </a>
                             </li>
-                
-                            <li><a>
+                            <li><a href="#">
                                     <i class="feather-linkedin"></i>
                                 </a>
                             </li>
                         </ul>
 
                         <div class="contact-btn mt--30">
-                            <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="/contact">
+                            <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="#">
                                 <div class="icon-reverse-wrapper">
                                     <span class="btn-text">Contact Next Level</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -57,12 +56,12 @@
                     <div class="footer-widget">
                         <h5 class="ft-title">Next Level</h5>
                         <ul class="ft-link">
-                            <li><a href="/courses">Courses</a></li>
-                            <li><a href="/mentoring-projects">Mentoring Projects</a></li>
-                            <li><a href="/private-classes">Private Classes</a></li>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/faqs">FAQ</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="{{ route('landing.AllCourse') }}">Courses</a></li>
+                            <li><a href="{{ route('landing.SpecialPrograms') }}">Mentoring Projects</a></li>
+                            <li><a href="{{ route('landing.SpecialPrograms') }}">Private Classes</a></li>
+                            <li><a href="{{ route('landing.About') }}">About Us</a></li>
+                            <li><a href="{{ route('landing.FAQs') }}">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,10 +71,10 @@
                     <div class="footer-widget">
                         <h5 class="ft-title">For Members</h5>
                         <ul class="ft-link">
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/register">Register</a></li>
-                            <li><a href="/my-courses">My Courses</a></li>
-                            <li><a href="/dashboard">Dashboard</a></li>
+                            <li><a href="{{ route('landing.Register') }}">Login</a></li>
+                            <li><a href="{{ route('landing.Register') }}">Register</a></li>
+                            <li><a href="{{ route('landing.Register') }}">My Courses</a></li>
+                            <li><a href="{{ route('landing.Register') }}">Dashboard</a></li>
                         </ul>
                     </div>
                 </div>
@@ -86,8 +85,7 @@
                         <h5 class="ft-title">Get in Touch</h5>
                         <ul class="ft-link">
                             <li><span>Phone:</span> <a href="#">+62 812-3456-7890</a></li>
-                            <li><span>Email:</span> <a
-                                    href="mailto:admin@nextlevelcourse.com">admin@nextlevelcourse.com</a></li>
+                            <li><span>Email:</span> <a href="mailto:admin@nextlevelcourse.com">admin@nextlevelcourse.com</a></li>
                         </ul>
 
                         <form class="newsletter-form mt--20" action="#">
@@ -111,20 +109,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="#">Next Level
+                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="{{ route('landing.Home') }}">Next Level
                             Course</a> All Rights Reserved.</p>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <ul
-                        class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="privacy-policy.html">Privacy policy</a></li>
-                        <li><a href="subscription.html">Subscription</a></li>
-                        <li><a href="login.html">Login & Register</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Copyright Area  -->
 </footer>
+<!-- End Footer Area -->
