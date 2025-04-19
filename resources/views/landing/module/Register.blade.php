@@ -6,7 +6,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1 ">
+    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -33,14 +33,14 @@
             <div class="col-lg-6">
                 <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                     <h3 class="title">Login</h3>
-                    <form class="max-width-auto">
+                    <form class="max-width-auto" id="loginForm">
                         <div class="form-group">
-                            <input name="con_name" type="text" />
+                            <input name="con_name" type="text" required />
                             <label>Username or email *</label>
                             <span class="focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <input name="con_email" type="password" />
+                            <input name="con_email" type="password" required />
                             <label>Password *</label>
                             <span class="focus-border"></span>
                         </div>
@@ -68,6 +68,10 @@
                             </button>
                         </div>
                     </form>
+                    <!-- Alert for login -->
+                    <div id="loginAlert" class="alert alert-success mt-3" style="display:none;">
+                        Login successful! Redirecting...
+                    </div>
                 </div>
             </div>
 
@@ -75,7 +79,7 @@
             <div class="col-lg-6">
                 <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                     <h3 class="title">Register</h3>
-                    <form class="max-width-auto">
+                    <form class="max-width-auto" id="registerForm">
                         <div class="form-group">
                             <input name="register-email" type="email" required />
                             <label>Email address *</label>
@@ -94,6 +98,10 @@
                             <p class="small text-muted">We'll send you a registration link to complete your account setup</p>
                         </div>
                     </form>
+                    <!-- Alert for registration -->
+                    <div id="registerAlert" class="alert alert-info mt-3" style="display:none;">
+                        Registration successful! Please check your email to confirm.
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +125,6 @@
                     
                     <form id="passwordResetForm">
                         <div class="form-group mb-4">
-                            <!-- <label for="resetEmail" class="form-label" style="display:block;margin-bottom:8px;font-weight:500;color:#555">Email Address</label> -->
                             <input type="email" class="form-control" id="resetEmail" required placeholder="your@email.com" style="width:100%;padding:12px 15px;border:1px solid #ddd;border-radius:8px;transition:all 0.3s">
                         </div>
                         <button type="submit" class="rbt-btn btn-gradient w-100"
@@ -126,6 +133,10 @@
                         </button>
 
                     </form>
+                    <!-- Alert for password reset -->
+                    <div id="resetAlert" class="alert alert-warning mt-3" style="display:none;">
+                        Password reset link sent! Please check your email.
+                    </div>
                 </div>
                 <div class="modal-footer" style="background:#f8f9fa;border-top:1px solid #eee;padding:15px 25px;justify-content:center">
                     <p class="small mb-0" style="color:#6c757d">We'll send a password reset link to your email</p>
@@ -135,6 +146,66 @@
     </div>
 </div>
 
+<!-- JavaScript untuk menangani alert SweetAlert2 -->
 
+<script>
+    // Menangani pengiriman form login dengan SweetAlert2
+    document.querySelector('.rbt-contact-form .max-width-auto').addEventListener('submit', function (e) {
+        e.preventDefault(); // Mencegah pengiriman form
+
+        // Mengambil nilai username dan password dari form login
+        let username = document.querySelector('input[name="con_name"]').value;
+        let password = document.querySelector('input[name="con_email"]').value;
+
+        if (username && password) {
+            // Login berhasil
+            Swal.fire({
+                title: "Login Sukses",
+                text: "Anda berhasil login!",
+                icon: "success",
+                draggable: true
+            });
+        } else {
+            // Error dalam login
+            Swal.fire({
+                title: "Error",
+                text: "Harap isi username dan password.",
+                icon: "error",
+                draggable: true
+            });
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Menangani pengiriman form pendaftaran
+        document.querySelector('#registerForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Mencegah pengiriman form
+
+            // Mengambil nilai email dari input form pendaftaran
+            let email = document.querySelector('input[name="register-email"]').value;
+
+            // Pola regex untuk validasi format email
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (email && emailPattern.test(email)) {
+                // Pendaftaran berhasil jika format email valid
+                Swal.fire({
+                    title: "Pendaftaran Sukses",
+                    text: "Link pendaftaran telah dikirimkan ke email Anda.",
+                    icon: "success",
+                    draggable: true
+                });
+            } else {
+                // Error jika format email tidak valid
+                Swal.fire({
+                    title: "Error",
+                    text: "Harap masukkan alamat email yang valid.",
+                    icon: "error",
+                    draggable: true
+                });
+            }
+        });
+    });
+</script>
 
 @endsection
