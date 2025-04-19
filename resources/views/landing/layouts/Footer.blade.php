@@ -71,10 +71,10 @@
                     <div class="footer-widget">
                         <h5 class="ft-title">For Members</h5>
                         <ul class="ft-link">
-                            <li><a href="{{ route('landing.Register') }}">Login</a></li>
-                            <li><a href="{{ route('landing.Register') }}">Register</a></li>
-                            <li><a href="{{ route('landing.Register') }}">My Courses</a></li>
-                            <li><a href="{{ route('landing.Register') }}">Dashboard</a></li>
+                            <li><a href="{{ route('landing.Authentication') }}">Login</a></li>
+                            <li><a href="{{ route('landing.Authentication') }}">Register</a></li>
+                            <li><a href="{{ route('landing.Authentication') }}">My Courses</a></li>
+                            <li><a href="{{ route('landing.Authentication') }}">Dashboard</a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +85,8 @@
                         <h5 class="ft-title">Get in Touch</h5>
                         <ul class="ft-link">
                             <li><span>Phone:</span> <a href="#">+62 812-3456-7890</a></li>
-                            <li><span>Email:</span> <a href="mailto:admin@nextlevelcourse.com">admin@nextlevelcourse.com</a></li>
+                            <li><span>Email:</span> <a
+                                    href="mailto:admin@nextlevelcourse.com">admin@nextlevelcourse.com</a></li>
                         </ul>
 
                         <form class="newsletter-form mt--20" action="#">
@@ -109,7 +110,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="{{ route('landing.Home') }}">Next Level
+                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a
+                            href="{{ route('landing.Home') }}">Next Level
                             Course</a> All Rights Reserved.</p>
                 </div>
             </div>
