@@ -8,9 +8,9 @@ use App\Modules\Authentication\Domain\DomainAuth;
 
 class RepositoryAuth extends DomainAuth
 {
-    public function LoginRepository() {}
+    protected function LoginRepository() {}
 
-    public function RegisterRepository(string $name, string $username, string $email, string $password, int $roles_id, string $token_verification, string $date_registered, string $ip): void
+    protected function RegisterRepository(string $name, string $username, string $email, string $password, int $roles_id, string $token_verification, string $date_registered, string $ip): void
     {
         $this->DomainUserRegister(
             $name,
