@@ -32,7 +32,7 @@
                  
                 <div class="col-lg-6 col-md-8">
                     <div class="rbt-contact-form contact-form-style-1">
-                        <h3 class="title text-center mb-4">Reset Password</h3>
+                        <!-- <h3 class="title text-center mb-4">Reset Password</h3> -->
                         <form id="resetPasswordForm">
                             <div class="form-group">
                                 <input name="new_password" type="password" required />
