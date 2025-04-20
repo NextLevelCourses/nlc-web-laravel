@@ -72,7 +72,8 @@
                                     <span class="rating-count">(18 Reviews)</span>
                                 </div>
                             </div>
-                            <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Matematika Kelas 12 Private
+                            <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Matematika Kelas 12
+                                    Private
                                     Class</a></h4>
                             <ul class="rbt-meta">
                                 <li><i class="feather-layers"></i>Project Based</li>
@@ -82,7 +83,7 @@
                             <p class="rbt-card-text">Learn by building real-world apps with professional mentors.</p>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price"><span>Rp. 500.000</span></div>
-                                <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                         class="feather-arrow-right"></i></a>
                             </div>
                         </div>
@@ -106,7 +107,8 @@
                                     <span class="rating-count">(12 Reviews)</span>
                                 </div>
                             </div>
-                            <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Fisika kelas 10 Private
+                            <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Fisika kelas 10
+                                    Private
                                     Class</a></h4>
                             <ul class="rbt-meta">
                                 <li><i class="feather-layers"></i>Project Based</li>
@@ -116,7 +118,7 @@
                             <p class="rbt-card-text">Build modern UI with real-world projects using ReactJS.</p>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price"><span>Rp. 550.000</span></div>
-                                <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                         class="feather-arrow-right"></i></a>
                             </div>
                         </div>
@@ -140,7 +142,8 @@
                                     <span class="rating-count">(9 Reviews)</span>
                                 </div>
                             </div>
-                            <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Biologi kelas 12 Private
+                            <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Biologi kelas 12
+                                    Private
                                     Class</a></h4>
                             <ul class="rbt-meta">
                                 <li><i class="feather-layers"></i>Project Based</li>
@@ -150,7 +153,7 @@
                             <p class="rbt-card-text">Start your programming journey with Python from scratch.</p>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price"><span>Rp. 480.000</span></div>
-                                <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                         class="feather-arrow-right"></i></a>
                             </div>
                         </div>
@@ -174,7 +177,8 @@
                                     <span class="rating-count">(15 Reviews)</span>
                                 </div>
                             </div>
-                            <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">CPNS Private Class</a>
+                            <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">CPNS Private
+                                    Class</a>
                             </h4>
                             <ul class="rbt-meta">
                                 <li><i class="feather-layers"></i>Project Based</li>
@@ -184,7 +188,7 @@
                             <p class="rbt-card-text">Master UI/UX design with Figma and real app prototyping.</p>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price"><span>Rp. 600.000</span></div>
-                                <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                         class="feather-arrow-right" id="mentoring-project"></i></a>
                             </div>
                         </div>
@@ -219,7 +223,8 @@
                                             <span class="rating-count">(21 Reviews)</span>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Fullstack Web
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Fullstack
+                                            Web
                                             Mentoring</a></h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-layers"></i>Real Project</li>
@@ -230,7 +235,7 @@
                                     </p>
                                     <div class="rbt-card-bottom">
                                         <div class="rbt-price"><span>Rp. 700.000</span></div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                        <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                                 class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -254,7 +259,7 @@
                                             <span class="rating-count">(7 Reviews)</span>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Mobile App
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Mobile App
                                             Mentoring</a></h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-layers"></i>Flutter Project</li>
@@ -264,7 +269,7 @@
                                     <p class="rbt-card-text">Create mobile apps from zero with expert support.</p>
                                     <div class="rbt-card-bottom">
                                         <div class="rbt-price"><span>Rp. 650.000</span></div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                        <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                                 class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -288,7 +293,8 @@
                                             <span class="rating-count">(11 Reviews)</span>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">Machine Learning
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">Machine
+                                            Learning
                                             Mentoring</a></h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-layers"></i>Case-Based</li>
@@ -298,7 +304,7 @@
                                     <p class="rbt-card-text">Get real ML experience with industry-grade datasets.</p>
                                     <div class="rbt-card-bottom">
                                         <div class="rbt-price"><span>Rp. 850.000</span></div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                        <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                                 class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -322,7 +328,8 @@
                                             <span class="rating-count">(14 Reviews)</span>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Register') }}">UI/UX Project
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.Authentication') }}">UI/UX
+                                            Project
                                             Mentoring</a></h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-layers"></i>Figma + Prototype</li>
@@ -332,7 +339,7 @@
                                     <p class="rbt-card-text">Design full user journey from wireframe to prototype.</p>
                                     <div class="rbt-card-bottom">
                                         <div class="rbt-price"><span>Rp. 600.000</span></div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.Register') }}">Daftar <i
+                                        <a class="rbt-btn-link" href="{{ route('landing.Authentication') }}">Daftar <i
                                                 class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>

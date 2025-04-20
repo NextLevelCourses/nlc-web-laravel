@@ -1,6 +1,6 @@
 @extends('dashboard.layouts.Master')
 
-@section('title', 'Create Course')
+@section('title', 'Checkout')
 
 @section('content')
     <div class="checkout_area bg-color-white rbt-section-gap">
@@ -124,8 +124,8 @@
                                 <button class="rbt-btn btn-gradient hover-icon-reverse">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Place order</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </button>
                             </div>

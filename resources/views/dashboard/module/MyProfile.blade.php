@@ -75,7 +75,7 @@
 
                                             <nav class="mainmenu-nav">
                                                 <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                                                    <li><a href="{{ route('landing.Register') }}"><i class="feather-log-out"></i><span>Logout</span></a></li>
+                                                    <li><a href="{{ route('landing.Authentication') }}"><i class="feather-log-out"></i><span>Logout</span></a></li>
                                                 </ul>
                                             </nav>
                                         </div>

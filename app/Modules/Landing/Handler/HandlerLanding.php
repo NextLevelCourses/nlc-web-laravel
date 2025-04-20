@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Landing\Handler;
 
-use Illuminate\Http\Request;
-
-class LandingController extends Controller
+class HandlerLanding
 {
     public function Index()
     {
@@ -31,9 +29,9 @@ class LandingController extends Controller
         return view('landing.module.Testimonial');
     }
 
-    public function Register()
+    public function Authentication()
     {
-        return view('landing.module.Register');
+        return view('landing.module.Authentication');
     }
 
     public function FAQs()

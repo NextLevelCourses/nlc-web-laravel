@@ -17,8 +17,8 @@ class UserSeeer extends Seeder
         DB::table('users')->insert([
             [
                 'name' => 'John Doe',
+                'username' => 'johndoe',
                 'email' => 'john@example.com',
-                'status' => 'admin',
                 'roles_id' => 3,
                 'password' => Hash::make('12345678'),
                 'created_at' => date('Y-m-d H:i:s'),
@@ -26,8 +26,8 @@ class UserSeeer extends Seeder
             ],
             [
                 'name' => 'Teguh',
+                'username' => 'teguh',
                 'email' => 'teguh@example.com',
-                'status' => 'student',
                 'roles_id' => 1,
                 'password' => Hash::make('12345678'),
                 'created_at' => date('Y-m-d H:i:s'),
@@ -35,8 +35,8 @@ class UserSeeer extends Seeder
             ],
             [
                 'name' => 'Samsul',
+                'username' => 'samsul',
                 'email' => 'samsul@example.com',
-                'status' => 'teacher',
                 'roles_id' => 2,
                 'password' => Hash::make('12345678'),
                 'created_at' => date('Y-m-d H:i:s'),
