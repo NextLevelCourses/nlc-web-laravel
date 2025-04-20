@@ -87,14 +87,16 @@
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                         @session('success')
-                            <div class="alert alert-success" role="alert">
+                            {{-- <div class="alert alert-success" role="alert">
                                 {{ $value }}
-                            </div>
+                            </div> --}}
+                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
                         @endsession
                         @session('error')
-                            <div class="alert alert-danger" role="alert">
+                            {{-- <div class="alert alert-danger" role="alert">
                                 {{ $value }}
-                            </div>
+                            </div> --}}
+                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
                         @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
