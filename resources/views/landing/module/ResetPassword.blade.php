@@ -25,9 +25,9 @@
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
          <div class="container">
             <div class="row">
-                  <div class="col-lg-12" style="position: relative; height: 50vh;">
-                          <div class="col-lg-6 col-md-8" style="position: absolute; top: 40%; left: 63%; transform: translate(-50%, -50%);">
-                <!-- <div class="col-lg-12 d-flex justify-content-center align-items-center"> -->
+                  <div class="col-lg-12" style="position: relative; height: 50vh; ">
+                          <div class="col-lg-8 col-md-12" style="position: absolute; top: 40%; left: 66.5%; transform: translate(-50%, -50%);">
+                <!-- <div class="col-lg-12 col-md-15 d-flex justify-content-center align-items-center"> -->
                 <!-- Login Form -->
                  
                 <div class="col-lg-6 col-md-8">
@@ -58,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            </div>
-                </div>
-            </div>
+        </div>
+    </div>
+</div>
             
         
 
