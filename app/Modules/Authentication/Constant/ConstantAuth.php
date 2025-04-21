@@ -80,12 +80,32 @@ class ConstantAuth
     }
 
     /**
-     * @var $success_register
+     * @var $SUCCESS_REGISTER_MESSAGE
      */
-    protected const SUCCESS_REGISTER = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
+    protected const SUCCESS_REGISTER_MESSAGE = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
 
     /**
-     * @var $failed_register
+     * @var $FAILED_REGISTER_MESSAGE
      */
-    protected const FAILED_REGISTER = 'Gagal registrasi, maaf ada kesalahan sistem';
+    protected const FAILED_REGISTER_MESSAGE = 'Gagal registrasi, maaf ada kesalahan sistem';
+
+    /**
+     * @var $SUCCESS_VERIFICATION_ACCOUNT_MESSAGE
+     */
+    protected const SUCCESS_VERIFICATION_ACCOUNT_MESSAGE = 'Berhasil verifikasi, silahkan login untuk melanjutkan';
+
+    /**
+     * @var $FAILED_VERIFICATION_ACCOUNT_MESSAGE
+     */
+    protected const FAILED_VERIFICATION_ACCOUNT_MESSAGE = 'Gagal verifikasi, token tidak valid atau sudah kadaluarsa';
+
+    /**
+     * @var $SUCCESS_FORGOT_PASSWORD_MESSAGE
+     */
+    protected const SUCCESS_FORGOT_PASSWORD_MESSAGE = 'Berhasil forgot password, silahkan cek email anda untuk mendapatkan link reset password';
+
+    /**
+     * @var $FAILED_FORGOT_PASSWORD_MESSAGE
+     */
+    protected const FAILED_FORGOT_PASSWORD_MESSAGE = 'Gagal forgot password, maaf ada kesalahan sistem';
 }

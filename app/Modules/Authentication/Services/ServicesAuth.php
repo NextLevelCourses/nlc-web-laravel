@@ -23,6 +23,11 @@ class ServicesAuth extends RepositoryAuth
         );
     }
 
+    protected function VerificationAccountServices($token): void
+    {
+        //
+    }
+
     private static function RandomName(): string
     {
         return 'NLC-' . Str::random(4);

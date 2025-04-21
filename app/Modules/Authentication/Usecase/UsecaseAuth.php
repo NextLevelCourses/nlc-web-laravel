@@ -61,7 +61,19 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
      *  verif account use of tokens
      */
 
-    public function VerificationAccount($token) {}
+    public function VerificationAccountCase($token, $currentRoute, $currentPath, $successVerificationAccountMessage, $errorVerificationAccountMessage)
+    {
+        DB::beginTransaction();
+        try {
+            $this->VerificationAccountServices($token);
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
+        } catch (\Exception $error) {
+            DB::rollBack();
+            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            return redirect()->route('landing.Authentication')->with('error', $errorVerificationAccountMessage);
+        }
+    }
 
     /**
      * @method LogoutCase
