@@ -90,13 +90,13 @@
                             {{-- <div class="alert alert-success" role="alert">
                                 {{ $value }}
                             </div> --}}
-                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
+                            <div class="flash-data-success" data-flashdata-success="{{ $value }}"></div>
                         @endsession
                         @session('error')
                             {{-- <div class="alert alert-danger" role="alert">
                                 {{ $value }}
                             </div> --}}
-                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
+                            <div class="flash-data-error" data-flashdata-error="{{ $value }}"></div>
                         @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
@@ -166,3 +166,8 @@
         <!-- End Forgot Password Modal -->
     </div>
 @endsection
+
+@push('js')
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.conf.js') }}"></script>
+@endpush

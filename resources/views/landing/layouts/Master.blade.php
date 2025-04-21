@@ -71,7 +71,6 @@
 </html>
 <!-- JS ============================================ -->
 <!-- Vendor JS -->
-
 <script src="{{ asset('assets/js/vendor/modernizr.min.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
@@ -98,10 +97,8 @@
 <script src="{{ asset('assets/js/vendor/plyr.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
-
-<!-- Import SweetAlert -->
-<script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.all.min.js') }}"></script>
-<script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.conf.js') }}"></script>
-
 <!-- Main JS -->
 <script src="{{ asset('assets/js/main.js') }}"></script>
+
+<!-- Import SweetAlert -->
+@stack('js')
