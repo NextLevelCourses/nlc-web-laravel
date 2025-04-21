@@ -46,5 +46,9 @@ class ServicesAuth extends RepositoryAuth
     protected function VerificationAccountServices(string $token): void
     {
         $this->VerificationAccountRepository($token);
+        //validate email by tokens
+        $token = $this->ValidateEmailByTokensRepository($token);
+        //delete token verification by email
+        $this->DeleteTokensVerifyAcountRepository($token[0]->email);
     }
 }

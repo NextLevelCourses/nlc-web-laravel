@@ -46,4 +46,23 @@ class DomainAuth implements InterfaceDomainAuth
     {
         DB::update("UPDATE users SET status = ? WHERE remember_token = ?", [true, $token]);
     }
+
+    /**
+     * @method DomainDeleteTokensVerification
+     *  transaction data with delete token verification account to table users
+     */
+    public function DomainDeleteTokensVerification(string $email): void
+    {
+        DB::update('UPDATE users SET remember_token = ? WHERE email = ?', [null, $email]);
+    }
+
+    /**
+     * @method DomainVerifyEmailByTokens
+     *  transaction data with validate token by email
+     */
+
+    public function DomainValidateEmailByTokens(string $token)
+    {
+        return DB::select("SELECT * FROM users WHERE remember_token = ?", [$token]);
+    }
 }

@@ -54,6 +54,16 @@ class RepositoryAuth extends DomainAuth
         $this->DomainVerifyAccountByTokens($token);
     }
 
+    public function DeleteTokensVerifyAcountRepository(string $email): void
+    {
+        $this->DomainDeleteTokensVerification($email);
+    }
+
+    public function ValidateEmailByTokensRepository(string $token)
+    {
+        return $this->DomainValidateEmailByTokens($token);
+    }
+
     /**
      * @method SendMailUserVerificationRegister
      *  send mail verification register user

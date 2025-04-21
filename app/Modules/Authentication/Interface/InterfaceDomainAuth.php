@@ -23,4 +23,8 @@ interface InterfaceDomainAuth
     ): void;
 
     public function DomainVerifyAccountByTokens(string $token): void;
+
+    public function DomainDeleteTokensVerification(string $email): void;
+
+    public function DomainValidateEmailByTokens(string $token);
 }
