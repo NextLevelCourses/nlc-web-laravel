@@ -2,6 +2,8 @@
 
 namespace App\Modules\Authentication\Constant;
 
+use Illuminate\Support\Str;
+
 class ConstantAuth
 {
     /**
@@ -108,4 +110,42 @@ class ConstantAuth
      * @var $FAILED_FORGOT_PASSWORD_MESSAGE
      */
     protected const FAILED_FORGOT_PASSWORD_MESSAGE = 'Gagal forgot password, maaf ada kesalahan sistem';
+
+    /**
+     * @method $RandomName
+     */
+    protected static function RandomName(): string
+    {
+        return 'NLC-' . Str::random(4);
+    }
+
+    /**
+     * @method $RandomUsername
+     */
+    protected static function RandomUsername(): string
+    {
+        return 'nlc-' . Str::random(4);
+    }
+
+    /**
+     * @method $RandomPassword
+     */
+    protected static function RandomPassword(): string
+    {
+        return Str::random(10);
+    }
+
+    /**
+     * @var int $roleID
+     */
+    protected int $roleID = 1; // roles id default student
+
+    /**
+     * @method $TokenVerification
+     */
+
+    protected static function TokenVerification(): string
+    {
+        return Str::random(20);
+    }
 }

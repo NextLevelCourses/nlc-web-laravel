@@ -14,17 +14,25 @@ class ServicesAuth extends RepositoryAuth
      *  excec bisnis logic register
      */
 
-    protected function RegisterServices($request): void
-    {
+    protected function RegisterServices(
+        $randomName,
+        $randomUsername,
+        $email,
+        $randomPassword,
+        $rolesId,
+        $tokenVerification,
+        $dateRegistered,
+        $ip,
+    ): void {
         $this->RegisterRepository(
-            $this->RandomName(),
-            $this->RandomUsername(),
-            $request->input('email'),
-            $this->RandomPassword(),
-            $this->RolesID(),
-            $this->TokenVerification(),
-            now(),
-            $request->getClientIp(),
+            $randomName,
+            $randomUsername,
+            $email,
+            $randomPassword,
+            $rolesId,
+            $tokenVerification,
+            $dateRegistered,
+            $ip,
         );
     }
 
@@ -36,30 +44,5 @@ class ServicesAuth extends RepositoryAuth
     protected function VerificationAccountServices($token): void
     {
         //
-    }
-
-    private static function RandomName(): string
-    {
-        return 'NLC-' . Str::random(4);
-    }
-
-    private static function RandomUsername(): string
-    {
-        return 'nlc-' . Str::random(4);
-    }
-
-    private static function RandomPassword(): string
-    {
-        return Str::random(10);
-    }
-
-    private static function RolesID(): int
-    {
-        return 1;
-    }
-
-    private static function TokenVerification(): string
-    {
-        return Str::random(20);
     }
 }

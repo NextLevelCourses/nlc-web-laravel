@@ -31,6 +31,12 @@ class HandlerAuth extends ConstantAuth
             $this->ConstCurrentPathLog($this->request),
             static::SUCCESS_REGISTER_MESSAGE,
             static::FAILED_REGISTER_MESSAGE,
+            //params for usecase need registration
+            $this->RandomName(),
+            $this->RandomUsername(),
+            $this->RandomPassword(),
+            $this->roleID,
+            $this->TokenVerification(),
         );
     }
 

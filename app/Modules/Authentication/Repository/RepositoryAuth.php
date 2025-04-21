@@ -12,11 +12,19 @@ class RepositoryAuth extends DomainAuth
 
     /**
      * @method RegisterRepository
-     *  manage business logic register repository
+     *  manage business logic user register then verification email repository
      */
 
-    protected function RegisterRepository(string $name, string $username, string $email, string $password, int $roles_id, string $token_verification, string $date_registered, string $ip): void
-    {
+    protected function RegisterRepository(
+        string $name,
+        string $username,
+        string $email,
+        string $password,
+        int $roles_id,
+        string $token_verification,
+        string $date_registered,
+        string $ip
+    ): void {
         $this->DomainUserRegister(
             $name,
             $username,
@@ -34,12 +42,6 @@ class RepositoryAuth extends DomainAuth
      *  manage business logic send mail verification account
      */
     protected function VerificationAccountRepository(string $token): void {}
-
-
-    /**
-     * @method RegisterRepository
-     *  manage business logic send mail verification account
-     */
 
     private static function SendMailVerification(string $email, string $username, string $password, string $date_registered, string $ip): void
     {

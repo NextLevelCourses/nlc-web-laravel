@@ -36,8 +36,21 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
      */
 
 
-    public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath, $successRegisterMessage, $errorRegisterMessage)
-    {
+    public function RegisterCase(
+        $request,
+        $ConstRuleRegister,
+        $ConstMessageRegister,
+        $currentRoute,
+        $currentPath,
+        $successRegisterMessage,
+        $errorRegisterMessage,
+        //params for services need registered
+        string $randomName,
+        string $randomUsername,
+        string $randomPassword,
+        int $rolesId,
+        string $tokenVerification,
+    ) {
         $this->requestAuth->RequestRegister(
             $request,
             $ConstRuleRegister,
@@ -46,7 +59,16 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
 
         DB::beginTransaction();
         try {
-            $this->RegisterServices($request, $currentRoute);
+            $this->RegisterServices(
+                $randomName,
+                $randomUsername,
+                $request->input('email'),
+                $randomPassword,
+                $rolesId,
+                $tokenVerification,
+                now(),
+                $request->getClientIp(),
+            );
             DB::commit();
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
