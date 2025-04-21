@@ -20,6 +20,7 @@ class ConstantAuth
 
     /**
      * @method $ConstRuleRegister
+     * @return array
      */
 
     protected function ConstRuleRegister(): array
@@ -43,6 +44,7 @@ class ConstantAuth
 
     /**
      * @method $ConstMessageRegister
+     * @return array
      */
 
     protected function ConstMessageRegister(): array
@@ -65,51 +67,59 @@ class ConstantAuth
 
     /**
      * @method $ConstCurrentRouteLog
+     * @return string
      */
 
-    protected function ConstCurrentRouteLog($request)
+    protected function ConstCurrentRouteLog($request): string
     {
         return $request->route()->getName();
     }
 
     /**
      * @method $ConstCurrentPathLog
+     * @return string
      */
 
-    protected function ConstCurrentPathLog($request)
+    protected function ConstCurrentPathLog($request): string
     {
         return $request->path();
     }
 
     /**
-     * @var $SUCCESS_REGISTER_MESSAGE
+     * @var string $SUCCESS_REGISTER_MESSAGE
+     * @return string
      */
-    protected const SUCCESS_REGISTER_MESSAGE = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
+    protected string $SUCCESS_REGISTER_MESSAGE = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
 
     /**
-     * @var $FAILED_REGISTER_MESSAGE
+     * @var string $FAILED_REGISTER_MESSAGE
+     * @return string
      */
-    protected const FAILED_REGISTER_MESSAGE = 'Gagal registrasi, maaf ada kesalahan sistem';
+    protected string $FAILED_REGISTER_MESSAGE = 'Gagal registrasi, maaf ada kesalahan sistem';
 
     /**
-     * @var $SUCCESS_VERIFICATION_ACCOUNT_MESSAGE
+     * @var string $SUCCESS_VERIFICATION_ACCOUNT_MESSAGE
+     * @return string
      */
-    protected const SUCCESS_VERIFICATION_ACCOUNT_MESSAGE = 'Berhasil verifikasi, silahkan login untuk melanjutkan';
+    protected string $SUCCESS_VERIFICATION_ACCOUNT_MESSAGE = 'Berhasil verifikasi, silahkan login untuk melanjutkan';
 
     /**
-     * @var $FAILED_VERIFICATION_ACCOUNT_MESSAGE
+     * @var string $FAILED_VERIFICATION_ACCOUNT_MESSAGE
+     * @return string
      */
-    protected const FAILED_VERIFICATION_ACCOUNT_MESSAGE = 'Gagal verifikasi, token tidak valid atau sudah kadaluarsa';
+    protected string $FAILED_VERIFICATION_ACCOUNT_MESSAGE = 'Gagal verifikasi, token tidak valid atau sudah kadaluarsa';
 
     /**
-     * @var $SUCCESS_FORGOT_PASSWORD_MESSAGE
+     * @var string $SUCCESS_FORGOT_PASSWORD_MESSAGE
+     * @return string
      */
-    protected const SUCCESS_FORGOT_PASSWORD_MESSAGE = 'Berhasil forgot password, silahkan cek email anda untuk mendapatkan link reset password';
+    protected string $SUCCESS_FORGOT_PASSWORD_MESSAGE = 'Berhasil forgot password, silahkan cek email anda untuk mendapatkan link reset password';
 
     /**
-     * @var $FAILED_FORGOT_PASSWORD_MESSAGE
+     * @var string $FAILED_FORGOT_PASSWORD_MESSAGE
+     * @return string
      */
-    protected const FAILED_FORGOT_PASSWORD_MESSAGE = 'Gagal forgot password, maaf ada kesalahan sistem';
+    protected string $FAILED_FORGOT_PASSWORD_MESSAGE = 'Gagal forgot password, maaf ada kesalahan sistem';
 
     /**
      * @method $RandomName

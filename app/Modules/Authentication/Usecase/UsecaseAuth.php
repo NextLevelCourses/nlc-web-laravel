@@ -38,19 +38,19 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
 
     public function RegisterCase(
         $request,
-        $ConstRuleRegister,
-        $ConstMessageRegister,
-        $currentRoute,
-        $currentPath,
-        $successRegisterMessage,
-        $errorRegisterMessage,
+        array       $ConstRuleRegister,
+        array       $ConstMessageRegister,
+        string      $currentRoute,
+        string      $currentPath,
+        string      $successRegisterMessage,
+        string      $errorRegisterMessage,
         //params for services need registered
-        string  $randomName,
-        string  $randomUsername,
-        string  $randomPassword,
-        int     $rolesId,
-        string  $tokenVerification,
-        string  $urlVerification,
+        string      $randomName,
+        string      $randomUsername,
+        string      $randomPassword,
+        int         $rolesId,
+        string      $tokenVerification,
+        string      $urlVerification,
     ) {
         $this->requestAuth->RequestRegister(
             $request,
@@ -85,8 +85,13 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
      *  verif account use of tokens
      */
 
-    public function VerificationAccountCase($token, $currentRoute, $currentPath, $successVerificationAccountMessage, $errorVerificationAccountMessage)
-    {
+    public function VerificationAccountCase(
+        string      $token,
+        string      $currentRoute,
+        string      $currentPath,
+        string      $successVerificationAccountMessage,
+        string      $errorVerificationAccountMessage
+    ) {
         DB::beginTransaction();
         try {
             $this->VerificationAccountServices($token);
