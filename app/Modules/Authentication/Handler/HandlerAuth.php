@@ -37,6 +37,7 @@ class HandlerAuth extends ConstantAuth
             $this->RandomPassword(),
             $this->roleID,
             $this->TokenVerification(),
+            $this->UrlVerification(),
         );
     }
 

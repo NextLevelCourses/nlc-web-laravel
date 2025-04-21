@@ -45,11 +45,12 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
         $successRegisterMessage,
         $errorRegisterMessage,
         //params for services need registered
-        string $randomName,
-        string $randomUsername,
-        string $randomPassword,
-        int $rolesId,
-        string $tokenVerification,
+        string  $randomName,
+        string  $randomUsername,
+        string  $randomPassword,
+        int     $rolesId,
+        string  $tokenVerification,
+        string  $urlVerification,
     ) {
         $this->requestAuth->RequestRegister(
             $request,
@@ -68,6 +69,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
                 $tokenVerification,
                 now(),
                 $request->getClientIp(),
+                $urlVerification,
             );
             DB::commit();
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);

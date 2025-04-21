@@ -26,6 +26,7 @@ interface InterfaceAuth
         string $randomPassword,
         int $rolesId,
         string $tokenVerification,
+        string $urlVerification,
     );
     public function VerificationAccountCase(
         $token,

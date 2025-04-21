@@ -113,6 +113,7 @@ class ConstantAuth
 
     /**
      * @method $RandomName
+     * @return string
      */
     protected static function RandomName(): string
     {
@@ -121,6 +122,7 @@ class ConstantAuth
 
     /**
      * @method $RandomUsername
+     * @return string
      */
     protected static function RandomUsername(): string
     {
@@ -129,6 +131,7 @@ class ConstantAuth
 
     /**
      * @method $RandomPassword
+     * @return string
      */
     protected static function RandomPassword(): string
     {
@@ -137,15 +140,26 @@ class ConstantAuth
 
     /**
      * @var int $roleID
+     * @return int
      */
     protected int $roleID = 1; // roles id default student
 
     /**
      * @method $TokenVerification
+     * @return string
      */
 
     protected static function TokenVerification(): string
     {
         return Str::random(20);
+    }
+
+    /**
+     * @method $UrlVerification
+     * @return string
+     */
+    protected static function UrlVerification(): string
+    {
+        return config('app.url') . '/verification/account';
     }
 }

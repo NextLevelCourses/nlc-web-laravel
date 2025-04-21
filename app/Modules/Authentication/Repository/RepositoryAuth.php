@@ -16,14 +16,15 @@ class RepositoryAuth extends DomainAuth
      */
 
     protected function RegisterRepository(
-        string $name,
-        string $username,
-        string $email,
-        string $password,
-        int $roles_id,
-        string $token_verification,
-        string $date_registered,
-        string $ip
+        string  $name,
+        string  $username,
+        string  $email,
+        string  $password,
+        int     $roles_id,
+        string  $token_verification,
+        string  $date_registered,
+        string  $ip,
+        string  $url_verification,
     ): void {
         $this->DomainUserRegister(
             $name,
@@ -33,8 +34,8 @@ class RepositoryAuth extends DomainAuth
             $roles_id,
             $token_verification,
         );
-
-        $this->SendMailVerification($email, $username, $password, $date_registered, $ip);
+        $url_verification = $url_verification . '/' . $token_verification;
+        $this->SendMailVerification($email, $username, $password, $date_registered, $ip, $url_verification);
     }
 
     /**
@@ -43,8 +44,14 @@ class RepositoryAuth extends DomainAuth
      */
     protected function VerificationAccountRepository(string $token): void {}
 
-    private static function SendMailVerification(string $email, string $username, string $password, string $date_registered, string $ip): void
-    {
-        Mail::to($email)->send(new MailAuth($username, $password, $date_registered, $ip, $email));
+    private static function SendMailVerification(
+        string $email,
+        string $username,
+        string $password,
+        string $date_registered,
+        string $ip,
+        string $url_verification,
+    ): void {
+        Mail::to($email)->send(new MailAuth($username, $password, $date_registered, $ip, $email, $url_verification));
     }
 }

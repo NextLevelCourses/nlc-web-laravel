@@ -15,14 +15,15 @@ class ServicesAuth extends RepositoryAuth
      */
 
     protected function RegisterServices(
-        $randomName,
-        $randomUsername,
-        $email,
-        $randomPassword,
-        $rolesId,
-        $tokenVerification,
-        $dateRegistered,
-        $ip,
+        string  $randomName,
+        string  $randomUsername,
+        string  $email,
+        string  $randomPassword,
+        int     $rolesId,
+        string  $tokenVerification,
+        string  $dateRegistered,
+        string  $ip,
+        string  $urlVerification,
     ): void {
         $this->RegisterRepository(
             $randomName,
@@ -33,6 +34,7 @@ class ServicesAuth extends RepositoryAuth
             $tokenVerification,
             $dateRegistered,
             $ip,
+            $urlVerification
         );
     }
 
