@@ -37,8 +37,8 @@ class ConstantAuth
     protected function ConstMessageLogin(): array
     {
         return array(
-            'umail.required' => 'The username or email wajib di isi.',
-            'password.required' => 'The password wajib di isi.',
+            'umail.required' => 'Username or email wajib di isi.',
+            'password.required' => 'Password wajib di isi.',
         );
     }
 
@@ -50,9 +50,9 @@ class ConstantAuth
     protected function ConstMessageRegister(): array
     {
         return array(
-            'email.required' => 'The email wajib di isi.',
-            'email.email' => 'harus sesuai dengan format email: @',
-            'email.unique' => 'email sudah terdaftar harap daftar dengan email lain',
+            'email.required' => 'Email wajib di isi.',
+            'email.email' => 'Harus sesuai dengan format email: @',
+            'email.unique' => 'Email sudah terdaftar harap daftar dengan email lain',
         );
     }
 
