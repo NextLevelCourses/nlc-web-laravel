@@ -94,10 +94,9 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
     ) {
         // DB::beginTransaction();
         try {
-            // $this->VerificationAccountServices($token);
-            return 'halo';
-            // DB::commit();
-            // return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
+            $this->VerificationAccountServices($token);
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
         } catch (\Exception $error) {
             // DB::rollBack();
             $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
