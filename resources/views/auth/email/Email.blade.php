@@ -128,6 +128,38 @@
             color: inherit;
             text-decoration: none
         }
+
+        .button {
+            background-color: #021D3B;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .button1 {
+            border-radius: 2px;
+        }
+
+        .button2 {
+            border-radius: 4px;
+        }
+
+        .button3 {
+            border-radius: 8px;
+        }
+
+        .button4 {
+            border-radius: 12px;
+        }
+
+        .button5 {
+            border-radius: 50%;
+        }
     </style>
     <style type="text/css">
         @media (min-width: 481px) {
@@ -305,7 +337,13 @@
                                                                                                 default password yang
                                                                                                 telah diberikan oleh
                                                                                                 sistem agar akun anda
-                                                                                                menjadi aman terkendali
+                                                                                                menjadi aman terkendali.
+                                                                                                Selanjutnya lakukan
+                                                                                                verifikasi akun agar
+                                                                                                akun anda aktif dengan
+                                                                                                cara mengklik tombol
+                                                                                                verification yang ada di
+                                                                                                bawah ini.
                                                                                             </p>
                                                                                         </td>
                                                                                     </tr>
@@ -1003,6 +1041,137 @@
                                                                                                                                         </table>
                                                                                                                                     </td>
                                                                                                                                 </tr>
+                                                                                                                                <tr>
+                                                                                                                                    <td>
+                                                                                                                                        <div class=t94
+                                                                                                                                            style="mso-line-height-rule:exactly;mso-line-height-alt:15px;line-height:15px;font-size:1px;display:block;">
+                                                                                                                                            &nbsp;&nbsp;
+                                                                                                                                        </div>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                                <tr>
+                                                                                                                                    <td
+                                                                                                                                        align=center>
+                                                                                                                                        <table
+                                                                                                                                            class=t98
+                                                                                                                                            role=presentation
+                                                                                                                                            cellpadding=0
+                                                                                                                                            cellspacing=0
+                                                                                                                                            style="Margin-left:auto;Margin-right:auto;">
+                                                                                                                                            <tr>
+                                                                                                                                                <td width=245
+                                                                                                                                                    class=t97
+                                                                                                                                                    style="width:800px;">
+                                                                                                                                                    <table
+                                                                                                                                                        class=t96
+                                                                                                                                                        role=presentation
+                                                                                                                                                        cellpadding=0
+                                                                                                                                                        cellspacing=0
+                                                                                                                                                        width=100%
+                                                                                                                                                        style="width:100%;">
+                                                                                                                                                        <tr>
+                                                                                                                                                            <td
+                                                                                                                                                                class=t95>
+                                                                                                                                                                <table
+                                                                                                                                                                    role=presentation
+                                                                                                                                                                    width=100%
+                                                                                                                                                                    cellpadding=0
+                                                                                                                                                                    cellspacing=0
+                                                                                                                                                                    style="width:100% !important;">
+                                                                                                                                                                    <tr>
+                                                                                                                                                                        <td
+                                                                                                                                                                            align=center>
+                                                                                                                                                                            <table
+                                                                                                                                                                                class=t87
+                                                                                                                                                                                role=presentation
+                                                                                                                                                                                cellpadding=0
+                                                                                                                                                                                cellspacing=0
+                                                                                                                                                                                style="Margin-left:auto;Margin-right:auto;">
+                                                                                                                                                                                <tr>
+                                                                                                                                                                                    <td width=245
+                                                                                                                                                                                        class=t86
+                                                                                                                                                                                        style="width:600px;">
+                                                                                                                                                                                        <table
+                                                                                                                                                                                            class=t85
+                                                                                                                                                                                            role=presentation
+                                                                                                                                                                                            cellpadding=0
+                                                                                                                                                                                            cellspacing=0
+                                                                                                                                                                                            width=100%
+                                                                                                                                                                                            style="width:100%;">
+                                                                                                                                                                                            <tr>
+                                                                                                                                                                                                <td
+                                                                                                                                                                                                    class=t84>
+                                                                                                                                                                                                    <p class=t83
+                                                                                                                                                                                                        style="margin:0;Margin:0;font-family:Albert Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:600;font-style:normal;font-size:15px;text-decoration:none;text-transform:none;letter-spacing:-0.64px;direction:ltr;color:#F7F7F7;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">
+                                                                                                                                                                                                        Link
+                                                                                                                                                                                                        Verification:
+                                                                                                                                                                                                    </p>
+                                                                                                                                                                                                </td>
+                                                                                                                                                                                            </tr>
+                                                                                                                                                                                        </table>
+                                                                                                                                                                                    </td>
+                                                                                                                                                                                </tr>
+                                                                                                                                                                            </table>
+                                                                                                                                                                        </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                                    <tr>
+                                                                                                                                                                        <td>
+                                                                                                                                                                            <div class=t89
+                                                                                                                                                                                style="mso-line-height-rule:exactly;mso-line-height-alt:5px;line-height:5px;font-size:1px;display:block;">
+                                                                                                                                                                                &nbsp;&nbsp;
+                                                                                                                                                                            </div>
+                                                                                                                                                                        </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                                    <tr>
+                                                                                                                                                                        <td
+                                                                                                                                                                            align=center>
+                                                                                                                                                                            <table
+                                                                                                                                                                                class=t93
+                                                                                                                                                                                role=presentation
+                                                                                                                                                                                cellpadding=0
+                                                                                                                                                                                cellspacing=0
+                                                                                                                                                                                style="Margin-left:auto;Margin-right:auto;">
+                                                                                                                                                                                <tr>
+                                                                                                                                                                                    <td width=245
+                                                                                                                                                                                        class=t92
+                                                                                                                                                                                        style="width:600px;">
+                                                                                                                                                                                        <table
+                                                                                                                                                                                            class=t91
+                                                                                                                                                                                            role=presentation
+                                                                                                                                                                                            cellpadding=0
+                                                                                                                                                                                            cellspacing=0
+                                                                                                                                                                                            width=100%
+                                                                                                                                                                                            style="width:100%;">
+                                                                                                                                                                                            <tr>
+                                                                                                                                                                                                <td
+                                                                                                                                                                                                    class=t90>
+                                                                                                                                                                                                    <a href="{{ $url_verification }}"
+                                                                                                                                                                                                        class=t88
+                                                                                                                                                                                                        style="margin:0;Margin:0;font-family:Albert Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:500;font-style:normal;font-size:15px;text-decoration:none;text-transform:none;direction:ltr;color:#F8F8F8;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">
+                                                                                                                                                                                                        {{ __('Click
+                                                                                                                                                                                                                                                                                                                                                                                                                here
+                                                                                                                                                                                                                                                                                                                                                                                                                to
+                                                                                                                                                                                                                                                                                                                                                                                                                verify
+                                                                                                                                                                                                                                                                                                                                                                                                                your
+                                                                                                                                                                                                                                                                                                                                                                                                                account') }}
+                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                </td>
+                                                                                                                                                                                            </tr>
+                                                                                                                                                                                        </table>
+                                                                                                                                                                                    </td>
+                                                                                                                                                                                </tr>
+                                                                                                                                                                            </table>
+                                                                                                                                                                        </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                                </table>
+                                                                                                                                                            </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                    </table>
+                                                                                                                                                </td>
+                                                                                                                                            </tr>
+                                                                                                                                        </table>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
                                                                                                                             </table>
                                                                                                                         </td>
                                                                                                                     </tr>
@@ -1040,12 +1209,16 @@
                                                                     <table class=t129 role=presentation cellpadding=0
                                                                         cellspacing=0 style="Margin-right:auto;">
                                                                         <tr>
+                                                                            <div class=t125
+                                                                                style="mso-line-height-rule:exactly;mso-line-height-alt:30px;line-height:30px;font-size:1px;display:block;">
+                                                                                &nbsp;&nbsp;</div>
                                                                             <td width=570 class=t128
                                                                                 style="width:600px;">
                                                                                 <table class=t127 role=presentation
                                                                                     cellpadding=0 cellspacing=0
                                                                                     width=100% style="width:100%;">
                                                                                     <tr>
+
                                                                                         <td class=t126>
                                                                                             <p class=t124
                                                                                                 style="margin:0;Margin:0;font-family:Albert Sans,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;line-height:22px;font-weight:400;font-style:normal;font-size:15px;text-decoration:none;text-transform:none;direction:ltr;color:#0E1E3B;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">
@@ -1226,6 +1399,7 @@
                                                                     </table>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
                                                                 <td>
                                                                     <div class=t155
