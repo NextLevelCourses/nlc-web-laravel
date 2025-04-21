@@ -30,6 +30,13 @@ class RepositoryAuth extends DomainAuth
     }
 
     /**
+     * @method VerificationAccountRepository
+     *  manage business logic send mail verification account
+     */
+    protected function VerificationAccountRepository(string $token): void {}
+
+
+    /**
      * @method RegisterRepository
      *  manage business logic send mail verification account
      */
