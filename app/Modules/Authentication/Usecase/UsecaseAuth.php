@@ -6,6 +6,7 @@ use App\Modules\Authentication\Domain\DomainAuth;
 use App\Modules\Authentication\Request\RequestAuth;
 use App\Modules\Authentication\Services\ServicesAuth;
 use App\Modules\Authentication\Interface\InterfaceUseCaseAuth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 
 class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
@@ -51,7 +52,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         int      $rolesId,
         string   $tokenVerification,
         string   $urlVerification,
-    ) {
+    ): RedirectResponse {
         $this->requestAuth->RequestRegister(
             $request,
             $ConstRuleRegister,
@@ -91,7 +92,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         string   $currentPath,
         string   $successVerificationAccountMessage,
         string   $errorVerificationAccountMessage
-    ) {
+    ): RedirectResponse {
         // DB::beginTransaction();
         try {
             $this->VerificationAccountServices($token);
