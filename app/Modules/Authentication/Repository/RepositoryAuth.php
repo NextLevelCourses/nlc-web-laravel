@@ -35,7 +35,14 @@ class RepositoryAuth extends DomainAuth
             $token_verification,
         );
         $url_verification = $url_verification . '/' . $token_verification;
-        $this->SendMailVerification($email, $username, $password, $date_registered, $ip, $url_verification);
+        $this->SendMailUserVerificationRegister(
+            $email,
+            $username,
+            $password,
+            $date_registered,
+            $ip,
+            $url_verification
+        );
     }
 
     /**
@@ -44,7 +51,7 @@ class RepositoryAuth extends DomainAuth
      */
     protected function VerificationAccountRepository(string $token): void {}
 
-    private static function SendMailVerification(
+    private static function SendMailUserVerificationRegister(
         string $email,
         string $username,
         string $password,
