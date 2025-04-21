@@ -49,8 +49,15 @@ class RepositoryAuth extends DomainAuth
      * @method VerificationAccountRepository
      *  manage business logic send mail verification account
      */
-    protected function VerificationAccountRepository(string $token): void {}
+    protected function VerificationAccountRepository(string $token): void
+    {
+        $this->DomainVerifyAccountByTokens($token);
+    }
 
+    /**
+     * @method SendMailUserVerificationRegister
+     *  send mail verification register user
+     */
     private static function SendMailUserVerificationRegister(
         string $email,
         string $username,

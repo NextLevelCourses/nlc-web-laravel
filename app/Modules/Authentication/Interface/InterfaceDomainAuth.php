@@ -22,5 +22,5 @@ interface InterfaceDomainAuth
         string $token_verification
     ): void;
 
-    public function DomainVerifyAccountByTokens($token): void;
+    public function DomainVerifyAccountByTokens(string $token): void;
 }

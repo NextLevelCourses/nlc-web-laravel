@@ -42,5 +42,8 @@ class DomainAuth implements InterfaceDomainAuth
      *  transaction data with verification account to table users
      */
 
-    public function DomainVerifyAccountByTokens($token): void {}
+    public function DomainVerifyAccountByTokens(string $token): void
+    {
+        DB::update("UPDATE users SET status = ? WHERE remember_token = ?", [true, $token]);
+    }
 }

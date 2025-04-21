@@ -43,5 +43,8 @@ class ServicesAuth extends RepositoryAuth
      *  excec bisnis logic verification account
      */
 
-    protected function VerificationAccountServices($token): void {}
+    protected function VerificationAccountServices(string $token): void
+    {
+        $this->VerificationAccountRepository($token);
+    }
 }
