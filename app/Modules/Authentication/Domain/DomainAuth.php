@@ -2,18 +2,22 @@
 
 namespace App\Modules\Authentication\Domain;
 
+use App\Modules\Authentication\Interface\InterfaceDomainAuth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class DomainAuth
+class DomainAuth implements InterfaceDomainAuth
 {
     /**
      * @method DomainLogErrorInsert
      *  transaction data with log error to table log_errors
      */
 
-    protected function DomainLogErrorInsert($message, $route, $path): void
-    {
+    public function DomainLogErrorInsert(
+        string $message,
+        string $route,
+        string $path
+    ): void {
         DB::insert('insert into log_errors (message,route,path,created_at,updated_at) values (?, ?, ?, ?, ?)', [$message, $route, $path, now(), now()]);
     }
 
@@ -22,7 +26,7 @@ class DomainAuth
      *  transaction data with user register to table users
      */
 
-    protected function DomainUserRegister(
+    public function DomainUserRegister(
         string $name,
         string $username,
         string $email,
@@ -37,5 +41,6 @@ class DomainAuth
      * @method DomainVerifyAccountByTokens
      *  transaction data with verification account to table users
      */
-    protected function DomainVerifyAccountByTokens($token) {}
+
+    public function DomainVerifyAccountByTokens($token): void {}
 }
