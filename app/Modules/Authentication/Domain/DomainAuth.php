@@ -22,8 +22,14 @@ class DomainAuth
      *  transaction data with user register to table users
      */
 
-    protected function DomainUserRegister($name, $username, $email, $password, $roles_id, $token_verification): void
-    {
+    protected function DomainUserRegister(
+        string $name,
+        string $username,
+        string $email,
+        string $password,
+        string $roles_id,
+        string $token_verification
+    ): void {
         DB::insert('INSERT INTO users (name,username,email,password,roles_id,remember_token,created_at,updated_at) values (?, ?, ?, ?, ?, ?, ?, ?)', [$name, $username, $email, Hash::make($password), $roles_id, $token_verification, now(), now()]);
     }
 

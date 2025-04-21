@@ -2,7 +2,7 @@
 
 namespace App\Modules\Authentication\Interface;
 
-interface InterfaceAuth
+interface InterfaceUseCaseAuth
 {
     /**
      * prepare method for prepare case business authentication

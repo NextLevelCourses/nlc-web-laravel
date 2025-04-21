@@ -5,10 +5,10 @@ namespace App\Modules\Authentication\Usecase;
 use App\Modules\Authentication\Domain\DomainAuth;
 use App\Modules\Authentication\Request\RequestAuth;
 use App\Modules\Authentication\Services\ServicesAuth;
-use App\Modules\Authentication\Interface\InterfaceAuth;
+use App\Modules\Authentication\Interface\InterfaceUseCaseAuth;
 use Illuminate\Support\Facades\DB;
 
-class UsecaseAuth extends ServicesAuth implements InterfaceAuth
+class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
 {
     public function __construct(
         private RequestAuth $requestAuth,
