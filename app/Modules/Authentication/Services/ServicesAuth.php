@@ -9,6 +9,11 @@ class ServicesAuth extends RepositoryAuth
 {
     protected function LoginServices() {}
 
+    /**
+     * @method RegisterServices
+     *  excec bisnis logic register
+     */
+
     protected function RegisterServices($request): void
     {
         $this->RegisterRepository(
@@ -22,6 +27,11 @@ class ServicesAuth extends RepositoryAuth
             $request->getClientIp(),
         );
     }
+
+    /**
+     * @method VerificationAccountServices
+     *  excec bisnis logic verification account
+     */
 
     protected function VerificationAccountServices($token): void
     {
