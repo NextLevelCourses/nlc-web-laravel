@@ -5,10 +5,11 @@ namespace App\Modules\Authentication\Usecase;
 use App\Modules\Authentication\Domain\DomainAuth;
 use App\Modules\Authentication\Request\RequestAuth;
 use App\Modules\Authentication\Services\ServicesAuth;
-use App\Modules\Authentication\Interface\InterfaceAuth;
+use App\Modules\Authentication\Interface\InterfaceUseCaseAuth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 
-class UsecaseAuth extends ServicesAuth implements InterfaceAuth
+class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
 {
     public function __construct(
         private RequestAuth $requestAuth,
@@ -36,8 +37,22 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
      */
 
 
-    public function RegisterCase($request, $ConstRuleRegister, $ConstMessageRegister, $currentRoute, $currentPath, $successRegisterMessage, $errorRegisterMessage)
-    {
+    public function RegisterCase(
+        $request,
+        array    $ConstRuleRegister,
+        array    $ConstMessageRegister,
+        string   $currentRoute,
+        string   $currentPath,
+        string   $successRegisterMessage,
+        string   $errorRegisterMessage,
+        //params for services need registered
+        string   $randomName,
+        string   $randomUsername,
+        string   $randomPassword,
+        int      $rolesId,
+        string   $tokenVerification,
+        string   $urlVerification,
+    ): RedirectResponse {
         $this->requestAuth->RequestRegister(
             $request,
             $ConstRuleRegister,
@@ -46,7 +61,17 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
 
         DB::beginTransaction();
         try {
-            $this->RegisterServices($request, $currentRoute);
+            $this->RegisterServices(
+                $randomName,
+                $randomUsername,
+                $request->input('email'),
+                $randomPassword,
+                $rolesId,
+                $tokenVerification,
+                now(),
+                $request->getClientIp(),
+                $urlVerification,
+            );
             DB::commit();
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
@@ -61,7 +86,24 @@ class UsecaseAuth extends ServicesAuth implements InterfaceAuth
      *  verif account use of tokens
      */
 
-    public function VerificationAccount($token) {}
+    public function VerificationAccountCase(
+        string   $token,
+        string   $currentRoute,
+        string   $currentPath,
+        string   $successVerificationAccountMessage,
+        string   $errorVerificationAccountMessage
+    ): RedirectResponse {
+        // DB::beginTransaction();
+        try {
+            $this->VerificationAccountServices($token);
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
+        } catch (\Exception $error) {
+            // DB::rollBack();
+            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            return redirect()->route('landing.Authentication')->with('error', $errorVerificationAccountMessage);
+        }
+    }
 
     /**
      * @method LogoutCase

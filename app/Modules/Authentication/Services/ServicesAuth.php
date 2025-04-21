@@ -9,42 +9,46 @@ class ServicesAuth extends RepositoryAuth
 {
     protected function LoginServices() {}
 
-    protected function RegisterServices($request): void
-    {
+    /**
+     * @method RegisterServices
+     *  excec bisnis logic register
+     */
+
+    protected function RegisterServices(
+        string  $randomName,
+        string  $randomUsername,
+        string  $email,
+        string  $randomPassword,
+        int     $rolesId,
+        string  $tokenVerification,
+        string  $dateRegistered,
+        string  $ip,
+        string  $urlVerification,
+    ): void {
         $this->RegisterRepository(
-            $this->RandomName(),
-            $this->RandomUsername(),
-            $request->input('email'),
-            $this->RandomPassword(),
-            $this->RolesID(),
-            $this->TokenVerification(),
-            now(),
-            $request->getClientIp(),
+            $randomName,
+            $randomUsername,
+            $email,
+            $randomPassword,
+            $rolesId,
+            $tokenVerification,
+            $dateRegistered,
+            $ip,
+            $urlVerification
         );
     }
 
-    private static function RandomName(): string
-    {
-        return 'NLC-' . Str::random(4);
-    }
+    /**
+     * @method VerificationAccountServices
+     *  excec bisnis logic verification account
+     */
 
-    private static function RandomUsername(): string
+    protected function VerificationAccountServices(string $token): void
     {
-        return 'nlc-' . Str::random(4);
-    }
-
-    private static function RandomPassword(): string
-    {
-        return Str::random(10);
-    }
-
-    private static function RolesID(): int
-    {
-        return 1;
-    }
-
-    private static function TokenVerification(): string
-    {
-        return Str::random(20);
+        $this->VerificationAccountRepository($token);
+        //validate email by tokens
+        $token = $this->ValidateEmailByTokensRepository($token);
+        //delete token verification by email
+        $this->DeleteTokensVerifyAcountRepository($token[0]->email);
     }
 }

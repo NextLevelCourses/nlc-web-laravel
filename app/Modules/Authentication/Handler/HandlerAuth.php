@@ -12,6 +12,10 @@ class HandlerAuth extends ConstantAuth
         private UsecaseAuth $usecaseAuth,
         private Request $request,
     ) {}
+    /**
+     * @method login
+     * handle usecase login
+     */
     public function login()
     {
         return $this->usecaseAuth->LoginCase(
@@ -21,6 +25,10 @@ class HandlerAuth extends ConstantAuth
         );
     }
 
+    /**
+     * @method register
+     * handle usecase register
+     */
     public function register()
     {
         return $this->usecaseAuth->RegisterCase(
@@ -29,21 +37,43 @@ class HandlerAuth extends ConstantAuth
             $this->ConstMessageRegister(),
             $this->ConstCurrentRouteLog($this->request),
             $this->ConstCurrentPathLog($this->request),
-            static::SUCCESS_REGISTER,
-            static::FAILED_REGISTER,
+            $this->SUCCESS_REGISTER_MESSAGE,
+            $this->FAILED_REGISTER_MESSAGE,
+            //params for usecase need registration
+            $this->RandomName(),
+            $this->RandomUsername(),
+            $this->RandomPassword(),
+            $this->roleID,
+            $this->TokenVerification(),
+            $this->UrlVerification(),
         );
     }
-
+    /**
+     * @method verification
+     * handle usecase verification
+     */
     public function verification($token)
     {
-        return $this->usecaseAuth->VerificationAccount($token);
+        return $this->usecaseAuth->VerificationAccountCase(
+            $token,
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+            $this->SUCCESS_VERIFICATION_ACCOUNT_MESSAGE,
+            $this->FAILED_VERIFICATION_ACCOUNT_MESSAGE,
+        );
     }
-
+    /**
+     * @method logout
+     * handle usecase logout
+     */
     public function logout()
     {
         return $this->usecaseAuth->LogoutCase();
     }
-
+    /**
+     * @method profile
+     * handle usecase profile
+     */
     public function profile()
     {
         return $this->usecaseAuth->ProfileCase();
