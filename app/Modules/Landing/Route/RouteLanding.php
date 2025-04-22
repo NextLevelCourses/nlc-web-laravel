@@ -5,7 +5,7 @@ namespace App\Modules\Landing\Route;
 use Illuminate\Support\Facades\Route;
 use App\Modules\Landing\Handler\HandlerLanding;
 
-Route::middleware('throttle:6,1')->group(function () {
+Route::middleware('throttle:30,1')->group(function () {
     Route::get('/', [HandlerLanding::class, 'Index'])->name('landing.Home');
     Route::get('/About', [HandlerLanding::class, 'About'])->name('landing.About');
     Route::get('/Testimonial', [HandlerLanding::class, 'Testimonial'])->name('landing.Testimonial');
