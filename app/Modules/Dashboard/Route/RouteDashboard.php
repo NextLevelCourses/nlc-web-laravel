@@ -5,7 +5,7 @@ namespace App\Modules\Dashboard\Route;
 use App\Modules\Dashboard\Handler\HandlerDashboard;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'throttle:6,1'])->group(function () {
     Route::get('/Home', [HandlerDashboard::class, 'Home'])->name('Dashboard.Home');
     Route::get('/DetailCourseDashboard', [HandlerDashboard::class, 'DetailCourseDashboard'])->name('Dashboard.DetailCourseDashboard');
     Route::get('/MyProfile', [HandlerDashboard::class, 'MyProfile'])->name('Dashboard.MyProfile');
