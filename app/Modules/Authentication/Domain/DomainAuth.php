@@ -59,9 +59,10 @@ class DomainAuth implements InterfaceDomainAuth
     /**
      * @method DomainVerifyEmailByTokens
      *  transaction data with validate token by email
+     * @return array
      */
 
-    public function DomainValidateEmailByTokens(string $token)
+    public function DomainValidateEmailByTokens(string $token): array
     {
         return DB::select("SELECT * FROM users WHERE remember_token = ?", [$token]);
     }

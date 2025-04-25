@@ -68,9 +68,9 @@ class RepositoryAuth extends DomainAuth
     /**
      * @method ValidateEmailByTokensRepository
      *  manage business logic validate email existing
-     * @return void
+     * @return array
      */
-    public function ValidateEmailByTokensRepository(string $token)
+    public function ValidateEmailByTokensRepository(string $token): array
     {
         return $this->DomainValidateEmailByTokens($token);
     }
