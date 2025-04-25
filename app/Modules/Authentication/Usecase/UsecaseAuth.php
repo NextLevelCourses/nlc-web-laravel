@@ -98,7 +98,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
             $this->domainAuth->DomainLogInsert($successRegisterMessage, $currentRoute, $currentPath, 'success');
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
-            DB::rollBack();
+            // DB::rollBack();
             $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorRegisterMessage);
         }
@@ -131,9 +131,27 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
 
     /**
      * @method LogoutCase
-     * logout account
+     * logout account user by session
      */
-    public function LogoutCase() {}
+    public function LogoutCase(
+        string   $logoutMessageSuccess,
+        string   $logoutMessageError,
+        string   $currentRoute,
+        string   $currentPath,
+        $userSession,
+    ): RedirectResponse {
+        DB::beginTransaction();
+        try {
+            $this->LogoutService();
+            $this->domainAuth->DomainLogInsert($logoutMessageSuccess . " ID: {$userSession->id}, Username {$userSession->username}", $currentRoute, $currentPath, 'error');
+            DB::commit();
+            return redirect()->intended('/Authentication')->with('success', $logoutMessageSuccess);
+        } catch (\Exception $error) {
+            DB::rollBack();
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
+            return redirect()->route('landing.Authentication')->with('error', $logoutMessageError);
+        }
+    }
 
 
     /**

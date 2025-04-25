@@ -2,69 +2,122 @@
 
 namespace App\Modules\Dashboard\Handler;
 
+use Illuminate\Support\Facades\Auth;
+
 class HandlerDashboard
 {
     public function Home()
     {
-        return view('dashboard.module.Home');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Home');
+        }
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function DetailCourseDashboard()
     {
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.DetailCourseDashboard');
+        }
         return view('dashboard.module.DetailCourseDashboard');
     }
 
     public function MyProfile()
     {
-        return view('dashboard.module.MyProfile');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.MyProfile');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function Wishlist()
     {
-        return view('dashboard.module.Wishlist');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Wishlist');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
     public function OrderHistory()
     {
-        return view('dashboard.module.OrderHistory');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.OrderHistory');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function CreateCourse()
     {
-        return view('dashboard.module.CreateCourse');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.CreateCourse');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function Checkout()
     {
-        return view('dashboard.module.Checkout');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Checkout');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function Learning()
     {
-        return view('dashboard.module.Learning');
+
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Learning');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function AboutUs()
     {
-        return view('dashboard.module.AboutUs');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.AboutUs');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function Cart()
     {
-        return view('dashboard.module.Cart');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Cart');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function MyCommunity()
     {
-        return view('dashboard.module.MyCommunity');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.MyCommunity');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function Mentoring()
     {
-        return view('dashboard.module.Mentoring');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.Mentoring');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 
     public function EnrolledCourses()
     {
-        return view('dashboard.module.EnrolledCourses');
+        if (Auth::guard('user')->check()) {
+            return view('dashboard.module.EnrolledCourses');
+        }
+        // Redirect to the login page if the user is not authenticated
+        return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
 }

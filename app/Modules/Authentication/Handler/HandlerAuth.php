@@ -75,7 +75,13 @@ class HandlerAuth extends ConstantAuth
      */
     public function logout()
     {
-        return $this->usecaseAuth->LogoutCase();
+        return $this->usecaseAuth->LogoutCase(
+            $this->MESSAGE_LOGOUT_SUCCESS,
+            $this->MESSAGE_LOGOUT_ERROR,
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+            $this->AuthUsersBySessions(),
+        );
     }
     /**
      * @method profile

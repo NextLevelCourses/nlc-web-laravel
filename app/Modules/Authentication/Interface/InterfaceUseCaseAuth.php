@@ -9,15 +9,15 @@ interface InterfaceUseCaseAuth
      */
     public function LoginCase(
         $request,
-        array $ConstRuleLogin,
-        array $ConstMessageLogin,
+        array    $ConstRuleLogin,
+        array    $ConstMessageLogin,
         //struct login
-        string $messageErrorLoginUsernameOrEmailAndPassword,
-        string $messageErrorLoginVerification,
-        string $currentRoute,
-        string $currentPath,
-        string $errorLoginMessage,
-        string $successLoginMessage,
+        string   $messageErrorLoginUsernameOrEmailAndPassword,
+        string   $messageErrorLoginVerification,
+        string   $currentRoute,
+        string   $currentPath,
+        string   $errorLoginMessage,
+        string   $successLoginMessage,
     );
     public function RegisterCase(
         $request,
@@ -42,6 +42,12 @@ interface InterfaceUseCaseAuth
         string   $successVerificationAccountMessage,
         string   $errorVerificationAccountMessage
     );
-    public function LogoutCase();
+    public function LogoutCase(
+        string   $logoutMessageSuccess,
+        string   $logoutMessageError,
+        string   $currentRoute,
+        string   $currentPath,
+        $userSession,
+    );
     public function ProfileCase();
 }

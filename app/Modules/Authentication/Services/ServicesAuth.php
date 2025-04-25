@@ -23,7 +23,7 @@ class ServicesAuth extends RepositoryAuth
             return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmailAndPassword);
         }
 
-        if (!$this->_SetAccountStatusByEmailOrUsername($request->umail)) {
+        if (!$this->_SetAccountStatusByEmailOrUsernameRepository($request->umail)) {
             return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
         }
 
@@ -72,5 +72,10 @@ class ServicesAuth extends RepositoryAuth
         $token = $this->ValidateEmailByTokensRepository($token);
         //delete token verification by email
         $this->DeleteTokensVerifyAcountRepository($token[0]->email);
+    }
+
+    protected function LogoutService(): void
+    {
+        $this->UserLoggoutSessionRepository();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Modules\Authentication\Constant;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 class ConstantAuth
@@ -158,6 +159,20 @@ class ConstantAuth
     protected string $MESSAGE_ERROR_LOGIN_VERIFICATION = 'Gagal Login, akun anda belum di verifikasi harap lakukan verifikasi';
 
     /**
+     * @var string $MESSAGE_LOGOUT_SUCCESS
+     * @return string
+     */
+
+    protected string $MESSAGE_LOGOUT_SUCCESS = 'Berhasil Logout, silahkan login kembali jika ingin masuk';
+
+    /**
+     * @var string $MESSAGE_LOGOUT_ERROR
+     * @return string
+     */
+
+    protected string $MESSAGE_LOGOUT_ERROR = 'Gagal Logout, silahkan dicoba kembali';
+
+    /**
      * @method $RandomName
      * @return string
      */
@@ -207,5 +222,13 @@ class ConstantAuth
     protected static function UrlVerification(): string
     {
         return config('app.url') . '/verification/account';
+    }
+
+    /**
+     * @method AuthUsersBySessions
+     */
+    protected function AuthUsersBySessions()
+    {
+        return Auth::guard('user')->user();
     }
 }

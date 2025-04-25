@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Hash;
 
 class RepositoryAuth extends DomainAuth
 {
-    protected function LoginRepository() {}
 
     /**
      * @method RegisterRepository
@@ -154,7 +153,7 @@ class RepositoryAuth extends DomainAuth
      * @return
      */
 
-    protected function _GetAccountStatusByEmailOrUsername(string $umail)
+    protected function _GetAccountStatusByEmailOrUsernameRepository(string $umail)
     {
         return $this->DomainValidateAccountStatus($umail)[0]->status;
     }
@@ -164,8 +163,17 @@ class RepositoryAuth extends DomainAuth
      * @return bool
      */
 
-    protected function _SetAccountStatusByEmailOrUsername(string $umail): bool
+    protected function _SetAccountStatusByEmailOrUsernameRepository(string $umail): bool
     {
-        return !$this->_GetAccountStatusByEmailOrUsername($umail) ? false : true;
+        return !$this->_GetAccountStatusByEmailOrUsernameRepository($umail) ? false : true;
+    }
+
+    /**
+     * @method UserLoggoutSessionRepository
+     */
+
+    protected function UserLoggoutSessionRepository(): void
+    {
+        Auth::guard('user')->logout();
     }
 }
