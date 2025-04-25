@@ -97,9 +97,9 @@ class RepositoryAuth extends DomainAuth
      *  validate password by hash
      * @return bool
      */
-    protected static function ValidatePasswordByHash($passwordReq, $passwordHash): bool
+    protected static function ValidatePasswordByHashRepository($passwordReq, $passwordHash): bool
     {
-        return Hash::check($passwordReq, $passwordHash) ? true : false;
+        return !Hash::check($passwordReq, $passwordHash) ? false : true;
     }
 
     /**
@@ -109,7 +109,7 @@ class RepositoryAuth extends DomainAuth
      */
     protected function ValidateLoginByExistingEmailRepository(string $umail): bool
     {
-        return !$this->DomainValidateLoginByExistingEmail($umail) ? false : true;
+        return $this->DomainValidateLoginByExistingEmail($umail);
     }
 
     /**
@@ -119,6 +119,27 @@ class RepositoryAuth extends DomainAuth
      */
     protected function ValidateLoginByExistingUsernameRepository(string $umail): bool
     {
-        return !$this->DomainValidateLoginByExistingUsername($umail) ? false : true;
+        return $this->DomainValidateLoginByExistingUsername($umail);
+    }
+
+    /**
+     * @method ValidateLoginStatusVerifyAccountRepositoryByEmail
+     * validate status verify account by email
+     * @return bool
+     */
+
+    protected function ValidateLoginStatusVerifyAccountRepositoryByEmail(string $email, int $accountStatus): bool
+    {
+        return $this->DomainValidateLoginStatusAccountByEmail($email, $accountStatus);
+    }
+
+    /**
+     * @method ValidateLoginStatusVerifyAccountRepositoryByUsername
+     * validate status verify account by email
+     * @return bool
+     */
+    protected function ValidateLoginStatusVerifyAccountRepositoryByUsername(string $username, int $accountStatus): bool
+    {
+        return $this->DomainValidateLoginStatusAccountByUsername($username, $accountStatus);
     }
 }

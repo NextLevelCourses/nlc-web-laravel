@@ -31,4 +31,8 @@ interface InterfaceDomainAuth
     public function DomainValidateLoginByExistingEmail(string $umail): bool;
 
     public function DomainValidateLoginByExistingUsername(string $umail): bool;
+
+    public function DomainValidateLoginStatusAccountByEmail(string $email, int $accountStatus): bool;
+
+    public function DomainValidateLoginStatusAccountByUsername(string $username, int $accountStatus): bool;
 }

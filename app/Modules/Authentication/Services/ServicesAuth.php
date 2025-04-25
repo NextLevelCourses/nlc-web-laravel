@@ -16,16 +16,41 @@ class ServicesAuth extends RepositoryAuth
     protected function LoginServices(
         $request,
         string $messageErrorLoginUsernameOrEmail,
-        string $messageErrorLoginPassword
+        string $messageErrorLoginPassword,
+        string $messageErrorLoginVerification,
     ): RedirectResponse {
 
-        if (!$this->ValidateLoginByExistingEmailRepository($request->umail)) {
-            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);
+        $userEmail = $this->ValidateLoginByExistingEmailRepository($request->umail);
+        if ($userEmail) {
+
+            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userEmail[0]->password);
+            if (!$userPassword) {
+                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
+            }
+            //di izinkan login jika account nya verif
+            $userAcccountStatusByEmail = $this->ValidateLoginStatusVerifyAccountRepositoryByEmail($request->umail, $userEmail[0]->status);
+            if ($userAcccountStatusByEmail) {
+            } else {
+                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
+            }
         }
 
-        if (!$this->ValidateLoginByExistingUsernameRepository($request->umail)) {
-            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
+        $userName = $this->ValidateLoginByExistingUsernameRepository($request->umail);
+        if ($userName) {
+
+            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userName[0]->password);
+            if (!$userPassword) {
+                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
+            }
+            //di izinkan login jika account nya verif
+            $userAcccountStatusByUsername = $this->ValidateLoginStatusVerifyAccountRepositoryByEmail($request->umail, $userName[0]->status);
+            if ($userAcccountStatusByUsername) {
+            } else {
+                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
+            }
         }
+
+        return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);
     }
 
     /**

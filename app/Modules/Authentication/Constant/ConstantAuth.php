@@ -125,6 +125,27 @@ class ConstantAuth
     protected string $FAILED_FORGOT_PASSWORD_MESSAGE = 'Gagal forgot password, maaf ada kesalahan sistem';
 
     /**
+     * @var string $MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL
+     * @return string
+     */
+
+    protected string $MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL = 'Gagal login, email atau password salah';
+
+    /**
+     * @var string $MESSAGE_ERROR_LOGIN_PASSWORD
+     * @return string
+     */
+
+    protected string $MESSAGE_ERROR_LOGIN_PASSWORD = 'Gagal Login, password anda salah';
+
+    /**
+     * @var string $MESSAGE_ERROR_LOGIN_VERIFICATION
+     * @return string
+     */
+
+    protected string $MESSAGE_ERROR_LOGIN_VERIFICATION = 'Gagal Login, akun anda belum di verifikasi harap lakukan verifikasi';
+
+    /**
      * @method $RandomName
      * @return string
      */
@@ -156,19 +177,6 @@ class ConstantAuth
      * @return int
      */
     protected int $roleID = 1; // roles id default student
-
-    /**
-     * @var string $MessageLoginError
-     * @return string
-     */
-
-    protected string $messageErrorLoginUsernameOrEmail = 'Gagal login, email atau password salah';
-
-    /**
-     * @var string $messageErrorLoginPassword
-     */
-
-    protected string $messageErrorLoginPassword = 'Gagal Login, password anda salah';
 
     /**
      * @method $TokenVerification

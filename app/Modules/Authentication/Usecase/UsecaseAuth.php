@@ -28,13 +28,14 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         //struct login
         string $messageErrorLoginUsernameOrEmail,
         string $messageErrorLoginPassword,
+        string $messageErrorLoginVerification,
     ) {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
             $ConstMessageLogin
         );
-        return $this->LoginServices($request, $messageErrorLoginUsernameOrEmail, $messageErrorLoginPassword);
+        return $this->LoginServices($request, $messageErrorLoginUsernameOrEmail, $messageErrorLoginPassword, $messageErrorLoginVerification);
     }
 
 

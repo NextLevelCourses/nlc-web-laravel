@@ -14,6 +14,7 @@ interface InterfaceUseCaseAuth
         //struct login
         string $messageErrorLoginUsernameOrEmail,
         string $messageErrorLoginPassword,
+        string $messageErrorLoginVerification,
     );
     public function RegisterCase(
         $request,
