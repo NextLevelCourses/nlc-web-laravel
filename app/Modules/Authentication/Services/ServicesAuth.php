@@ -33,7 +33,7 @@ class ServicesAuth extends RepositoryAuth
             }
 
             $this->GenerateSessionAuthByUserIDRepository($userEmailOrPassword[0]->id);
-            return redirect()->route('Dashboard.Home')->with('success', $messageSuccessLogin);
+            return redirect()->intended('/Home')->with('success', $messageSuccessLogin);
         }
 
         return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);
