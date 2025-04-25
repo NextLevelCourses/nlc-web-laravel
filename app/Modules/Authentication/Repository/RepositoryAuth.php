@@ -5,6 +5,7 @@ namespace App\Modules\Authentication\Repository;
 use Illuminate\Support\Facades\Mail;
 use App\Modules\Authentication\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class RepositoryAuth extends DomainAuth
@@ -103,43 +104,23 @@ class RepositoryAuth extends DomainAuth
     }
 
     /**
-     * @method ValidateLoginByExistingEmailRepository
-     *  validate email
-     * @return bool
+     * @method ValidateLoginByExistingEmailOrUsernameRepository
+     *  validate login by existing email or username
+     * @return array
      */
-    protected function ValidateLoginByExistingEmailRepository(string $umail): bool
+
+    protected function ValidateLoginByExistingEmailOrUsernameRepository(string $umail): array
     {
-        return $this->DomainValidateLoginByExistingEmail($umail);
+        return $this->DomainValidateLoginByExistingEmailOrUsername($umail);
     }
 
     /**
-     * @method ValidateLoginByExistingUsernameRepository
-     *  validate username
-     * @return bool
-     */
-    protected function ValidateLoginByExistingUsernameRepository(string $umail): bool
-    {
-        return $this->DomainValidateLoginByExistingUsername($umail);
-    }
-
-    /**
-     * @method ValidateLoginStatusVerifyAccountRepositoryByEmail
-     * validate status verify account by email
-     * @return bool
+     * @method GenerateSessionAuthByUserID
+     * @return void
      */
 
-    protected function ValidateLoginStatusVerifyAccountRepositoryByEmail(string $email, int $accountStatus): bool
+    protected static function GenerateSessionAuthByUserIDRepository(int $id): void
     {
-        return $this->DomainValidateLoginStatusAccountByEmail($email, $accountStatus);
-    }
-
-    /**
-     * @method ValidateLoginStatusVerifyAccountRepositoryByUsername
-     * validate status verify account by email
-     * @return bool
-     */
-    protected function ValidateLoginStatusVerifyAccountRepositoryByUsername(string $username, int $accountStatus): bool
-    {
-        return $this->DomainValidateLoginStatusAccountByUsername($username, $accountStatus);
+        Auth::guard('user')->loginUsingId($id);
     }
 }

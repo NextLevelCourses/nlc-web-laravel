@@ -2,7 +2,6 @@
 
 namespace App\Modules\Authentication\Services;
 
-use Illuminate\Support\Str;
 use App\Modules\Authentication\Repository\RepositoryAuth;
 use Illuminate\Http\RedirectResponse;
 
@@ -18,36 +17,23 @@ class ServicesAuth extends RepositoryAuth
         string $messageErrorLoginUsernameOrEmail,
         string $messageErrorLoginPassword,
         string $messageErrorLoginVerification,
+        string $messageSuccessLogin,
     ): RedirectResponse {
 
-        $userEmail = $this->ValidateLoginByExistingEmailRepository($request->umail);
-        if ($userEmail) {
+        $userEmailOrPassword = $this->ValidateLoginByExistingEmailOrUsernameRepository($request->umail);
+        if ($userEmailOrPassword) {
 
-            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userEmail[0]->password);
+            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userEmailOrPassword[0]->password);
             if (!$userPassword) {
                 return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
             }
             //di izinkan login jika account nya verif
-            $userAcccountStatusByEmail = $this->ValidateLoginStatusVerifyAccountRepositoryByEmail($request->umail, $userEmail[0]->status);
-            if ($userAcccountStatusByEmail) {
-            } else {
+            if (!$userEmailOrPassword[0]->status) {
                 return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
             }
-        }
 
-        $userName = $this->ValidateLoginByExistingUsernameRepository($request->umail);
-        if ($userName) {
-
-            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userName[0]->password);
-            if (!$userPassword) {
-                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
-            }
-            //di izinkan login jika account nya verif
-            $userAcccountStatusByUsername = $this->ValidateLoginStatusVerifyAccountRepositoryByUsername($request->umail, $userName[0]->status);
-            if ($userAcccountStatusByUsername) {
-            } else {
-                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
-            }
+            $this->GenerateSessionAuthByUserIDRepository($userEmailOrPassword[0]->id);
+            return redirect()->route('home')->with('success', $messageSuccessLogin);
         }
 
         return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);

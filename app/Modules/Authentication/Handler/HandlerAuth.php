@@ -28,6 +28,7 @@ class HandlerAuth extends ConstantAuth
             $this->ConstCurrentRouteLog($this->request),
             $this->ConstCurrentPathLog($this->request),
             $this->FAILED_LOGIN_MESSAGE,
+            $this->SUCCESS_LOGIN_MESSAGE,
         );
     }
 

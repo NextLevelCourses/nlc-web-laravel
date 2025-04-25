@@ -68,46 +68,12 @@ class DomainAuth implements InterfaceDomainAuth
     }
 
     /**
-     * @method DomainValidateLoginByExistingEmail
-     * @return bool
+     * @method DomainValidateLoginByExistingEmailOrUsername
+     * *  transaction data with validate login by existing email or username
+     * @return array
      */
-    public function DomainValidateLoginByExistingEmail(string $umail): bool
+    public function DomainValidateLoginByExistingEmailOrUsername(string $umail): array
     {
-        $email = DB::select("SELECT * FROM users WHERE email = ?", [$umail]);
-        return !empty($email);
-    }
-
-
-    /**
-     * @method DomainValidateLoginByExistingUsername
-     * @return bool
-     */
-
-    public function DomainValidateLoginByExistingUsername(string $umail): bool
-    {
-        $username = DB::select("SELECT * FROM users WHERE username = ?", [$umail]);
-        return !empty($username);
-    }
-
-    /**
-     * @method DomainValidateLoginStatusAccountByEmail
-     * @return bool
-     */
-
-    public function DomainValidateLoginStatusAccountByEmail(string $email, int $accountStatus): bool
-    {
-        $statusAccountByEmail = DB::select("SELECT * FROM users WHERE email = ? AND status = ?", [$email, $accountStatus]);
-        return !empty($statusAccountByEmail);
-    }
-
-    /**
-     * @method DomainValidateLoginStatusAccountByUsername
-     * @return bool
-     */
-
-    public function DomainValidateLoginStatusAccountByUsername(string $username, int $accountStatus): bool
-    {
-        $statusAccountByUsername = DB::select("SELECT * FROM users WHERE username = ? AND status = ?", [$username, $accountStatus]);
-        return !empty($statusAccountByUsername);
+        return DB::select("SELECT * FROM users WHERE email = ? OR username", [$umail, $umail]);
     }
 }

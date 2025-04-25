@@ -31,7 +31,8 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         string $messageErrorLoginVerification,
         string $currentRoute,
         string $currentPath,
-        string $errorLoginMessage
+        string $errorLoginMessage,
+        string $successLoginMessage,
     ) {
         $this->requestAuth->RequestLogin(
             $request,
@@ -45,6 +46,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
                 $messageErrorLoginUsernameOrEmail,
                 $messageErrorLoginPassword,
                 $messageErrorLoginVerification,
+                $successLoginMessage,
             );
             DB::commit();
         } catch (\Exception $error) {
