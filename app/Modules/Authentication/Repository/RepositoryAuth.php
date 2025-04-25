@@ -148,4 +148,24 @@ class RepositoryAuth extends DomainAuth
     {
         return redirect()->intended('/Home')->with('success', $messageSuccessLogin);
     }
+
+    /**
+     * @method _GetAccountStatusByEmailOrUsername
+     * @return
+     */
+
+    protected function _GetAccountStatusByEmailOrUsername(string $umail)
+    {
+        return $this->DomainValidateAccountStatus($umail)[0]->status;
+    }
+
+    /**
+     * @method _SetAccountStatusByEmailOrUsername
+     * @return bool
+     */
+
+    protected function _SetAccountStatusByEmailOrUsername(string $umail): bool
+    {
+        return !$this->_GetAccountStatusByEmailOrUsername($umail) ? false : true;
+    }
 }

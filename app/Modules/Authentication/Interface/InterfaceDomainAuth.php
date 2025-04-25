@@ -26,4 +26,6 @@ interface InterfaceDomainAuth
     public function DomainVerifyAccountByTokens(string $token): void;
 
     public function DomainDeleteTokensVerification(string $email): void;
+
+    public function DomainValidateAccountStatus(string $umail): array;
 }

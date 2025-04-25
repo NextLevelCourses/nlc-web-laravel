@@ -23,6 +23,10 @@ class ServicesAuth extends RepositoryAuth
             return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmailAndPassword);
         }
 
+        if (!$this->_SetAccountStatusByEmailOrUsername($request->umail)) {
+            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
+        }
+
         $this->GenerateSessionLoginRepository($this->SetRequestLoginByUsernameOrEmailAndPasswordRepository($request));
         return $this->RedirectLoginSuccessRepository($messageSuccessLogin);
     }
