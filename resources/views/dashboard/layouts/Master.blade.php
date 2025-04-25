@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
     <!-- CSS
-	============================================ -->
+ ============================================ -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick-theme.css') }}">
@@ -56,7 +56,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start Card Style --> <!-- content -->
-        
+
     @yield('content')
 
     <!-- Start Footer aera -->
@@ -103,10 +103,9 @@
     <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
 
-
-
     <!-- Main JS -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    @stack('js')
 </body>
 
 </html>

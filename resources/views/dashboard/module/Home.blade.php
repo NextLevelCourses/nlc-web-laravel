@@ -977,3 +977,8 @@
         </div>
     </div>
 @endsection
+
+@push('js')
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.conf.js') }}"></script>
+@endpush
