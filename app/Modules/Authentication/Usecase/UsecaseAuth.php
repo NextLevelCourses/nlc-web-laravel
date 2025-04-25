@@ -47,8 +47,9 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
                 $messageErrorLoginVerification,
                 $successLoginMessage,
             );
+            $this->domainAuth->DomainLogInsert($successLoginMessage, $currentRoute, $currentPath, 'success');
         } catch (\Exception $error) {
-            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorLoginMessage);
         }
     }
@@ -96,10 +97,11 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
                 $urlVerification,
             );
             DB::commit();
+            $this->domainAuth->DomainLogInsert($successRegisterMessage, $currentRoute, $currentPath, 'success');
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
             DB::rollBack();
-            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorRegisterMessage);
         }
     }
@@ -120,10 +122,11 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         try {
             $this->VerificationAccountServices($token);
             DB::commit();
+            $this->domainAuth->DomainLogInsert($successVerificationAccountMessage, $currentRoute, $currentPath, 'success');
             return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
         } catch (\Exception $error) {
             // DB::rollBack();
-            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorVerificationAccountMessage);
         }
     }

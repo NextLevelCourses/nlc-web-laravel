@@ -7,10 +7,11 @@ interface InterfaceDomainAuth
     /**
      * prepare method for prepare domain business authentication
      */
-    public function DomainLogErrorInsert(
+    public function DomainLogInsert(
         string $message,
         string $route,
-        string $path
+        string $path,
+        string $type,
     ): void;
 
     public function DomainUserRegister(
