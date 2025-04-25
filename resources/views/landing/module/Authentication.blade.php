@@ -28,6 +28,12 @@
 
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
         <div class="container">
+            @session('success')
+                <div class="flash-data-success" data-flashdata-success="{{ $value }}"></div>
+            @endsession
+            @session('error')
+                <div class="flash-data-error" data-flashdata-error="{{ $value }}"></div>
+            @endsession
             <div class="row gy-5 row--30">
                 <!-- Login Form -->
                 <div class="col-lg-6">
@@ -86,18 +92,6 @@
                 <!-- Register Form -->
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
-                        @session('success')
-                            {{-- <div class="alert alert-success" role="alert">
-                                {{ $value }}
-                            </div> --}}
-                            <div class="flash-data-success" data-flashdata-success="{{ $value }}"></div>
-                        @endsession
-                        @session('error')
-                            {{-- <div class="alert alert-danger" role="alert">
-                                {{ $value }}
-                            </div> --}}
-                            <div class="flash-data-error" data-flashdata-error="{{ $value }}"></div>
-                        @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
                             @csrf
