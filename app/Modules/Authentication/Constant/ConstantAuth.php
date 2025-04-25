@@ -141,7 +141,7 @@ class ConstantAuth
      * @return string
      */
 
-    protected string $MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL = 'Gagal login, email atau username salah';
+    protected string $MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL_AND_PASSWORD = 'Gagal login, email atau username dan password salah';
 
     /**
      * @var string $MESSAGE_ERROR_LOGIN_PASSWORD

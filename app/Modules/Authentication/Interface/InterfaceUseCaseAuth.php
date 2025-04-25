@@ -12,8 +12,7 @@ interface InterfaceUseCaseAuth
         array $ConstRuleLogin,
         array $ConstMessageLogin,
         //struct login
-        string $messageErrorLoginUsernameOrEmail,
-        string $messageErrorLoginPassword,
+        string $messageErrorLoginUsernameOrEmailAndPassword,
         string $messageErrorLoginVerification,
         string $currentRoute,
         string $currentPath,

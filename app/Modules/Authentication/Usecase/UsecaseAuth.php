@@ -26,8 +26,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         array $ConstRuleLogin,
         array $ConstMessageLogin,
         //struct login
-        string $messageErrorLoginUsernameOrEmail,
-        string $messageErrorLoginPassword,
+        string $messageErrorLoginUsernameOrEmailAndPassword,
         string $messageErrorLoginVerification,
         string $currentRoute,
         string $currentPath,
@@ -42,8 +41,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         try {
             return $this->LoginServices(
                 $request,
-                $messageErrorLoginUsernameOrEmail,
-                $messageErrorLoginPassword,
+                $messageErrorLoginUsernameOrEmailAndPassword,
                 $messageErrorLoginVerification,
                 $successLoginMessage,
             );

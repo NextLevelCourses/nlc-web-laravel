@@ -14,29 +14,17 @@ class ServicesAuth extends RepositoryAuth
 
     protected function LoginServices(
         $request,
-        string $messageErrorLoginUsernameOrEmail,
-        string $messageErrorLoginPassword,
+        string $messageErrorLoginUsernameOrEmailAndPassword,
         string $messageErrorLoginVerification,
         string $messageSuccessLogin,
     ): RedirectResponse {
 
-        $userEmailOrPassword = $this->ValidateLoginByExistingEmailOrUsernameRepository($request->umail);
-        if ($userEmailOrPassword) {
-
-            $userPassword = $this->ValidatePasswordByHashRepository($request->password, $userEmailOrPassword[0]->password);
-            if (!$userPassword) {
-                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
-            }
-            //di izinkan login jika account nya verif
-            if (!$userEmailOrPassword[0]->status) {
-                return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);
-            }
-
-            $this->GenerateSessionAuthByUserIDRepository($userEmailOrPassword[0]->id);
-            return redirect()->intended('/Home')->with('success', $messageSuccessLogin);
+        if (!$this->ValidateLoginByExistingEmailOrUsernameRepository($this->SetRequestLoginByUsernameOrEmailAndPasswordRepository($request))) {
+            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmailAndPassword);
         }
 
-        return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);
+        $this->GenerateSessionLoginRepository($this->SetRequestLoginByUsernameOrEmailAndPasswordRepository($request));
+        return $this->RedirectLoginSuccessRepository($messageSuccessLogin);
     }
 
     /**

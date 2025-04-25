@@ -5,6 +5,7 @@ namespace App\Modules\Authentication\Repository;
 use Illuminate\Support\Facades\Mail;
 use App\Modules\Authentication\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -106,21 +107,45 @@ class RepositoryAuth extends DomainAuth
     /**
      * @method ValidateLoginByExistingEmailOrUsernameRepository
      *  validate login by existing email or username
-     * @return array
+     * @return bool
      */
 
-    protected function ValidateLoginByExistingEmailOrUsernameRepository(string $umail): array
+    protected function ValidateLoginByExistingEmailOrUsernameRepository($credential): bool
     {
-        return $this->DomainValidateLoginByExistingEmailOrUsername($umail);
+        return Auth::attempt($credential) ? true : false;
     }
 
     /**
-     * @method GenerateSessionAuthByUserID
-     * @return void
+     * @method SetRequestLoginByUsernameOrEmailRepository
+     *  validate login by existing email or username
+     * @return array
      */
 
-    protected static function GenerateSessionAuthByUserIDRepository(int $id): void
+    protected function SetRequestLoginByUsernameOrEmailAndPasswordRepository($request): array
     {
-        Auth::guard('user')->loginUsingId($id);
+        return filter_var($request->umail, FILTER_VALIDATE_EMAIL) ?
+            ['email' => $request->umail, 'password' => $request->password] :
+            ['username' => $request->umail, 'password' => $request->password];
+    }
+
+    /**
+     * @method GenerateSessionLoginRepository
+     */
+
+    protected function GenerateSessionLoginRepository($credential)
+    {
+        $login = Auth::getProvider()->retrieveByCredentials($credential);
+        Auth::guard('user')->login($login);
+        return Auth::guard('user')->user();
+    }
+
+    /**
+     * @method RedirectLoginSuccessRepository
+     * @return RedirectResponse
+     */
+
+    protected function RedirectLoginSuccessRepository($messageSuccessLogin): RedirectResponse
+    {
+        return redirect()->intended('/Home')->with('success', $messageSuccessLogin);
     }
 }

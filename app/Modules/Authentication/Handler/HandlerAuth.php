@@ -23,8 +23,7 @@ class HandlerAuth extends ConstantAuth
             $this->ConstRuleLogin(),
             $this->ConstMessageLogin(),
             //struct login
-            $this->MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL,
-            $this->MESSAGE_ERROR_LOGIN_PASSWORD,
+            $this->MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL_AND_PASSWORD,
             $this->MESSAGE_ERROR_LOGIN_VERIFICATION,
             $this->ConstCurrentRouteLog($this->request),
             $this->ConstCurrentPathLog($this->request),
