@@ -8,6 +8,12 @@
         <div class="rbt-banner-image"></div>
         <!-- End Banner BG Image  -->
     </div>
+    @session('success')
+        <div class="flash-data-success" data-flashdata-success="{{ $value }}"></div>
+    @endsession
+    @session('error')
+        <div class="flash-data-error" data-flashdata-error="{{ $value }}"></div>
+    @endsession
 
     <!-- Start Card Style -->
     <div class="rbt-dashboard-area rbt-section-overlayping-top rbt-section-gapBottom">
@@ -234,3 +240,7 @@
 
         @endsection
         <!-- End Form -->
+        @push('js')
+            <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.all.min.js') }}"></script>
+            <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.conf.js') }}"></script>
+        @endpush
