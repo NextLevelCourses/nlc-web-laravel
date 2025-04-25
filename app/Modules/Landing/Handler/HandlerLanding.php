@@ -2,6 +2,8 @@
 
 namespace App\Modules\Landing\Handler;
 
+use Illuminate\Support\Facades\Auth;
+
 class HandlerLanding
 {
     public function Index()
@@ -31,7 +33,10 @@ class HandlerLanding
 
     public function Authentication()
     {
-        return view('landing.module.Authentication');
+        if (!Auth::guard('user')->check()) {
+            return view('landing.module.Authentication');
+        }
+        return redirect()->intended('/Home')->with('error', 'Gak perlu login lagi');
     }
 
     public function FAQs()
