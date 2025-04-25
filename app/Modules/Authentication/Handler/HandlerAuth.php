@@ -25,6 +25,9 @@ class HandlerAuth extends ConstantAuth
             $this->MESSAGE_ERROR_LOGIN_USERNAME_OR_EMAIL,
             $this->MESSAGE_ERROR_LOGIN_PASSWORD,
             $this->MESSAGE_ERROR_LOGIN_VERIFICATION,
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+            $this->FAILED_LOGIN_MESSAGE,
         );
     }
 

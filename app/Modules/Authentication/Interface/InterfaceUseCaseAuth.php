@@ -15,6 +15,9 @@ interface InterfaceUseCaseAuth
         string $messageErrorLoginUsernameOrEmail,
         string $messageErrorLoginPassword,
         string $messageErrorLoginVerification,
+        string $currentRoute,
+        string $currentPath,
+        string $errorLoginMessage,
     );
     public function RegisterCase(
         $request,

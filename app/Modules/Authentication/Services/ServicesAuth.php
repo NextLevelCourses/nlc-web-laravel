@@ -43,7 +43,7 @@ class ServicesAuth extends RepositoryAuth
                 return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
             }
             //di izinkan login jika account nya verif
-            $userAcccountStatusByUsername = $this->ValidateLoginStatusVerifyAccountRepositoryByEmail($request->umail, $userName[0]->status);
+            $userAcccountStatusByUsername = $this->ValidateLoginStatusVerifyAccountRepositoryByUsername($request->umail, $userName[0]->status);
             if ($userAcccountStatusByUsername) {
             } else {
                 return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginVerification);

@@ -29,13 +29,29 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         string $messageErrorLoginUsernameOrEmail,
         string $messageErrorLoginPassword,
         string $messageErrorLoginVerification,
+        string $currentRoute,
+        string $currentPath,
+        string $errorLoginMessage
     ) {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
-            $ConstMessageLogin
+            $ConstMessageLogin,
         );
-        return $this->LoginServices($request, $messageErrorLoginUsernameOrEmail, $messageErrorLoginPassword, $messageErrorLoginVerification);
+        DB::beginTransaction();
+        try {
+            return $this->LoginServices(
+                $request,
+                $messageErrorLoginUsernameOrEmail,
+                $messageErrorLoginPassword,
+                $messageErrorLoginVerification,
+            );
+            DB::commit();
+        } catch (\Exception $error) {
+            DB::rollBack();
+            $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
+            return redirect()->route('landing.Authentication')->with('error', $errorLoginMessage);
+        }
     }
 
 

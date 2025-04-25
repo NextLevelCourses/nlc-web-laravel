@@ -95,10 +95,22 @@ class ConstantAuth
     protected string $SUCCESS_REGISTER_MESSAGE = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
 
     /**
+     * @var string $SUCCESS_LOGIN_MESSAGE
+     * @return string
+     */
+    protected string $SUCCESS_LOGIN_MESSAGE = 'Berhasil Registrasi,harap cek email anda untuk mendapatkan link verifikasi account';
+
+    /**
      * @var string $FAILED_REGISTER_MESSAGE
      * @return string
      */
     protected string $FAILED_REGISTER_MESSAGE = 'Gagal registrasi, maaf ada kesalahan sistem';
+
+    /**
+     * @var string $FAILED_LOGIN_MESSAGE
+     * @return string
+     */
+    protected string $FAILED_LOGIN_MESSAGE = 'Gagal registrasi, maaf ada kesalahan sistem';
 
     /**
      * @var string $SUCCESS_VERIFICATION_ACCOUNT_MESSAGE
