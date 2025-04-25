@@ -12,6 +12,8 @@ interface InterfaceUseCaseAuth
         array $ConstRuleLogin,
         array $ConstMessageLogin,
         //struct login
+        string $messageErrorLoginUsernameOrEmail,
+        string $messageErrorLoginPassword,
     );
     public function RegisterCase(
         $request,

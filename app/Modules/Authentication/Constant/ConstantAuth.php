@@ -158,6 +158,19 @@ class ConstantAuth
     protected int $roleID = 1; // roles id default student
 
     /**
+     * @var string $MessageLoginError
+     * @return string
+     */
+
+    protected string $messageErrorLoginUsernameOrEmail = 'Gagal login, email atau password salah';
+
+    /**
+     * @var string $messageErrorLoginPassword
+     */
+
+    protected string $messageErrorLoginPassword = 'Gagal Login, password anda salah';
+
+    /**
      * @method $TokenVerification
      * @return string
      */

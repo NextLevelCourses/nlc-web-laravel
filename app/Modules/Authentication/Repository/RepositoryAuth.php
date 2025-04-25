@@ -5,6 +5,7 @@ namespace App\Modules\Authentication\Repository;
 use Illuminate\Support\Facades\Mail;
 use App\Modules\Authentication\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
+use Illuminate\Support\Facades\Hash;
 
 class RepositoryAuth extends DomainAuth
 {
@@ -60,7 +61,7 @@ class RepositoryAuth extends DomainAuth
      *  manage business logic delete token after verify
      * @return void
      */
-    public function DeleteTokensVerifyAcountRepository(string $email): void
+    protected function DeleteTokensVerifyAcountRepository(string $email): void
     {
         $this->DomainDeleteTokensVerification($email);
     }
@@ -70,7 +71,7 @@ class RepositoryAuth extends DomainAuth
      *  manage business logic validate email existing
      * @return array
      */
-    public function ValidateEmailByTokensRepository(string $token): array
+    protected function ValidateEmailByTokensRepository(string $token): array
     {
         return $this->DomainValidateEmailByTokens($token);
     }
@@ -89,5 +90,35 @@ class RepositoryAuth extends DomainAuth
         string $url_verification,
     ): void {
         Mail::to($email)->send(new MailAuth($username, $password, $date_registered, $ip, $email, $url_verification));
+    }
+
+    /**
+     * @method ValidatePasswordByHash
+     *  validate password by hash
+     * @return bool
+     */
+    protected static function ValidatePasswordByHash($passwordReq, $passwordHash): bool
+    {
+        return Hash::check($passwordReq, $passwordHash) ? true : false;
+    }
+
+    /**
+     * @method ValidateLoginByExistingEmailRepository
+     *  validate email
+     * @return bool
+     */
+    protected function ValidateLoginByExistingEmailRepository(string $umail): bool
+    {
+        return !$this->DomainValidateLoginByExistingEmail($umail) ? false : true;
+    }
+
+    /**
+     * @method ValidateLoginByExistingUsernameRepository
+     *  validate username
+     * @return bool
+     */
+    protected function ValidateLoginByExistingUsernameRepository(string $umail): bool
+    {
+        return !$this->DomainValidateLoginByExistingUsername($umail) ? false : true;
     }
 }

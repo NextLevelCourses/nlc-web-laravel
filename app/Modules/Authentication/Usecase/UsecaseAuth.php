@@ -24,14 +24,17 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
     public function LoginCase(
         $request,
         array $ConstRuleLogin,
-        array $ConstMessageLogin
+        array $ConstMessageLogin,
+        //struct login
+        string $messageErrorLoginUsernameOrEmail,
+        string $messageErrorLoginPassword,
     ) {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
             $ConstMessageLogin
         );
-        return $this->LoginServices();
+        return $this->LoginServices($request, $messageErrorLoginUsernameOrEmail, $messageErrorLoginPassword);
     }
 
 

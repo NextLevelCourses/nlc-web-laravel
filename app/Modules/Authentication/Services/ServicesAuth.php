@@ -4,12 +4,28 @@ namespace App\Modules\Authentication\Services;
 
 use Illuminate\Support\Str;
 use App\Modules\Authentication\Repository\RepositoryAuth;
+use Illuminate\Http\RedirectResponse;
 
 class ServicesAuth extends RepositoryAuth
 {
-    protected function LoginServices(): string
-    {
-        return 'halo';
+    /**
+     * @method LoginServices
+     * excec bisnis logic login
+     */
+
+    protected function LoginServices(
+        $request,
+        string $messageErrorLoginUsernameOrEmail,
+        string $messageErrorLoginPassword
+    ): RedirectResponse {
+
+        if (!$this->ValidateLoginByExistingEmailRepository($request->umail)) {
+            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginUsernameOrEmail);
+        }
+
+        if (!$this->ValidateLoginByExistingUsernameRepository($request->umail)) {
+            return redirect()->route('landing.Authentication')->with('error', $messageErrorLoginPassword);
+        }
     }
 
     /**

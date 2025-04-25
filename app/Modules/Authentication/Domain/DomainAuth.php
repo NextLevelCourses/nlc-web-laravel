@@ -71,8 +71,11 @@ class DomainAuth implements InterfaceDomainAuth
      * @method DomainValidateLoginByExistingEmail
      * @return bool
      */
-
-    public function DomainValidateLoginByExistingEmail(string $email): void {}
+    public function DomainValidateLoginByExistingEmail(string $umail): bool
+    {
+        $email = DB::select("SELECT * FROM users WHERE email = ?", [$umail]);
+        return !empty($email);
+    }
 
 
     /**
@@ -80,5 +83,9 @@ class DomainAuth implements InterfaceDomainAuth
      * @return bool
      */
 
-    public function DomainValidateLoginByExistingUsername(string $email): void {}
+    public function DomainValidateLoginByExistingUsername(string $umail): bool
+    {
+        $username = DB::select("SELECT * FROM users WHERE username = ?", [$umail]);
+        return !empty($username);
+    }
 }

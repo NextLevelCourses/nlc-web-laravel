@@ -21,7 +21,9 @@ class HandlerAuth extends ConstantAuth
         return $this->usecaseAuth->LoginCase(
             $this->request,
             $this->ConstRuleLogin(),
-            $this->ConstMessageLogin()
+            $this->ConstMessageLogin(),
+            $this->messageErrorLoginUsernameOrEmail,
+            $this->messageErrorLoginPassword,
         );
     }
 
