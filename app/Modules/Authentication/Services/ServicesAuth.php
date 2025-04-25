@@ -7,7 +7,10 @@ use App\Modules\Authentication\Repository\RepositoryAuth;
 
 class ServicesAuth extends RepositoryAuth
 {
-    protected function LoginServices() {}
+    protected function LoginServices(): string
+    {
+        return 'halo';
+    }
 
     /**
      * @method RegisterServices

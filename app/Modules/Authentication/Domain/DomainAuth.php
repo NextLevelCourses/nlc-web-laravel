@@ -65,4 +65,19 @@ class DomainAuth implements InterfaceDomainAuth
     {
         return DB::select("SELECT * FROM users WHERE remember_token = ?", [$token]);
     }
+
+    /**
+     * @method DomainValidateLoginByExistingEmail
+     * @return bool
+     */
+
+    public function DomainValidateLoginByExistingEmail(string $email): void {}
+
+
+    /**
+     * @method DomainValidateLoginByExistingUsername
+     * @return bool
+     */
+
+    public function DomainValidateLoginByExistingUsername(string $email): void {}
 }

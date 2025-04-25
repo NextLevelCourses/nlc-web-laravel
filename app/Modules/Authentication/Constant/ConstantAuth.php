@@ -8,6 +8,7 @@ class ConstantAuth
 {
     /**
      * @method $ConstRuleLogin
+     * @return array
      */
 
     protected function ConstRuleLogin(): array
@@ -32,6 +33,7 @@ class ConstantAuth
 
     /**
      * @method $ConstMessageLogin
+     * @return array
      */
 
     protected function ConstMessageLogin(): array
@@ -58,6 +60,7 @@ class ConstantAuth
 
     /**
      * @method $ConstMessageLog
+     * @return string
      */
 
     protected function ConstMessageLog(string $message = 'not message here'): string

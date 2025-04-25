@@ -21,15 +21,19 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
      * user account login for generate session
      */
 
-    public function LoginCase($request, $ConstRuleLogin, $ConstMessageLogin)
-    {
+    public function LoginCase(
+        $request,
+        array $ConstRuleLogin,
+        array $ConstMessageLogin
+    ) {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
             $ConstMessageLogin
         );
-        $this->LoginServices();
+        return $this->LoginServices();
     }
+
 
     /**
      * @method RegisterCase

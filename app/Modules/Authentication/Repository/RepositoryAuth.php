@@ -48,17 +48,28 @@ class RepositoryAuth extends DomainAuth
     /**
      * @method VerificationAccountRepository
      *  manage business logic send mail verification account
+     * @return void
      */
     protected function VerificationAccountRepository(string $token): void
     {
         $this->DomainVerifyAccountByTokens($token);
     }
 
+    /**
+     * @method DeleteTokensVerifyAcountRepository
+     *  manage business logic delete token after verify
+     * @return void
+     */
     public function DeleteTokensVerifyAcountRepository(string $email): void
     {
         $this->DomainDeleteTokensVerification($email);
     }
 
+    /**
+     * @method ValidateEmailByTokensRepository
+     *  manage business logic validate email existing
+     * @return void
+     */
     public function ValidateEmailByTokensRepository(string $token)
     {
         return $this->DomainValidateEmailByTokens($token);
@@ -67,6 +78,7 @@ class RepositoryAuth extends DomainAuth
     /**
      * @method SendMailUserVerificationRegister
      *  send mail verification register user
+     * @return void
      */
     private static function SendMailUserVerificationRegister(
         string $email,

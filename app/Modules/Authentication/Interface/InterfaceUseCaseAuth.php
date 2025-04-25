@@ -9,8 +9,9 @@ interface InterfaceUseCaseAuth
      */
     public function LoginCase(
         $request,
-        $ConstRuleLogin,
-        $ConstMessageLogin
+        array $ConstRuleLogin,
+        array $ConstMessageLogin,
+        //struct login
     );
     public function RegisterCase(
         $request,
