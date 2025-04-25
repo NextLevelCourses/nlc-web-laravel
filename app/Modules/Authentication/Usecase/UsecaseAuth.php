@@ -33,13 +33,12 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         string $currentPath,
         string $errorLoginMessage,
         string $successLoginMessage,
-    ) {
+    ): RedirectResponse {
         $this->requestAuth->RequestLogin(
             $request,
             $ConstRuleLogin,
             $ConstMessageLogin,
         );
-        DB::beginTransaction();
         try {
             return $this->LoginServices(
                 $request,
@@ -48,9 +47,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
                 $messageErrorLoginVerification,
                 $successLoginMessage,
             );
-            DB::commit();
         } catch (\Exception $error) {
-            DB::rollBack();
             $this->domainAuth->DomainLogErrorInsert($error->getMessage(), $currentRoute, $currentPath);
             return redirect()->route('landing.Authentication')->with('error', $errorLoginMessage);
         }
