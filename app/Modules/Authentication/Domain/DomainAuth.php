@@ -74,6 +74,6 @@ class DomainAuth implements InterfaceDomainAuth
      */
     public function DomainValidateLoginByExistingEmailOrUsername(string $umail): array
     {
-        return DB::select("SELECT * FROM users WHERE email = ? OR username", [$umail, $umail]);
+        return DB::select("SELECT * FROM users WHERE email = ? OR username = ?", [$umail, $umail]);
     }
 }
