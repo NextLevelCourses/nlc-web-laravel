@@ -44,6 +44,6 @@ class MailSuccessForgot extends Mailable
         return $this->view('forgot-password.email.Success', [
             'email' => $this->email,
             'url' => $this->url,
-        ])->subject('Success Forgot Password Account');
+        ])->subject('Success Reset Password Your Account');
     }
 }
