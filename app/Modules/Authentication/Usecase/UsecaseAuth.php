@@ -187,7 +187,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         );
         DB::beginTransaction();
         try {
-            $this->ForgotPasswordServices($request->email);
+            $this->ForgotPasswordServices($request->reset_email);
             DB::commit();
             return redirect()->route('landing.Authentication')->with('success', $messageSuccessForgotPassword);
         } catch (\Exception $error) {
