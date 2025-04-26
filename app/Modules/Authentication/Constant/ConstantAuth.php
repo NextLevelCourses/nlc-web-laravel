@@ -92,6 +92,8 @@ class ConstantAuth
     protected function ConstChangePasswordMessage(): array
     {
         return array(
+            'min' => ':attribute Password minimal 8 karakter',
+            'regex' => ':attribute Password harus terdiri dari huruf besar, kecil, angka dan spesical character',
             'change_new_password.required' => 'Password baru wajib di isi.',
             'change_confirm_password.required' => 'Konfirmasi Password wajib di isi.',
             'change_confirm_password.same' => 'Password tidak sama.',
@@ -105,7 +107,7 @@ class ConstantAuth
     protected function ConstChangePasswordRules(): array
     {
         return array(
-            'change_new_password' => 'required|string|min:8',
+            'change_new_password' => 'required|string|min:8|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/',
             'change_confirm_password' => 'required|string|min:8|same:change_new_password',
         );
     }
