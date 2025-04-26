@@ -28,4 +28,12 @@ interface InterfaceDomainAuth
     public function DomainDeleteTokensVerification(string $email): void;
 
     public function DomainValidateAccountStatus(string $umail): array;
+
+    public function DomainInsertForgotPassword(
+        string $email,
+        string $token,
+        string $url,
+        string $created_at,
+        string $updated_at
+    ): void;
 }

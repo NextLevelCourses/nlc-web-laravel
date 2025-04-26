@@ -78,4 +78,14 @@ class DomainAuth implements InterfaceDomainAuth
     {
         return DB::select("SELECT * FROM users WHERE email = ? OR username = ?", [$umail, $umail]);
     }
+
+    public function DomainInsertForgotPassword(
+        string $email,
+        string $token,
+        string $url,
+        string $created_at,
+        string $updated_at
+    ): void {
+        DB::insert('INSERT INTO password_reset_tokens (email,token,url,created_at,updated_at) values (?, ?, ?, ?, ?)', [$email, $token, $url, $created_at, $updated_at]);
+    }
 }

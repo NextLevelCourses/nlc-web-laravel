@@ -68,6 +68,7 @@
             padding: 20px;
             font-size: 14px;
             color: #94a3b8;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -80,6 +81,7 @@
                 alt="logo" />
         </div>
         <h1>Forgot your<br>password?</h1>
+        <p><b>Halo {{ $email }}</b></p>
         <p>Harap mengklik tombol dibawah ini<br>jika ingin melakukan reset password</p>
         <a href="{{ $url }}" class="button">Reset your password</a>
         <div class="footer-text">

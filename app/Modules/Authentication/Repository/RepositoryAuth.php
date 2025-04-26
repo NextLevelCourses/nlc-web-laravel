@@ -5,6 +5,7 @@ namespace App\Modules\Authentication\Repository;
 use Illuminate\Support\Facades\Mail;
 use App\Modules\Authentication\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
+use App\Modules\Authentication\Mail\MailForgot;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -178,7 +179,34 @@ class RepositoryAuth extends DomainAuth
     }
 
     /**
-     * @method SendEmailForgotPasswordRepository
+     * @method InsertForgotPasswordRepository
+     * @return void
      */
-    protected function SendEmailForgotPasswordRepository(string $email, string $url, string $token): void {}
+    protected function InsertForgotPasswordRepository(
+        string $email,
+        string $url,
+        string $token,
+        string $created_at,
+        string $updated_at,
+    ): void {
+        $this->DomainInsertForgotPassword(
+            $email,
+            $token,
+            $url,
+            $created_at,
+            $updated_at
+        );
+    }
+
+    /**
+     * @method SendEmailForgotPasswordRepository
+     * @return void
+     */
+
+    protected function SendEmailForgotPasswordRepository(
+        string $email,
+        string $url,
+    ): void {
+        Mail::to($email)->send(new MailForgot($email, $url));
+    }
 }

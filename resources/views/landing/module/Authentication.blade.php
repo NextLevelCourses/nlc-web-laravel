@@ -135,9 +135,15 @@
                         <form id="resetPasswordForm" action="{{ route('auth.forgot.password') }}" method="POST">
                             @csrf
                             <div class="form-group">
-                                <input name="reset_email" id="reset_email" type="email" required />
+                                <input name="reset_email" id="reset_email" type="text"
+                                    class="@error('reset_email') is-invalid @enderror" />
                                 <label for="reset_email">Email address *</label>
                                 <span class="focus-border"></span>
+                                @error('reset_email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
 
                             <div class="form-submit-group">

@@ -88,13 +88,13 @@ class ServicesAuth extends RepositoryAuth
      * @method ForgotPasswordServices
      *  excec bisnis logic forgot password users by email
      */
-    protected function ForgotPasswordServices(string $email)
+    protected function ForgotPasswordServices(string $email): void
     {
-        $token = Str::random(20);
-        $url = config('app.url') . '/reset/' . $token . '/password';
+        $token  = Str::random(20);
+        $url    = config('app.url') . '/reset/' . $token . '/password';
         if (!empty($email)) {
-            return $this->SendEmailForgotPasswordRepository($email, $url, $token);
+            $this->InsertForgotPasswordRepository($email, $url, $token, now(), now());
+            $this->SendEmailForgotPasswordRepository($email, $url);
         }
-        return false;
     }
 }

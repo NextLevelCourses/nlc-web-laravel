@@ -67,7 +67,7 @@ class ConstantAuth
     protected function ConstRuleForgotPassword(): array
     {
         return array(
-            'email' => 'required|email|exists:users,email',
+            'reset_email' => 'required|email|exists:users,email',
         );
     }
 
@@ -78,9 +78,9 @@ class ConstantAuth
     protected function ConstMessageForgotPassword(): array
     {
         return array(
-            'email.required' => 'Email wajib di isi.',
-            'email.email' => 'Harus sesuai dengan format email: @',
-            'email.exists' => 'Email tidak terdaftar harap daftar dengan email lain',
+            'reset_email.required' => 'Email wajib di isi.',
+            'reset_email.email' => 'Harus sesuai dengan format email: @',
+            'reset_email.exists' => 'Email tidak terdaftar harap masukan email lain',
         );
     }
 
