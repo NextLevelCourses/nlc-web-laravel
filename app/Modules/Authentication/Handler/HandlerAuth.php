@@ -135,5 +135,8 @@ class HandlerAuth extends ConstantAuth
      * handle usecase change password
      */
 
-    public function changePassword() {}
+    public function changePassword()
+    {
+        return $this->usecaseAuth->ChangePasswordCase($this->request);
+    }
 }

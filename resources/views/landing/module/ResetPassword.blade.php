@@ -34,10 +34,11 @@
                         <div class="col-lg-6 col-md-8">
                             <div class="rbt-contact-form contact-form-style-1">
                                 <!-- <h3 class="title text-center mb-4">Reset Password</h3> -->
-                                <form id="resetPasswordForm" action="" method="POST">
+                                <form id="resetPasswordForm" action="{{ route('auth.change.password') }}" method="POST">
                                     @csrf
+                                    <input name="token_reset_password" type="text" value="{{ $token }}" hidden />
                                     <div class="form-group">
-                                        <input name="email" type="text" value="wadaw" />
+                                        <input name="email" type="text" value="{{ $email }}" readonly />
                                         <label>Email</label>
                                         <span class="focus-border"></span>
                                     </div>

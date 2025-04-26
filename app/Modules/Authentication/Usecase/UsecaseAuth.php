@@ -212,4 +212,13 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
             return redirect()->route('landing.Authentication')->with('error', $errorMessageResetPassword);
         }
     }
+
+    /**
+     * @method ChangePasswordCase
+     * setup reset password
+     */
+    public function ChangePasswordCase($request)
+    {
+        return $request->all();
+    }
 }

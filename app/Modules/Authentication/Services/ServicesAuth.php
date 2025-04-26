@@ -114,6 +114,9 @@ class ServicesAuth extends RepositoryAuth
         if (empty($token)) {
             return redirect()->route('landing.Authentication')->with('error', $errorMessageResetPassword);
         };
-        return view('landing.module.ResetPassword', ['email' => $token[0]->email]);
+        return view('landing.module.ResetPassword', [
+            'email' => $token[0]->email,
+            'token' => $token[0]->token
+        ]);
     }
 }
