@@ -98,7 +98,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
             $this->domainAuth->DomainLogInsert($successRegisterMessage, $currentRoute, $currentPath, 'success');
             return redirect()->route('landing.Authentication')->with('success', $successRegisterMessage);
         } catch (\Exception $error) {
-            // DB::rollBack();
+            DB::rollBack();
             $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorRegisterMessage);
         }
@@ -123,7 +123,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
             $this->domainAuth->DomainLogInsert($successVerificationAccountMessage, $currentRoute, $currentPath, 'success');
             return redirect()->route('landing.Authentication')->with('success', $successVerificationAccountMessage);
         } catch (\Exception $error) {
-            // DB::rollBack();
+            DB::rollBack();
             $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorVerificationAccountMessage);
         }
@@ -159,4 +159,47 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
      * get profile by sessions
      */
     public function ProfileCase() {}
+
+    /**
+     * @method UpdateProfileCase
+     * update profile by sessions
+     */
+    public function UpdateProfileCase() {}
+
+    /**
+     * @method ForgotPasswordCase
+     * send link forgot password
+     */
+    public function ForgotPasswordCase(
+        //validate
+        $request,
+        array    $ConstRuleForgotPassword,
+        array    $ConstMessageForgotPassword,
+        //struct forgot password
+        string   $currentRoute,
+        string   $currentPath,
+        string   $successRegisterForgotPassword,
+    ): RedirectResponse {
+        $this->requestAuth->RequestForgot(
+            $request,
+            $ConstRuleForgotPassword,
+            $ConstMessageForgotPassword
+        );
+        DB::beginTransaction();
+        try {
+            $this->ForgotPasswordServices($request->email);
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', $successRegisterForgotPassword);
+        } catch (\Exception $error) {
+            DB::rollBack();
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
+            return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
+        }
+    }
+
+    /**
+     * @method ResetPasswordCase
+     * setup reset password
+     */
+    public function ResetPasswordCase($token) {}
 }

@@ -87,7 +87,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://img.icons8.com/ios-filled/50/000000/level-up.png" alt="Logo" />
+            <img crossorigin="anonymous"
+                src="https://drive.google.com/drive-viewer/AKGpihZQq-99jGheSKdDRc2N2rKTm0QvU6dai0kjb-ltfnfy0xtYzkbTLvxRhzQK-el70vKz5yRVcHruSmjA4lyzRz7O0qN35gSJaA=s2560"
+                alt="Logo" />
         </div>
         <div class="title">Terimakasih telah mendaftar di sistem ini</div>
         <div class="info">

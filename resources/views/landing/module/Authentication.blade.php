@@ -132,7 +132,8 @@
                 <div class="modal-content">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                         <h3 class="title">Reset Password</h3>
-                        <form id="resetPasswordForm">
+                        <form id="resetPasswordForm" action="{{ route('auth.forgot.password') }}" method="POST">
+                            @csrf
                             <div class="form-group">
                                 <input name="reset_email" id="reset_email" type="email" required />
                                 <label for="reset_email">Email address *</label>

@@ -14,4 +14,9 @@ class RequestAuth
     {
         return $request->validate($RegisterRules, $RegisterMessage);
     }
+
+    public function RequestForgot(Request $request, array $ForgotRules, array $ForgotMessage)
+    {
+        return $request->validate($ForgotRules, $ForgotMessage);
+    }
 }

@@ -176,4 +176,9 @@ class RepositoryAuth extends DomainAuth
     {
         Auth::guard('user')->logout();
     }
+
+    /**
+     * @method SendEmailForgotPasswordRepository
+     */
+    protected function SendEmailForgotPasswordRepository(string $email, string $url, string $token): void {}
 }

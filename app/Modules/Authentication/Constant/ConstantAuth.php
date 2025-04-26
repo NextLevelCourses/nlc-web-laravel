@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class ConstantAuth
 {
     /**
-     * @method $ConstRuleLogin
+     * @method ConstRuleLogin
      * @return array
      */
 
@@ -21,7 +21,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstRuleRegister
+     * @method ConstRuleRegister
      * @return array
      */
 
@@ -33,7 +33,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstMessageLogin
+     * @method ConstMessageLogin
      * @return array
      */
 
@@ -46,7 +46,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstMessageRegister
+     * @method ConstMessageRegister
      * @return array
      */
 
@@ -60,7 +60,32 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstMessageLog
+     * @method ConstRuleForgotPassword
+     * @return array
+     */
+
+    protected function ConstRuleForgotPassword(): array
+    {
+        return array(
+            'email' => 'required|email|exists:users,email',
+        );
+    }
+
+    /**
+     * @method ConstMessageForgotPassword
+     * @return array
+     */
+    protected function ConstMessageForgotPassword(): array
+    {
+        return array(
+            'email.required' => 'Email wajib di isi.',
+            'email.email' => 'Harus sesuai dengan format email: @',
+            'email.exists' => 'Email tidak terdaftar harap daftar dengan email lain',
+        );
+    }
+
+    /**
+     * @method ConstMessageLog
      * @return string
      */
 
@@ -70,7 +95,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstCurrentRouteLog
+     * @method ConstCurrentRouteLog
      * @return string
      */
 
@@ -80,7 +105,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $ConstCurrentPathLog
+     * @method ConstCurrentPathLog
      * @return string
      */
 
@@ -173,7 +198,14 @@ class ConstantAuth
     protected string $MESSAGE_LOGOUT_ERROR = 'Gagal Logout, silahkan dicoba kembali';
 
     /**
-     * @method $RandomName
+     * @var string $MESSAGE_FORGOT_PASSWORD_SUCCESS
+     * @return string
+     */
+
+    protected string $MESSAGE_FORGOT_PASSWORD_SUCCESS = 'Berhasil Forgot, silahkan cek email anda untuk mendapatkan link reset password';
+
+    /**
+     * @method RandomName
      * @return string
      */
     protected static function RandomName(): string
@@ -182,7 +214,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $RandomUsername
+     * @method RandomUsername
      * @return string
      */
     protected static function RandomUsername(): string
@@ -191,7 +223,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $RandomPassword
+     * @method RandomPassword
      * @return string
      */
     protected static function RandomPassword(): string
@@ -206,7 +238,7 @@ class ConstantAuth
     protected int $roleID = 1; // roles id default student
 
     /**
-     * @method $TokenVerification
+     * @method TokenVerification
      * @return string
      */
 
@@ -216,7 +248,7 @@ class ConstantAuth
     }
 
     /**
-     * @method $UrlVerification
+     * @method UrlVerification
      * @return string
      */
     protected static function UrlVerification(): string

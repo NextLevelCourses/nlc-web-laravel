@@ -2,8 +2,9 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Modules\Authentication\Repository\RepositoryAuth;
+use Illuminate\Support\Str;
 use Illuminate\Http\RedirectResponse;
+use App\Modules\Authentication\Repository\RepositoryAuth;
 
 class ServicesAuth extends RepositoryAuth
 {
@@ -74,8 +75,26 @@ class ServicesAuth extends RepositoryAuth
         $this->DeleteTokensVerifyAcountRepository($token[0]->email);
     }
 
+    /**
+     * @method LogoutService
+     *  excec bisnis logic loggout user session
+     */
     protected function LogoutService(): void
     {
         $this->UserLoggoutSessionRepository();
+    }
+
+    /**
+     * @method ForgotPasswordServices
+     *  excec bisnis logic forgot password users by email
+     */
+    protected function ForgotPasswordServices(string $email)
+    {
+        $token = Str::random(20);
+        $url = config('app.url') . '/reset/' . $token . '/password';
+        if (!empty($email)) {
+            return $this->SendEmailForgotPasswordRepository($email, $url, $token);
+        }
+        return false;
     }
 }

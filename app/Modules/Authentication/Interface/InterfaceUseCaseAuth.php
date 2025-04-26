@@ -50,4 +50,19 @@ interface InterfaceUseCaseAuth
         $userSession,
     );
     public function ProfileCase();
+
+    public function UpdateProfileCase();
+
+    public function ForgotPasswordCase(
+        //validate
+        $request,
+        array    $ConstRuleForgotPassword,
+        array    $ConstMessageForgotPassword,
+        //struct forgot password
+        string   $currentRoute,
+        string   $currentPath,
+        string   $successRegisterForgotPassword,
+    );
+
+    public function ResetPasswordCase($token);
 }

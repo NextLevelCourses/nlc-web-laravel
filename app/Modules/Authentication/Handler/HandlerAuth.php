@@ -91,4 +91,39 @@ class HandlerAuth extends ConstantAuth
     {
         return $this->usecaseAuth->ProfileCase();
     }
+
+
+    /**
+     * @method updateProfile
+     * handle usecase update profile    
+     */
+    public function updateProfile()
+    {
+        return $this->usecaseAuth->UpdateProfileCase();
+    }
+
+    /**
+     * @method forgotPassword
+     * handle usecase forgot password
+     */
+    public function forgotPassword()
+    {
+        return $this->usecaseAuth->ForgotPasswordCase(
+            $this->request,
+            $this->ConstRuleForgotPassword(),
+            $this->ConstMessageForgotPassword(),
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+            $this->SUCCESS_FORGOT_PASSWORD_MESSAGE,
+        );
+    }
+
+    /**
+     * @method resetPassword
+     * handle usecase reset password
+     */
+    public function resetPassword($token)
+    {
+        return $this->usecaseAuth->ResetPasswordCase($token);
+    }
 }
