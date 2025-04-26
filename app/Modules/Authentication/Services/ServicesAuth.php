@@ -119,4 +119,14 @@ class ServicesAuth extends RepositoryAuth
             'token' => $token[0]->token
         ]);
     }
+
+    /**
+     * @method ChangePasswordServices
+     */
+
+    protected function ChangePasswordServices(
+        $request
+    ) {
+        return $request->all();
+    }
 }

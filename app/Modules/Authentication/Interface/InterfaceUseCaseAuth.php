@@ -2,6 +2,8 @@
 
 namespace App\Modules\Authentication\Interface;
 
+use Illuminate\Http\RedirectResponse;
+
 interface InterfaceUseCaseAuth
 {
     /**
@@ -18,7 +20,7 @@ interface InterfaceUseCaseAuth
         string   $currentPath,
         string   $errorLoginMessage,
         string   $successLoginMessage,
-    );
+    ): RedirectResponse;
     public function RegisterCase(
         $request,
         array    $ConstRuleRegister,
@@ -34,7 +36,7 @@ interface InterfaceUseCaseAuth
         int      $rolesId,
         string   $tokenVerification,
         string   $urlVerification,
-    );
+    ): RedirectResponse;
     public function VerificationAccountCase(
         string   $token,
         string   $currentRoute,
@@ -48,7 +50,7 @@ interface InterfaceUseCaseAuth
         string   $currentRoute,
         string   $currentPath,
         $userSession,
-    );
+    ): RedirectResponse;
     public function ProfileCase();
 
     public function UpdateProfileCase();
@@ -62,12 +64,16 @@ interface InterfaceUseCaseAuth
         string   $currentRoute,
         string   $currentPath,
         string   $successRegisterForgotPassword,
-    );
+    ): RedirectResponse;
 
     public function ResetPasswordCase(
         string   $token,
         string   $errorMessageResetPassword,
     );
 
-    public function ChangePasswordCase($request);
+    public function ChangePasswordCase(
+        $request,
+        array   $ConstChangePasswordRules,
+        array   $ConstChangePasswordMessage,
+    );
 }

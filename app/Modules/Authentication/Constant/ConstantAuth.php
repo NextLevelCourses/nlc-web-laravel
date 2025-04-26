@@ -85,6 +85,32 @@ class ConstantAuth
     }
 
     /**
+     * @method ConstChangePasswordMessage
+     * @return array
+     */
+
+    protected function ConstChangePasswordMessage(): array
+    {
+        return array(
+            'change_new_password.required' => 'Password baru wajib di isi.',
+            'change_confirm_password.required' => 'Konfirmasi Password wajib di isi.',
+            'change_confirm_password.same' => 'Password tidak sama.',
+        );
+    }
+
+    /**
+     * @method ConstChangePasswordRules
+     * @return array
+     */
+    protected function ConstChangePasswordRules(): array
+    {
+        return array(
+            'change_new_password' => 'required|string|min:8',
+            'change_confirm_password' => 'required|string|min:8|same:change_new_password',
+        );
+    }
+
+    /**
      * @method ConstMessageLog
      * @return string
      */

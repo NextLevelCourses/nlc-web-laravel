@@ -19,4 +19,9 @@ class RequestAuth
     {
         return $request->validate($ForgotRules, $ForgotMessage);
     }
+
+    public function RequestChangePassword(Request $request, array $ChangePasswordRules, array $ChangePasswordMessage)
+    {
+        return $request->validate($ChangePasswordRules, $ChangePasswordMessage);
+    }
 }

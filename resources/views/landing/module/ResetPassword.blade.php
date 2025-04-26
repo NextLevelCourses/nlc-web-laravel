@@ -44,15 +44,28 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input name="new_password" type="password" required />
+                                        <input name="change_new_password"
+                                            class="@error('change_new_password') is-invalid @enderror" type="password" />
                                         <label>New Password</label>
                                         <span class="focus-border"></span>
+                                        @error('change_new_password')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group mt-4">
-                                        <input name="confirm_password" type="password" required />
+                                        <input name="change_confirm_password"
+                                            class="@error('change_confirm_password') is-invalid @enderror"
+                                            type="password" />
                                         <label>Confirm Password</label>
                                         <span class="focus-border"></span>
+                                        @error('change_confirm_password')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-submit-group mt-5">

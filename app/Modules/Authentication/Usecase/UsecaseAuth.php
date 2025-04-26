@@ -217,8 +217,22 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
      * @method ChangePasswordCase
      * setup reset password
      */
-    public function ChangePasswordCase($request)
-    {
-        return $request->all();
+    public function ChangePasswordCase(
+        $request,
+        array $ConstChangePasswordRules,
+        array $ConstChangePasswordMessage
+    ) {
+        $this->requestAuth->RequestChangePassword(
+            $request,
+            $ConstChangePasswordRules,
+            $ConstChangePasswordMessage,
+        );
+
+        try {
+            return $this->ChangePasswordServices($request);
+        } catch (\Exception $error) {
+            $this->domainAuth->DomainLogInsert($error->getMessage(), 'resetPassword', 'resetPassword', 'error');
+            return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
+        }
     }
 }
