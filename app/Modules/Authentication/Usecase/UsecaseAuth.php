@@ -201,5 +201,8 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
      * @method ResetPasswordCase
      * setup reset password
      */
-    public function ResetPasswordCase($token) {}
+    public function ResetPasswordCase($token)
+    {
+        return $token;
+    }
 }
