@@ -178,7 +178,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         //struct forgot password
         string   $currentRoute,
         string   $currentPath,
-        string   $successRegisterForgotPassword,
+        string   $messageSuccessForgotPassword,
     ): RedirectResponse {
         $this->requestAuth->RequestForgot(
             $request,
@@ -189,7 +189,7 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
         try {
             $this->ForgotPasswordServices($request->email);
             DB::commit();
-            return redirect()->route('landing.Authentication')->with('success', $successRegisterForgotPassword);
+            return redirect()->route('landing.Authentication')->with('success', $messageSuccessForgotPassword);
         } catch (\Exception $error) {
             DB::rollBack();
             $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
