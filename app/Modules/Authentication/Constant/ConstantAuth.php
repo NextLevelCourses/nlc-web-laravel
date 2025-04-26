@@ -205,6 +205,20 @@ class ConstantAuth
     protected string $MESSAGE_FORGOT_PASSWORD_SUCCESS = 'Berhasil Forgot, silahkan cek email anda untuk mendapatkan link reset password';
 
     /**
+     * @var string $MESSAGE_RESET_PASSWORD_SUCCESS
+     * @return string
+     */
+
+    protected string $MESSAGE_RESET_PASSWORD_SUCCESS = 'Berhasil Reset Password, silahkan login menggunakan password baru anda';
+
+    /**
+     * @var string $MESSAGE_RESET_PASSWORD_FAILED
+     * @return string
+     */
+
+    protected string $MESSAGE_RESET_PASSWORD_FAILED = 'Gagal Reset Password, token tidak valid atau sudah kadaluarsa';
+
+    /**
      * @method RandomName
      * @return string
      */

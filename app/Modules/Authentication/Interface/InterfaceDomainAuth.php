@@ -36,4 +36,6 @@ interface InterfaceDomainAuth
         string $created_at,
         string $updated_at
     ): void;
+
+    public function DomainValidateTokenResetPassword(string $token): array;
 }

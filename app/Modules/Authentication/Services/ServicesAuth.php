@@ -102,4 +102,19 @@ class ServicesAuth extends RepositoryAuth
             $this->SendEmailForgotPasswordRepository($email, $url);
         }
     }
+
+    /**
+     * @method ResetPasswordServices
+     */
+    protected function ResetPasswordServices(
+        string  $token,
+        string  $errorMessageResetPassword,
+        string  $successMessageResetPassword
+    ) {
+        $token = $this->ValidateTokensResetPasswordRepository($token);
+        if (empty($token)) {
+            return redirect()->route('landing.Authentication')->with('error', $errorMessageResetPassword);
+        };
+        return $token[0]->email;
+    }
 }

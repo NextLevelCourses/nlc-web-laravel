@@ -209,4 +209,14 @@ class RepositoryAuth extends DomainAuth
     ): void {
         Mail::to($email)->send(new MailForgot($email, $url));
     }
+
+    /**
+     * @method ResetPasswordRepository
+     * @return array
+     */
+
+    protected function ValidateTokensResetPasswordRepository(string $token): array
+    {
+        return $this->DomainValidateTokenResetPassword($token);
+    }
 }
