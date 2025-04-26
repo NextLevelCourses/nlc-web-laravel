@@ -67,6 +67,5 @@ interface InterfaceUseCaseAuth
     public function ResetPasswordCase(
         string   $token,
         string   $errorMessageResetPassword,
-        string   $successMessageResetPassword,
     );
 }

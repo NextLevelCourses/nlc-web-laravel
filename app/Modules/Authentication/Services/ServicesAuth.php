@@ -109,12 +109,11 @@ class ServicesAuth extends RepositoryAuth
     protected function ResetPasswordServices(
         string  $token,
         string  $errorMessageResetPassword,
-        string  $successMessageResetPassword
     ) {
         $token = $this->ValidateTokensResetPasswordRepository($token);
         if (empty($token)) {
             return redirect()->route('landing.Authentication')->with('error', $errorMessageResetPassword);
         };
-        return $token[0]->email;
+        return view('landing.module.ResetPassword', ['email' => $token[0]->email]);
     }
 }

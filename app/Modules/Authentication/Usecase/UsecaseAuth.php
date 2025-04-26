@@ -204,10 +204,9 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
     public function ResetPasswordCase(
         string  $token,
         string  $errorMessageResetPassword,
-        string  $successMessageResetPassword,
     ) {
         try {
-            return $this->ResetPasswordServices($token, $errorMessageResetPassword, $successMessageResetPassword);
+            return $this->ResetPasswordServices($token, $errorMessageResetPassword);
         } catch (\Exception $error) {
             $this->domainAuth->DomainLogInsert($error->getMessage(), 'resetPassword', 'resetPassword', 'error');
             return redirect()->route('landing.Authentication')->with('error', $errorMessageResetPassword);

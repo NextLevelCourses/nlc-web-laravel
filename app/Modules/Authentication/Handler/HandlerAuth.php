@@ -127,7 +127,6 @@ class HandlerAuth extends ConstantAuth
         return $this->usecaseAuth->ResetPasswordCase(
             $token,
             $this->MESSAGE_RESET_PASSWORD_FAILED,
-            $this->MESSAGE_RESET_PASSWORD_SUCCESS,
         );
     }
 
