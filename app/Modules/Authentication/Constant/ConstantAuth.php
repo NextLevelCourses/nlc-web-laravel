@@ -247,6 +247,13 @@ class ConstantAuth
     protected string $MESSAGE_RESET_PASSWORD_FAILED = 'Gagal Reset Password, token tidak valid atau sudah kadaluarsa';
 
     /**
+     * @var string $MESSAGE_SUCCESS_CHANGE_PASSWORD
+     * @return string
+     */
+
+    protected string $MESSAGE_SUCCESS_CHANGE_PASSWORD = 'Berhasil Ubah Password, silahkan login menggunakan password baru anda';
+
+    /**
      * @method RandomName
      * @return string
      */

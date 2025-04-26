@@ -72,8 +72,13 @@ interface InterfaceUseCaseAuth
     );
 
     public function ChangePasswordCase(
+        //validate
         $request,
         array   $ConstChangePasswordRules,
         array   $ConstChangePasswordMessage,
+        //struct change password
+        string  $currentRoute,
+        string  $currentPath,
+        string  $successChangePasswordMessage,
     );
 }

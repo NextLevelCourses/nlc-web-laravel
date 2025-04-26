@@ -103,4 +103,27 @@ class DomainAuth implements InterfaceDomainAuth
     {
         return DB::select("SELECT * FROM password_reset_tokens WHERE token = ?", [$token]);
     }
+
+
+    /**
+     * @method DomainChangePassword
+     *  transaction with change password by email from reset password 
+     * @return void
+     */
+    public function DomainChangePassword(
+        string $email,
+        string $password
+    ): void {
+        DB::update('UPDATE users SET password = ? WHERE email = ?', [Hash::make($password), $email]);
+    }
+
+    /**
+     * @method DomainDeleteTokenResetPassword
+     *  transaction with delete token reset password
+     * @return void
+     */
+    public function DomainDeleteTokenResetPassword(string $token): void
+    {
+        DB::delete('DELETE FROM password_reset_tokens WHERE token = ?', [$token]);
+    }
 }

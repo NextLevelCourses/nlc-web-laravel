@@ -126,7 +126,10 @@ class ServicesAuth extends RepositoryAuth
 
     protected function ChangePasswordServices(
         $request
-    ) {
-        return $request->all();
+    ): void {
+        $url = config('app.url') . '/Authentication';
+        $this->ChangePasswordRepository($request->email, $request->change_new_password);
+        $this->SendEmailResetPasswordRepository($request->email, $url);
+        $this->DeleteTokenResetPasswordRepository($request->token_reset_password);
     }
 }

@@ -38,4 +38,11 @@ interface InterfaceDomainAuth
     ): void;
 
     public function DomainValidateTokenResetPassword(string $token): array;
+
+    public function DomainChangePassword(
+        string $email,
+        string $password,
+    ): void;
+
+    public function DomainDeleteTokenResetPassword(string $token): void;
 }

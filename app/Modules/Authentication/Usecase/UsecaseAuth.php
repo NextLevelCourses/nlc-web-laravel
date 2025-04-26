@@ -216,22 +216,32 @@ class UsecaseAuth extends ServicesAuth implements InterfaceUseCaseAuth
     /**
      * @method ChangePasswordCase
      * setup reset password
+     * @return RedirectResponse
      */
     public function ChangePasswordCase(
         $request,
         array $ConstChangePasswordRules,
-        array $ConstChangePasswordMessage
-    ) {
+        array $ConstChangePasswordMessage,
+        //struct change password
+        string  $currentRoute,
+        string  $currentPath,
+        string  $successChangePasswordMessage,
+    ): RedirectResponse {
         $this->requestAuth->RequestChangePassword(
             $request,
             $ConstChangePasswordRules,
             $ConstChangePasswordMessage,
         );
 
+        DB::beginTransaction();
         try {
-            return $this->ChangePasswordServices($request);
+            $this->ChangePasswordServices($request);
+            $this->domainAuth->DomainLogInsert($successChangePasswordMessage . "Email: {$request->email}", $currentRoute, $currentPath, 'success');
+            DB::commit();
+            return redirect()->route('landing.Authentication')->with('success', $successChangePasswordMessage);
         } catch (\Exception $error) {
-            $this->domainAuth->DomainLogInsert($error->getMessage(), 'resetPassword', 'resetPassword', 'error');
+            DB::rollBack();
+            $this->domainAuth->DomainLogInsert($error->getMessage(), $currentRoute, $currentPath, 'error');
             return redirect()->route('landing.Authentication')->with('error', $error->getMessage());
         }
     }

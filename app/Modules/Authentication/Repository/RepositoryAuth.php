@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Modules\Authentication\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
 use App\Modules\Authentication\Mail\MailForgot;
+use App\Modules\Authentication\Mail\MailSuccessForgot;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -218,5 +219,37 @@ class RepositoryAuth extends DomainAuth
     protected function ValidateTokensResetPasswordRepository(string $token): array
     {
         return $this->DomainValidateTokenResetPassword($token);
+    }
+
+    /**
+     * @method ChangePasswordRepository
+     * @return void
+     */
+    protected function ChangePasswordRepository(
+        string $email,
+        string $password,
+    ): void {
+        $this->DomainChangePassword($email, $password);
+    }
+
+    /**
+     * @method DeleteTokenResetPasswordRepository
+     * @return void
+     */
+    protected function DeleteTokenResetPasswordRepository(string $token): void
+    {
+        $this->DomainDeleteTokenResetPassword($token);
+    }
+
+    /**
+     * @method SendEmailResetPasswordRepository
+     * @return void
+     */
+
+    protected function SendEmailResetPasswordRepository(
+        string $email,
+        string $url,
+    ): void {
+        Mail::to($email)->send(new MailSuccessForgot($email, $url));
     }
 }

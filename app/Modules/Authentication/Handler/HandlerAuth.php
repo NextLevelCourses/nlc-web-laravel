@@ -141,6 +141,9 @@ class HandlerAuth extends ConstantAuth
             $this->request,
             $this->ConstChangePasswordRules(),
             $this->ConstChangePasswordMessage(),
+            $this->ConstCurrentRouteLog($this->request),
+            $this->ConstCurrentPathLog($this->request),
+            $this->MESSAGE_SUCCESS_CHANGE_PASSWORD,
         );
     }
 }
