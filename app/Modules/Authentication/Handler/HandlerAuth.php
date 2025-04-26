@@ -126,4 +126,11 @@ class HandlerAuth extends ConstantAuth
     {
         return $this->usecaseAuth->ResetPasswordCase($token);
     }
+
+    /**
+     * @method changePassword
+     * handle usecase change password
+     */
+
+    public function changePassword() {}
 }

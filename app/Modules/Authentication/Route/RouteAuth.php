@@ -9,5 +9,6 @@ Route::middleware('throttle:30,1')->group(function () {
     Route::get('/verification/account/{token}', [HandlerAuth::class, 'verification'])->name('auth.verification');
     Route::post('/logout', [HandlerAuth::class, 'logout'])->name('auth.logout');
     Route::post('/forgot/password', [HandlerAuth::class, 'forgotPassword'])->name('auth.forgot.password');
-    Route::post('/reset/{token}/password', [HandlerAuth::class, 'resetPassword'])->name('auth.reset.password');
+    Route::get('/reset/{token}/password', [HandlerAuth::class, 'resetPassword'])->name('auth.reset.password');
+    Route::post('/change/password', [HandlerAuth::class, 'changePassword'])->name('auth.change.password');
 });
