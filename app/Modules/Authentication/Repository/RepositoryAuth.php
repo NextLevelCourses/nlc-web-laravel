@@ -16,6 +16,7 @@ class RepositoryAuth extends DomainAuth
     /**
      * @method RegisterRepository
      *  manage business logic user register then verification email repository
+     * @return void
      */
 
     protected function RegisterRepository(
@@ -151,7 +152,6 @@ class RepositoryAuth extends DomainAuth
 
     /**
      * @method _GetAccountStatusByEmailOrUsername
-     * @return
      */
 
     protected function _GetAccountStatusByEmailOrUsernameRepository(string $umail)

@@ -11,6 +11,7 @@ class ServicesAuth extends RepositoryAuth
     /**
      * @method LoginServices
      * excec bisnis logic login
+     * @return RedirectResponse
      */
 
     protected function LoginServices(
@@ -35,6 +36,7 @@ class ServicesAuth extends RepositoryAuth
     /**
      * @method RegisterServices
      *  excec bisnis logic register
+     *  @return void
      */
 
     protected function RegisterServices(
@@ -64,6 +66,7 @@ class ServicesAuth extends RepositoryAuth
     /**
      * @method VerificationAccountServices
      *  excec bisnis logic verification account
+     * @return void
      */
 
     protected function VerificationAccountServices(string $token): void
@@ -78,6 +81,7 @@ class ServicesAuth extends RepositoryAuth
     /**
      * @method LogoutService
      *  excec bisnis logic loggout user session
+     * @return void
      */
     protected function LogoutService(): void
     {
@@ -87,6 +91,7 @@ class ServicesAuth extends RepositoryAuth
     /**
      * @method ForgotPasswordServices
      *  excec bisnis logic forgot password users by email
+     * @return void
      */
     protected function ForgotPasswordServices(string $email): void
     {
