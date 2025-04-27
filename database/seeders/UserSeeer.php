@@ -21,6 +21,7 @@ class UserSeeer extends Seeder
                 'email' => 'john@example.com',
                 'roles_id' => 3,
                 'password' => Hash::make('12345678'),
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ],
@@ -30,6 +31,7 @@ class UserSeeer extends Seeder
                 'email' => 'teguh@example.com',
                 'roles_id' => 1,
                 'password' => Hash::make('12345678'),
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ],
@@ -39,6 +41,7 @@ class UserSeeer extends Seeder
                 'email' => 'samsul@example.com',
                 'roles_id' => 2,
                 'password' => Hash::make('12345678'),
+                'status' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]
