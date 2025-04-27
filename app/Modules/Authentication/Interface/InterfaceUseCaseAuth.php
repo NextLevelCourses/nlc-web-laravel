@@ -2,6 +2,8 @@
 
 namespace App\Modules\Authentication\Interface;
 
+use Illuminate\Http\RedirectResponse;
+
 interface InterfaceUseCaseAuth
 {
     /**
@@ -9,9 +11,16 @@ interface InterfaceUseCaseAuth
      */
     public function LoginCase(
         $request,
-        $ConstRuleLogin,
-        $ConstMessageLogin
-    );
+        array    $ConstRuleLogin,
+        array    $ConstMessageLogin,
+        //struct login
+        string   $messageErrorLoginUsernameOrEmailAndPassword,
+        string   $messageErrorLoginVerification,
+        string   $currentRoute,
+        string   $currentPath,
+        string   $errorLoginMessage,
+        string   $successLoginMessage,
+    ): RedirectResponse;
     public function RegisterCase(
         $request,
         array    $ConstRuleRegister,
@@ -27,7 +36,7 @@ interface InterfaceUseCaseAuth
         int      $rolesId,
         string   $tokenVerification,
         string   $urlVerification,
-    );
+    ): RedirectResponse;
     public function VerificationAccountCase(
         string   $token,
         string   $currentRoute,
@@ -35,6 +44,41 @@ interface InterfaceUseCaseAuth
         string   $successVerificationAccountMessage,
         string   $errorVerificationAccountMessage
     );
-    public function LogoutCase();
+    public function LogoutCase(
+        string   $logoutMessageSuccess,
+        string   $logoutMessageError,
+        string   $currentRoute,
+        string   $currentPath,
+        $userSession,
+    ): RedirectResponse;
     public function ProfileCase();
+
+    public function UpdateProfileCase();
+
+    public function ForgotPasswordCase(
+        //validate
+        $request,
+        array    $ConstRuleForgotPassword,
+        array    $ConstMessageForgotPassword,
+        //struct forgot password
+        string   $currentRoute,
+        string   $currentPath,
+        string   $successRegisterForgotPassword,
+    ): RedirectResponse;
+
+    public function ResetPasswordCase(
+        string   $token,
+        string   $errorMessageResetPassword,
+    );
+
+    public function ChangePasswordCase(
+        //validate
+        $request,
+        array   $ConstChangePasswordRules,
+        array   $ConstChangePasswordMessage,
+        //struct change password
+        string  $currentRoute,
+        string  $currentPath,
+        string  $successChangePasswordMessage,
+    );
 }

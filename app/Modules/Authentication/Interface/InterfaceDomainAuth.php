@@ -7,10 +7,11 @@ interface InterfaceDomainAuth
     /**
      * prepare method for prepare domain business authentication
      */
-    public function DomainLogErrorInsert(
+    public function DomainLogInsert(
         string $message,
         string $route,
-        string $path
+        string $path,
+        string $type,
     ): void;
 
     public function DomainUserRegister(
@@ -26,5 +27,22 @@ interface InterfaceDomainAuth
 
     public function DomainDeleteTokensVerification(string $email): void;
 
-    public function DomainValidateEmailByTokens(string $token);
+    public function DomainValidateAccountStatus(string $umail): array;
+
+    public function DomainInsertForgotPassword(
+        string $email,
+        string $token,
+        string $url,
+        string $created_at,
+        string $updated_at
+    ): void;
+
+    public function DomainValidateTokenResetPassword(string $token): array;
+
+    public function DomainChangePassword(
+        string $email,
+        string $password,
+    ): void;
+
+    public function DomainDeleteTokenResetPassword(string $token): void;
 }
