@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Landing\Handler;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
-class LandingController extends Controller
+class HandlerLanding
 {
     public function Index()
     {
@@ -31,9 +31,12 @@ class LandingController extends Controller
         return view('landing.module.Testimonial');
     }
 
-    public function Register()
+    public function Authentication()
     {
-        return view('landing.module.Register');
+        if (!Auth::guard('user')->check()) {
+            return view('landing.module.Authentication');
+        }
+        return redirect()->intended('/Home')->with('error', 'Gak perlu login lagi');
     }
 
     public function FAQs()
@@ -54,5 +57,10 @@ class LandingController extends Controller
     public function OurCommunity()
     {
         return view('landing.module.OurCommunity');
+    }
+
+    public function ResetPassword()
+    {
+        return view('landing.module.ResetPassword');
     }
 }

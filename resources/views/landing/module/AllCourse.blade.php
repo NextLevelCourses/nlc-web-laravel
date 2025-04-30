@@ -387,7 +387,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-01.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -413,7 +413,8 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">React Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">React
+                                            Front To Back</a>
                                     </h4>
 
                                     <ul class="rbt-meta">
@@ -438,7 +439,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -450,7 +451,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-02.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -471,7 +472,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">PHP Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">PHP
+                                            Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -495,7 +497,9 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon"
+                                            href="{{ route('landing.DetailCourseLanding') }}">Learn More<i
+                                                class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -506,7 +510,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-03.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-10%</span>
@@ -531,7 +535,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Angular Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a
+                                            href="{{ route('landing.DetailCourseLanding') }}">Angular Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -555,7 +560,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -567,7 +572,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-04.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -593,7 +598,8 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Web Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web
+                                            Front To Back</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>20 Lessons</li>
@@ -617,7 +623,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -629,7 +635,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-05.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-20%</span>
@@ -654,7 +660,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">SQL Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL
+                                            Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -678,7 +685,9 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon"
+                                            href="{{ route('landing.DetailCourseLanding') }}">Learn More<i
+                                                class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -689,7 +698,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-06.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -710,7 +719,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">JS Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">JS
+                                            Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -734,7 +744,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -746,7 +756,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-04.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-40%</span>
@@ -772,7 +782,8 @@
                                         </div>
                                     </div>
 
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">Web Front To Back</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">Web
+                                            Front To Back</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>20 Lessons</li>
@@ -796,7 +807,7 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -808,7 +819,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-05.jpg" alt="Card image">
                                         <div class="rbt-badge-3 bg-white">
                                             <span>-20%</span>
@@ -833,7 +844,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">SQL Beginner Advanced</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">SQL
+                                            Beginner Advanced</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>12 Lessons</li>
@@ -857,7 +869,9 @@
                                             <span class="current-price">$60</span>
                                             <span class="off-price">$120</span>
                                         </div>
-                                        <a class="rbt-btn-link left-icon" href="{{ route('landing.DetailCourse') }}">Learn More<i class="feather-arrow-right"></i></a>
+                                        <a class="rbt-btn-link left-icon"
+                                            href="{{ route('landing.DetailCourseLanding') }}">Learn More<i
+                                                class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -868,7 +882,7 @@
                         <div class="course-grid-3">
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
-                                    <a href="{{ route('landing.DetailCourse') }}">
+                                    <a href="{{ route('landing.DetailCourseLanding') }}">
                                         <img src="assets/images/course/course-online-06.jpg" alt="Card image">
                                     </a>
                                 </div>
@@ -889,7 +903,8 @@
                                                     class="feather-bookmark"></i></a>
                                         </div>
                                     </div>
-                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourse') }}">JS Zero to Mastery</a>
+                                    <h4 class="rbt-card-title"><a href="{{ route('landing.DetailCourseLanding') }}">JS
+                                            Zero to Mastery</a>
                                     </h4>
                                     <ul class="rbt-meta">
                                         <li><i class="feather-book"></i>8 Lessons</li>
@@ -913,7 +928,7 @@
                                             <span class="current-price">$80</span>
                                             <span class="off-price">$100</span>
                                         </div>
-                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourse') }}">Learn
+                                        <a class="rbt-btn-link" href="{{ route('landing.DetailCourseLanding') }}">Learn
                                             More<i class="feather-arrow-right"></i></a>
                                     </div>
                                 </div>

@@ -101,4 +101,8 @@ nlc-rollback:
 #generate key
 nlc-key-generate:
 	php artisan key:generate
+nlc-config-refresh:
+	php artisan config:clear
+	php artisan config:cache
+	php artisan optimize
 #=========================================== END::exec local app ============================

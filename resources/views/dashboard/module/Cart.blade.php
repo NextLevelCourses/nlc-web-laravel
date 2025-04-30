@@ -3,28 +3,28 @@
 @section('title', 'Cart')
 
 @section('content')
-<!-- Start Learning Cart Header -->
-<div class="rbt-breadcrumb-default ptb--25 ptb_md--50 ptb_sm--30 bg-gradient-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-inner text-center">
-                    <h2 class="title">Your Learning Cart is Ready!</h2>
-                    <div class="slider-btn rbt-button-group justify-content-center">
-                                    <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ route('Dashboard.Home') }}">
-                                        <span class="icon-reverse-wrapper">
-                                            <span class="btn-text">Add Course</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </span>
-                                    </a>
-                                </div>
+ <!-- Start breadcrumb Area -->
+    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center pt--10">
+                        <h2 class="title">Your Learning Cart is Ready!</h2>
+                        <div class="slider-btn rbt-button-group justify-content-center pt--40">
+                        <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ route('Dashboard.Home') }}">
+                        <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Add Course</span>
+                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                        </span>
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Learning Cart Header -->
+    <!-- End Breadcrumb Area -->
 
     <div class="rbt-cart-area bg-color-white pt--20">
         <div class="cart_area">
@@ -142,15 +142,11 @@
         </td>
     </tr>
 </tbody>
-
-                                </table>
-                            </div>
-                        </form>
-
+</table>
+</div>
+</form>
                         <div class="row g-5">
-
                             <div class="col-lg-6 col-12">
-
                                 
                                 <!-- Discount Coupon -->
                                 <div class="discount-coupon edu-bg-shade">
@@ -199,21 +195,13 @@
                                                 <span data-text="Update Cart">Update Cart</span>
                                             </button>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="rbt-separator-mid">
-        <div class="container">
-            <hr class="rbt-separator m-0">
         </div>
     </div>
 @endsection
