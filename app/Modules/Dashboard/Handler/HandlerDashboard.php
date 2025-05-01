@@ -67,4 +67,9 @@ class HandlerDashboard
     {
         return view('dashboard.module.EnrolledCourses');
     }
+
+    public function MyCourses()
+    {
+        return view('dashboard.module.MyCourses');
+    }
 }

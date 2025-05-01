@@ -65,7 +65,19 @@
                                                     <li><a href="{{ route('Dashboard.EnrolledCourses') }}"><i class="feather-book-open"></i><span>Enrolled Courses</span></a></li>
                                                     <li><a href="{{ route('Dashboard.Wishlist') }}"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
                                                     <li><a href="#"><i class="feather-star"></i><span>Reviews</span></a></li>
+                                                    <li><a href="{{ route('Dashboard.MyCourses') }}"><i class="feather-monitor"></i><span>My Courses</span></a></li>
                                                     <li><a href="{{ route('Dashboard.OrderHistory') }}"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
+                                                </ul>
+                                            </nav>
+
+                                            <div class="section-title mt--40 mb--20">
+                                                <h6 class="rbt-title-style-2">Instructor</h6>
+                                            </div>
+
+                                            <nav class="mainmenu-nav">
+                                                <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                                    <li><a href="{{ route('Dashboard.MyCourses') }}"><i
+                                                    class="feather-monitor"></i><span>My Courses</span></a></li>
                                                 </ul>
                                             </nav>
 
