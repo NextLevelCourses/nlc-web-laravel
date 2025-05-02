@@ -1,8 +1,8 @@
 <?php
 
 //Landing Routes
-require __DIR__ . '/../app/Modules/Landing/Route/RouteLanding.php';
+require __DIR__ . '/../app/Modules/Landing/Routes/RouteLanding.php';
 //Dashboard Routes
-require __DIR__ . '/../app/Modules/Dashboard/Route/RouteDashboard.php';
+require __DIR__ . '/../app/Modules/Dashboard/Routes/RouteDashboard.php';
 //Authentication Routes
-require __DIR__ . '/../app/Modules/Authentication/Route/RouteAuth.php';
+require __DIR__ . '/../app/Modules/Authentication/Routes/RouteAuth.php';

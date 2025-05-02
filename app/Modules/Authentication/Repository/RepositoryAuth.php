@@ -3,10 +3,10 @@
 namespace App\Modules\Authentication\Repository;
 
 use Illuminate\Support\Facades\Mail;
-use App\Modules\Authentication\Mail\MailAuth;
+use App\Mail\MailAuth;
 use App\Modules\Authentication\Domain\DomainAuth;
-use App\Modules\Authentication\Mail\MailForgot;
-use App\Modules\Authentication\Mail\MailSuccessForgot;
+use App\Mail\MailForgot;
+use App\Mail\MailSuccessForgot;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

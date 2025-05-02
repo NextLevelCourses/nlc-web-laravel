@@ -232,10 +232,19 @@
 
                 <div class="header-right">
                     <div class="rbt-btn-wrapper d-none d-xl-block">
-                        <a class="rbt-btn rbt-switch-btn btn-gradient btn-sm hover-transform-none"
-                            href="{{ route('landing.Authentication') }}">
-                            <span data-text="Join Now">Join Now</span>
-                        </a>
+                        @if (Route::has('landing.Authentication'))
+                            @auth
+                                <a class="rbt-btn rbt-switch-btn btn-gradient btn-sm hover-transform-none"
+                                    href="{{ route('Dashboard.Home') }}">
+                                    <span data-text="Dashboard">Dashboard</span>
+                                </a>
+                            @else
+                                <a class="rbt-btn rbt-switch-btn btn-gradient btn-sm hover-transform-none"
+                                    href="{{ route('landing.Authentication') }}">
+                                    <span data-text="Join Now">Join Now</span>
+                                </a>
+                            @endauth
+                        @endif
                     </div>
 
                     <!-- Start Mobile-Menu-Bar -->
