@@ -487,7 +487,15 @@
                          </li>
 
                          <li class="account-access rbt-user-wrapper d-none d-xl-block">
-                             <a href="#"><i class="feather-user"></i>Admin</a>
+                             <a href="#"><i class="feather-user"></i>
+                                 @if (Auth::guard('user')->user()->roles_id == 1)
+                                     {{ __('Student') }}
+                                 @elseif(Auth::guard('user')->user()->roles_id == 2)
+
+                                 @elseif(Auth::guard('user')->user()->roles_id == 3)
+                                     {{ __('Admin') }}
+                                 @endif
+                             </a>
                              <div class="rbt-user-menu-list-wrapper">
                                  <div class="inner">
                                      <div class="rbt-admin-profile">
@@ -495,7 +503,7 @@
                                              <img src="assets/images/team/avatar.jpg" alt="User Images">
                                          </div>
                                          <div class="admin-info">
-                                             <span class="name">RainbowIT</span>
+                                             <span class="name">{{ Auth::guard('user')->user()->name }}</span>
                                              <!-- <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a> -->
                                          </div>
                                      </div>
@@ -521,8 +529,8 @@
                                              </a>
                                          </li>
                                      </ul>
-                                     <hr class="mt--10 mb--10">
-                                     <ul class="user-list-wrapper">
+                                     {{-- <hr class="mt--10 mb--10"> --}}
+                                     {{-- <ul class="user-list-wrapper">
                                      </ul>
 
                                      <ul class="user-list-wrapper">
@@ -532,7 +540,7 @@
                                                  <span>Logout</span>
                                              </a>
                                          </li>
-                                     </ul>
+                                     </ul> --}}
                                  </div>
                              </div>
                          </li>
@@ -546,7 +554,7 @@
                                              <img src="assets/images/team/avatar.jpg" alt="User Images">
                                          </div>
                                          <div class="admin-info">
-                                             <span class="name">RainbowIT</span>
+                                             <span class="name">{{ Auth::guard('user')->user()->name }}</span>
                                              <a class="rbt-btn-link color-primary"
                                                  href="{{ route('Dashboard.MyProfile') }}">View Profile</a>
                                          </div>

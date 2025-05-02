@@ -28,6 +28,12 @@
 
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
         <div class="container">
+            @session('success')
+                <div class="flash-data-success" data-flashdata-success="{{ $value }}"></div>
+            @endsession
+            @session('error')
+                <div class="flash-data-error" data-flashdata-error="{{ $value }}"></div>
+            @endsession
             <div class="row gy-5 row--30">
                 <!-- Login Form -->
                 <div class="col-lg-6">
@@ -86,18 +92,6 @@
                 <!-- Register Form -->
                 <div class="col-lg-6">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
-                        @session('success')
-                            {{-- <div class="alert alert-success" role="alert">
-                                {{ $value }}
-                            </div> --}}
-                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
-                        @endsession
-                        @session('error')
-                            {{-- <div class="alert alert-danger" role="alert">
-                                {{ $value }}
-                            </div> --}}
-                            <div class="flash-data" data-flashdata="{{ $value }}"></div>
-                        @endsession
                         <h3 class="title">Register</h3>
                         <form class="max-width-auto" action="{{ route('auth.register') }}" method="POST">
                             @csrf
@@ -138,11 +132,18 @@
                 <div class="modal-content">
                     <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                         <h3 class="title">Reset Password</h3>
-                        <form id="resetPasswordForm">
+                        <form id="resetPasswordForm" action="{{ route('auth.forgot.password') }}" method="POST">
+                            @csrf
                             <div class="form-group">
-                                <input name="reset_email" id="reset_email" type="email" required />
+                                <input name="reset_email" id="reset_email" type="text"
+                                    class="@error('reset_email') is-invalid @enderror" />
                                 <label for="reset_email">Email address *</label>
                                 <span class="focus-border"></span>
+                                @error('reset_email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
 
                             <div class="form-submit-group">
@@ -166,3 +167,8 @@
         <!-- End Forgot Password Modal -->
     </div>
 @endsection
+
+@push('js')
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('assets/sweetalert2-11.19.1/dist/sweetalert2.conf.js') }}"></script>
+@endpush

@@ -14,4 +14,14 @@ class RequestAuth
     {
         return $request->validate($RegisterRules, $RegisterMessage);
     }
+
+    public function RequestForgot(Request $request, array $ForgotRules, array $ForgotMessage)
+    {
+        return $request->validate($ForgotRules, $ForgotMessage);
+    }
+
+    public function RequestChangePassword(Request $request, array $ChangePasswordRules, array $ChangePasswordMessage)
+    {
+        return $request->validate($ChangePasswordRules, $ChangePasswordMessage);
+    }
 }
