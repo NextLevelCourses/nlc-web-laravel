@@ -64,10 +64,10 @@
 
                             <div class="row mb--30">
                                 <div class="col-lg-6">
-                                    <div class="rbt-checkbox">
+                                    {{-- <div class="rbt-checkbox">
                                         <input type="checkbox" id="rememberme" name="rememberme">
                                         <label for="rememberme">Remember me</label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="rbt-lost-password text-end">
