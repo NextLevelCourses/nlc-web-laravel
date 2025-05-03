@@ -120,4 +120,9 @@ class HandlerDashboard
         // Redirect to the login page if the user is not authenticated
         return redirect()->intended('/Authentication')->with('error', 'Silahkan login terlebih dahulu');
     }
+
+    public function MyCourses()
+    {
+        return view('dashboard.module.MyCourses');
+    }
 }

@@ -19,4 +19,5 @@ Route::middleware(['auth:user', 'throttle:30,1'])->group(function () {
     Route::get('/MyCommunity', [HandlerDashboard::class, 'MyCommunity'])->name('Dashboard.MyCommunity');
     Route::get('/Mentoring', [HandlerDashboard::class, 'Mentoring'])->name('Dashboard.Mentoring');
     Route::get('/EnrolledCourses', [HandlerDashboard::class, 'EnrolledCourses'])->name('Dashboard.EnrolledCourses');
+    Route::get('/MyCourses', [HandlerDashboard::class, 'MyCourses'])->name('Dashboard.MyCourses');
 });
